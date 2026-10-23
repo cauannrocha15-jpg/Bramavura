@@ -1,0 +1,37 @@
+name: Import verified Huntera capture
+on:
+  push:
+    branches: [main]
+    paths: ['.capture/import-ready.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: verified-capture-import
+  cancel-in-progress: false
+jobs:
+  import:
+    if: github.repository == 'cauannrocha15-jpg/Bramavura'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version: '22'
+          package-manager-cache: false
+      - name: Import only bytes matching the captured hashes
+        run: node .capture/import.cjs
+      - name: Verify complete captured client
+        run: node verify.cjs
+      - name: Test compatibility with the original client codec and validators
+        run: node tests/compatibility.cjs
+      - name: Save verified reconstruction
+        run: |
+          git fetch origin main
+          test "$(git rev-parse HEAD)" = "$(git rev-parse FETCH_HEAD)"
+          git rm -- .capture/import-ready.json
+          git add -- .
+          if git diff --cached --quiet; then exit 0; fi
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'feat: import verified client, compatibility backend and observed catalogs'
+          git push origin HEAD:main
