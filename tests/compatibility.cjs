@@ -14,6 +14,7 @@ const backendModule=require('../backend.cjs');
   try{
   const captured=path.resolve(__dirname,'../public');
   const protocol=await import(pathToFileURL(path.join(captured,'chunk-JRE7IT7W.js')).href);
+  const dictionary=(await import(pathToFileURL(path.join(captured,'chunk-M5GYIUVK.js')).href)).a;
   let wire=fs.readFileSync(path.join(captured,'chunk-L7RK2YWL.js'),'utf8');
   wire=wire.replace(/from"\.\/(.*?)"/g,(_,name)=>'from'+JSON.stringify(pathToFileURL(path.join(captured,name)).href));
   wire=wire.replace('export{Qe as a}', 'export{Qe as a,Ye as encodeClient,Je as decodeServer}');
@@ -59,8 +60,131 @@ const backendModule=require('../backend.cjs');
   assert.equal(backend.catalogEvidence.bestiaryLootCapture.complete,true);
   assert.equal(backend.catalogEvidence.bestiaryLootCapture.lootEntries,2779);
   assert.equal(backend.catalogEvidence.bestiaryLootCapture.maxNotes,660);
-  assert.equal(backend.cyclopediaCatalog.items.length,811,'Direct species loot must not invent additional item tooltip records');
-  assert(backend.catalogEvidence.unknownLootItemStats.length>=731,'Unknown tooltip stats remain explicitly unknown');
+  const itemCatalogCapture=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../data/item-catalog-observed-current.json'),'utf8'));
+  assert.equal(itemCatalogCapture.completeness.complete,true);
+  assert.equal(itemCatalogCapture.records.length,1070);
+  assert.equal(itemCatalogCapture.completeness.capturedPages,134);
+  assert.deepEqual(itemCatalogCapture.completeness.pages,Array.from({length:134},(_,index)=>index+1));
+  assert.deepEqual(itemCatalogCapture.completeness.missingPages,[]);
+  const observedItems=new Map(itemCatalogCapture.records.map(record=>[record.itemId,record]));
+  assert.equal(observedItems.size,1070,'The source must contain 1070 unique item IDs');
+  const catalogItems=new Map(backend.cyclopediaCatalog.items.map(record=>[record.itemId,record]));
+  assert.equal(backend.cyclopediaCatalog.items.length,1070,'The full item source replaces the catalog without adding hunt or species loot IDs');
+  assert.deepEqual(new Set(catalogItems.keys()),new Set(observedItems.keys()));
+  const fieldsByItem=new Map(backend.catalogEvidence.itemCatalogFields.map(record=>[record.itemId,record]));
+  assert.equal(backend.catalogEvidence.itemCatalogFields.length,1070);
+  assert.equal(fieldsByItem.size,1070);
+  const captureEvidence=backend.catalogEvidence.itemCatalogCapture;
+  assert.equal(captureEvidence.file,'item-catalog-observed-current.json');
+  assert.equal(captureEvidence.complete,true);
+  assert.equal(captureEvidence.expectedItems,1070);
+  assert.equal(captureEvidence.capturedItems,1070);
+  assert.equal(captureEvidence.expectedPages,134);
+  assert.equal(captureEvidence.capturedPages,134);
+  assert.deepEqual(captureEvidence.reasons,[]);
+  assert.deepEqual(backend.catalogEvidence.invalidItemCatalogRecords,[]);
+  const categoryByLabel=new Map();
+  for(const [id,label] of Object.entries(protocol.Jb))for(const displayed of [label,dictionary[label]??label]){
+    assert(!categoryByLabel.has(displayed)||categoryByLabel.get(displayed)===Number(id),'Original category labels must not be ambiguous');
+    categoryByLabel.set(displayed,Number(id));
+  }
+  const slotByLabel=new Map();
+  for(const slot of ['helmet','amulet','weapon','armor','shield','ring','legs','boots','ammo','backpack'])for(const label of [slot,dictionary[slot]??slot])slotByLabel.set(label,slot);
+  const priorTooltips=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../data/equipment-observed.json'),'utf8'));
+  const priorByName=new Map(priorTooltips.map(record=>[record.name.toLowerCase(),record]));
+  function priorTooltipFields(name){
+    const prior=priorByName.get(name.toLowerCase());
+    if(!prior)return null;
+    const firstCard=(prior.tooltip||'').split(/\btext EQUIPADO\b/u)[0],result={};
+    assert(firstCard.split('\n').includes('text '+prior.name),'Historical tooltip must identify its own first card');
+    for(const [field,label] of Object.entries({attack:'Ataque',defense:'Defesa',armor:'Armadura',range:'Alcance',speedBonus:'Velocidade',classification:'Classificação'})){
+      const match=firstCard.match(new RegExp('(?:^|\\n)text '+label+': ([+-]?[0-9]+)(?:\\n|$)','u'));
+      if(match)result[field]=Number(match[1]);
+    }
+    const weight=firstCard.match(/(?:^|\n)text ([0-9]+(?:\.[0-9]+)?) oz(?:\n|$)/u);
+    if(weight)result.weight=Math.round(Number(weight[1])*100);
+    if(firstCard.includes('text Duas mãos'))result.twoHanded=true;
+    else if(firstCard.includes('text Uma mão'))result.twoHanded=false;
+    return result;
+  }
+  const requiredStats=['attack','defense','armor'];
+  const nullableWireFields={attack:'attack',defense:'defense',armor:'armor',range:'range',speedBonus:'speedBonus',elementalDamage:'elementalDamage',elementalType:'elementalTypeLabel',weight:'weightHundredths',classification:'classification',twoHanded:'twoHanded',protection:'protections'};
+  const expectedObservedCounts={},expectedListCounts={},retainedTooltipIds=new Set();
+  let oneHandedDisplayed=0,twoHandedDisplayed=0;
+  for(const observed of itemCatalogCapture.records){
+    const actual=catalogItems.get(observed.itemId),fields=fieldsByItem.get(observed.itemId),context=`item ${observed.itemId} (${observed.name})`;
+    assert.equal(fields.sourcePage,observed.sourcePage,'Keep the visible page for '+context);
+    assert(Array.isArray(fields.unknownFields)&&Array.isArray(fields.neutralTransportFields));
+    assert.equal(new Set(fields.unknownFields).size,fields.unknownFields.length,'Unknown fields are not duplicated for '+context);
+    assert(fields.provenance&&typeof fields.provenance==='object');
+    assert([null,'one-handed','two-handed'].includes(fields.handednessDisplayed),'Displayed handedness has an explicit observed/unknown state for '+context);
+    if(fields.handednessDisplayed==='one-handed'){
+      oneHandedDisplayed++;
+      assert.equal(priorTooltipFields(observed.name)?.twoHanded,false,'One-handed evidence comes from the historical first-card label for '+context);
+      assert(!Object.hasOwn(actual,'twoHanded'),'One-handed display is also an absent-source fallback, so it must not fabricate twoHanded:false for '+context);
+      assert(!Object.hasOwn(fields.provenance,'twoHanded'),'One-handed fallback display is not known boolean provenance for '+context);
+      assert(fields.unknownFields.includes('twoHanded'),'One-handed display leaves the source boolean unknown for '+context);
+    }else if(fields.handednessDisplayed==='two-handed'){
+      twoHandedDisplayed++;
+      assert.equal(priorTooltipFields(observed.name)?.twoHanded,true,'Two-handed evidence comes from the historical first-card label for '+context);
+      assert.equal(actual.twoHanded,true,'The explicit two-handed label supports true for '+context);
+    }
+    assert(categoryByLabel.has(observed.categoryLabel),'Source category must resolve through the pinned original labels for '+context);
+    const domValues={itemId:observed.itemId,name:observed.name,category:categoryByLabel.get(observed.categoryLabel)};
+    if(observed.slotLabel!==null){
+      assert(slotByLabel.has(observed.slotLabel),'Source slot must resolve through the original translation for '+context);
+      domValues.slot=slotByLabel.get(observed.slotLabel);
+    }
+    for(const [wireField,sourceField] of Object.entries(nullableWireFields))if(observed[sourceField]!==null)domValues[wireField]=observed[sourceField];
+    for(const [field,value] of Object.entries(domValues)){
+      assert.deepEqual(actual[field],value,'Current rendered value wins for '+context+', '+field);
+      if(field!=='itemId')assert.equal(fields.provenance[field],'item-list-dom','Current rendered provenance for '+context+', '+field);
+      assert(!fields.unknownFields.includes(field),'Observed value must not remain unknown for '+context+', '+field);
+    }
+    if(observed.slotLabel===null){
+      assert.equal(actual.slot,null,'Absent slot label uses only the required null wire shape for '+context);
+      assert(fields.unknownFields.includes('slot'),'Absent slot remains unknown for '+context);
+      assert(!Object.hasOwn(fields.provenance,'slot'));
+    }
+    for(const [field,sourceField] of Object.entries(nullableWireFields))if(observed[sourceField]===null){
+      if(fields.provenance[field]==='prior-tooltip'){
+        const previous=priorTooltipFields(observed.name);
+        assert(previous&&Object.hasOwn(previous,field),'Historical supplement needs an explicitly rendered first-card field for '+context+', '+field);
+        if(field==='twoHanded')assert.equal(previous[field],true,'A historical one-handed fallback cannot establish twoHanded:false for '+context);
+        assert.deepEqual(actual[field],previous[field],'Historical supplement retains its observed value for '+context+', '+field);
+        assert(!fields.unknownFields.includes(field));
+        retainedTooltipIds.add(observed.itemId);
+      }else{
+        assert(fields.unknownFields.includes(field),'Unobserved value remains unknown for '+context+', '+field);
+        assert(!Object.hasOwn(fields.provenance,field),'An unknown field has no recovered provenance for '+context+', '+field);
+        if(requiredStats.includes(field))assert.equal(actual[field],0,'Required numeric wire placeholder for '+context+', '+field);
+        else assert(!Object.hasOwn(actual,field),'Unknown optional field must be omitted for '+context+', '+field);
+      }
+    }
+    assert.deepEqual([...fields.neutralTransportFields].sort(),requiredStats.filter(field=>fields.unknownFields.includes(field)).sort(),'Only the three unknown required stats need neutral wire numbers for '+context);
+    for(const [field,source] of Object.entries(fields.provenance)){
+      assert(['item-list-dom','prior-tooltip'].includes(source),'Every field has a documented provenance for '+context+', '+field);
+      assert(!fields.unknownFields.includes(field));
+      expectedObservedCounts[field]=(expectedObservedCounts[field]??0)+1;
+      if(source==='item-list-dom'){
+        assert(Object.hasOwn(domValues,field),'DOM provenance needs a current observed value for '+context+', '+field);
+        assert.deepEqual(actual[field],domValues[field]);
+        expectedListCounts[field]=(expectedListCounts[field]??0)+1;
+      }else retainedTooltipIds.add(observed.itemId);
+    }
+  }
+  assert(oneHandedDisplayed>0,'Regression fixture must exercise the ambiguous historical one-handed label');
+  assert(twoHandedDisplayed>0,'Regression fixture must retain explicitly observed two-handed weapons');
+  assert.deepEqual(captureEvidence.observedFields,expectedObservedCounts,'Evidence counts every known final field and excludes transport placeholders');
+  assert.deepEqual(captureEvidence.listObservedFields,expectedListCounts,'List coverage counts only current DOM fields');
+  assert.equal(captureEvidence.retainedTooltips,retainedTooltipIds.size);
+  const lootItemIds=new Set([...backend.hunts.flatMap(hunt=>hunt.loot.map(item=>item.itemId)),...backend.cyclopediaCatalog.monsters.flatMap(monster=>monster.loot.map(item=>item.itemId))]);
+  const expectedUnknownStats=[...lootItemIds].filter(itemId=>!fieldsByItem.has(itemId)||requiredStats.some(field=>fieldsByItem.get(itemId).unknownFields.includes(field)));
+  assert.deepEqual(new Set(backend.catalogEvidence.unknownLootItemStats),new Set(expectedUnknownStats),'Unknown combat values are derived exactly from observed field evidence');
+  const expectedOutsideHunts=[];
+  for(const hunt of backend.hunts)for(const item of hunt.loot)if(!observedItems.has(item.itemId))expectedOutsideHunts.push({huntId:hunt.id,itemId:item.itemId,name:item.name});
+  const outsideKey=entry=>JSON.stringify([entry.huntId,entry.itemId,entry.name]);
+  assert.deepEqual(new Set(backend.catalogEvidence.huntLootItemsOutsideItemCatalog.map(outsideKey)),new Set(expectedOutsideHunts.map(outsideKey)),'Hunt loot outside the exact source stays in diagnostics without expanding the catalog');
   assert.deepEqual(backend.cyclopediaCatalog.monsters.find(monster=>monster.name==='Rat').loot,[{itemId:3031,rarity:'common',max:4},{itemId:3607,rarity:'common'}]);
   assert.deepEqual(backend.cyclopediaCatalog.monsters.find(monster=>monster.name==='Ripper Spectre').loot.filter(entry=>entry.rarity==='uncommon'),[{itemId:7642,rarity:'uncommon',max:2}],'Direct ficha supplies the uncommon loot missing from the mono-species hunt');
   const demonLoot=backend.cyclopediaCatalog.monsters.find(monster=>monster.name==='Demon').loot;
@@ -140,6 +264,8 @@ const backendModule=require('../backend.cjs');
   assert.deepEqual(evidence.unknownLootAssociations,[]);
   assert.equal(evidence.observedBestiaryLoot.length,192);
   assert.equal(evidence.bestiaryLootCapture.lootEntries,2779);
+  assert.deepEqual(evidence.itemCatalogCapture,backend.catalogEvidence.itemCatalogCapture,'HTTP exposes complete item-catalog provenance and coverage');
+  assert.deepEqual(evidence.itemCatalogFields,backend.catalogEvidence.itemCatalogFields);
   const socket=new WebSocket(ticket.websocketUrl);socket.binaryType='arraybuffer';
   const cleanupSocket=own(()=>socket.close());
   const received=[],rejected=[];
@@ -161,6 +287,8 @@ const backendModule=require('../backend.cjs');
     await until(()=>received.some(m=>m.type==='cyclopedia-catalog'));
     assert.equal(received.find(m=>m.type==='cyclopedia-catalog').monsters.length,192);
     assert.deepEqual(received.find(m=>m.type==='cyclopedia-catalog').monsters,backend.cyclopediaCatalog.monsters,'Binary transport preserves all observed species loot tables including duplicates and optional max');
+    assert.equal(received.find(m=>m.type==='cyclopedia-catalog').items.length,1070);
+    assert.deepEqual(received.find(m=>m.type==='cyclopedia-catalog').items,backend.cyclopediaCatalog.items,'Binary transport preserves every current item value and omitted unknown optional field');
     assert(!received.some(m=>m.type==='system-message'&&m.text.includes('cyclopedia-request')),'Automatic catalog request must return its catalog');
     send({type:'start-hunt',huntId:'rat-hunt',tier:0});
     await until(()=>received.some(m=>m.type==='hunt-analyzer-update'));
@@ -186,9 +314,52 @@ const backendModule=require('../backend.cjs');
   const fixtureRoot=path.resolve(os.tmpdir());
   const fixtureDir=fs.mkdtempSync(path.join(fixtureRoot,'huntera-backend-'));
   own(()=>{const target=path.resolve(fixtureDir);assert.equal(path.dirname(target),fixtureRoot);assert(path.basename(target).startsWith('huntera-backend-'));fs.rmSync(target,{recursive:true,force:true});});
+  const catalogFixtureFiles=['game-data.json','bestiary.json','new-hunts-normalized-20261019.json','bestiary-records.json','equipment-observed.json','hunts-observed-current.json','bestiary-loot-observed-current.json','item-catalog-observed-current.json'];
+  const copyCatalogFixture=(target,{includeItems=true}={})=>{
+    fs.mkdirSync(target);
+    for(const name of catalogFixtureFiles)if(includeItems||name!=='item-catalog-observed-current.json')fs.copyFileSync(path.resolve(__dirname,'../data',name),path.join(target,name));
+  };
+  const missingItemsDir=path.join(fixtureDir,'missing-items');
+  copyCatalogFixture(missingItemsDir,{includeItems:false});
+  const legacy=backendModule.createBackend({memory:true,dataDir:missingItemsDir});
+  const cleanupLegacy=own(()=>legacy.close());
+  assert.equal(legacy.catalogEvidence.itemCatalogCapture.complete,false);
+  assert(legacy.catalogEvidence.itemCatalogCapture.reasons.length>0,'Missing source must have an explicit fallback reason');
+  assert.equal(legacy.cyclopediaCatalog.items.length,811,'Missing full source preserves the existing legacy catalog');
+  assert(protocol.Gc(legacy.cyclopediaCatalog),'Legacy fallback still passes the original validator');
+  const legacyItems=new Map(legacy.cyclopediaCatalog.items.map(record=>[record.itemId,record]));
+  for(const itemId of retainedTooltipIds){
+    const previous=legacyItems.get(itemId),current=catalogItems.get(itemId);
+    assert(previous,'Historical supplement must have exactly the same legacy item ID: '+itemId);
+    assert.equal(previous.name.toLowerCase(),current.name.toLowerCase(),'Historical supplement name must agree for item '+itemId);
+    assert.equal(previous.category,current.category,'Historical supplement category must agree for item '+itemId);
+  }
+  await cleanupLegacy();
+  const invalidItemCases=[
+    {name:'wrong-total',mutate:source=>{source.completeness.expectedItems=1069;}},
+    {name:'partial-source',mutate:source=>{source.completeness.complete=false;}},
+    {name:'conflicting-duplicate-id',recordError:true,mutate:source=>{source.records[1].itemId=source.records[0].itemId;source.records[1].raw.itemId=source.records[0].itemId;}},
+    {name:'numeric-string',recordError:true,mutate:source=>{const row=source.records.find(record=>record.attack!==null);row.attack=String(row.attack);}},
+    {name:'unknown-category',recordError:true,mutate:source=>{const row=source.records[0];row.categoryLabel='Category absent from pinned client';row.raw.identityRaw=row.categoryLabel+(row.slotLabel===null?'':' — '+row.slotLabel);}}
+  ];
+  for(const testCase of invalidItemCases){
+    const target=path.join(fixtureDir,'invalid-items-'+testCase.name);
+    copyCatalogFixture(target);
+    const invalidItems=structuredClone(itemCatalogCapture);
+    testCase.mutate(invalidItems);
+    fs.writeFileSync(path.join(target,'item-catalog-observed-current.json'),JSON.stringify(invalidItems));
+    const rejectedCatalog=backendModule.createBackend({memory:true,dataDir:target});
+    const dispose=own(()=>rejectedCatalog.close());
+    assert.equal(rejectedCatalog.catalogEvidence.itemCatalogCapture.complete,false,'Reject the complete source atomically for '+testCase.name);
+    assert(rejectedCatalog.catalogEvidence.itemCatalogCapture.reasons.length>0,'Explain the source rejection for '+testCase.name);
+    if(testCase.recordError)assert(rejectedCatalog.catalogEvidence.invalidItemCatalogRecords.length>0,'Identify invalid records for '+testCase.name);
+    assert.equal(rejectedCatalog.cyclopediaCatalog.items.length,811,'Rejected source must not partially replace or expand legacy catalog for '+testCase.name);
+    assert.deepEqual(rejectedCatalog.cyclopediaCatalog.items,legacy.cyclopediaCatalog.items,'Fallback is the unchanged legacy catalog for '+testCase.name);
+    assert(protocol.Gc(rejectedCatalog.cyclopediaCatalog),'Fallback passes original validator for '+testCase.name);
+    await dispose();
+  }
   const invalidDataDir=path.join(fixtureDir,'invalid-catalog');
-  fs.mkdirSync(invalidDataDir);
-  for(const name of ['game-data.json','bestiary.json','new-hunts-normalized-20261019.json','bestiary-records.json','equipment-observed.json','hunts-observed-current.json'])fs.copyFileSync(path.resolve(__dirname,'../data',name),path.join(invalidDataDir,name));
+  copyCatalogFixture(invalidDataDir);
   const invalidCapture=structuredClone(bestiaryLootCapture);
   invalidCapture.records.find(record=>record.name==='Ripper Spectre').loot[0].max=null;
   Object.assign(invalidCapture.records.find(record=>record.name==='Amazon'),{loot:[],emptyMessage:null});
@@ -196,6 +367,8 @@ const backendModule=require('../backend.cjs');
   const invalidCatalog=backendModule.createBackend({memory:true,dataDir:invalidDataDir});
   const cleanupInvalidCatalog=own(()=>invalidCatalog.close());
   assert.equal(invalidCatalog.catalogEvidence.bestiaryLootCapture.complete,false);
+  assert.equal(invalidCatalog.catalogEvidence.itemCatalogCapture.complete,true,'Invalid species loot does not invalidate the independent complete item source');
+  assert.equal(invalidCatalog.cyclopediaCatalog.items.length,1070);
   assert.equal(invalidCatalog.catalogEvidence.bestiaryLootCapture.capturedSpecies,190);
   assert.deepEqual(invalidCatalog.catalogEvidence.invalidBestiaryLootRecords.map(record=>record.name).sort(),['Amazon','Ripper Spectre']);
   for(const name of ['Ripper Spectre','Amazon'])assert(invalidCatalog.catalogEvidence.unknownLootAssociations.includes(name),'Invalid source data must not become confirmed empty loot for '+name);

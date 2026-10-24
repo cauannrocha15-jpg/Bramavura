@@ -156,6 +156,128 @@ function appearanceMetadata(directory) {
   return {items,byName};
 }
 
+// Labels come from Wa and the pt-BR dictionary in the captured public client.
+// In particular a category never supplies a missing equipment slot.
+const ITEM_CATEGORY_LABELS=new Map([
+  [1,'Armors'],[2,'Amulets'],[3,'Boots','Botas'],[4,'Containers'],[5,'Decoration'],[6,'Food'],[7,'Helmets & Hats'],[8,'Legs','Pernas'],[9,'Others','Outros'],[10,'Potions','Poções'],[11,'Rings'],[12,'Runes','Runas'],[13,'Shields'],[14,'Tools'],[15,'Valuables','Valiosos'],[16,'Ammunition'],[17,'Axes'],[18,'Clubs'],[19,'Distance Weapons'],[20,'Swords'],[21,'Wands & Rods'],[24,'Creature Products','Produtos de criatura'],[25,'Quivers']
+].flatMap(([id,...labels])=>labels.map(label=>[label,id])));
+const ITEM_SLOT_LABELS=new Map(EQUIPMENT.flatMap(slot=>[[slot,slot],[({helmet:'elmo',amulet:'amuleto',weapon:'arma',armor:'armadura',shield:'escudo',ring:'anel',legs:'pernas',boots:'botas',ammo:'munição',backpack:'mochila'})[slot],slot]]));
+const ITEM_STAT_FIELDS=['attack','defense','armor'];
+const ITEM_OPTIONAL_FIELDS=['weight','range','speedBonus','elementalDamage','elementalType','classification','twoHanded','protection'];
+const ITEM_CHIP_FIELDS={Atk:'attack',Atq:'attack',Def:'defense',Arm:'armor',Range:'range',Alcance:'range',Speed:'speedBonus',Velocidade:'speedBonus'};
+const ITEM_ELEMENTS=new Set(['fire','ice','energy','earth','death','holy','lifedrain','manadrain']);
+const sameItemName=(a,b)=>typeof a==='string'&&typeof b==='string'&&a.trim().toLowerCase()===b.trim().toLowerCase();
+
+function priorTooltipFields(record){
+  if(typeof record.tooltip!=='string')return null;
+  const text=record.tooltip.split(/\btext EQUIPADO\b/)[0],fields={};
+  if(!text.split('\n').includes('text '+record.name))return null;
+  for(const [field,label] of Object.entries({attack:'Ataque',defense:'Defesa',armor:'Armadura',range:'Alcance',classification:'Classificação'})){
+    const match=text.match(new RegExp('(?:^|\\n)text '+label+': ([0-9]+)(?:\\n|$)'));
+    if(match)fields[field]=Number(match[1]);
+  }
+  const weight=text.match(/(?:^|\n)text ([0-9]+)(?:[.,]([0-9]{1,2}))? oz(?:\n|$)/);
+  if(weight)fields.weight=Number(weight[1])*100+Number((weight[2]||'').padEnd(2,'0'));
+  if(/(?:^|\n)text Duas mãos(?:\n|$)/.test(text))fields.twoHanded=true;
+  const elemental=text.match(/(?:^|\n)text Dano de (Terra|Fogo|Gelo|Energia): \+([0-9]+)(?:\n|$)/);
+  if(elemental){fields.elementalDamage=Number(elemental[2]);fields.elementalType={Terra:'earth',Fogo:'fire',Gelo:'ice',Energia:'energy'}[elemental[1]];}
+  for(const [field,value] of Object.entries(fields))if(typeof value==='number'&&!Number.isSafeInteger(value))delete fields[field];
+  if(!Object.hasOwn(fields,'elementalDamage'))delete fields.elementalType;
+  return fields;
+}
+
+function observedItemCatalog(directory,appearances,priorTooltips){
+  const capture={file:'item-catalog-observed-current.json',expectedItems:1070,expectedPages:134,capturedItems:0,capturedPages:0,complete:false,reasons:[],observedFields:{},listObservedFields:{},retainedTooltips:0};
+  const result={items:null,fields:[],conflicts:[],invalid:[],capture};
+  let currentId=null;
+  const check=(condition,reason)=>{if(!condition)throw new Error(reason);};
+  try{
+    const bytes=fs.readFileSync(path.join(directory,capture.file));
+    capture.sha256=crypto.createHash('sha256').update(bytes).digest('hex');
+    const source=JSON.parse(bytes.toString('utf8')),records=source.records;
+    capture.capturedItems=Array.isArray(records)?records.length:0;
+    capture.capturedPages=source.completeness?.capturedPages||0;
+    capture.capturedFrom=source.capturedFrom;capture.capturedThrough=source.capturedThrough;
+    check(source.captureType==='item-catalog-observed-current'&&source.source?.captureType==='item-catalog-page','Wrong item capture type');
+    check(source.completeness?.complete===true&&source.completeness.expectedItems===1070&&source.completeness.capturedItems===1070&&source.completeness.expectedPages===134&&source.completeness.capturedPages===134,'Item capture is incomplete');
+    check(Array.isArray(source.completeness.pages)&&source.completeness.pages.length===134&&source.completeness.pages.every((page,index)=>page===index+1)&&Array.isArray(source.completeness.missingPages)&&source.completeness.missingPages.length===0,'Item page coverage is incomplete');
+    check(Array.isArray(source.source.blocks)&&source.source.blocks.length>=134&&source.source.blocks.every(block=>Number.isSafeInteger(block.page)&&block.page>=1&&block.page<=134&&typeof block.capturedAt==='string'&&Number.isFinite(Date.parse(block.capturedAt))&&block.url==='https://huntera.com.br/game')&&new Set(source.source.blocks.map(block=>block.page)).size===134,'Item page provenance is incomplete');
+    check(Array.isArray(records)&&records.length===1070,'Expected exactly 1070 item records');
+    check(Array.isArray(source.validation?.unparsedFields)&&source.validation.unparsedFields.length===0,'Unparsed item fields remain');
+    const seen=new Set(),pages=new Map(),observed=[];
+    for(const record of records){
+      currentId=record?.itemId;
+      check(Number.isSafeInteger(currentId)&&currentId>0&&!seen.has(currentId),'Invalid or repeated item ID');seen.add(currentId);
+      check(typeof record.name==='string'&&record.name.length>0&&record.name===record.name.trim(),'Invalid item name');
+      check(Number.isSafeInteger(record.sourcePage)&&record.sourcePage>=1&&record.sourcePage<=134,'Invalid item source page');
+      pages.set(record.sourcePage,(pages.get(record.sourcePage)||0)+1);
+      const raw=record.raw;
+      check(raw&&raw.itemId===currentId&&raw.name===record.name&&['identityRaw','descriptionRaw','weightRaw','moreRaw'].every(field=>typeof raw[field]==='string')&&Array.isArray(raw.chipsRaw)&&Array.isArray(raw.dropSources),'Invalid raw item evidence');
+      check(Array.isArray(record.unparsedFields)&&record.unparsedFields.length===0,'Item contains unparsed fields');
+      const identity=raw.identityRaw.trim().split(/\s+—\s+/),label=identity[0],slotLabel=identity.length===2?identity[1]:null;
+      check(identity.length<=2&&ITEM_CATEGORY_LABELS.has(label)&&record.categoryLabel===label&&record.slotLabel===slotLabel,'Unknown or inconsistent category/slot label');
+      check(slotLabel===null||ITEM_SLOT_LABELS.has(slotLabel),'Unknown equipment slot label');
+      const fields={name:record.name,category:ITEM_CATEGORY_LABELS.get(label)};
+      if(slotLabel!==null)fields.slot=ITEM_SLOT_LABELS.get(slotLabel);
+      const chips=new Set();
+      for(const chip of raw.chipsRaw){
+        check(chip&&typeof chip.term==='string'&&typeof chip.value==='string','Invalid item chip');
+        const field=Object.hasOwn(ITEM_CHIP_FIELDS,chip.term.trim())?ITEM_CHIP_FIELDS[chip.term.trim()]:null;
+        check(field&&!chips.has(field),'Unknown or repeated item chip');chips.add(field);
+        const value=field==='speedBonus'&&/^\+-[0-9]+$/.test(chip.value.trim())?chip.value.trim().slice(1):chip.value.trim();
+        const match=(field==='attack'?/^([+]?[0-9]+)(?:\s+\+([0-9]+)\s+(.+))?$/:field==='speedBonus'?/^([+-]?[0-9]+)$/:/^([+]?[0-9]+)$/).exec(value);
+        check(match&&Number.isSafeInteger(Number(match[1])),'Invalid observed item stat');fields[field]=Number(match[1]);
+        if(match[2]!==undefined){check(Number.isSafeInteger(Number(match[2]))&&ITEM_ELEMENTS.has(match[3]),'Invalid elemental damage');fields.elementalDamage=Number(match[2]);fields.elementalType=match[3];}
+      }
+      if(raw.weightRaw.trim()){
+        const weight=/(?:^|[^0-9.,])([0-9]+)(?:[.,]([0-9]{1,2}))?\s*oz\s*$/.exec(raw.weightRaw.trim());
+        check(weight,'Invalid observed item weight');fields.weight=Number(weight[1])*100+Number((weight[2]||'').padEnd(2,'0'));
+        check(Number.isSafeInteger(fields.weight)&&fields.weight>=0,'Invalid observed item weight');
+      }
+      for(const field of [...ITEM_STAT_FIELDS,'range','speedBonus','elementalDamage'])check(record[field]===(fields[field]??null),'Normalized stat disagrees with raw evidence: '+field);
+      check(record.elementalTypeLabel===(fields.elementalType??null)&&record.weightHundredths===(fields.weight??null)&&record.weightOz===(fields.weight===undefined?null:fields.weight/100),'Normalized element/weight disagrees with raw evidence');
+      check(record.twoHanded===null&&record.classification===null&&record.protections===null,'List capture contains unobserved tooltip fields');
+      check(raw.dropSources.length<=5&&raw.dropSources.every(drop=>drop&&typeof drop.name==='string'&&drop.name.length>0&&(typeof drop.monsterId==='string'&&drop.monsterId.length>0||Number.isSafeInteger(drop.monsterId)&&drop.monsterId>0)),'Invalid visible drop source');
+      observed.push({itemId:currentId,sourcePage:record.sourcePage,fields});
+    }
+    currentId=null;
+    check(pages.size===134&&[...pages].every(([page,count])=>count===(page===134?6:8)),'Item records do not cover all page ranges');
+    const items=new Map();
+    for(const observedItem of observed){
+      const {itemId,sourcePage,fields}=observedItem,provenance=Object.fromEntries(Object.keys(fields).map(field=>[field,'item-list-dom']));
+      for(const field of Object.keys(fields))capture.listObservedFields[field]=(capture.listObservedFields[field]||0)+1;
+      const metadata=appearances.items.get(itemId);
+      if(metadata){
+        if(!sameItemName(metadata.name,fields.name))result.conflicts.push({itemId,source:'appearance-metadata',field:'name',observed:fields.name,previous:metadata.name});
+        if(Number.isFinite(metadata.category)&&metadata.category!==fields.category)result.conflicts.push({itemId,source:'appearance-metadata',field:'category',observed:fields.category,previous:metadata.category});
+      }
+      const prior=priorTooltips.get(itemId);
+      let handednessDisplayed=null;
+      if(prior){
+        const conflicts=[];
+        if(!sameItemName(prior.name,fields.name))conflicts.push({field:'name',observed:fields.name,previous:prior.name});
+        if(prior.category!==fields.category)conflicts.push({field:'category',observed:fields.category,previous:prior.category});
+        for(const [field,value] of Object.entries(prior.fields))if(Object.hasOwn(fields,field)&&fields[field]!==value)conflicts.push({field,observed:fields[field],previous:value});
+        if(conflicts.length)result.conflicts.push(...conflicts.map(conflict=>({itemId,source:'prior-tooltip',...conflict})));
+        else{
+          handednessDisplayed=prior.handednessDisplayed;
+          let supplemented=false;
+          for(const [field,value] of Object.entries(prior.fields))if(!Object.hasOwn(fields,field)){fields[field]=value;provenance[field]='prior-tooltip';supplemented=true;}
+          if(supplemented)capture.retainedTooltips++;
+        }
+      }
+      const unknownFields=['slot',...ITEM_STAT_FIELDS,...ITEM_OPTIONAL_FIELDS].filter(field=>!Object.hasOwn(fields,field));
+      const neutralTransportFields=ITEM_STAT_FIELDS.filter(field=>unknownFields.includes(field));
+      const entry={itemId,name:fields.name,category:fields.category,slot:fields.slot??null,attack:fields.attack??0,defense:fields.defense??0,armor:fields.armor??0};
+      for(const field of ITEM_OPTIONAL_FIELDS)if(Object.hasOwn(fields,field))entry[field]=fields[field];
+      items.set(itemId,entry);result.fields.push({itemId,sourcePage,unknownFields,neutralTransportFields,provenance,handednessDisplayed});
+      for(const field of Object.keys(provenance))capture.observedFields[field]=(capture.observedFields[field]||0)+1;
+    }
+    result.items=items;capture.complete=true;
+  }catch(error){capture.reasons.push(error.message);result.invalid.push({itemId:currentId,reason:error.message});}
+  return result;
+}
+
 function createBackend(options = {}) {
   const dataDir = options.dataDir || path.join(__dirname, 'data');
   const stateFile = options.stateFile || path.join(dataDir, 'local-state.json');
@@ -268,7 +390,8 @@ function createBackend(options = {}) {
   catalogEvidence.bestiaryLootCapture.capturedSpecies=directlyObservedMonsters.length;
   catalogEvidence.bestiaryLootCapture.lootEntries=directlyObservedMonsters.reduce((sum,record)=>sum+record.loot.length,0);
   catalogEvidence.bestiaryLootCapture.maxNotes=directlyObservedMonsters.reduce((sum,record)=>sum+record.loot.filter(entry=>Object.hasOwn(entry,'max')).length,0);
-  const catalogItems=new Map();
+  let catalogItems=new Map();
+  const priorTooltips=new Map();
   const categorySlots={1:'armor',2:'amulet',3:'boots',4:'backpack',7:'helmet',8:'legs',11:'ring',13:'shield',16:'ammo',17:'weapon',18:'weapon',19:'weapon',20:'weapon',21:'weapon',25:'shield'};
   for(const record of equipmentRecords){
     const metadata=appearances.byName.get(record.name.toLowerCase());
@@ -281,6 +404,8 @@ function createBackend(options = {}) {
     const classification=number('Classifica\u00e7\u00e3o');if(classification)entry.classification=classification;
     if(text.includes('Duas mãos'))entry.twoHanded=true;
     else if(text.includes('Uma mão'))entry.twoHanded=false;
+    const explicitFields=priorTooltipFields(record);
+    if(explicitFields&&Object.keys(explicitFields).length)priorTooltips.set(entry.itemId,{name:record.name,category:entry.category,fields:explicitFields,handednessDisplayed:/(?:^|\n)text Duas mãos(?:\n|$)/.test(text)?'two-handed':/(?:^|\n)text Uma mão(?:\n|$)/.test(text)?'one-handed':null});
     catalogItems.set(entry.itemId,entry);
   }
   for(const entry of facts.ammunition||[])catalogItems.set(entry.itemId,{itemId:entry.itemId,name:entry.name,category:16,attack:entry.attack,defense:0,armor:0,slot:'ammo'});
@@ -289,6 +414,12 @@ function createBackend(options = {}) {
   // inserted into attack/defense/armor.
   for(const [key,category] of [['potions',10],['runes',12]])for(const entry of facts[key]||[]){const metadata=appearances.items.get(entry.itemId);if(metadata)catalogItems.set(entry.itemId,{itemId:entry.itemId,name:entry.name||metadata.name,category,attack:0,defense:0,armor:0,slot:null});}
   for(const entry of facts.npcShop?.sellCatalog||[]){const metadata=appearances.byName.get(entry.name.toLowerCase());if(metadata&&Number.isFinite(metadata.category)&&!catalogItems.has(metadata.itemId))catalogItems.set(metadata.itemId,{itemId:metadata.itemId,name:entry.name,category:metadata.category,attack:0,defense:0,armor:0,slot:null,...(Number.isFinite(entry.weightOz)?{weight:Math.round(entry.weightOz*100)}:{}),shopBuys:true});}
+  const directItems=observedItemCatalog(dataDir,appearances,priorTooltips);
+  Object.assign(catalogEvidence,{itemCatalogCapture:directItems.capture,itemCatalogFields:directItems.fields,itemCatalogConflicts:directItems.conflicts,invalidItemCatalogRecords:directItems.invalid,huntLootItemsOutsideItemCatalog:[]});
+  if(directItems.items){
+    catalogItems=directItems.items;
+    catalogEvidence.equipmentStatSource='Complete rendered item list; coherent earlier tooltip fields supplement only the same ID/name/category. Missing required combat fields use neutral wire zero and remain unknown in itemCatalogFields.';
+  }
   const rarityNames={'common':'common','comum':'common','uncommon':'uncommon','incomum':'uncommon','semi-rare':'semi-rare','semi-raro':'semi-rare','rare':'rare','raro':'rare','very-rare':'very-rare','very rare':'very-rare','muito raro':'very-rare','muito-raro':'very-rare'};
   function observedLoot(raw,huntId){
     const metadata=Number.isInteger(raw.itemId)?appearances.items.get(raw.itemId):appearances.byName.get(String(raw.name||'').toLowerCase());
@@ -301,7 +432,9 @@ function createBackend(options = {}) {
     const entry={...(known||{}),itemId,name:raw.name||metadata?.name||String(itemId),attack:known?.attack??0,defense:known?.defense??0,armor:known?.armor??0,slot:known?.slot??null,rarity};
     // The DOM supplies this item's identity, name, order and rarity. Add it to
     // the item catalogue only when its real public category is available.
-    if(!known&&Number.isFinite(metadata?.category))catalogItems.set(itemId,{...entry,category:metadata.category});
+    if(!known&&directItems.capture.complete){
+      if(!catalogEvidence.huntLootItemsOutsideItemCatalog.some(value=>value.huntId===huntId&&value.itemId===itemId))catalogEvidence.huntLootItemsOutsideItemCatalog.push({huntId,itemId,name:entry.name});
+    }else if(!known&&Number.isFinite(metadata?.category))catalogItems.set(itemId,{...entry,category:metadata.category});
     return entry;
   }
   for(const record of currentHuntRecords){
@@ -340,6 +473,14 @@ function createBackend(options = {}) {
       if(!catalogEvidence.unknownLootItemStats.includes(itemId))catalogEvidence.unknownLootItemStats.push(itemId);
       if(!Number.isFinite(metadata?.category)&&!catalogEvidence.unknownLootItemCategories.includes(itemId))catalogEvidence.unknownLootItemCategories.push(itemId);
     }
+  }
+  if(directItems.capture.complete){
+    const evidenceById=new Map(directItems.fields.map(record=>[record.itemId,record]));
+    const lootIds=[...new Set([...hunts.flatMap(hunt=>(hunt.loot||[]).map(entry=>entry.itemId)),...catalogMonsters.flatMap(monster=>monster.loot.map(entry=>entry.itemId))])];
+    // This list means at least one required combat field is unknown, even
+    // though its neutral wire zero is needed by the original validator.
+    catalogEvidence.unknownLootItemStats=lootIds.filter(itemId=>!evidenceById.has(itemId)||ITEM_STAT_FIELDS.some(field=>evidenceById.get(itemId).unknownFields.includes(field)));
+    catalogEvidence.unknownLootItemCategories=lootIds.filter(itemId=>!catalogItems.has(itemId)&&!Number.isFinite(appearances.items.get(itemId)?.category));
   }
   const cyclopediaCatalog={type:'cyclopedia-catalog',items:[...catalogItems.values()],monsters:catalogMonsters,summons:[],bosses:Object.values(facts.dailyBosses||{}).map(boss=>({id:boss.id,name:boss.name}))};
   function stats(character, hunting = false) {
