@@ -1,6 +1,8 @@
 {
-  "sourcePackSha256": "5be10cf17840a75f57937e9efa176d31c933fb305abd7a2be8253882053cbdfa",
-  "sourceFiles": 23,
+  "sourcePackSha256": "e01bc0f741fe17b3a7c12b0bbe222f102690c74f797f4be6762d21a5568c722b",
+  "sourceFiles": 82,
+  "ownSourceFiles": 23,
+  "embeddedCapturedFiles": 59,
   "capturedFiles": 4275,
   "capturedBytes": 96545024,
   "baseline": "main-MUNRWAJS.js"

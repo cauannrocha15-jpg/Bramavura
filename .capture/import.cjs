@@ -8,7 +8,7 @@ async function main(){
   const ready=JSON.parse(await fs.readFile(path.join(__dirname,'import-ready.json'),'utf8'));
   const packed=Buffer.from(await fs.readFile(path.join(__dirname,'sources.json.gz.b64'),'utf8'),'base64');
   if(digest(packed)!==ready.sourcePackSha256)throw new Error('Source pack hash mismatch');
-  const sources=JSON.parse(zlib.gunzipSync(packed,{maxOutputLength:16777216})).files;
+  const sources=JSON.parse(zlib.gunzipSync(packed,{maxOutputLength:67108864})).files;
   if(!Array.isArray(sources)||sources.length!==ready.sourceFiles)throw new Error('Source file count mismatch');
   function safePath(relative){
     if(typeof relative!=='string'||!relative||/[\\:\0]/.test(relative)||path.posix.normalize(relative)!==relative||relative.startsWith('/')||relative.split('/').some(p=>p==='..'||p==='.git'||p==='.github'||p==='.capture')||relative==='data/local-state.json')throw new Error('Unsafe target path');
@@ -17,21 +17,28 @@ async function main(){
     return target;
   }
   function verify(bytes,record){if(bytes.length!==record.bytes||digest(bytes)!==record.sha256)throw new Error('Captured bytes differ: '+record.path);}
-  const seen=new Set();
+  const seen=new Set(),sourceByPath=new Map();
   let manifest;
   for(const record of sources){
     safePath(record.path);
     if(seen.has(record.path))throw new Error('Duplicate source path');
     seen.add(record.path);
+    sourceByPath.set(record.path,record);
     const bytes=Buffer.from(record.base64,'base64');verify(bytes,record);
     if(record.path==='capture-integrity.json')manifest=JSON.parse(bytes);
   }
   if(!manifest||manifest.main!==ready.baseline||manifest.files.length!==ready.capturedFiles||manifest.files.reduce((sum,f)=>sum+f.bytes,0)!==ready.capturedBytes)throw new Error('Capture manifest mismatch');
+  const capturedPaths=new Set();
   for(const record of manifest.files){
     const relative='public/'+record.path;safePath(relative);
+    if(capturedPaths.has(relative))throw new Error('Duplicate captured path');
+    capturedPaths.add(relative);
     const url=new URL(record.sourceUrl);
     if(url.protocol!=='https:'||url.hostname!=='huntera.com.br'||url.port||url.username||url.password||url.hash)throw new Error('Unexpected source host');
-    if(seen.has(relative))throw new Error('Duplicate captured path');
+    if(seen.has(relative)){
+      const embedded=sourceByPath.get(relative);
+      if(!embedded||embedded.sha256!==record.sha256||embedded.bytes!==record.bytes)throw new Error('Conflicting embedded capture: '+relative);
+    }
     seen.add(relative);
   }
   async function existing(relative,record){
