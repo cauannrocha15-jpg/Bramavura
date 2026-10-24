@@ -1,0 +1,7145 @@
+{
+  "schemaVersion": 1,
+  "target": "Huntera browser game",
+  "scope": "Functional facts and observed numeric configuration for independent reconstruction; captured source is not executed or included as executable implementation.",
+  "sourceFiles": [
+    {
+      "name": "chunk-VOZYCQ5H.js",
+      "sha256": "80d02a15ac9a2147aa647ffb7552c7fb1ee4118a090351903e262f3aaeb97b7b"
+    },
+    {
+      "name": "chunk-MA6BHVBH.js",
+      "sha256": "77c121bd9959298eebfa4f9503739b99bbfa3d12521dc917dac970203fde2e23"
+    },
+    {
+      "name": "chunk-IRFRAURP.js",
+      "sha256": "6600ede664d30275650300b2932aa76a3d1ae363f8a1ee2cd98c1aa5671ba8f8"
+    },
+    {
+      "name": "chunk-225DSCAO.js",
+      "sha256": "c736748c174c3c7f0d81fbcf89093ac23346a2c380cafceaaf6b33c3bf9fe758"
+    },
+    {
+      "name": "chunk-SVCSXMON.js",
+      "sha256": "73427cf727d94b2c1800d86208383f23ba081e6d9d4b57b28f70fe07c2e58879"
+    }
+  ],
+  "evidenceLabels": {
+    "static": "Literal values or formulas read from shipped client; server parity not proven.",
+    "ui": "A supplied accessibility snapshot or parent agent direct UI observation.",
+    "inference": "An interpretation or correlation explicitly marked; not server fact."
+  },
+  "coverage": {
+    "hunts": 81,
+    "spellDefinitions": 58,
+    "spellTooltipFormulas": 48,
+    "potions": 12,
+    "runes": 11,
+    "ammo": 22,
+    "npcBuyPrices": 67,
+    "creatureFullServerCatalogAvailable": false,
+    "exactLootProbabilitiesAvailable": false,
+    "serverCombatImplementationAvailable": false,
+    "uniqueCreatureNamesObserved": 186
+  },
+  "hunts": [
+    {
+      "ordinal": 1,
+      "id": "rat-hunt",
+      "name": "Rat Cellars",
+      "monsters": [
+        "Rat"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 2,
+      "id": "spider-hunt",
+      "name": "Spider Nest",
+      "monsters": [
+        "Spider"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 3,
+      "id": "troll-hunt",
+      "name": "Troll Hills",
+      "monsters": [
+        "Troll"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 4,
+      "id": "swamp-troll-hunt",
+      "name": "Swamp Troll Cave",
+      "monsters": [
+        "Swamp Troll"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 5,
+      "id": "orc-hunt",
+      "name": "Orc Camp",
+      "monsters": [
+        "Orc"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 6,
+      "id": "folda-hunt",
+      "name": "Folda Icefields",
+      "monsters": [
+        "Frost Troll",
+        "Winter Wolf",
+        "Polar Bear"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 7,
+      "id": "skeleton-hunt",
+      "name": "Bone Crypt",
+      "monsters": [
+        "Skeleton"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 8,
+      "id": "rotworm-hunt",
+      "name": "Rotworm Caves",
+      "monsters": [
+        "Rotworm"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 9,
+      "id": "dwarf-hunt",
+      "name": "Dwarf Mines",
+      "monsters": [
+        "Dwarf"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 10,
+      "id": "minotaur-hunt",
+      "name": "Minotaur Maze",
+      "monsters": [
+        "Minotaur"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 11,
+      "id": "gloom-ghost-wolf-hunt",
+      "name": "Gloomy Poacher Caves",
+      "monsters": [
+        "Gloom Wolf",
+        "Ghost Wolf",
+        "Hunter"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 12,
+      "id": "amazon-hunt",
+      "name": "Amazon Camp",
+      "monsters": [
+        "Amazon",
+        "Valkyrie"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 13,
+      "id": "dark-cathedral-hunt",
+      "name": "Dark Cathedral",
+      "monsters": [
+        "Smuggler",
+        "Wild Warrior",
+        "Bandit",
+        "Assassin",
+        "Dark Monk"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 14,
+      "id": "ghoul-hunt",
+      "name": "Ghoul Graveyard",
+      "monsters": [
+        "Ghoul"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 15,
+      "id": "rorc-hunt",
+      "name": "Rorc Camp",
+      "monsters": [
+        "Rorc",
+        "Wolf"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 16,
+      "id": "yalahar-elf-hunt",
+      "name": "Yalahar Elf Quarter",
+      "monsters": [
+        "Elf",
+        "Elf Scout",
+        "Elf Arcanist"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 17,
+      "id": "tarantula-hunt",
+      "name": "Tarantula Burrows",
+      "monsters": [
+        "Tarantula"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 18,
+      "id": "scarab-hunt",
+      "name": "Scarab Tombs",
+      "monsters": [
+        "Scarab"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 19,
+      "id": "swampling-hunt",
+      "name": "Venore Swamp",
+      "monsters": [
+        "Bug",
+        "Swampling",
+        "Leaf Golem",
+        "Wilting Leaf Golem",
+        "Haunted Treeling"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 20,
+      "id": "tortoise-hunt",
+      "name": "Tortoise Shore",
+      "monsters": [
+        "Tortoise",
+        "Thornback Tortoise",
+        "Blood Crab"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 21,
+      "id": "mutated-human-hunt",
+      "name": "Plagued Quarter",
+      "monsters": [
+        "Mutated Human"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 22,
+      "id": "cyclops-hunt",
+      "name": "Cyclop Hills",
+      "monsters": [
+        "Cyclops"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 23,
+      "id": "mummy-hunt",
+      "name": "Burial Chambers",
+      "monsters": [
+        "Mummy"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 24,
+      "id": "bonelord-hunt",
+      "name": "Hell Gate",
+      "monsters": [
+        "Bonelord"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 25,
+      "id": "orc-fortress-hunt",
+      "name": "Orc Fortress",
+      "monsters": [
+        "Orc",
+        "Orc Spearman",
+        "Orc Warrior",
+        "Orc Shaman",
+        "Orc Rider",
+        "Orc Berserker",
+        "Orc Leader",
+        "Orc Warlord"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 26,
+      "id": "green-djinn-hunt",
+      "name": "Yalahar Green Djinn Fortress",
+      "monsters": [
+        "Green Djinn"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 27,
+      "id": "blue-djinn-hunt",
+      "name": "Yalahar Blue Djinn Fortress",
+      "monsters": [
+        "Blue Djinn"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 28,
+      "id": "carlin-corym-hunt",
+      "name": "Carlin Corym Cave",
+      "monsters": [
+        "Corym Charlatan",
+        "Corym Skirmisher",
+        "Corym Vanguard"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 29,
+      "id": "cult-hunt",
+      "name": "Magician Cults",
+      "monsters": [
+        "Novice of the Cult",
+        "Acolyte of the Cult",
+        "Adept of the Cult",
+        "Enlightened of the Cult"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 30,
+      "id": "elder-forest-hunt",
+      "name": "Elder Forest",
+      "monsters": [
+        "Leaf Golem",
+        "Wilting Leaf Golem",
+        "Haunted Treeling",
+        "Forest Fury",
+        "Emerald Damselfly",
+        "Marsh Stalker",
+        "Elder Forest Fury"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 31,
+      "id": "drefia-hunt",
+      "name": "Drefia",
+      "monsters": [
+        "Demon Skeleton",
+        "Ghoul",
+        "Skeleton",
+        "Skeleton Warrior",
+        "Necromancer",
+        "Priestess",
+        "Blood Priest"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 32,
+      "id": "ab-bonelord-hunt",
+      "name": "Braindeath Caves",
+      "monsters": [
+        "Bonelord",
+        "Elder Bonelord",
+        "Braindeath"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 33,
+      "id": "ice-golem-hunt",
+      "name": "Frost Mines",
+      "monsters": [
+        "Ice Golem"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 34,
+      "id": "lizard-steppe-hunt",
+      "name": "Lizard Steppe",
+      "monsters": [
+        "Lizard Sentinel",
+        "Lizard Templar",
+        "Lizard Snakecharmer",
+        "Killer Caiman",
+        "Lizard Zaogun"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 35,
+      "id": "brimstone-cave-hunt",
+      "name": "Brimstone Cave",
+      "monsters": [
+        "Brimstone Bug",
+        "Lancer Beetle",
+        "Wailing Widow"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 36,
+      "id": "quirefang-surface-hunt",
+      "name": "Quirefang Surface",
+      "monsters": [
+        "Waspoid",
+        "Crawler",
+        "Ladybug",
+        "Insectoid Worker"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 37,
+      "id": "warzone-wyverns-hunt",
+      "name": "Warzone Earth Plague",
+      "monsters": [
+        "Wyvern",
+        "Massive Earth Elemental",
+        "Wiggler"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 38,
+      "id": "dragon-hunt",
+      "name": "Dragon Lair",
+      "monsters": [
+        "Dragon"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 39,
+      "id": "vampire-hunt",
+      "name": "Vampire Crypt",
+      "monsters": [
+        "Vampire",
+        "Vampire Viscount",
+        "Vampire Bride"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 40,
+      "id": "mutated-cave-hunt",
+      "name": "Mutated Cave",
+      "monsters": [
+        "Mutated Bat",
+        "Mutated Tiger"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 41,
+      "id": "bog-raider-hunt",
+      "name": "Yalahar Bog",
+      "monsters": [
+        "Bog Raider"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 42,
+      "id": "giant-spider-hunt",
+      "name": "Giant Spider Cavern",
+      "monsters": [
+        "Giant Spider"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 43,
+      "id": "deeplings-hunt",
+      "name": "The Deep",
+      "monsters": [
+        "Shark",
+        "Deepling Scout",
+        "Deepling Guard",
+        "Deepling Spellsinger",
+        "Deepling Warrior"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 44,
+      "id": "hero-hunt",
+      "name": "Hero Fortress",
+      "monsters": [
+        "Hero"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 45,
+      "id": "wyrm-hunt",
+      "name": "Wyrm Caverns",
+      "monsters": [
+        "Wyrm"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 46,
+      "id": "zao-stronghold-hunt",
+      "name": "Zao Stronghold",
+      "monsters": [
+        "Lizard Legionnaire",
+        "Lizard Dragon Priest",
+        "Lizard High Guard"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 47,
+      "id": "grimvale-warrens-hunt",
+      "name": "Grimvale Warrens",
+      "monsters": [
+        "Werebadger"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 48,
+      "id": "rathleton-minotaurs-hunt",
+      "name": "Rathleton Minotaur Camp",
+      "monsters": [
+        "Mooh'Tah Warrior",
+        "Worm Priestess",
+        "Minotaur Hunter",
+        "Minotaur Amazon",
+        "Execowtioner",
+        "Moohtant"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 49,
+      "id": "grimvale-dens-hunt",
+      "name": "Grimvale Dens",
+      "monsters": [
+        "Wereboar",
+        "Werebear"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 50,
+      "id": "dragon-lord-hunt",
+      "name": "Dragon Lord Peak",
+      "monsters": [
+        "Dragon Lord"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 51,
+      "id": "war-golem-hunt",
+      "name": "Factory Quarter",
+      "monsters": [
+        "War Golem"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 52,
+      "id": "lizard-chosen-hunt",
+      "name": "Corrupted Terraces",
+      "monsters": [
+        "Lizard Chosen"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 53,
+      "id": "werehyaena-hunt",
+      "name": "Hyaena Lairs",
+      "monsters": [
+        "Werehyaena",
+        "Werehyaena Shaman"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 54,
+      "id": "werelion-hunt",
+      "name": "Lion Sanctum",
+      "monsters": [
+        "Werelion",
+        "Werelioness",
+        "White Lion"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 55,
+      "id": "behemoth-hunt",
+      "name": "Behemoth Quarry",
+      "monsters": [
+        "Behemoth"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 56,
+      "id": "hellspawn-hunt",
+      "name": "Magician Quarter",
+      "monsters": [
+        "Hellspawn",
+        "Plaguesmith"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 57,
+      "id": "hydra-hunt",
+      "name": "Banuta Ruins",
+      "monsters": [
+        "Hydra",
+        "Eternal Guardian",
+        "Medusa"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 58,
+      "id": "seacrest-serpent-hunt",
+      "name": "Seacrest Caves",
+      "monsters": [
+        "Seacrest Serpent"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 59,
+      "id": "draken-walls-hunt",
+      "name": "Draken Walls",
+      "monsters": [
+        "Draken Warmaster",
+        "Draken Spellweaver"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 60,
+      "id": "ripper-spectre-hunt",
+      "name": "Haunted Cellar",
+      "monsters": [
+        "Ripper Spectre"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 61,
+      "id": "goroma-serpent-spawn-hunt",
+      "name": "Goroma Serpent Caves",
+      "monsters": [
+        "Serpent Spawn",
+        "Medusa"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 62,
+      "id": "asura-hunt",
+      "name": "Asura Palace",
+      "monsters": [
+        "Dawnfire Asura",
+        "Midnight Asura",
+        "Hellspawn",
+        "Frost Flower Asura"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 63,
+      "id": "gazer-spectre-hunt",
+      "name": "Haunted Temple",
+      "monsters": [
+        "Gazer Spectre"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 64,
+      "id": "roshamuul-lower-hunt",
+      "name": "Lower Roshamuul",
+      "monsters": [
+        "Frazzlemaw",
+        "Silencer"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 65,
+      "id": "burster-spectre-hunt",
+      "name": "Haunted Tomb",
+      "monsters": [
+        "Burster Spectre"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 66,
+      "id": "grim-reaper-hunt",
+      "name": "Halls of the Reaper",
+      "monsters": [
+        "Grim Reaper"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 67,
+      "id": "demon-hunt",
+      "name": "Infernal Gate",
+      "monsters": [
+        "Demon"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 68,
+      "id": "falcon-hunt",
+      "name": "Falcon's Eye",
+      "monsters": [
+        "Falcon Knight",
+        "Falcon Paladin"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 69,
+      "id": "falcon-bastion-hunt",
+      "name": "Falcon Bastion",
+      "monsters": [
+        "Falcon Knight",
+        "Falcon Paladin"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 70,
+      "id": "lion-bastion-hunt",
+      "name": "Lion Bastion",
+      "monsters": [
+        "Usurper Archer",
+        "Usurper Knight",
+        "Usurper Warlock",
+        "Chicken"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 71,
+      "id": "cobra-bastion-hunt",
+      "name": "Cobra Bastion",
+      "monsters": [
+        "Cobra Assassin",
+        "Cobra Scout",
+        "Cobra Vizier"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 72,
+      "id": "hell-hub-hunt",
+      "name": "Hell Hub",
+      "monsters": [
+        "Demon",
+        "Vexclaw",
+        "Grimeleech",
+        "Hellflayer"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 73,
+      "id": "marapur-naga-hunt",
+      "name": "Marapur Naga",
+      "monsters": [
+        "Naga Archer",
+        "Naga Warrior",
+        "Makara"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 74,
+      "id": "summer-court-hunt",
+      "name": "Summer Court",
+      "monsters": [
+        "Crazed Summer Rearguard",
+        "Crazed Summer Vanguard",
+        "Arachnophobica",
+        "Insane Siren",
+        "Thanatursus"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 75,
+      "id": "winter-court-hunt",
+      "name": "Winter Court",
+      "monsters": [
+        "Crazed Winter Rearguard",
+        "Crazed Winter Vanguard",
+        "Soul-Broken Harbinger",
+        "Arachnophobica",
+        "Thanatursus"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 76,
+      "id": "catacombs-hunt",
+      "name": "Catacombs",
+      "monsters": [
+        "Hellspawn",
+        "Grim Reaper",
+        "Demon",
+        "Destroyer",
+        "Dark Torturer",
+        "Juggernaut"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 77,
+      "id": "issavi-hunt",
+      "name": "Kilmaresh Steppe",
+      "monsters": [
+        "Sphinx",
+        "Lamassu"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 78,
+      "id": "issavi-south-hunt",
+      "name": "Issavi Steppe",
+      "monsters": [
+        "Young Goanna",
+        "Ogre Rowdy",
+        "Adult Goanna",
+        "Manticore",
+        "Ogre Sage",
+        "Sphinx",
+        "Clomp",
+        "Feral Sphinx",
+        "Lamassu"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 79,
+      "id": "ice-library-hunt",
+      "name": "Ice Library",
+      "monsters": [
+        "Animated Feather",
+        "Icecold Book",
+        "Squid Warden"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 80,
+      "id": "fire-library-hunt",
+      "name": "Fire Library",
+      "monsters": [
+        "Burning Book",
+        "Rage Squid",
+        "Guardian of Tales",
+        "Ink Blob"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    },
+    {
+      "ordinal": 81,
+      "id": "energy-library-hunt",
+      "name": "Energy Library",
+      "monsters": [
+        "Energetic Book",
+        "Brain Squid",
+        "Energuardian of Tales",
+        "Knowledge Elemental"
+      ],
+      "idMapping": "inferred from matching ordered client and UI lists",
+      "source": "hunts.json + chunk-VOZYCQ5H.js:Gt"
+    }
+  ],
+  "lootRarity": [
+    {
+      "id": "common",
+      "label": "Common",
+      "min": 0.25,
+      "upperExclusive": null,
+      "meaning": "Client presentation bucket; exact per-drop probabilities are not included.",
+      "upperInclusive": 1
+    },
+    {
+      "id": "uncommon",
+      "label": "Uncommon",
+      "min": 0.05,
+      "upperExclusive": 0.25,
+      "meaning": "Client presentation bucket; exact per-drop probabilities are not included."
+    },
+    {
+      "id": "semi-rare",
+      "label": "Semi-Rare",
+      "min": 0.01,
+      "upperExclusive": 0.05,
+      "meaning": "Client presentation bucket; exact per-drop probabilities are not included."
+    },
+    {
+      "id": "rare",
+      "label": "Rare",
+      "min": 0.001,
+      "upperExclusive": 0.01,
+      "meaning": "Client presentation bucket; exact per-drop probabilities are not included."
+    },
+    {
+      "id": "very-rare",
+      "label": "Very Rare",
+      "min": 0,
+      "upperExclusive": 0.001,
+      "meaning": "Client presentation bucket; exact per-drop probabilities are not included."
+    }
+  ],
+  "creatures": [
+    {
+      "id": "rat",
+      "name": "Rat",
+      "maxHealth": 20,
+      "baseExperience": 5,
+      "speed": 172,
+      "attack": {
+        "min": 3,
+        "max": 4,
+        "intervalMs": 2000
+      },
+      "damageTakenPercent": {
+        "earth": 80,
+        "ice": 110,
+        "holy": 80,
+        "death": 110
+      },
+      "loot": [
+        {
+          "name": "cheese",
+          "rarity": "common"
+        },
+        {
+          "name": "gold coin",
+          "rarity": "common"
+        }
+      ],
+      "bestiaryStageOneKills": 2500,
+      "source": "parent direct UI observation; hunt-details.txt confirms loot classes",
+      "evidence": "ui"
+    }
+  ],
+  "creatureNamesObserved": [
+    "Rat",
+    "Spider",
+    "Troll",
+    "Swamp Troll",
+    "Orc",
+    "Frost Troll",
+    "Winter Wolf",
+    "Polar Bear",
+    "Skeleton",
+    "Rotworm",
+    "Dwarf",
+    "Minotaur",
+    "Gloom Wolf",
+    "Ghost Wolf",
+    "Hunter",
+    "Amazon",
+    "Valkyrie",
+    "Smuggler",
+    "Wild Warrior",
+    "Bandit",
+    "Assassin",
+    "Dark Monk",
+    "Ghoul",
+    "Rorc",
+    "Wolf",
+    "Elf",
+    "Elf Scout",
+    "Elf Arcanist",
+    "Tarantula",
+    "Scarab",
+    "Bug",
+    "Swampling",
+    "Leaf Golem",
+    "Wilting Leaf Golem",
+    "Haunted Treeling",
+    "Tortoise",
+    "Thornback Tortoise",
+    "Blood Crab",
+    "Mutated Human",
+    "Cyclops",
+    "Mummy",
+    "Bonelord",
+    "Orc Spearman",
+    "Orc Warrior",
+    "Orc Shaman",
+    "Orc Rider",
+    "Orc Berserker",
+    "Orc Leader",
+    "Orc Warlord",
+    "Green Djinn",
+    "Blue Djinn",
+    "Corym Charlatan",
+    "Corym Skirmisher",
+    "Corym Vanguard",
+    "Novice of the Cult",
+    "Acolyte of the Cult",
+    "Adept of the Cult",
+    "Enlightened of the Cult",
+    "Forest Fury",
+    "Emerald Damselfly",
+    "Marsh Stalker",
+    "Elder Forest Fury",
+    "Demon Skeleton",
+    "Skeleton Warrior",
+    "Necromancer",
+    "Priestess",
+    "Blood Priest",
+    "Elder Bonelord",
+    "Braindeath",
+    "Ice Golem",
+    "Lizard Sentinel",
+    "Lizard Templar",
+    "Lizard Snakecharmer",
+    "Killer Caiman",
+    "Lizard Zaogun",
+    "Brimstone Bug",
+    "Lancer Beetle",
+    "Wailing Widow",
+    "Waspoid",
+    "Crawler",
+    "Ladybug",
+    "Insectoid Worker",
+    "Wyvern",
+    "Massive Earth Elemental",
+    "Wiggler",
+    "Dragon",
+    "Vampire",
+    "Vampire Viscount",
+    "Vampire Bride",
+    "Mutated Bat",
+    "Mutated Tiger",
+    "Bog Raider",
+    "Giant Spider",
+    "Shark",
+    "Deepling Scout",
+    "Deepling Guard",
+    "Deepling Spellsinger",
+    "Deepling Warrior",
+    "Hero",
+    "Wyrm",
+    "Lizard Legionnaire",
+    "Lizard Dragon Priest",
+    "Lizard High Guard",
+    "Werebadger",
+    "Mooh'Tah Warrior",
+    "Worm Priestess",
+    "Minotaur Hunter",
+    "Minotaur Amazon",
+    "Execowtioner",
+    "Moohtant",
+    "Wereboar",
+    "Werebear",
+    "Dragon Lord",
+    "War Golem",
+    "Lizard Chosen",
+    "Werehyaena",
+    "Werehyaena Shaman",
+    "Werelion",
+    "Werelioness",
+    "White Lion",
+    "Behemoth",
+    "Hellspawn",
+    "Plaguesmith",
+    "Hydra",
+    "Eternal Guardian",
+    "Medusa",
+    "Seacrest Serpent",
+    "Draken Warmaster",
+    "Draken Spellweaver",
+    "Ripper Spectre",
+    "Serpent Spawn",
+    "Dawnfire Asura",
+    "Midnight Asura",
+    "Frost Flower Asura",
+    "Gazer Spectre",
+    "Frazzlemaw",
+    "Silencer",
+    "Burster Spectre",
+    "Grim Reaper",
+    "Demon",
+    "Falcon Knight",
+    "Falcon Paladin",
+    "Usurper Archer",
+    "Usurper Knight",
+    "Usurper Warlock",
+    "Chicken",
+    "Cobra Assassin",
+    "Cobra Scout",
+    "Cobra Vizier",
+    "Vexclaw",
+    "Grimeleech",
+    "Hellflayer",
+    "Naga Archer",
+    "Naga Warrior",
+    "Makara",
+    "Crazed Summer Rearguard",
+    "Crazed Summer Vanguard",
+    "Arachnophobica",
+    "Insane Siren",
+    "Thanatursus",
+    "Crazed Winter Rearguard",
+    "Crazed Winter Vanguard",
+    "Soul-Broken Harbinger",
+    "Destroyer",
+    "Dark Torturer",
+    "Juggernaut",
+    "Sphinx",
+    "Lamassu",
+    "Young Goanna",
+    "Ogre Rowdy",
+    "Adult Goanna",
+    "Manticore",
+    "Ogre Sage",
+    "Clomp",
+    "Feral Sphinx",
+    "Animated Feather",
+    "Icecold Book",
+    "Squid Warden",
+    "Burning Book",
+    "Rage Squid",
+    "Guardian of Tales",
+    "Ink Blob",
+    "Energetic Book",
+    "Brain Squid",
+    "Energuardian of Tales",
+    "Knowledge Elemental"
+  ],
+  "playerInitialObservation": {
+    "vocation": null,
+    "level1": {
+      "maxHealth": 150,
+      "maxMana": 55,
+      "experienceNeeded": 100
+    },
+    "level2": {
+      "maxHealth": 155,
+      "maxMana": 60,
+      "experienceNeeded": 100
+    },
+    "healthRegenPerTick": 10,
+    "manaRegenPerTick": 5,
+    "regenTickMs": null,
+    "newcomerExperienceBonusPercent": 200,
+    "ratKillExperienceObserved": 15,
+    "staminaMaximumMs": 43200000,
+    "freeHuntSessionMs": 14400000,
+    "source": "hunt-details.txt; tutorial-complete.txt; parent direct UI observation",
+    "evidence": "ui",
+    "limitations": "HP/mana growth only observed for level 1 to 2. General XP and regeneration interval formulas are not established."
+  },
+  "vocations": [
+    {
+      "id": "knight",
+      "partyRole": "tank"
+    },
+    {
+      "id": "paladin",
+      "partyRole": "dps"
+    },
+    {
+      "id": "sorcerer",
+      "partyRole": "dps"
+    },
+    {
+      "id": "druid",
+      "partyRole": "healer"
+    }
+  ],
+  "vocationMilestones": {
+    "firstSpellLevel": 8,
+    "selectionLevel": 8,
+    "source": "chunk-225DSCAO.js: vocation chooser explicit level 8 text; chunk-VOZYCQ5H.js:ge spell requirements",
+    "evidence": "static"
+  },
+  "skills": {
+    "trainable": [
+      "club",
+      "sword",
+      "axe",
+      "distance",
+      "shielding",
+      "magic"
+    ],
+    "allHighscoreSkills": [
+      "fist",
+      "club",
+      "sword",
+      "axe",
+      "distance",
+      "shielding",
+      "magic",
+      "fishing"
+    ],
+    "experienceCurves": null,
+    "trainingGainRates": null
+  },
+  "equipment": {
+    "slots": [
+      "helmet",
+      "amulet",
+      "weapon",
+      "armor",
+      "shield",
+      "ring",
+      "legs",
+      "boots",
+      "ammo",
+      "backpack"
+    ],
+    "displayIcons": {
+      "helmet": 3351,
+      "armor": 3357,
+      "legs": 3557,
+      "boots": 3552,
+      "weapon": 3264,
+      "shield": 3410,
+      "amulet": 3055,
+      "ring": 3091,
+      "ammo": 25977
+    },
+    "tutorialWeapons": [
+      {
+        "id": "longsword",
+        "itemId": 3285,
+        "count": 1,
+        "kind": "melee"
+      },
+      {
+        "id": "wand",
+        "itemId": 3074,
+        "count": 1,
+        "kind": "magic"
+      },
+      {
+        "id": "bow",
+        "itemId": 3350,
+        "count": 1,
+        "kind": "ranged"
+      }
+    ],
+    "vocationStarterItems": {
+      "knight": [
+        3264,
+        3376,
+        3378,
+        3362,
+        3426,
+        3552
+      ],
+      "paladin": [
+        3350,
+        3277,
+        3355,
+        3361,
+        3552
+      ],
+      "sorcerer": [
+        3074,
+        3059,
+        3562,
+        3559,
+        3552,
+        3607
+      ],
+      "druid": [
+        3066,
+        3059,
+        3562,
+        3559,
+        3552,
+        3607
+      ]
+    },
+    "vocationStarterItemsCountEach": 1,
+    "maximumEquipmentStatsSource": "server cyclopedia-catalog and player inventory; not present as complete values in captured client"
+  },
+  "actionBar": {
+    "slotCount": 20,
+    "kinds": [
+      "attack",
+      "heal",
+      "support",
+      "item"
+    ],
+    "conditionAttributes": [
+      "health",
+      "mana",
+      "targets",
+      "trapped",
+      "paralyzed",
+      "shield",
+      "attackers"
+    ],
+    "conditionOperators": [
+      "<",
+      "<=",
+      "=",
+      ">=",
+      ">"
+    ],
+    "conditionSubjectKinds": [
+      "player",
+      "target",
+      "area",
+      "friend"
+    ],
+    "maximumConditionsPerRule": 8,
+    "healingTargetKinds": [
+      "self",
+      "party-lowest",
+      "named"
+    ],
+    "targetStrategies": [
+      "nearest",
+      "boss",
+      "lowest-health",
+      "highest-health",
+      "lowest-health-percent",
+      "highest-health-percent"
+    ],
+    "stances": [
+      "full-defense",
+      "balanced",
+      "full-attack"
+    ],
+    "evidence": "static except localized strategy/stance UI from hunt-details.txt"
+  },
+  "spells": [
+    {
+      "id": "light-healing",
+      "name": "Light Healing",
+      "words": "exura",
+      "kind": "healing",
+      "mana": 20,
+      "cooldownMs": 1000,
+      "requirements": {
+        "vocations": [
+          "sorcerer",
+          "druid"
+        ],
+        "level": 8,
+        "magicLevel": 0
+      },
+      "areaTiles": [
+        [
+          0,
+          0
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*1.4+8)",
+        "max": "floor(L/5+ML*1.795+11)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "wound-cleansing",
+      "name": "Wound Cleansing",
+      "words": "exura ico",
+      "kind": "healing",
+      "mana": 40,
+      "cooldownMs": 1000,
+      "requirements": {
+        "vocations": [
+          "knight"
+        ],
+        "level": 8
+      },
+      "areaTiles": [
+        [
+          0,
+          0
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*4+25)",
+        "max": "floor(L/5+ML*7.95+51)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "fair-wound-cleansing",
+      "name": "Fair Wound Cleansing",
+      "words": "exura med ico",
+      "kind": "healing",
+      "mana": 90,
+      "cooldownMs": 1000,
+      "requirements": {
+        "vocations": [
+          "knight"
+        ],
+        "level": 300
+      },
+      "areaTiles": [
+        [
+          0,
+          0
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": {
+        "min": "floor((L/5+ML*4+25)*2)",
+        "max": "floor((L/5+ML*7.95+51)*2)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "intense-wound-cleansing",
+      "name": "Intense Wound Cleansing",
+      "words": "exura gran ico",
+      "kind": "healing",
+      "mana": 200,
+      "cooldownMs": 120000,
+      "requirements": {
+        "vocations": [
+          "knight"
+        ],
+        "level": 80
+      },
+      "areaTiles": [
+        [
+          0,
+          0
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*70+438)",
+        "max": "floor(L/5+ML*92+544)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "intense-healing",
+      "name": "Intense Healing",
+      "words": "exura gran",
+      "kind": "healing",
+      "mana": 70,
+      "cooldownMs": 1000,
+      "requirements": {
+        "vocations": [
+          "sorcerer",
+          "druid",
+          "paladin"
+        ],
+        "level": 20
+      },
+      "areaTiles": [
+        [
+          0,
+          0
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*3.184+20)",
+        "max": "floor(L/5+ML*5.59+35)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "ultimate-healing",
+      "name": "Ultimate Healing",
+      "words": "exura vita",
+      "kind": "healing",
+      "mana": 160,
+      "cooldownMs": 1000,
+      "requirements": {
+        "vocations": [
+          "sorcerer",
+          "druid"
+        ],
+        "level": 30
+      },
+      "areaTiles": [
+        [
+          0,
+          0
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*6.8+42)",
+        "max": "floor(L/5+ML*12.9+90)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "heal-friend",
+      "name": "Heal Friend",
+      "words": "exura sio",
+      "kind": "healing",
+      "mana": 120,
+      "cooldownMs": 1000,
+      "requirements": {
+        "vocations": [
+          "druid"
+        ],
+        "level": 18
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ]
+      ],
+      "target": [
+        0,
+        -1
+      ],
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*10+3)",
+        "max": "floor(L/5+ML*14+5)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "mass-healing",
+      "name": "Mass Healing",
+      "words": "exura gran mas res",
+      "kind": "healing",
+      "mana": 150,
+      "cooldownMs": 2000,
+      "requirements": {
+        "vocations": [
+          "druid"
+        ],
+        "level": 36
+      },
+      "areaTiles": [
+        [
+          -1,
+          -3
+        ],
+        [
+          0,
+          -3
+        ],
+        [
+          1,
+          -3
+        ],
+        [
+          -2,
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          -3,
+          -1
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          -3,
+          0
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          -3,
+          1
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          -2,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*5.7+26)",
+        "max": "floor(L/5+ML*10.43+62)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "haste",
+      "name": "Haste",
+      "words": "utani hur",
+      "kind": "support",
+      "mana": 60,
+      "cooldownMs": 2000,
+      "requirements": {
+        "vocations": [
+          "knight",
+          "paladin",
+          "sorcerer",
+          "druid"
+        ],
+        "level": 14
+      },
+      "areaTiles": [
+        [
+          0,
+          0
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": null,
+      "evidence": "static"
+    },
+    {
+      "id": "strong-haste",
+      "name": "Strong Haste",
+      "words": "utani gran hur",
+      "kind": "support",
+      "mana": 100,
+      "cooldownMs": 2000,
+      "requirements": {
+        "vocations": [
+          "sorcerer",
+          "druid"
+        ],
+        "level": 20
+      },
+      "areaTiles": [
+        [
+          0,
+          0
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": null,
+      "evidence": "static"
+    },
+    {
+      "id": "charge",
+      "name": "Charge",
+      "words": "utani tempo hur",
+      "kind": "support",
+      "mana": 100,
+      "cooldownMs": 2000,
+      "requirements": {
+        "vocations": [
+          "knight"
+        ],
+        "level": 25
+      },
+      "areaTiles": [
+        [
+          0,
+          0
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": null,
+      "evidence": "static"
+    },
+    {
+      "id": "swift-foot",
+      "name": "Swift Foot",
+      "words": "utamo tempo san",
+      "kind": "support",
+      "mana": 400,
+      "cooldownMs": 10000,
+      "requirements": {
+        "vocations": [
+          "paladin"
+        ],
+        "level": 55
+      },
+      "areaTiles": [
+        [
+          0,
+          0
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": null,
+      "evidence": "static"
+    },
+    {
+      "id": "magic-shield",
+      "name": "Magic Shield",
+      "words": "utamo vita",
+      "kind": "support",
+      "mana": 50,
+      "cooldownMs": 14000,
+      "requirements": {
+        "vocations": [
+          "sorcerer",
+          "druid"
+        ],
+        "level": 14
+      },
+      "areaTiles": [
+        [
+          0,
+          0
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": null,
+      "evidence": "static"
+    },
+    {
+      "id": "blood-rage",
+      "name": "Blood Rage",
+      "words": "utito tempo",
+      "kind": "support",
+      "mana": 290,
+      "cooldownMs": 2000,
+      "requirements": {
+        "vocations": [
+          "knight"
+        ],
+        "level": 60
+      },
+      "areaTiles": [
+        [
+          0,
+          0
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": null,
+      "evidence": "static"
+    },
+    {
+      "id": "protector",
+      "name": "Protector",
+      "words": "utamo tempo",
+      "kind": "support",
+      "mana": 200,
+      "cooldownMs": 2000,
+      "requirements": {
+        "vocations": [
+          "knight"
+        ],
+        "level": 55
+      },
+      "areaTiles": [
+        [
+          0,
+          0
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": null,
+      "evidence": "static"
+    },
+    {
+      "id": "sharpshooter",
+      "name": "Sharpshooter",
+      "words": "utito tempo san",
+      "kind": "support",
+      "mana": 450,
+      "cooldownMs": 10000,
+      "requirements": {
+        "vocations": [
+          "paladin"
+        ],
+        "level": 60
+      },
+      "areaTiles": [
+        [
+          0,
+          0
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": null,
+      "evidence": "static"
+    },
+    {
+      "id": "divine-healing",
+      "name": "Divine Healing",
+      "words": "exura san",
+      "kind": "healing",
+      "mana": 160,
+      "cooldownMs": 1000,
+      "requirements": {
+        "vocations": [
+          "paladin"
+        ],
+        "level": 24
+      },
+      "areaTiles": [
+        [
+          0,
+          0
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*7.22+44)",
+        "max": "floor(L/5+ML*12.79+79)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "salvation",
+      "name": "Salvation",
+      "words": "exura gran san",
+      "kind": "healing",
+      "mana": 210,
+      "cooldownMs": 1000,
+      "requirements": {
+        "vocations": [
+          "paladin"
+        ],
+        "level": 36
+      },
+      "areaTiles": [
+        [
+          0,
+          0
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*12+75)",
+        "max": "floor(L/5+ML*20+125)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "apprentices-strike",
+      "name": "Apprentice's Strike",
+      "words": "exori min flam",
+      "kind": "attack",
+      "mana": 6,
+      "cooldownMs": 2000,
+      "requirements": {
+        "vocations": [
+          "sorcerer",
+          "druid"
+        ],
+        "level": 8,
+        "magicLevel": 0
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -3
+        ]
+      ],
+      "target": [
+        0,
+        -3
+      ],
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*.4+3)",
+        "max": "floor(L/5+ML*.7+5)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "energy-strike",
+      "name": "Energy Strike",
+      "words": "exori vis",
+      "kind": "attack",
+      "mana": 20,
+      "cooldownMs": 2000,
+      "requirements": {
+        "vocations": [
+          "sorcerer",
+          "druid"
+        ],
+        "level": 12,
+        "magicLevel": 0
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -3
+        ]
+      ],
+      "target": [
+        0,
+        -3
+      ],
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*1.403+8)",
+        "max": "floor(L/5+ML*2.203+13)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "terra-strike",
+      "name": "Terra Strike",
+      "words": "exori tera",
+      "kind": "attack",
+      "mana": 20,
+      "cooldownMs": 2000,
+      "requirements": {
+        "vocations": [
+          "sorcerer",
+          "druid"
+        ],
+        "level": 13,
+        "magicLevel": 0
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -3
+        ]
+      ],
+      "target": [
+        0,
+        -3
+      ],
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*1.403+8)",
+        "max": "floor(L/5+ML*2.203+13)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "flame-strike",
+      "name": "Flame Strike",
+      "words": "exori flam",
+      "kind": "attack",
+      "mana": 20,
+      "cooldownMs": 2000,
+      "requirements": {
+        "vocations": [
+          "sorcerer",
+          "druid"
+        ],
+        "level": 14,
+        "magicLevel": 0
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -3
+        ]
+      ],
+      "target": [
+        0,
+        -3
+      ],
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*1.403+8)",
+        "max": "floor(L/5+ML*2.203+13)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "ice-strike",
+      "name": "Ice Strike",
+      "words": "exori frigo",
+      "kind": "attack",
+      "mana": 20,
+      "cooldownMs": 2000,
+      "requirements": {
+        "vocations": [
+          "sorcerer",
+          "druid"
+        ],
+        "level": 15,
+        "magicLevel": 0
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -3
+        ]
+      ],
+      "target": [
+        0,
+        -3
+      ],
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*1.403+8)",
+        "max": "floor(L/5+ML*2.203+13)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "death-strike",
+      "name": "Death Strike",
+      "words": "exori mort",
+      "kind": "attack",
+      "mana": 20,
+      "cooldownMs": 2000,
+      "requirements": {
+        "vocations": [
+          "sorcerer"
+        ],
+        "level": 16,
+        "magicLevel": 0
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -3
+        ]
+      ],
+      "target": [
+        0,
+        -3
+      ],
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*1.403+8)",
+        "max": "floor(L/5+ML*2.203+13)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "ethereal-spear",
+      "name": "Ethereal Spear",
+      "words": "exori con",
+      "kind": "attack",
+      "mana": 25,
+      "cooldownMs": 2000,
+      "requirements": {
+        "vocations": [
+          "paladin"
+        ],
+        "level": 20
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -3
+        ]
+      ],
+      "target": [
+        0,
+        -3
+      ],
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+(D+25)/3)",
+        "max": "floor(L/5+D+25)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "divine-missile",
+      "name": "Divine Missile",
+      "words": "exori san",
+      "kind": "attack",
+      "mana": 20,
+      "cooldownMs": 2000,
+      "requirements": {
+        "vocations": [
+          "paladin"
+        ],
+        "level": 28
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -3
+        ]
+      ],
+      "target": [
+        0,
+        -3
+      ],
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*1.79+11)",
+        "max": "floor(L/5+ML*3+18)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "strong-ethereal-spear",
+      "name": "Strong Ethereal Spear",
+      "words": "exori gran con",
+      "kind": "attack",
+      "mana": 55,
+      "cooldownMs": 8000,
+      "requirements": {
+        "vocations": [
+          "paladin"
+        ],
+        "level": 40
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -3
+        ]
+      ],
+      "target": [
+        0,
+        -3
+      ],
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor((2*D+A/2500)*2.3+L/5+7)",
+        "max": "floor((2*D+A/1875)*3.3+L/5+13)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "strong-terra-strike",
+      "name": "Strong Terra Strike",
+      "words": "exori gran tera",
+      "kind": "attack",
+      "mana": 60,
+      "cooldownMs": 8000,
+      "requirements": {
+        "vocations": [
+          "druid"
+        ],
+        "level": 48
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -3
+        ]
+      ],
+      "target": [
+        0,
+        -3
+      ],
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*2.8+16)",
+        "max": "floor(L/5+ML*4.4+28)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "strong-ice-strike",
+      "name": "Strong Ice Strike",
+      "words": "exori gran frigo",
+      "kind": "attack",
+      "mana": 60,
+      "cooldownMs": 8000,
+      "requirements": {
+        "vocations": [
+          "druid"
+        ],
+        "level": 52
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -3
+        ]
+      ],
+      "target": [
+        0,
+        -3
+      ],
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*2.8+16)",
+        "max": "floor(L/5+ML*4.4+28)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "ultimate-terra-strike",
+      "name": "Ultimate Terra Strike",
+      "words": "exori max tera",
+      "kind": "attack",
+      "mana": 100,
+      "cooldownMs": 30000,
+      "requirements": {
+        "vocations": [
+          "druid"
+        ],
+        "level": 56
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -3
+        ]
+      ],
+      "target": [
+        0,
+        -3
+      ],
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*4.5+35)",
+        "max": "floor(L/5+ML*7.3+55)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "ultimate-ice-strike",
+      "name": "Ultimate Ice Strike",
+      "words": "exori max frigo",
+      "kind": "attack",
+      "mana": 100,
+      "cooldownMs": 30000,
+      "requirements": {
+        "vocations": [
+          "druid"
+        ],
+        "level": 60
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -3
+        ]
+      ],
+      "target": [
+        0,
+        -3
+      ],
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*4.5+35)",
+        "max": "floor(L/5+ML*7.3+55)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "strong-flame-strike",
+      "name": "Strong Flame Strike",
+      "words": "exori gran flam",
+      "kind": "attack",
+      "mana": 60,
+      "cooldownMs": 8000,
+      "requirements": {
+        "vocations": [
+          "sorcerer"
+        ],
+        "level": 48
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -3
+        ]
+      ],
+      "target": [
+        0,
+        -3
+      ],
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*2.8+16)",
+        "max": "floor(L/5+ML*4.4+28)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "strong-energy-strike",
+      "name": "Strong Energy Strike",
+      "words": "exori gran vis",
+      "kind": "attack",
+      "mana": 60,
+      "cooldownMs": 8000,
+      "requirements": {
+        "vocations": [
+          "sorcerer"
+        ],
+        "level": 52
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -3
+        ]
+      ],
+      "target": [
+        0,
+        -3
+      ],
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*2.8+16)",
+        "max": "floor(L/5+ML*4.4+28)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "ultimate-flame-strike",
+      "name": "Ultimate Flame Strike",
+      "words": "exori max flam",
+      "kind": "attack",
+      "mana": 100,
+      "cooldownMs": 30000,
+      "requirements": {
+        "vocations": [
+          "sorcerer"
+        ],
+        "level": 56
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -3
+        ]
+      ],
+      "target": [
+        0,
+        -3
+      ],
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*4.5+35)",
+        "max": "floor(L/5+ML*7.3+55)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "ultimate-energy-strike",
+      "name": "Ultimate Energy Strike",
+      "words": "exori max vis",
+      "kind": "attack",
+      "mana": 100,
+      "cooldownMs": 30000,
+      "requirements": {
+        "vocations": [
+          "sorcerer"
+        ],
+        "level": 60
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -3
+        ]
+      ],
+      "target": [
+        0,
+        -3
+      ],
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*4.5+35)",
+        "max": "floor(L/5+ML*7.3+55)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "berserk",
+      "name": "Berserk",
+      "words": "exori",
+      "kind": "area",
+      "mana": 60,
+      "cooldownMs": 4000,
+      "requirements": {
+        "vocations": [
+          "knight"
+        ],
+        "level": 35
+      },
+      "areaTiles": [
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": {
+        "min": "floor(L/5+(S+A)*.5)",
+        "max": "floor(L/5+(S+A)*1.5)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "groundshaker",
+      "name": "Groundshaker",
+      "words": "exori mas",
+      "kind": "area",
+      "mana": 80,
+      "cooldownMs": 8000,
+      "requirements": {
+        "vocations": [
+          "knight"
+        ],
+        "level": 33
+      },
+      "areaTiles": [
+        [
+          -1,
+          -3
+        ],
+        [
+          0,
+          -3
+        ],
+        [
+          1,
+          -3
+        ],
+        [
+          -2,
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          -3,
+          -1
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          -3,
+          0
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          -3,
+          1
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          -2,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": {
+        "min": "floor(L/5+(S+A)*.5)",
+        "max": "floor(L/5+(S+A)*1.1)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "brutal-strike",
+      "name": "Brutal Strike",
+      "words": "exori ico",
+      "kind": "attack",
+      "mana": 15,
+      "cooldownMs": 6000,
+      "requirements": {
+        "vocations": [
+          "knight"
+        ],
+        "level": 16
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ]
+      ],
+      "target": [
+        0,
+        -1
+      ],
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(((S*A)*.02+4+L/5)*1.28)",
+        "max": "floor(((S*A)*.04+9+L/5)*1.28)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "annihilation",
+      "name": "Annihilation",
+      "words": "exori gran ico",
+      "kind": "attack",
+      "mana": 300,
+      "cooldownMs": 30000,
+      "requirements": {
+        "vocations": [
+          "knight"
+        ],
+        "level": 110
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ]
+      ],
+      "target": [
+        0,
+        -1
+      ],
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(((S*A)*.17+13+L/5)*1.28)",
+        "max": "floor(((S*A)*.2+34+L/5)*1.28)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "whirlwind-throw",
+      "name": "Whirlwind Throw",
+      "words": "exori hur",
+      "kind": "attack",
+      "mana": 20,
+      "cooldownMs": 6000,
+      "requirements": {
+        "vocations": [
+          "knight"
+        ],
+        "level": 28
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -3
+        ]
+      ],
+      "target": [
+        0,
+        -3
+      ],
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+(S+A)/3)",
+        "max": "floor(L/5+S+A)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "lesser-front-sweep",
+      "name": "Lesser Front Sweep",
+      "words": "exori infir min",
+      "kind": "area",
+      "mana": 6,
+      "cooldownMs": 6000,
+      "requirements": {
+        "vocations": [
+          "knight"
+        ],
+        "level": 8
+      },
+      "areaTiles": [
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "target": null,
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(((S*A)*.04+31+L/5)*1.1*(14/80))",
+        "max": "floor(((S*A)*.08+45+L/5)*1.1*(14/80))"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "front-sweep",
+      "name": "Front Sweep",
+      "words": "exori min",
+      "kind": "area",
+      "mana": 100,
+      "cooldownMs": 6000,
+      "requirements": {
+        "vocations": [
+          "knight"
+        ],
+        "level": 70
+      },
+      "areaTiles": [
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "target": null,
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(((S*A)*.04+31+L/5)*1.1)",
+        "max": "floor(((S*A)*.08+45+L/5)*1.1)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "fierce-berserk",
+      "name": "Fierce Berserk",
+      "words": "exori gran",
+      "kind": "area",
+      "mana": 120,
+      "cooldownMs": 6000,
+      "requirements": {
+        "vocations": [
+          "knight"
+        ],
+        "level": 90
+      },
+      "areaTiles": [
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": {
+        "min": "floor(L/5+(S+2*A)*1.1)",
+        "max": "floor(L/5+(S+2*A)*3)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "challenge",
+      "name": "Challenge",
+      "words": "exeta res",
+      "kind": "support",
+      "mana": 40,
+      "cooldownMs": 2000,
+      "requirements": {
+        "vocations": [
+          "knight"
+        ],
+        "level": 20
+      },
+      "areaTiles": [
+        [
+          -1,
+          -3
+        ],
+        [
+          0,
+          -3
+        ],
+        [
+          1,
+          -3
+        ],
+        [
+          -2,
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          -3,
+          -1
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          -3,
+          0
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          -3,
+          1
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          -2,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": null,
+      "evidence": "static"
+    },
+    {
+      "id": "chivalrous-challenge",
+      "name": "Chivalrous Challenge",
+      "words": "exeta amp res",
+      "kind": "support",
+      "mana": 80,
+      "cooldownMs": 2000,
+      "requirements": {
+        "vocations": [
+          "knight"
+        ],
+        "level": 150
+      },
+      "areaTiles": [
+        [
+          -1,
+          -5
+        ],
+        [
+          0,
+          -5
+        ],
+        [
+          1,
+          -5
+        ],
+        [
+          -3,
+          -4
+        ],
+        [
+          -2,
+          -4
+        ],
+        [
+          -1,
+          -4
+        ],
+        [
+          0,
+          -4
+        ],
+        [
+          1,
+          -4
+        ],
+        [
+          2,
+          -4
+        ],
+        [
+          3,
+          -4
+        ],
+        [
+          -4,
+          -3
+        ],
+        [
+          -3,
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -1,
+          -3
+        ],
+        [
+          0,
+          -3
+        ],
+        [
+          1,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3,
+          -3
+        ],
+        [
+          4,
+          -3
+        ],
+        [
+          -4,
+          -2
+        ],
+        [
+          -3,
+          -2
+        ],
+        [
+          -2,
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          3,
+          -2
+        ],
+        [
+          4,
+          -2
+        ],
+        [
+          -5,
+          -1
+        ],
+        [
+          -4,
+          -1
+        ],
+        [
+          -3,
+          -1
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          5,
+          -1
+        ],
+        [
+          -5,
+          0
+        ],
+        [
+          -4,
+          0
+        ],
+        [
+          -3,
+          0
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          -5,
+          1
+        ],
+        [
+          -4,
+          1
+        ],
+        [
+          -3,
+          1
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          -4,
+          2
+        ],
+        [
+          -3,
+          2
+        ],
+        [
+          -2,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          -4,
+          3
+        ],
+        [
+          -3,
+          3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          -3,
+          4
+        ],
+        [
+          -2,
+          4
+        ],
+        [
+          -1,
+          4
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          -1,
+          5
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": null,
+      "evidence": "static"
+    },
+    {
+      "id": "fire-wave",
+      "name": "Fire Wave",
+      "words": "exevo flam hur",
+      "kind": "area",
+      "mana": 25,
+      "cooldownMs": 4000,
+      "requirements": {
+        "vocations": [
+          "sorcerer"
+        ],
+        "level": 16
+      },
+      "areaTiles": [
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -1,
+          -3
+        ],
+        [
+          0,
+          -3
+        ],
+        [
+          1,
+          -3
+        ],
+        [
+          2,
+          -3
+        ]
+      ],
+      "target": null,
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*1.25+4)",
+        "max": "floor(L/5+ML*2+12)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "energy-beam",
+      "name": "Energy Beam",
+      "words": "exevo vis lux",
+      "kind": "area",
+      "mana": 40,
+      "cooldownMs": 4000,
+      "requirements": {
+        "vocations": [
+          "sorcerer"
+        ],
+        "level": 20
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -3
+        ],
+        [
+          0,
+          -4
+        ]
+      ],
+      "target": null,
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*1.8+11)",
+        "max": "floor(L/5+ML*3+19)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "great-energy-beam",
+      "name": "Great Energy Beam",
+      "words": "exevo gran vis lux",
+      "kind": "area",
+      "mana": 110,
+      "cooldownMs": 6000,
+      "requirements": {
+        "vocations": [
+          "sorcerer"
+        ],
+        "level": 24
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          -3
+        ],
+        [
+          0,
+          -4
+        ],
+        [
+          0,
+          -5
+        ]
+      ],
+      "target": null,
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*4)",
+        "max": "floor(L/5+ML*7)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "energy-wave",
+      "name": "Energy Wave",
+      "words": "exevo vis hur",
+      "kind": "area",
+      "mana": 170,
+      "cooldownMs": 8000,
+      "requirements": {
+        "vocations": [
+          "sorcerer"
+        ],
+        "level": 28
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          -1,
+          -3
+        ],
+        [
+          0,
+          -3
+        ],
+        [
+          1,
+          -3
+        ],
+        [
+          -1,
+          -4
+        ],
+        [
+          0,
+          -4
+        ],
+        [
+          1,
+          -4
+        ]
+      ],
+      "target": null,
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*4.5)",
+        "max": "floor(L/5+ML*9)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "great-fire-wave",
+      "name": "Great Fire Wave",
+      "words": "exevo gran flam hur",
+      "kind": "area",
+      "mana": 120,
+      "cooldownMs": 4000,
+      "requirements": {
+        "vocations": [
+          "sorcerer"
+        ],
+        "level": 32
+      },
+      "areaTiles": [
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -1,
+          -3
+        ],
+        [
+          0,
+          -3
+        ],
+        [
+          1,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -2,
+          -4
+        ],
+        [
+          -1,
+          -4
+        ],
+        [
+          0,
+          -4
+        ],
+        [
+          1,
+          -4
+        ],
+        [
+          2,
+          -4
+        ]
+      ],
+      "target": null,
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*2.8+16)",
+        "max": "floor(L/5+ML*4.4+28)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "rage-of-the-skies",
+      "name": "Rage of the Skies",
+      "words": "exevo gran mas vis",
+      "kind": "area",
+      "mana": 300,
+      "cooldownMs": 40000,
+      "requirements": {
+        "vocations": [
+          "sorcerer"
+        ],
+        "level": 40
+      },
+      "areaTiles": [
+        [
+          0,
+          -6
+        ],
+        [
+          -1,
+          -5
+        ],
+        [
+          0,
+          -5
+        ],
+        [
+          1,
+          -5
+        ],
+        [
+          -2,
+          -4
+        ],
+        [
+          -1,
+          -4
+        ],
+        [
+          0,
+          -4
+        ],
+        [
+          1,
+          -4
+        ],
+        [
+          2,
+          -4
+        ],
+        [
+          -3,
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -1,
+          -3
+        ],
+        [
+          0,
+          -3
+        ],
+        [
+          1,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3,
+          -3
+        ],
+        [
+          -4,
+          -2
+        ],
+        [
+          -3,
+          -2
+        ],
+        [
+          -2,
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          3,
+          -2
+        ],
+        [
+          4,
+          -2
+        ],
+        [
+          -5,
+          -1
+        ],
+        [
+          -4,
+          -1
+        ],
+        [
+          -3,
+          -1
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          5,
+          -1
+        ],
+        [
+          -6,
+          0
+        ],
+        [
+          -5,
+          0
+        ],
+        [
+          -4,
+          0
+        ],
+        [
+          -3,
+          0
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          -5,
+          1
+        ],
+        [
+          -4,
+          1
+        ],
+        [
+          -3,
+          1
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          -4,
+          2
+        ],
+        [
+          -3,
+          2
+        ],
+        [
+          -2,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          -3,
+          3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          -2,
+          4
+        ],
+        [
+          -1,
+          4
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          -1,
+          5
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          0,
+          6
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*7)",
+        "max": "floor(L/5+ML*14)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "hells-core",
+      "name": "Hell's Core",
+      "words": "exevo gran mas flam",
+      "kind": "area",
+      "mana": 550,
+      "cooldownMs": 40000,
+      "requirements": {
+        "vocations": [
+          "sorcerer"
+        ],
+        "level": 44
+      },
+      "areaTiles": [
+        [
+          0,
+          -5
+        ],
+        [
+          -1,
+          -4
+        ],
+        [
+          0,
+          -4
+        ],
+        [
+          1,
+          -4
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -1,
+          -3
+        ],
+        [
+          0,
+          -3
+        ],
+        [
+          1,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -3,
+          -2
+        ],
+        [
+          -2,
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          3,
+          -2
+        ],
+        [
+          -4,
+          -1
+        ],
+        [
+          -3,
+          -1
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          -5,
+          0
+        ],
+        [
+          -4,
+          0
+        ],
+        [
+          -3,
+          0
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          -4,
+          1
+        ],
+        [
+          -3,
+          1
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          -3,
+          2
+        ],
+        [
+          -2,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1,
+          4
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*10)",
+        "max": "floor(L/5+ML*14)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "ice-wave",
+      "name": "Ice Wave",
+      "words": "exevo frigo hur",
+      "kind": "area",
+      "mana": 25,
+      "cooldownMs": 4000,
+      "requirements": {
+        "vocations": [
+          "druid"
+        ],
+        "level": 16
+      },
+      "areaTiles": [
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -1,
+          -3
+        ],
+        [
+          0,
+          -3
+        ],
+        [
+          1,
+          -3
+        ],
+        [
+          2,
+          -3
+        ]
+      ],
+      "target": null,
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*.81+4)",
+        "max": "floor(L/5+ML*2+12)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "terra-wave",
+      "name": "Terra Wave",
+      "words": "exevo tera hur",
+      "kind": "area",
+      "mana": 170,
+      "cooldownMs": 4000,
+      "requirements": {
+        "vocations": [
+          "druid"
+        ],
+        "level": 28
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          -1,
+          -3
+        ],
+        [
+          0,
+          -3
+        ],
+        [
+          1,
+          -3
+        ],
+        [
+          -1,
+          -4
+        ],
+        [
+          0,
+          -4
+        ],
+        [
+          1,
+          -4
+        ]
+      ],
+      "target": null,
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*3.5)",
+        "max": "floor(L/5+ML*7)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "strong-ice-wave",
+      "name": "Strong Ice Wave",
+      "words": "exevo gran frigo hur",
+      "kind": "area",
+      "mana": 170,
+      "cooldownMs": 8000,
+      "requirements": {
+        "vocations": [
+          "druid"
+        ],
+        "level": 32
+      },
+      "areaTiles": [
+        [
+          0,
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          -1,
+          -3
+        ],
+        [
+          0,
+          -3
+        ],
+        [
+          1,
+          -3
+        ],
+        [
+          -1,
+          -4
+        ],
+        [
+          0,
+          -4
+        ],
+        [
+          1,
+          -4
+        ]
+      ],
+      "target": null,
+      "directional": true,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*4.5+20)",
+        "max": "floor(L/5+ML*7.6+48)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "wrath-of-nature",
+      "name": "Wrath of Nature",
+      "words": "exevo gran mas tera",
+      "kind": "area",
+      "mana": 350,
+      "cooldownMs": 40000,
+      "requirements": {
+        "vocations": [
+          "druid"
+        ],
+        "level": 40
+      },
+      "areaTiles": [
+        [
+          0,
+          -6
+        ],
+        [
+          -1,
+          -5
+        ],
+        [
+          0,
+          -5
+        ],
+        [
+          1,
+          -5
+        ],
+        [
+          -2,
+          -4
+        ],
+        [
+          -1,
+          -4
+        ],
+        [
+          0,
+          -4
+        ],
+        [
+          1,
+          -4
+        ],
+        [
+          2,
+          -4
+        ],
+        [
+          -3,
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -1,
+          -3
+        ],
+        [
+          0,
+          -3
+        ],
+        [
+          1,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3,
+          -3
+        ],
+        [
+          -4,
+          -2
+        ],
+        [
+          -3,
+          -2
+        ],
+        [
+          -2,
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          3,
+          -2
+        ],
+        [
+          4,
+          -2
+        ],
+        [
+          -5,
+          -1
+        ],
+        [
+          -4,
+          -1
+        ],
+        [
+          -3,
+          -1
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          5,
+          -1
+        ],
+        [
+          -6,
+          0
+        ],
+        [
+          -5,
+          0
+        ],
+        [
+          -4,
+          0
+        ],
+        [
+          -3,
+          0
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          -5,
+          1
+        ],
+        [
+          -4,
+          1
+        ],
+        [
+          -3,
+          1
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          -4,
+          2
+        ],
+        [
+          -3,
+          2
+        ],
+        [
+          -2,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          -3,
+          3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          -2,
+          4
+        ],
+        [
+          -1,
+          4
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          -1,
+          5
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          0,
+          6
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*5)",
+        "max": "floor(L/5+ML*10)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "eternal-winter",
+      "name": "Eternal Winter",
+      "words": "exevo gran mas frigo",
+      "kind": "area",
+      "mana": 525,
+      "cooldownMs": 40000,
+      "requirements": {
+        "vocations": [
+          "druid"
+        ],
+        "level": 44
+      },
+      "areaTiles": [
+        [
+          0,
+          -5
+        ],
+        [
+          -1,
+          -4
+        ],
+        [
+          0,
+          -4
+        ],
+        [
+          1,
+          -4
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -1,
+          -3
+        ],
+        [
+          0,
+          -3
+        ],
+        [
+          1,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -3,
+          -2
+        ],
+        [
+          -2,
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          3,
+          -2
+        ],
+        [
+          -4,
+          -1
+        ],
+        [
+          -3,
+          -1
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          -5,
+          0
+        ],
+        [
+          -4,
+          0
+        ],
+        [
+          -3,
+          0
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          -4,
+          1
+        ],
+        [
+          -3,
+          1
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          -3,
+          2
+        ],
+        [
+          -2,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1,
+          4
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*6)",
+        "max": "floor(L/5+ML*12)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "divine-caldera",
+      "name": "Divine Caldera",
+      "words": "exevo mas san",
+      "kind": "area",
+      "mana": 160,
+      "cooldownMs": 4000,
+      "requirements": {
+        "vocations": [
+          "paladin"
+        ],
+        "level": 50
+      },
+      "areaTiles": [
+        [
+          -1,
+          -3
+        ],
+        [
+          0,
+          -3
+        ],
+        [
+          1,
+          -3
+        ],
+        [
+          -2,
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          -3,
+          -1
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          -3,
+          0
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          -3,
+          1
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          -2,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "target": null,
+      "directional": false,
+      "tooltipRange": {
+        "min": "floor(L/5+ML*4)",
+        "max": "floor(L/5+ML*6)"
+      },
+      "evidence": "static"
+    }
+  ],
+  "tooltipFormulaVariables": {
+    "L": "character level",
+    "ML": "character magicLevel as displayed in stats",
+    "S": "effective attack skill: base skill plus skill bonus for combat.attackSkill",
+    "D": "effective distance skill: base distance plus skill bonus",
+    "A": "combat.weaponAttack if greater than zero, otherwise 7",
+    "rounding": "floor independently for minimum and maximum",
+    "scope": "Tooltips state range before target armor and resistances. These are client declared formulas, not verified server execution."
+  },
+  "buffDeclarations": {
+    "haste": {
+      "speedBonusPercent": 30,
+      "durationMs": 33000
+    },
+    "strong-haste": {
+      "speedBonusPercent": 70,
+      "durationMs": 22000
+    },
+    "charge": {
+      "speedBonusPercent": 90,
+      "durationMs": 5000
+    },
+    "swift-foot": {
+      "speedBonusPercent": 80,
+      "durationMs": 10000,
+      "breaksOnAttack": true,
+      "onlyNoTargetsInRange": true
+    },
+    "magic-shield": {
+      "durationMs": 180000,
+      "damageRedirect": "mana",
+      "capacityFormula": null
+    },
+    "blood-rage": {
+      "durationMs": 10000,
+      "damageDealtBonusPercent": 35,
+      "damageTakenBonusPercent": 15,
+      "defenseDisabled": true
+    },
+    "protector": {
+      "durationMs": 13000,
+      "damageTakenReductionPercent": 15,
+      "damageDealtReductionPercent": 35,
+      "defenseIncreaseFormula": null
+    },
+    "sharpshooter": {
+      "durationMs": 10000,
+      "distanceAndEtherealDamageBonusPercent": 40,
+      "movementDisabled": true,
+      "defenseDisabled": true,
+      "healingAndSupportSpellsDisabled": true,
+      "potionsAllowed": true
+    },
+    "evidence": "Client spell descriptions in chunk-MA6BHVBH.js; server behavior not executed by this extraction."
+  },
+  "potions": [
+    {
+      "id": "lesser-health-potion",
+      "itemId": 7876,
+      "goldCostPerUse": 0,
+      "requirements": {},
+      "health": {
+        "kind": "range",
+        "min": 63,
+        "max": 88
+      },
+      "mana": null,
+      "evidence": "static"
+    },
+    {
+      "id": "health-potion",
+      "itemId": 266,
+      "goldCostPerUse": 50,
+      "requirements": {},
+      "health": {
+        "kind": "range",
+        "min": 125,
+        "max": 175
+      },
+      "mana": null,
+      "evidence": "static"
+    },
+    {
+      "id": "strong-health-potion",
+      "itemId": 236,
+      "goldCostPerUse": 115,
+      "requirements": {
+        "vocations": [
+          "knight",
+          "paladin"
+        ],
+        "level": 50
+      },
+      "health": {
+        "kind": "range",
+        "min": 250,
+        "max": 350
+      },
+      "mana": null,
+      "evidence": "static"
+    },
+    {
+      "id": "great-health-potion",
+      "itemId": 239,
+      "goldCostPerUse": 225,
+      "requirements": {
+        "vocations": [
+          "knight"
+        ],
+        "level": 80
+      },
+      "health": {
+        "kind": "range",
+        "min": 425,
+        "max": 575
+      },
+      "mana": null,
+      "evidence": "static"
+    },
+    {
+      "id": "ultimate-health-potion",
+      "itemId": 7643,
+      "goldCostPerUse": 379,
+      "requirements": {
+        "vocations": [
+          "knight"
+        ],
+        "level": 130
+      },
+      "health": {
+        "kind": "range",
+        "min": 650,
+        "max": 850
+      },
+      "mana": null,
+      "evidence": "static"
+    },
+    {
+      "id": "supreme-health-potion",
+      "itemId": 23375,
+      "goldCostPerUse": 650,
+      "requirements": {
+        "vocations": [
+          "knight"
+        ],
+        "level": 200
+      },
+      "health": {
+        "kind": "range",
+        "min": 875,
+        "max": 1125
+      },
+      "mana": null,
+      "evidence": "static"
+    },
+    {
+      "id": "mana-potion",
+      "itemId": 268,
+      "goldCostPerUse": 56,
+      "requirements": {},
+      "health": null,
+      "mana": {
+        "kind": "range",
+        "min": 75,
+        "max": 125
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "strong-mana-potion",
+      "itemId": 237,
+      "goldCostPerUse": 108,
+      "requirements": {
+        "level": 50
+      },
+      "health": null,
+      "mana": {
+        "kind": "range",
+        "min": 115,
+        "max": 185
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "great-mana-potion",
+      "itemId": 238,
+      "goldCostPerUse": 158,
+      "requirements": {
+        "vocations": [
+          "sorcerer",
+          "druid",
+          "paladin"
+        ],
+        "level": 80
+      },
+      "health": null,
+      "mana": {
+        "kind": "range",
+        "min": 150,
+        "max": 250
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "ultimate-mana-potion",
+      "itemId": 23373,
+      "goldCostPerUse": 488,
+      "requirements": {
+        "vocations": [
+          "sorcerer",
+          "druid"
+        ],
+        "level": 130
+      },
+      "health": null,
+      "mana": {
+        "kind": "range",
+        "min": 425,
+        "max": 575
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "great-spirit-potion",
+      "itemId": 7642,
+      "goldCostPerUse": 90,
+      "requirements": {
+        "vocations": [
+          "paladin"
+        ],
+        "level": 80
+      },
+      "health": {
+        "kind": "range",
+        "min": 250,
+        "max": 350
+      },
+      "mana": {
+        "kind": "range",
+        "min": 100,
+        "max": 200
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "ultimate-spirit-potion",
+      "itemId": 23374,
+      "goldCostPerUse": 195,
+      "requirements": {
+        "vocations": [
+          "paladin"
+        ],
+        "level": 130
+      },
+      "health": {
+        "kind": "range",
+        "min": 420,
+        "max": 580
+      },
+      "mana": {
+        "kind": "range",
+        "min": 250,
+        "max": 350
+      },
+      "evidence": "static"
+    }
+  ],
+  "runes": [
+    {
+      "id": "explosion-rune",
+      "name": "Explosion Rune",
+      "itemId": 3200,
+      "goldCostPerUse": 25,
+      "requirements": {
+        "level": 31,
+        "magicLevel": 6
+      },
+      "tooltipRange": {
+        "min": "floor(0)",
+        "max": "floor(L/5+ML*4.8)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "fireball-rune",
+      "name": "Fireball Rune",
+      "itemId": 3189,
+      "goldCostPerUse": 30,
+      "requirements": {
+        "level": 27,
+        "magicLevel": 4
+      },
+      "tooltipRange": {
+        "min": "floor(L/5+ML*1.81+10)",
+        "max": "floor(L/5+ML*3+18)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "great-fireball-rune",
+      "name": "Great Fireball Rune",
+      "itemId": 3191,
+      "goldCostPerUse": 60,
+      "requirements": {
+        "level": 30,
+        "magicLevel": 4
+      },
+      "tooltipRange": {
+        "min": "floor(L/5+ML*1.2+7)",
+        "max": "floor(L/5+ML*2.8+17)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "avalanche-rune",
+      "name": "Avalanche Rune",
+      "itemId": 3161,
+      "goldCostPerUse": 55,
+      "requirements": {
+        "level": 30,
+        "magicLevel": 4
+      },
+      "tooltipRange": {
+        "min": "floor(L/5+ML*1.2+7)",
+        "max": "floor(L/5+ML*2.8+17)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "thunderstorm-rune",
+      "name": "Thunderstorm Rune",
+      "itemId": 3202,
+      "goldCostPerUse": 45,
+      "requirements": {
+        "level": 28,
+        "magicLevel": 4
+      },
+      "tooltipRange": {
+        "min": "floor(L/5+ML*1+6)",
+        "max": "floor(L/5+ML*2.6+16)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "stone-shower-rune",
+      "name": "Stone Shower Rune",
+      "itemId": 3175,
+      "goldCostPerUse": 40,
+      "requirements": {
+        "level": 28,
+        "magicLevel": 4
+      },
+      "tooltipRange": {
+        "min": "floor(L/5+ML*1+6)",
+        "max": "floor(L/5+ML*2.6+16)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "heavy-magic-missile-rune",
+      "name": "Heavy Magic Missile Rune",
+      "itemId": 3198,
+      "goldCostPerUse": 15,
+      "requirements": {
+        "level": 25,
+        "magicLevel": 3
+      },
+      "tooltipRange": {
+        "min": "floor(L/5+ML*.4+2)",
+        "max": "floor(L/5+ML*1.59+10)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "icicle-rune",
+      "name": "Icicle Rune",
+      "itemId": 3158,
+      "goldCostPerUse": 30,
+      "requirements": {
+        "level": 28,
+        "magicLevel": 4
+      },
+      "tooltipRange": {
+        "min": "floor(L/5+ML*1.81+10)",
+        "max": "floor(L/5+ML*3+18)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "holy-missile-rune",
+      "name": "Holy Missile Rune",
+      "itemId": 3182,
+      "goldCostPerUse": 14,
+      "requirements": {
+        "vocations": [
+          "paladin"
+        ],
+        "level": 27,
+        "magicLevel": 4
+      },
+      "tooltipRange": {
+        "min": "floor(L/5+ML*1.79+11)",
+        "max": "floor(L/5+ML*3.75+24)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "sudden-death-rune",
+      "name": "Sudden Death Rune",
+      "itemId": 3155,
+      "goldCostPerUse": 150,
+      "requirements": {
+        "level": 45,
+        "magicLevel": 15
+      },
+      "tooltipRange": {
+        "min": "floor(L/5+ML*4.605+28)",
+        "max": "floor(L/5+ML*7.395+46)"
+      },
+      "evidence": "static"
+    },
+    {
+      "id": "ultimate-healing-rune",
+      "name": "Ultimate Healing Rune",
+      "itemId": 3160,
+      "goldCostPerUse": 160,
+      "requirements": {
+        "level": 24
+      },
+      "tooltipRange": {
+        "min": "floor(L/5+ML*7.3+42)",
+        "max": "floor(L/5+ML*12.4+90)"
+      },
+      "evidence": "static"
+    }
+  ],
+  "ammunition": [
+    {
+      "itemId": 21470,
+      "kind": "arrow",
+      "name": "Simple Arrow",
+      "cost": 0,
+      "level": 0,
+      "attack": 20,
+      "baseCostBeforeClientMultiplier": 0,
+      "evidence": "static"
+    },
+    {
+      "itemId": 3447,
+      "kind": "arrow",
+      "name": "Arrow",
+      "cost": 1,
+      "level": 0,
+      "attack": 25,
+      "baseCostBeforeClientMultiplier": 3,
+      "evidence": "static"
+    },
+    {
+      "itemId": 3446,
+      "kind": "bolt",
+      "name": "Bolt",
+      "cost": 2,
+      "level": 0,
+      "attack": 30,
+      "baseCostBeforeClientMultiplier": 4,
+      "evidence": "static"
+    },
+    {
+      "itemId": 3448,
+      "kind": "arrow",
+      "name": "Poison Arrow",
+      "cost": 2,
+      "level": 0,
+      "attack": 23,
+      "baseCostBeforeClientMultiplier": 5,
+      "evidence": "static"
+    },
+    {
+      "itemId": 774,
+      "kind": "arrow",
+      "name": "Earth Arrow",
+      "cost": 2,
+      "level": 20,
+      "attack": 14,
+      "elementalDamage": 14,
+      "elementalType": "earth",
+      "baseCostBeforeClientMultiplier": 5,
+      "evidence": "static"
+    },
+    {
+      "itemId": 763,
+      "kind": "arrow",
+      "name": "Flaming Arrow",
+      "cost": 2,
+      "level": 20,
+      "attack": 14,
+      "elementalDamage": 14,
+      "elementalType": "fire",
+      "baseCostBeforeClientMultiplier": 5,
+      "evidence": "static"
+    },
+    {
+      "itemId": 761,
+      "kind": "arrow",
+      "name": "Flash Arrow",
+      "cost": 2,
+      "level": 20,
+      "attack": 14,
+      "elementalDamage": 14,
+      "elementalType": "energy",
+      "baseCostBeforeClientMultiplier": 5,
+      "evidence": "static"
+    },
+    {
+      "itemId": 762,
+      "kind": "arrow",
+      "name": "Shiver Arrow",
+      "cost": 2,
+      "level": 20,
+      "attack": 14,
+      "elementalDamage": 14,
+      "elementalType": "ice",
+      "baseCostBeforeClientMultiplier": 5,
+      "evidence": "static"
+    },
+    {
+      "itemId": 7364,
+      "kind": "arrow",
+      "name": "Sniper Arrow",
+      "cost": 2,
+      "level": 20,
+      "attack": 28,
+      "baseCostBeforeClientMultiplier": 5,
+      "evidence": "static"
+    },
+    {
+      "itemId": 7363,
+      "kind": "bolt",
+      "name": "Piercing Bolt",
+      "cost": 2,
+      "level": 30,
+      "attack": 33,
+      "baseCostBeforeClientMultiplier": 5,
+      "evidence": "static"
+    },
+    {
+      "itemId": 14251,
+      "kind": "arrow",
+      "name": "Tarsal Arrow",
+      "cost": 2,
+      "level": 30,
+      "attack": 33,
+      "baseCostBeforeClientMultiplier": 6,
+      "evidence": "static"
+    },
+    {
+      "itemId": 14252,
+      "kind": "bolt",
+      "name": "Vortex Bolt",
+      "cost": 2,
+      "level": 40,
+      "attack": 36,
+      "baseCostBeforeClientMultiplier": 6,
+      "evidence": "static"
+    },
+    {
+      "itemId": 7365,
+      "kind": "arrow",
+      "name": "Onyx Arrow",
+      "cost": 3,
+      "level": 40,
+      "attack": 38,
+      "baseCostBeforeClientMultiplier": 7,
+      "evidence": "static"
+    },
+    {
+      "itemId": 3450,
+      "kind": "bolt",
+      "name": "Power Bolt",
+      "cost": 3,
+      "level": 55,
+      "attack": 40,
+      "baseCostBeforeClientMultiplier": 7,
+      "evidence": "static"
+    },
+    {
+      "itemId": 3449,
+      "kind": "arrow",
+      "name": "Burst Arrow",
+      "cost": 6,
+      "level": 0,
+      "attack": 27,
+      "areaRadius": 1,
+      "baseCostBeforeClientMultiplier": 15,
+      "evidence": "static"
+    },
+    {
+      "itemId": 16143,
+      "kind": "arrow",
+      "name": "Envenomed Arrow",
+      "cost": 5,
+      "level": 70,
+      "attack": 27,
+      "elementalDamage": 27,
+      "elementalType": "earth",
+      "baseCostBeforeClientMultiplier": 12,
+      "evidence": "static"
+    },
+    {
+      "itemId": 16142,
+      "kind": "bolt",
+      "name": "Drill Bolt",
+      "cost": 8,
+      "level": 70,
+      "attack": 56,
+      "baseCostBeforeClientMultiplier": 19,
+      "evidence": "static"
+    },
+    {
+      "itemId": 15793,
+      "kind": "arrow",
+      "name": "Crystalline Arrow",
+      "cost": 8,
+      "level": 90,
+      "attack": 65,
+      "baseCostBeforeClientMultiplier": 20,
+      "evidence": "static"
+    },
+    {
+      "itemId": 16141,
+      "kind": "bolt",
+      "name": "Prismatic Bolt",
+      "cost": 14,
+      "level": 90,
+      "attack": 66,
+      "baseCostBeforeClientMultiplier": 34,
+      "evidence": "static"
+    },
+    {
+      "itemId": 6528,
+      "kind": "bolt",
+      "name": "Infernal Bolt",
+      "cost": 20,
+      "level": 110,
+      "attack": 72,
+      "baseCostBeforeClientMultiplier": 49,
+      "evidence": "static"
+    },
+    {
+      "itemId": 35902,
+      "kind": "bolt",
+      "name": "Spectral Bolt",
+      "cost": 28,
+      "level": 150,
+      "attack": 78,
+      "baseCostBeforeClientMultiplier": 70,
+      "evidence": "static"
+    },
+    {
+      "itemId": 35901,
+      "kind": "arrow",
+      "name": "Diamond Arrow",
+      "cost": 52,
+      "level": 150,
+      "attack": 37,
+      "areaRadius": 2,
+      "baseCostBeforeClientMultiplier": 130,
+      "evidence": "static"
+    }
+  ],
+  "npcShop": {
+    "buyCatalog": [
+      {
+        "name": "paladin's bow",
+        "buyPriceGold": 0
+      },
+      {
+        "name": "hand axe",
+        "buyPriceGold": 8
+      },
+      {
+        "name": "sabre",
+        "buyPriceGold": 9
+      },
+      {
+        "name": "spear",
+        "buyPriceGold": 10
+      },
+      {
+        "name": "mace",
+        "buyPriceGold": 30
+      },
+      {
+        "name": "scythe",
+        "buyPriceGold": 50
+      },
+      {
+        "name": "sword",
+        "buyPriceGold": 85
+      },
+      {
+        "name": "hatchet",
+        "buyPriceGold": 85
+      },
+      {
+        "name": "longsword",
+        "buyPriceGold": 170
+      },
+      {
+        "name": "orcish axe",
+        "buyPriceGold": 270
+      },
+      {
+        "name": "bow",
+        "buyPriceGold": 400
+      },
+      {
+        "name": "morning star",
+        "buyPriceGold": 430
+      },
+      {
+        "name": "crossbow",
+        "buyPriceGold": 500
+      },
+      {
+        "name": "double axe",
+        "buyPriceGold": 860
+      },
+      {
+        "name": "wand of dragonbreath",
+        "buyPriceGold": 1000
+      },
+      {
+        "name": "moonlight rod",
+        "buyPriceGold": 1000
+      },
+      {
+        "name": "broadsword",
+        "buyPriceGold": 1650
+      },
+      {
+        "name": "serpent sword",
+        "buyPriceGold": 3000
+      },
+      {
+        "name": "wand of decay",
+        "buyPriceGold": 5000
+      },
+      {
+        "name": "necrotic rod",
+        "buyPriceGold": 5000
+      },
+      {
+        "name": "wand of draconia",
+        "buyPriceGold": 7500
+      },
+      {
+        "name": "northwind rod",
+        "buyPriceGold": 7500
+      },
+      {
+        "name": "wand of cosmic energy",
+        "buyPriceGold": 10000
+      },
+      {
+        "name": "terra rod",
+        "buyPriceGold": 10000
+      },
+      {
+        "name": "wand of inferno",
+        "buyPriceGold": 15000
+      },
+      {
+        "name": "hailstorm rod",
+        "buyPriceGold": 15000
+      },
+      {
+        "name": "studded shield",
+        "buyPriceGold": 50
+      },
+      {
+        "name": "brass shield",
+        "buyPriceGold": 65
+      },
+      {
+        "name": "plate shield",
+        "buyPriceGold": 125
+      },
+      {
+        "name": "spellbook",
+        "buyPriceGold": 150
+      },
+      {
+        "name": "leather helmet",
+        "buyPriceGold": 12
+      },
+      {
+        "name": "studded helmet",
+        "buyPriceGold": 63
+      },
+      {
+        "name": "brass helmet",
+        "buyPriceGold": 75
+      },
+      {
+        "name": "viking helmet",
+        "buyPriceGold": 235
+      },
+      {
+        "name": "steel helmet",
+        "buyPriceGold": 580
+      },
+      {
+        "name": "leather armor",
+        "buyPriceGold": 35
+      },
+      {
+        "name": "studded armor",
+        "buyPriceGold": 47
+      },
+      {
+        "name": "chain armor",
+        "buyPriceGold": 75
+      },
+      {
+        "name": "brass armor",
+        "buyPriceGold": 450
+      },
+      {
+        "name": "plate armor",
+        "buyPriceGold": 1200
+      },
+      {
+        "name": "leather legs",
+        "buyPriceGold": 10
+      },
+      {
+        "name": "studded legs",
+        "buyPriceGold": 50
+      },
+      {
+        "name": "chain legs",
+        "buyPriceGold": 60
+      },
+      {
+        "name": "brass legs",
+        "buyPriceGold": 195
+      },
+      {
+        "name": "plate legs",
+        "buyPriceGold": 1200
+      },
+      {
+        "name": "leather boots",
+        "buyPriceGold": 10
+      },
+      {
+        "name": "exercise sword",
+        "buyPriceGold": 347222
+      },
+      {
+        "name": "exercise axe",
+        "buyPriceGold": 347222
+      },
+      {
+        "name": "exercise club",
+        "buyPriceGold": 347222
+      },
+      {
+        "name": "exercise bow",
+        "buyPriceGold": 347222
+      },
+      {
+        "name": "exercise rod",
+        "buyPriceGold": 347222
+      },
+      {
+        "name": "exercise wand",
+        "buyPriceGold": 347222
+      },
+      {
+        "name": "exercise shield",
+        "buyPriceGold": 347222
+      },
+      {
+        "name": "durable exercise sword",
+        "buyPriceGold": 1250000
+      },
+      {
+        "name": "durable exercise axe",
+        "buyPriceGold": 1250000
+      },
+      {
+        "name": "durable exercise club",
+        "buyPriceGold": 1250000
+      },
+      {
+        "name": "durable exercise bow",
+        "buyPriceGold": 1250000
+      },
+      {
+        "name": "durable exercise rod",
+        "buyPriceGold": 1250000
+      },
+      {
+        "name": "durable exercise wand",
+        "buyPriceGold": 1250000
+      },
+      {
+        "name": "durable exercise shield",
+        "buyPriceGold": 1250000
+      },
+      {
+        "name": "lasting exercise sword",
+        "buyPriceGold": 10000000
+      },
+      {
+        "name": "lasting exercise axe",
+        "buyPriceGold": 10000000
+      },
+      {
+        "name": "lasting exercise club",
+        "buyPriceGold": 10000000
+      },
+      {
+        "name": "lasting exercise bow",
+        "buyPriceGold": 10000000
+      },
+      {
+        "name": "lasting exercise rod",
+        "buyPriceGold": 10000000
+      },
+      {
+        "name": "lasting exercise wand",
+        "buyPriceGold": 10000000
+      },
+      {
+        "name": "lasting exercise shield",
+        "buyPriceGold": 10000000
+      }
+    ],
+    "sellCatalog": [
+      {
+        "name": "cheese",
+        "sellPriceGold": 2,
+        "weightOz": 4,
+        "source": "npc-cheese.txt + parent UI observation"
+      }
+    ],
+    "evidence": "ui",
+    "source": "npc-store.txt; npc-sell.txt; npc-cheese.txt",
+    "limitations": "Only current shop listing and cheese sale inspected; not all game item stats/prices are captured."
+  },
+  "itemCategories": {
+    "1": "Armors",
+    "2": "Amulets",
+    "3": "Boots",
+    "4": "Containers",
+    "5": "Decoration",
+    "6": "Food",
+    "7": "Helmets & Hats",
+    "8": "Legs",
+    "9": "Others",
+    "10": "Potions",
+    "11": "Rings",
+    "12": "Runes",
+    "13": "Shields",
+    "14": "Tools",
+    "15": "Valuables",
+    "16": "Ammunition",
+    "17": "Axes",
+    "18": "Clubs",
+    "19": "Distance Weapons",
+    "20": "Swords",
+    "21": "Wands & Rods",
+    "24": "Creature Products",
+    "25": "Quivers"
+  },
+  "coinDenominations": [
+    {
+      "itemId": 3031,
+      "goldValue": 1
+    },
+    {
+      "itemId": 3035,
+      "goldValue": 100
+    },
+    {
+      "itemId": 3043,
+      "goldValue": 10000
+    }
+  ],
+  "quests": {
+    "annihilator": {
+      "id": "annihilator",
+      "name": "The Annihilator",
+      "minLevel": 100,
+      "staminaFloorMs": 900000,
+      "prizes": [
+        3388,
+        3288,
+        3319,
+        3213
+      ],
+      "outfitIds": [
+        541,
+        542
+      ],
+      "garrison": {
+        "monster": "demon",
+        "count": 6
+      },
+      "missions": [
+        {
+          "id": "annihilator",
+          "name": "Mission 1",
+          "noLeave": true
+        }
+      ]
+    },
+    "yalahar": {
+      "id": "yalahar",
+      "name": "In Service of Yalahar",
+      "minLevel": 80,
+      "staminaFloorMs": 900000,
+      "prizes": [
+        8862,
+        8863,
+        8864
+      ],
+      "garrison": null,
+      "faceOutfitId": 309,
+      "outfitIds": [
+        324,
+        325
+      ],
+      "missions": [
+        {
+          "kind": "kills",
+          "id": "yalahar-humans",
+          "name": "Mission 1",
+          "count": 2500,
+          "species": [
+            "mutatedHuman"
+          ]
+        },
+        {
+          "kind": "kills",
+          "id": "yalahar-tigers",
+          "name": "Mission 2",
+          "count": 2500,
+          "species": [
+            "mutatedTiger"
+          ]
+        },
+        {
+          "kind": "kills",
+          "id": "yalahar-raiders",
+          "name": "Mission 3",
+          "count": 2500,
+          "species": [
+            "bogRaider"
+          ]
+        },
+        {
+          "id": "yalahar",
+          "name": "Mission 4",
+          "seats": 20
+        }
+      ]
+    },
+    "wrath": {
+      "id": "wrath",
+      "name": "The Wrath of the Emperor",
+      "minLevel": 80,
+      "staminaFloorMs": 900000,
+      "prizes": [
+        11689,
+        11686,
+        11687
+      ],
+      "outfitIds": [
+        367,
+        366
+      ],
+      "garrison": null,
+      "faceOutfitId": 344,
+      "missions": [
+        {
+          "kind": "kills",
+          "id": "wrath-lizards",
+          "name": "Mission 1",
+          "count": 5000,
+          "species": [
+            "lizardSentinel",
+            "lizardTemplar",
+            "lizardSnakecharmer",
+            "lizardLegionnaire",
+            "lizardDragonPriest",
+            "lizardHighGuard",
+            "lizardZaogun",
+            "lizardChosen"
+          ]
+        },
+        {
+          "id": "wrath-1",
+          "name": "Mission 2",
+          "seats": 16
+        },
+        {
+          "id": "wrath-2",
+          "name": "Mission 3",
+          "seats": 40
+        },
+        {
+          "id": "wrath-3",
+          "name": "Mission 4"
+        },
+        {
+          "id": "wrath-4",
+          "name": "Mission 5"
+        }
+      ]
+    }
+  },
+  "dailyBosses": {
+    "oberon": {
+      "id": "oberon",
+      "name": "Grand Master Oberon",
+      "door": {
+        "minLevel": 250,
+        "staminaMs": 900000,
+        "kills": {
+          "count": 5000,
+          "monsters": [
+            "falconKnight",
+            "falconPaladin"
+          ]
+        }
+      },
+      "healthBars": 3
+    },
+    "jaul": {
+      "id": "jaul",
+      "name": "Jaul",
+      "door": {
+        "minLevel": 150,
+        "staminaMs": 900000,
+        "kills": {
+          "count": 2500,
+          "each": true,
+          "monsters": [
+            "deeplingScout",
+            "deeplingWarrior",
+            "deeplingSpellsinger",
+            "deeplingGuard"
+          ]
+        }
+      },
+      "healthBars": 1
+    },
+    "scarlettEtzel": {
+      "id": "scarlettEtzel",
+      "name": "Scarlett Etzel",
+      "door": {
+        "minLevel": 250,
+        "staminaMs": 900000,
+        "kills": {
+          "count": 5000,
+          "monsters": [
+            "cobraAssassin",
+            "cobraScout",
+            "cobraVizier"
+          ]
+        }
+      },
+      "healthBars": 1,
+      "mirrors": {
+        "immunity": 30000,
+        "freezeMs": 4000,
+        "burstPercent": 25
+      }
+    },
+    "urmahlullu": {
+      "id": "urmahlullu",
+      "name": "Urmahlullu the Immaculate",
+      "door": {
+        "minLevel": 250,
+        "staminaMs": 900000,
+        "kills": {
+          "count": 2500,
+          "each": true,
+          "monsters": [
+            "sphinx",
+            "lamassu",
+            "feralSphinx"
+          ]
+        }
+      },
+      "healthBars": 1,
+      "forms": [
+        {
+          "atHealth": 400000,
+          "name": "Wildness of Urmahlullu",
+          "outfitId": 570
+        },
+        {
+          "atHealth": 300000,
+          "name": "Urmahlullu the Tamed",
+          "outfitId": 1197
+        },
+        {
+          "atHealth": 200000,
+          "name": "Wisdom of Urmahlullu",
+          "outfitId": 1200
+        },
+        {
+          "atHealth": 100000,
+          "name": "Urmahlullu the Weakened",
+          "outfitId": 1197
+        }
+      ]
+    },
+    "timira": {
+      "id": "timira",
+      "name": "Timira the Many-Headed",
+      "door": {
+        "minLevel": 250,
+        "staminaMs": 900000,
+        "kills": {
+          "count": 2500,
+          "each": true,
+          "monsters": [
+            "nagaArcher",
+            "nagaWarrior"
+          ]
+        }
+      },
+      "healthBars": 1
+    },
+    "drume": {
+      "id": "drume",
+      "name": "Drume",
+      "door": {
+        "minLevel": 250,
+        "staminaMs": 900000,
+        "kills": {
+          "count": 2500,
+          "each": true,
+          "monsters": [
+            "usurperArcher",
+            "usurperKnight",
+            "usurperWarlock"
+          ]
+        }
+      },
+      "healthBars": 1
+    },
+    "facelessBane": {
+      "id": "facelessBane",
+      "name": "Faceless Bane",
+      "door": {
+        "minLevel": 250,
+        "staminaMs": 900000,
+        "kills": {
+          "count": 2500,
+          "each": true,
+          "monsters": [
+            "ripperSpectre",
+            "gazerSpectre",
+            "bursterSpectre"
+          ]
+        }
+      },
+      "healthBars": 1
+    },
+    "plagueroot": {
+      "id": "plagueroot",
+      "name": "Plagueroot",
+      "door": {
+        "minLevel": 250,
+        "staminaMs": 900000,
+        "kills": {
+          "count": 2500,
+          "each": true,
+          "monsters": [
+            "insaneSiren",
+            "soulBrokenHarbinger"
+          ]
+        }
+      },
+      "healthBars": 1
+    },
+    "malofurMangrinder": {
+      "id": "malofurMangrinder",
+      "name": "Malofur Mangrinder",
+      "door": {
+        "minLevel": 250,
+        "staminaMs": 900000,
+        "kills": {
+          "count": 2500,
+          "each": true,
+          "monsters": [
+            "insaneSiren",
+            "soulBrokenHarbinger"
+          ]
+        }
+      },
+      "healthBars": 1
+    },
+    "maxxenius": {
+      "id": "maxxenius",
+      "name": "Maxxenius",
+      "door": {
+        "minLevel": 250,
+        "staminaMs": 900000,
+        "kills": {
+          "count": 2500,
+          "each": true,
+          "monsters": [
+            "insaneSiren",
+            "soulBrokenHarbinger"
+          ]
+        }
+      },
+      "healthBars": 1
+    },
+    "alptramun": {
+      "id": "alptramun",
+      "name": "Alptramun",
+      "door": {
+        "minLevel": 250,
+        "staminaMs": 900000,
+        "kills": {
+          "count": 2500,
+          "each": true,
+          "monsters": [
+            "insaneSiren",
+            "soulBrokenHarbinger"
+          ]
+        }
+      },
+      "healthBars": 1
+    },
+    "izcandarTheBanished": {
+      "id": "izcandarTheBanished",
+      "name": "Izcandar The Banished",
+      "door": {
+        "minLevel": 250,
+        "staminaMs": 900000,
+        "kills": {
+          "count": 2500,
+          "each": true,
+          "monsters": [
+            "insaneSiren",
+            "soulBrokenHarbinger"
+          ]
+        }
+      },
+      "healthBars": 1
+    }
+  },
+  "arenas": [
+    {
+      "id": "greenhorn-arena",
+      "name": "Greenhorn Pit",
+      "finalBoss": "Orcus the Cruel",
+      "recommendedLevel": 30,
+      "entryFeeGold": 1000,
+      "bossCount": 10,
+      "source": "adventure-arena.txt + chunk-VOZYCQ5H.js:Ut"
+    },
+    {
+      "id": "scrapper-arena",
+      "name": "Scrapper Pit",
+      "finalBoss": "Spirit of Fire",
+      "recommendedLevel": 50,
+      "entryFeeGold": 5000,
+      "bossCount": 10,
+      "source": "adventure-arena.txt + chunk-VOZYCQ5H.js:Ut"
+    },
+    {
+      "id": "warlord-arena",
+      "name": "Warlord Pit",
+      "finalBoss": "The Obliverator",
+      "recommendedLevel": 80,
+      "entryFeeGold": 15000,
+      "bossCount": 10,
+      "source": "adventure-arena.txt + chunk-VOZYCQ5H.js:Ut"
+    },
+    {
+      "id": "bloodsand-arena",
+      "name": "Bloodsand Pit",
+      "finalBoss": "Molgrath the Flayer",
+      "recommendedLevel": 100,
+      "entryFeeGold": 35000,
+      "bossCount": 10,
+      "source": "adventure-arena.txt + chunk-VOZYCQ5H.js:Ut"
+    },
+    {
+      "id": "executioner-arena",
+      "name": "Executioner Pit",
+      "finalBoss": "Xarathok",
+      "recommendedLevel": 140,
+      "entryFeeGold": 75000,
+      "bossCount": 10,
+      "source": "adventure-arena.txt + chunk-VOZYCQ5H.js:Ut"
+    },
+    {
+      "id": "obliteration-arena",
+      "name": "Obliteration Pit",
+      "finalBoss": "The Obliteration",
+      "recommendedLevel": 200,
+      "entryFeeGold": 150000,
+      "bossCount": 10,
+      "source": "adventure-arena.txt + chunk-VOZYCQ5H.js:Ut"
+    }
+  ],
+  "bestiaryPresentation": {
+    "stageSize": "baseKills * 2^stageIndex",
+    "stageStart": "baseKills * (2^stageIndex - 1)",
+    "stageEnd": "baseKills * (2^(stageIndex+1) - 1)",
+    "nextStageReward": "every fourth stage gives damage; others give experience",
+    "stageUnlockGoldCost": "max(100, round((baseKills * 2^max(1,completedStageIndex)) * max(40,monsterBaseXP) * 0.05 / 100) * 100)",
+    "stageUnlockCostCaution": "Parameters and client cost display established statically; payment policy and server checks not executed.",
+    "source": "chunk-225DSCAO.js:$s,gh,Sb,bh,Ds,mr",
+    "evidence": "static"
+  },
+  "forgePresentation": {
+    "classMaximumTier": {
+      "0": 0,
+      "1": 2,
+      "2": 3,
+      "3": 4,
+      "4": 10
+    },
+    "goldUpgradeCosts": {
+      "1": [
+        60000,
+        12000000
+      ],
+      "2": [
+        1800000,
+        12000000,
+        48000000
+      ],
+      "3": [
+        9600000,
+        24000000,
+        48000000,
+        156000000
+      ],
+      "4": [
+        19200000,
+        48000000,
+        96000000,
+        156000000,
+        240000000,
+        600000000,
+        1800000000,
+        6000000000,
+        19200000000,
+        36000000000
+      ]
+    },
+    "coreUpgradeCosts": {
+      "1": [
+        1,
+        1
+      ],
+      "2": [
+        1,
+        1,
+        3
+      ],
+      "3": [
+        1,
+        2,
+        3,
+        10
+      ],
+      "4": [
+        1,
+        2,
+        5,
+        10,
+        15,
+        25,
+        35,
+        50,
+        60,
+        85
+      ]
+    },
+    "perkChancePercentPolynomials": {
+      "onslaught": {
+        "tierSquared": 0.05,
+        "tier": 0.4,
+        "constant": 0.05
+      },
+      "ruse": {
+        "tierSquared": 0.0307576,
+        "tier": 0.440697,
+        "constant": 0.026
+      },
+      "momentum": {
+        "tierSquared": 0.05,
+        "tier": 1.9,
+        "constant": 0.05
+      },
+      "transcendence": {
+        "tierSquared": 0.0127,
+        "tier": 0.107,
+        "constant": 0.0073
+      }
+    },
+    "perkBySlot": {
+      "weapon": "onslaught",
+      "armor": "ruse",
+      "helmet": "momentum",
+      "legs": "transcendence"
+    },
+    "weaponDamagePercentPerTier": 2,
+    "armorAndLegsProtectionPercentPerTier": {
+      "physical": 2,
+      "magic": 1
+    },
+    "evidence": "static",
+    "source": "chunk-SVCSXMON.js",
+    "limitations": "Costs and tooltip perk formulas only; success transaction and actual server effects not verified."
+  },
+  "missingServerFacts": [
+    "Full creature catalog and IDs/health/XP/attack/loot for every hunt",
+    "Full item stats, NPC prices, imbuement catalog, forge transaction rules",
+    "Exact per-monster loot probabilities and amount distributions",
+    "General level XP curve and skill progression curves",
+    "Actual physical attack/armor/defense, posture, distance accuracy and monster AI formulas",
+    "Authoritative spawn positions, map/tile layout and routes",
+    "Hunt tier compositions/counts/multipliers/reward scaling",
+    "Stamina regeneration rate, buy cost and death loss formulas",
+    "Server timing, reconnect/offline progression, anti-bot and multiplayer authority"
+  ],
+  "reconstructionGuidance": [
+    "Use spells, potions, ammo, visible prices and action-bar rules as factual configuration inputs. Implement independent authoritative gameplay logic.",
+    "For missing quantities either capture normal visible gameplay/UI or introduce clearly labeled original balancing values; do not label estimates exact.",
+    "The requested new RMT economy is separate design work; no original RMT logic or client code has been copied into this data file."
+  ]
+}

@@ -1,0 +1,420 @@
+[
+  {
+    "name": "paladin's bow",
+    "priceGold": 0,
+    "source": "ui-observed",
+    "tooltip": "container\ntext paladin's bow\ntext ↓ 0 gp\ncontent list\ntext Alcance: 5\ntext Duas mãos\ntext 31.00 oz\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "hand axe",
+    "priceGold": 8,
+    "source": "ui-observed",
+    "tooltip": "container\ntext hand axe\ntext ↓ 8 gp\ncontent list\ntext Ataque: 10\ntext Defesa: 5\ntext Uma mão\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 4\ntext Valor no leilão: 9\ntext 18.00 oz\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "sabre",
+    "priceGold": 9,
+    "source": "ui-observed",
+    "tooltip": "container\ntext sabre\ntext ↓ 9 gp\ncontent list\ntext Ataque: 12\ntext Defesa: 10\ntext Uma mão\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 3\ntext Valor no leilão: 9\ntext 25.00 oz\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "spear",
+    "priceGold": 10,
+    "source": "ui-observed",
+    "tooltip": "container\ntext spear\ntext ↓ 10 gp\ncontent list\ntext Ataque: 9\ntext Alcance: 3\ntext Uma mão\ncontent list\ntext Valor no Npc: 3\ntext Valor no leilão: 13\ntext 20.00 oz\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "mace",
+    "priceGold": 30,
+    "source": "ui-observed",
+    "tooltip": "container\ntext mace\ntext ↓ 30 gp\ncontent list\ntext Ataque: 16\ntext Defesa: 11\ntext Uma mão\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 9\ntext Valor no leilão: 5.389\ntext 38.00 oz\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "scythe",
+    "priceGold": 50,
+    "source": "ui-observed",
+    "tooltip": "container\ntext scythe\ntext ↓ 50 gp\ncontent list\ntext Ataque: 8\ntext Defesa: 3\ntext Duas mãos\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 10\ntext Valor no leilão: 2.300\ntext 30.00 oz\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "sword",
+    "priceGold": 85,
+    "source": "ui-observed",
+    "tooltip": "container\ntext sword\ntext ↓ 85 gp\ncontent list\ntext Ataque: 14\ntext Defesa: 12\ntext Uma mão\ntext Classificação: 1\ntext Slot de imbuement vazio\ntext Slot de imbuement vazio\ncontent list\ntext Valor no Npc: 25\ntext Valor no leilão: 40\ntext 35.00 oz\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "hatchet",
+    "priceGold": 85,
+    "source": "ui-observed",
+    "tooltip": "container\ntext hatchet\ntext ↓ 85 gp\ncontent list\ntext Ataque: 15\ntext Defesa: 8\ntext Uma mão\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 25\ntext Valor no leilão: 26\ntext 35.00 oz\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "longsword",
+    "priceGold": 170,
+    "source": "ui-observed",
+    "tooltip": "container\ntext longsword\ntext 170 gp\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "orcish axe",
+    "priceGold": 270,
+    "source": "ui-observed",
+    "tooltip": "container\ntext orcish axe\ntext ↑ 270 gp\ncontent list\ntext Ataque: 23\ntext Defesa: 12\ntext Uma mão\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 80\ntext Valor no leilão: 400\ntext 45.00 oz\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "bow",
+    "priceGold": 400,
+    "source": "ui-observed",
+    "tooltip": "container\ntext bow\ntext ↓ 400 gp\ncontent list\ntext Alcance: 6\ntext Duas mãos\ncontent list\ntext Valor no Npc: 100\ntext Valor no leilão: 299\ntext 31.00 oz\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "morning star",
+    "priceGold": 430,
+    "source": "ui-observed",
+    "tooltip": "container\ntext morning star\ntext ↑ 430 gp\ncontent list\ntext Ataque: 25\ntext Defesa: 11\ntext Uma mão\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 100\ntext Valor no leilão: 195\ntext 54.00 oz\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "crossbow",
+    "priceGold": 500,
+    "source": "ui-observed",
+    "tooltip": "container\ntext crossbow\ntext ↓ 500 gp\ncontent list\ntext Alcance: 5\ntext Duas mãos\ntext Classificação: 1\ntext Slot de imbuement vazio\ntext Slot de imbuement vazio\ntext Slot de imbuement vazio\ncontent list\ntext Valor no Npc: 160\ntext Valor no leilão: 500\ntext 40.00 oz\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "double axe",
+    "priceGold": 860,
+    "source": "ui-observed",
+    "tooltip": "container\ntext double axe\ntext ↑ 860 gp\ncontent list\ntext Ataque: 35\ntext Defesa: 12\ntext Duas mãos\ntext Classificação: 1\ntext Level necessário: 25\ntext Vocação: knight\ncontent list\ntext Valor no Npc: 260\ntext Valor no leilão: 300\ntext 70.00 oz\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "wand of dragonbreath",
+    "priceGold": 1000,
+    "source": "ui-observed",
+    "tooltip": "container\ntext wand of dragonbreath\ntext 1.000 gp\ncontent list\ntext Alcance: 3\ntext Uma mão\ntext Classificação: 1\ntext Slot de imbuement vazio\ntext Slot de imbuement vazio\ntext Level necessário: 13\ntext Vocação: sorcerer\ncontent list\ntext Valor no Npc: 200\ntext Valor no leilão: 1.900\ntext 23.00 oz\ntext Legends say that this wand holds the soul of a young dragon\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "moonlight rod",
+    "priceGold": 1000,
+    "source": "ui-observed",
+    "tooltip": "container\ntext moonlight rod\ntext 1.000 gp\ncontent list\ntext Alcance: 3\ntext Uma mão\ntext Classificação: 1\ntext Level necessário: 13\ntext Vocação: druid\ncontent list\ntext Valor no Npc: 200\ntext Valor no leilão: 700\ntext 21.00 oz\ntext Icecold rays of moonlight shimmer on its tip\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "broadsword",
+    "priceGold": 1650,
+    "source": "ui-observed",
+    "tooltip": "container\ntext broadsword\ntext ↑ 1.650 gp\ncontent list\ntext Ataque: 26\ntext Defesa: 23\ntext Duas mãos\ntext Classificação: 1\ntext Slot de imbuement vazio\ntext Slot de imbuement vazio\ntext Slot de imbuement vazio\ntext Vocação: knight\ncontent list\ntext Valor no Npc: 500\ntext Valor no leilão: 800\ntext 52.50 oz\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "serpent sword",
+    "priceGold": 3000,
+    "source": "ui-observed",
+    "tooltip": "container\ntext serpent sword\ntext ↑ 3.000 gp\ncontent list\ntext Ataque: 18\ntext Dano de Terra: +8\ntext Defesa: 15\ntext Uma mão\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 900\ntext Valor no leilão: 1.250\ntext 41.00 oz\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "wand of decay",
+    "priceGold": 5000,
+    "source": "ui-observed",
+    "tooltip": "container\ntext wand of decay\ntext 5.000 gp\ncontent list\ntext Alcance: 3\ntext Uma mão\ntext Classificação: 1\ntext Level necessário: 19\ntext Vocação: sorcerer\ncontent list\ntext Valor no Npc: 1.000\ntext Valor no leilão: 1.900\ntext 23.00 oz\ntext It is half-rotten itself and reeks terribly\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "necrotic rod",
+    "priceGold": 5000,
+    "source": "ui-observed",
+    "tooltip": "container\ntext necrotic rod\ntext 5.000 gp\ncontent list\ntext Alcance: 3\ntext Uma mão\ntext Classificação: 1\ntext Level necessário: 19\ntext Vocação: druid\ncontent list\ntext Valor no Npc: 1.000\ntext Valor no leilão: 2.100\ntext 23.00 oz\ntext It was brought up from hell to deliver death\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "wand of draconia",
+    "priceGold": 7500,
+    "source": "ui-observed",
+    "tooltip": "container\ntext wand of draconia\ntext 7.500 gp\ncontent list\ntext Alcance: 3\ntext Uma mão\ntext Classificação: 1\ntext Slot de imbuement vazio\ntext Slot de imbuement vazio\ntext Level necessário: 22\ntext Vocação: sorcerer\ncontent list\ntext Valor no Npc: 1.500\ntext Valor no leilão: 2.750\ntext 27.00 oz\ntext This wand holds the spirit and soul of a dragon lord\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "northwind rod",
+    "priceGold": 7500,
+    "source": "ui-observed",
+    "tooltip": "container\ntext northwind rod\ntext 7.500 gp\ncontent list\ntext Alcance: 3\ntext Uma mão\ntext Classificação: 1\ntext Slot de imbuement vazio\ntext Slot de imbuement vazio\ntext Level necessário: 22\ntext Vocação: druid\ncontent list\ntext Valor no Npc: 1.500\ntext Valor no leilão: 2.999\ntext 29.00 oz\ntext It was made by one of the shamans in Svargrond and symbolises an icy mammoth\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "wand of cosmic energy",
+    "priceGold": 10000,
+    "source": "ui-observed",
+    "tooltip": "container\ntext wand of cosmic energy\ntext 10.000 gp\ncontent list\ntext Alcance: 3\ntext Uma mão\ntext Classificação: 1\ntext Level necessário: 26\ntext Vocação: sorcerer\ncontent list\ntext Valor no Npc: 2.000\ntext Valor no leilão: 4.696\ntext 25.00 oz\ntext The energy of a radiant star is trapped inside its globe\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "terra rod",
+    "priceGold": 10000,
+    "source": "ui-observed",
+    "tooltip": "container\ntext terra rod\ntext 10.000 gp\ncontent list\ntext Alcance: 3\ntext Uma mão\ntext Classificação: 1\ntext Level necessário: 26\ntext Vocação: druid\ncontent list\ntext Valor no Npc: 2.000\ntext Valor no leilão: 3.200\ntext 25.00 oz\ntext Small stones are flying from its tip\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "wand of inferno",
+    "priceGold": 15000,
+    "source": "ui-observed",
+    "tooltip": "container\ntext wand of inferno\ntext 15.000 gp\ncontent list\ntext Alcance: 3\ntext Uma mão\ntext Classificação: 1\ntext Level necessário: 30\ntext Vocação: sorcerer\ncontent list\ntext Valor no Npc: 3.000\ntext Valor no leilão: 3.900\ntext 27.00 oz\ntext It unleashes the very fires of hell\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "hailstorm rod",
+    "priceGold": 15000,
+    "source": "ui-observed",
+    "tooltip": "container\ntext hailstorm rod\ntext 15.000 gp\ncontent list\ntext Alcance: 3\ntext Uma mão\ntext Classificação: 1\ntext Level necessário: 30\ntext Vocação: druid\ncontent list\ntext Valor no Npc: 3.000\ntext Valor no leilão: 3.990\ntext 27.00 oz\ntext It grants you the power of striking your foes with furious hailstorms\ntext EQUIPADO\ntext longsword\ncontent list\ntext Ataque: 17\ntext Defesa: 14\ntext Uma mão\ntext Proficiência: nível 0/3\ntext Classificação: 1\ncontent list\ntext Valor no Npc: 51\ntext Valor no leilão: 55\ntext 42.00 oz\n\nThe focused UI element is 0 AXWebArea Huntera — MMORPG de navegador estilo Tibia, grátis, URL: huntera.com.br/game"
+  },
+  {
+    "name": "studded shield",
+    "priceGold": 50,
+    "source": "ui-observed",
+    "tooltip": null
+  },
+  {
+    "name": "brass shield",
+    "priceGold": 65,
+    "source": "ui-observed",
+    "tooltip": null
+  },
+  {
+    "name": "plate shield",
+    "priceGold": 125,
+    "source": "ui-observed",
+    "tooltip": null
+  },
+  {
+    "name": "spellbook",
+    "priceGold": 150,
+    "source": "ui-observed",
+    "tooltip": null
+  },
+  {
+    "name": "leather helmet",
+    "priceGold": 12,
+    "source": "ui-observed",
+    "tooltip": null
+  },
+  {
+    "name": "studded helmet",
+    "priceGold": 63,
+    "source": "ui-observed",
+    "tooltip": null
+  },
+  {
+    "name": "brass helmet",
+    "priceGold": 75,
+    "source": "ui-observed",
+    "tooltip": null
+  },
+  {
+    "name": "viking helmet",
+    "priceGold": 235,
+    "source": "ui-observed",
+    "tooltip": null
+  },
+  {
+    "name": "steel helmet",
+    "priceGold": 580,
+    "source": "ui-observed",
+    "tooltip": null
+  },
+  {
+    "name": "leather armor",
+    "priceGold": 35,
+    "source": "ui-observed",
+    "tooltip": null
+  },
+  {
+    "name": "studded armor",
+    "priceGold": 47,
+    "source": "ui-observed",
+    "tooltip": null
+  },
+  {
+    "name": "chain armor",
+    "priceGold": 75,
+    "source": "ui-observed",
+    "tooltip": null
+  },
+  {
+    "name": "brass armor",
+    "priceGold": 450,
+    "source": "ui-observed",
+    "tooltip": null
+  },
+  {
+    "name": "plate armor",
+    "priceGold": 1200,
+    "source": "ui-observed",
+    "tooltip": null
+  },
+  {
+    "name": "leather legs",
+    "priceGold": 10,
+    "source": "ui-observed",
+    "tooltip": null
+  },
+  {
+    "name": "studded legs",
+    "priceGold": 50,
+    "source": "ui-observed",
+    "tooltip": null
+  },
+  {
+    "name": "chain legs",
+    "priceGold": 60,
+    "source": "ui-observed",
+    "tooltip": null
+  },
+  {
+    "name": "brass legs",
+    "priceGold": 195,
+    "source": "ui-observed",
+    "tooltip": null
+  },
+  {
+    "name": "plate legs",
+    "priceGold": 1200,
+    "source": "ui-observed",
+    "tooltip": null
+  },
+  {
+    "name": "leather boots",
+    "priceGold": 10,
+    "source": "ui-observed",
+    "tooltip": null
+  },
+  {
+    "name": "exercise sword",
+    "priceGold": 347222,
+    "source": "ui-observed",
+    "tooltip": null
+  },
+  {
+    "name": "exercise axe",
+    "priceGold": 347222,
+    "source": "ui-observed",
+    "tooltip": null
+  },
+  {
+    "name": "exercise club",
+    "priceGold": 347222,
+    "source": "ui-observed",
+    "tooltip": null
+  },
+  {
+    "name": "exercise bow",
+    "priceGold": 347222,
+    "source": "ui-observed",
+    "tooltip": null
+  },
+  {
+    "name": "exercise rod",
+    "priceGold": 347222,
+    "source": "ui-observed",
+    "tooltip": null
+  },
+  {
+    "name": "exercise wand",
+    "priceGold": 347222,
+    "source": "ui-observed",
+    "tooltip": null,
+    "captureStatus": "price-only"
+  },
+  {
+    "name": "exercise shield",
+    "priceGold": 347222,
+    "source": "ui-observed",
+    "tooltip": null,
+    "captureStatus": "price-only"
+  },
+  {
+    "name": "durable exercise sword",
+    "priceGold": 1250000,
+    "source": "ui-observed",
+    "tooltip": null,
+    "captureStatus": "price-only"
+  },
+  {
+    "name": "durable exercise axe",
+    "priceGold": 1250000,
+    "source": "ui-observed",
+    "tooltip": null,
+    "captureStatus": "price-only"
+  },
+  {
+    "name": "durable exercise club",
+    "priceGold": 1250000,
+    "source": "ui-observed",
+    "tooltip": null,
+    "captureStatus": "price-only"
+  },
+  {
+    "name": "durable exercise bow",
+    "priceGold": 1250000,
+    "source": "ui-observed",
+    "tooltip": null,
+    "captureStatus": "price-only"
+  },
+  {
+    "name": "durable exercise rod",
+    "priceGold": 1250000,
+    "source": "ui-observed",
+    "tooltip": null,
+    "captureStatus": "price-only"
+  },
+  {
+    "name": "durable exercise wand",
+    "priceGold": 1250000,
+    "source": "ui-observed",
+    "tooltip": null,
+    "captureStatus": "price-only"
+  },
+  {
+    "name": "durable exercise shield",
+    "priceGold": 1250000,
+    "source": "ui-observed",
+    "tooltip": null,
+    "captureStatus": "price-only"
+  },
+  {
+    "name": "lasting exercise sword",
+    "priceGold": 10000000,
+    "source": "ui-observed",
+    "tooltip": null,
+    "captureStatus": "price-only"
+  },
+  {
+    "name": "lasting exercise axe",
+    "priceGold": 10000000,
+    "source": "ui-observed",
+    "tooltip": null,
+    "captureStatus": "price-only"
+  },
+  {
+    "name": "lasting exercise club",
+    "priceGold": 10000000,
+    "source": "ui-observed",
+    "tooltip": null,
+    "captureStatus": "price-only"
+  },
+  {
+    "name": "lasting exercise bow",
+    "priceGold": 10000000,
+    "source": "ui-observed",
+    "tooltip": null,
+    "captureStatus": "price-only"
+  },
+  {
+    "name": "lasting exercise rod",
+    "priceGold": 10000000,
+    "source": "ui-observed",
+    "tooltip": null,
+    "captureStatus": "price-only"
+  },
+  {
+    "name": "lasting exercise wand",
+    "priceGold": 10000000,
+    "source": "ui-observed",
+    "tooltip": null,
+    "captureStatus": "price-only"
+  },
+  {
+    "name": "lasting exercise shield",
+    "priceGold": 10000000,
+    "source": "ui-observed",
+    "tooltip": null,
+    "captureStatus": "price-only"
+  }
+]

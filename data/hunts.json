@@ -1,0 +1,326 @@
+[
+  {
+    "name": "Rat Cellars",
+    "text": "HUNT 01\nRat Cellars\nRat\nSem recorde ainda"
+  },
+  {
+    "name": "Spider Nest",
+    "text": "HUNT 02\nSpider Nest\nSpider\nSem recorde ainda"
+  },
+  {
+    "name": "Troll Hills",
+    "text": "HUNT 03\nTroll Hills\nTroll\nSem recorde ainda"
+  },
+  {
+    "name": "Swamp Troll Cave",
+    "text": "HUNT 04\nSwamp Troll Cave\nSwamp Troll\nSem recorde ainda"
+  },
+  {
+    "name": "Orc Camp",
+    "text": "HUNT 05\nOrc Camp\nOrc\nSem recorde ainda"
+  },
+  {
+    "name": "Folda Icefields",
+    "text": "HUNT 06\nFolda Icefields\nFrost Troll, Winter Wolf, Polar Bear\nSem recorde ainda"
+  },
+  {
+    "name": "Bone Crypt",
+    "text": "HUNT 07\nBone Crypt\nSkeleton\nSem recorde ainda"
+  },
+  {
+    "name": "Rotworm Caves",
+    "text": "HUNT 08\nRotworm Caves\nRotworm\nSem recorde ainda"
+  },
+  {
+    "name": "Dwarf Mines",
+    "text": "HUNT 09\nDwarf Mines\nDwarf\nSem recorde ainda"
+  },
+  {
+    "name": "Minotaur Maze",
+    "text": "HUNT 10\nMinotaur Maze\nMinotaur\nSem recorde ainda"
+  },
+  {
+    "name": "Gloomy Poacher Caves",
+    "text": "HUNT 11\nGloomy Poacher Caves\nGloom Wolf, Ghost Wolf, Hunter\nSem recorde ainda"
+  },
+  {
+    "name": "Amazon Camp",
+    "text": "HUNT 12\nAmazon Camp\nAmazon, Valkyrie\nSem recorde ainda"
+  },
+  {
+    "name": "Dark Cathedral",
+    "text": "HUNT 13\nDark Cathedral\nSmuggler, Wild Warrior, Bandit, Assassin, Dark Monk\nSem recorde ainda"
+  },
+  {
+    "name": "Ghoul Graveyard",
+    "text": "HUNT 14\nGhoul Graveyard\nGhoul\nSem recorde ainda"
+  },
+  {
+    "name": "Rorc Camp",
+    "text": "HUNT 15\nRorc Camp\nRorc, Wolf\nSem recorde ainda"
+  },
+  {
+    "name": "Yalahar Elf Quarter",
+    "text": "HUNT 16\nYalahar Elf Quarter\nElf, Elf Scout, Elf Arcanist\nSem recorde ainda"
+  },
+  {
+    "name": "Tarantula Burrows",
+    "text": "HUNT 17\nTarantula Burrows\nTarantula\nSem recorde ainda"
+  },
+  {
+    "name": "Scarab Tombs",
+    "text": "HUNT 18\nScarab Tombs\nScarab\nSem recorde ainda"
+  },
+  {
+    "name": "Venore Swamp",
+    "text": "HUNT 19\nVenore Swamp\nBug, Swampling, Leaf Golem, Wilting Leaf Golem, Haunted Treeling\nSem recorde ainda"
+  },
+  {
+    "name": "Tortoise Shore",
+    "text": "HUNT 20\nTortoise Shore\nTortoise, Thornback Tortoise, Blood Crab\nSem recorde ainda"
+  },
+  {
+    "name": "Plagued Quarter",
+    "text": "HUNT 21\nPlagued Quarter\nMutated Human\nSem recorde ainda"
+  },
+  {
+    "name": "Cyclop Hills",
+    "text": "HUNT 22\nCyclop Hills\nCyclops\nSem recorde ainda"
+  },
+  {
+    "name": "Burial Chambers",
+    "text": "HUNT 23\nBurial Chambers\nMummy\nSem recorde ainda"
+  },
+  {
+    "name": "Hell Gate",
+    "text": "HUNT 24\nHell Gate\nBonelord\nSem recorde ainda"
+  },
+  {
+    "name": "Orc Fortress",
+    "text": "HUNT 25\nOrc Fortress\nOrc, Orc Spearman, Orc Warrior, Orc Shaman, Orc Rider, Orc Berserker, Orc Leader, Orc Warlord\nSem recorde ainda"
+  },
+  {
+    "name": "Yalahar Green Djinn Fortress",
+    "text": "HUNT 26\nYalahar Green Djinn Fortress\nGreen Djinn\nSem recorde ainda"
+  },
+  {
+    "name": "Yalahar Blue Djinn Fortress",
+    "text": "HUNT 27\nYalahar Blue Djinn Fortress\nBlue Djinn\nSem recorde ainda"
+  },
+  {
+    "name": "Carlin Corym Cave",
+    "text": "HUNT 28\nCarlin Corym Cave\nCorym Charlatan, Corym Skirmisher, Corym Vanguard\nSem recorde ainda"
+  },
+  {
+    "name": "Magician Cults",
+    "text": "HUNT 29\nMagician Cults\nNovice of the Cult, Acolyte of the Cult, Adept of the Cult, Enlightened of the Cult\nSem recorde ainda"
+  },
+  {
+    "name": "Elder Forest",
+    "text": "HUNT 30\nElder Forest\nLeaf Golem, Wilting Leaf Golem, Haunted Treeling, Forest Fury, Emerald Damselfly, Marsh Stalker, Elder Forest Fury\nSem recorde ainda"
+  },
+  {
+    "name": "Drefia",
+    "text": "HUNT 31\nDrefia\nDemon Skeleton, Ghoul, Skeleton, Skeleton Warrior, Necromancer, Priestess, Blood Priest\nSem recorde ainda"
+  },
+  {
+    "name": "Braindeath Caves",
+    "text": "HUNT 32\nBraindeath Caves\nBonelord, Elder Bonelord, Braindeath\nSem recorde ainda"
+  },
+  {
+    "name": "Frost Mines",
+    "text": "HUNT 33\nFrost Mines\nIce Golem\nSem recorde ainda"
+  },
+  {
+    "name": "Lizard Steppe",
+    "text": "HUNT 34\nLizard Steppe\nLizard Sentinel, Lizard Templar, Lizard Snakecharmer, Killer Caiman, Lizard Zaogun\nSem recorde ainda"
+  },
+  {
+    "name": "Brimstone Cave",
+    "text": "HUNT 35\nBrimstone Cave\nBrimstone Bug, Lancer Beetle, Wailing Widow\nSem recorde ainda"
+  },
+  {
+    "name": "Quirefang Surface",
+    "text": "HUNT 36\nQuirefang Surface\nWaspoid, Crawler, Ladybug, Insectoid Worker\nSem recorde ainda"
+  },
+  {
+    "name": "Warzone Earth Plague",
+    "text": "HUNT 37\nWarzone Earth Plague\nWyvern, Massive Earth Elemental, Wiggler\nSem recorde ainda"
+  },
+  {
+    "name": "Dragon Lair",
+    "text": "HUNT 38\nDragon Lair\nDragon\nSem recorde ainda"
+  },
+  {
+    "name": "Vampire Crypt",
+    "text": "HUNT 39\nVampire Crypt\nVampire, Vampire Viscount, Vampire Bride\nSem recorde ainda"
+  },
+  {
+    "name": "Mutated Cave",
+    "text": "HUNT 40\nMutated Cave\nMutated Bat, Mutated Tiger\nSem recorde ainda"
+  },
+  {
+    "name": "Yalahar Bog",
+    "text": "HUNT 41\nYalahar Bog\nBog Raider\nSem recorde ainda"
+  },
+  {
+    "name": "Giant Spider Cavern",
+    "text": "HUNT 42\nGiant Spider Cavern\nGiant Spider\nSem recorde ainda"
+  },
+  {
+    "name": "The Deep",
+    "text": "HUNT 43\nThe Deep\nShark, Deepling Scout, Deepling Guard, Deepling Spellsinger, Deepling Warrior\nSem recorde ainda"
+  },
+  {
+    "name": "Hero Fortress",
+    "text": "HUNT 44\nHero Fortress\nHero\nSem recorde ainda"
+  },
+  {
+    "name": "Wyrm Caverns",
+    "text": "HUNT 45\nWyrm Caverns\nWyrm\nSem recorde ainda"
+  },
+  {
+    "name": "Zao Stronghold",
+    "text": "HUNT 46\nZao Stronghold\nLizard Legionnaire, Lizard Dragon Priest, Lizard High Guard\nSem recorde ainda"
+  },
+  {
+    "name": "Grimvale Warrens",
+    "text": "HUNT 47\nGrimvale Warrens\nWerebadger\nSem recorde ainda"
+  },
+  {
+    "name": "Rathleton Minotaur Camp",
+    "text": "HUNT 48\nRathleton Minotaur Camp\nMooh'Tah Warrior, Worm Priestess, Minotaur Hunter, Minotaur Amazon, Execowtioner, Moohtant\nSem recorde ainda"
+  },
+  {
+    "name": "Grimvale Dens",
+    "text": "HUNT 49\nGrimvale Dens\nWereboar, Werebear\nSem recorde ainda"
+  },
+  {
+    "name": "Dragon Lord Peak",
+    "text": "HUNT 50\nDragon Lord Peak\nDragon Lord\nSem recorde ainda"
+  },
+  {
+    "name": "Factory Quarter",
+    "text": "HUNT 51\nFactory Quarter\nWar Golem\nSem recorde ainda"
+  },
+  {
+    "name": "Corrupted Terraces",
+    "text": "HUNT 52\nCorrupted Terraces\nLizard Chosen\nSem recorde ainda"
+  },
+  {
+    "name": "Hyaena Lairs",
+    "text": "HUNT 53\nHyaena Lairs\nWerehyaena, Werehyaena Shaman\nSem recorde ainda"
+  },
+  {
+    "name": "Lion Sanctum",
+    "text": "HUNT 54\nLion Sanctum\nWerelion, Werelioness, White Lion\nSem recorde ainda"
+  },
+  {
+    "name": "Behemoth Quarry",
+    "text": "HUNT 55\nBehemoth Quarry\nBehemoth\nSem recorde ainda"
+  },
+  {
+    "name": "Magician Quarter",
+    "text": "HUNT 56\nMagician Quarter\nHellspawn, Plaguesmith\nSem recorde ainda"
+  },
+  {
+    "name": "Banuta Ruins",
+    "text": "HUNT 57\nBanuta Ruins\nHydra, Eternal Guardian, Medusa\nSem recorde ainda"
+  },
+  {
+    "name": "Seacrest Caves",
+    "text": "HUNT 58\nSeacrest Caves\nSeacrest Serpent\nSem recorde ainda"
+  },
+  {
+    "name": "Draken Walls",
+    "text": "HUNT 59\nDraken Walls\nDraken Warmaster, Draken Spellweaver\nSem recorde ainda"
+  },
+  {
+    "name": "Haunted Cellar",
+    "text": "HUNT 60\nHaunted Cellar\nRipper Spectre\nSem recorde ainda"
+  },
+  {
+    "name": "Goroma Serpent Caves",
+    "text": "HUNT 61\nGoroma Serpent Caves\nSerpent Spawn, Medusa\nSem recorde ainda"
+  },
+  {
+    "name": "Asura Palace",
+    "text": "HUNT 62\nAsura Palace\nDawnfire Asura, Midnight Asura, Hellspawn, Frost Flower Asura\nSem recorde ainda"
+  },
+  {
+    "name": "Haunted Temple",
+    "text": "HUNT 63\nHaunted Temple\nGazer Spectre\nSem recorde ainda"
+  },
+  {
+    "name": "Lower Roshamuul",
+    "text": "HUNT 64\nLower Roshamuul\nFrazzlemaw, Silencer\nSem recorde ainda"
+  },
+  {
+    "name": "Haunted Tomb",
+    "text": "HUNT 65\nHaunted Tomb\nBurster Spectre\nSem recorde ainda"
+  },
+  {
+    "name": "Halls of the Reaper",
+    "text": "HUNT 66\nHalls of the Reaper\nGrim Reaper\nSem recorde ainda"
+  },
+  {
+    "name": "Infernal Gate",
+    "text": "HUNT 67\nInfernal Gate\nDemon\nSem recorde ainda"
+  },
+  {
+    "name": "Falcon's Eye",
+    "text": "HUNT 68\nFalcon's Eye\nFalcon Knight, Falcon Paladin\nSem recorde ainda"
+  },
+  {
+    "name": "Falcon Bastion",
+    "text": "HUNT 69\nFalcon Bastion\nFalcon Knight, Falcon Paladin\nSem recorde ainda"
+  },
+  {
+    "name": "Lion Bastion",
+    "text": "HUNT 70\nLion Bastion\nUsurper Archer, Usurper Knight, Usurper Warlock, Chicken\nSem recorde ainda"
+  },
+  {
+    "name": "Cobra Bastion",
+    "text": "HUNT 71\nCobra Bastion\nCobra Assassin, Cobra Scout, Cobra Vizier\nSem recorde ainda"
+  },
+  {
+    "name": "Hell Hub",
+    "text": "HUNT 72\nHell Hub\nDemon, Vexclaw, Grimeleech, Hellflayer\nSem recorde ainda"
+  },
+  {
+    "name": "Marapur Naga",
+    "text": "HUNT 73\nMarapur Naga\nNaga Archer, Naga Warrior, Makara\nSem recorde ainda"
+  },
+  {
+    "name": "Summer Court",
+    "text": "HUNT 74\nSummer Court\nCrazed Summer Rearguard, Crazed Summer Vanguard, Arachnophobica, Insane Siren, Thanatursus\nSem recorde ainda"
+  },
+  {
+    "name": "Winter Court",
+    "text": "HUNT 75\nWinter Court\nCrazed Winter Rearguard, Crazed Winter Vanguard, Soul-Broken Harbinger, Arachnophobica, Thanatursus\nSem recorde ainda"
+  },
+  {
+    "name": "Catacombs",
+    "text": "HUNT 76\nCatacombs\nHellspawn, Grim Reaper, Demon, Destroyer, Dark Torturer, Juggernaut\nSem recorde ainda"
+  },
+  {
+    "name": "Kilmaresh Steppe",
+    "text": "HUNT 77\nKilmaresh Steppe\nSphinx, Lamassu\nSem recorde ainda"
+  },
+  {
+    "name": "Issavi Steppe",
+    "text": "HUNT 78\nIssavi Steppe\nYoung Goanna, Ogre Rowdy, Adult Goanna, Manticore, Ogre Sage, Sphinx, Clomp, Feral Sphinx, Lamassu\nSem recorde ainda"
+  },
+  {
+    "name": "Ice Library",
+    "text": "HUNT 79\nIce Library\nAnimated Feather, Icecold Book, Squid Warden\nSem recorde ainda"
+  },
+  {
+    "name": "Fire Library",
+    "text": "HUNT 80\nFire Library\nBurning Book, Rage Squid, Guardian of Tales, Ink Blob\nSem recorde ainda"
+  },
+  {
+    "name": "Energy Library",
+    "text": "HUNT 81\nEnergy Library\nEnergetic Book, Brain Squid, Energuardian of Tales, Knowledge Elemental\nSem recorde ainda"
+  }
+]

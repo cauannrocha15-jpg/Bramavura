@@ -1,0 +1,2174 @@
+{
+  "schemaVersion": 1,
+  "observationDate": "2026-10-19",
+  "evidenceBoundary": {
+    "source": "parent-provided CUA rendered UI snapshots",
+    "liveBrowserAvailableInThisAgent": false,
+    "targetCodeExecuted": false,
+    "huntStarted": false,
+    "resourcesSpent": false,
+    "lootPreferencesChanged": false,
+    "serverCombatFormulasProven": false
+  },
+  "observedCounts": {
+    "hunts": 83,
+    "bestiary": 192,
+    "newHunts": 2,
+    "newCreatures": 6
+  },
+  "hunts": [
+    {
+      "name": "Netherworld",
+      "observedOrdinal": 74,
+      "rawServerId": null,
+      "stableLegacyIndex": null,
+      "proposedRuntimeIndex": 81,
+      "requiredLevel": null,
+      "recommendedLevel": null,
+      "vocationEligibility": null,
+      "premiumEligibility": null,
+      "tiers": null,
+      "pullModes": [
+        {
+          "label": "Agressivo",
+          "selected": true,
+          "numericTier": null,
+          "creatureCount": null,
+          "requiredLevel": null
+        },
+        {
+          "label": "Suicida",
+          "selected": false,
+          "numericTier": null,
+          "creatureCount": null,
+          "requiredLevel": null
+        },
+        {
+          "label": "Hardcore",
+          "selected": false,
+          "numericTier": null,
+          "creatureCount": null,
+          "requiredLevel": null
+        }
+      ],
+      "catalogCreatureNames": [
+        "Flimsy Lost Soul",
+        "Mean Lost Soul",
+        "Freakish Lost Soul"
+      ],
+      "selectedPull": {
+        "label": "Agressivo",
+        "creatureNames": [
+          "Flimsy Lost Soul",
+          "Mean Lost Soul",
+          "Freakish Lost Soul"
+        ],
+        "creatureCounts": null,
+        "spawnWeights": null
+      },
+      "otherPullCompositions": null,
+      "possibleLoot": [
+        {
+          "name": "Twiceslicer",
+          "rarity": "rare",
+          "imbuementSlots": 3,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Ornate Crossbow",
+          "rarity": "semi-rare",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Warrior's Axe",
+          "rarity": "rare",
+          "imbuementSlots": 2,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Crystal Crossbow",
+          "rarity": "rare",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Mercenary Sword",
+          "rarity": "semi-rare",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Fire Axe",
+          "rarity": "semi-rare",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Glacial Rod",
+          "rarity": "rare",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Haunted Blade",
+          "rarity": "rare",
+          "imbuementSlots": 3,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Wand Of Voodoo",
+          "rarity": "rare",
+          "imbuementSlots": 2,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Springsprout Rod",
+          "rarity": "semi-rare",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Hailstorm Rod",
+          "rarity": "semi-rare",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Wand Of Starstorm",
+          "rarity": "semi-rare",
+          "imbuementSlots": 2,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Wand Of Cosmic Energy",
+          "rarity": "uncommon",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Terra Rod",
+          "rarity": "semi-rare",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Skull Staff",
+          "rarity": "semi-rare",
+          "imbuementSlots": 2,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Machete",
+          "rarity": "semi-rare",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Cursed Bone",
+          "rarity": "semi-rare",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Ivory Comb",
+          "rarity": "semi-rare",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Gemmed Figurine",
+          "rarity": "semi-rare",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Silver Hand Mirror",
+          "rarity": "semi-rare",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Necklace Of The Deep",
+          "rarity": "semi-rare",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Emerald Bangle",
+          "rarity": "uncommon",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Ensouled Essence",
+          "rarity": "semi-rare",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Ring Of Blue Plasma",
+          "rarity": "semi-rare",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Lost Soul",
+          "rarity": "common",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Platinum Coin",
+          "rarity": "common",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Death Toll",
+          "rarity": "uncommon",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        }
+      ],
+      "lootScope": "hunt detail possible loot shown with the selected pull; no per-creature attribution or probabilities",
+      "source": "netherworld-detail-20261019.txt",
+      "evidence": "ui-observed"
+    },
+    {
+      "name": "Nimmersatt Dragons",
+      "observedOrdinal": 82,
+      "rawServerId": null,
+      "stableLegacyIndex": null,
+      "proposedRuntimeIndex": 82,
+      "requiredLevel": null,
+      "recommendedLevel": null,
+      "vocationEligibility": null,
+      "premiumEligibility": null,
+      "tiers": null,
+      "pullModes": [
+        {
+          "label": "Agressivo",
+          "selected": true,
+          "numericTier": null,
+          "creatureCount": null,
+          "requiredLevel": null
+        },
+        {
+          "label": "Suicida",
+          "selected": false,
+          "numericTier": null,
+          "creatureCount": null,
+          "requiredLevel": null
+        },
+        {
+          "label": "Hardcore",
+          "selected": false,
+          "numericTier": null,
+          "creatureCount": null,
+          "requiredLevel": null
+        }
+      ],
+      "catalogCreatureNames": [
+        "Dragolisk",
+        "Mega Dragon",
+        "Wardragon"
+      ],
+      "selectedPull": {
+        "label": "Agressivo",
+        "creatureNames": [
+          "Dragolisk",
+          "Mega Dragon",
+          "Wardragon"
+        ],
+        "creatureCounts": null,
+        "spawnWeights": null
+      },
+      "otherPullCompositions": null,
+      "possibleLoot": [
+        {
+          "name": "Dragon Slayer",
+          "rarity": "rare",
+          "imbuementSlots": 3,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Dragon Shield",
+          "rarity": "rare",
+          "imbuementSlots": 1,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Gold Ingot",
+          "rarity": "uncommon",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Dragonbone Staff",
+          "rarity": "rare",
+          "imbuementSlots": 2,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Dragon Tongue",
+          "rarity": "uncommon",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Dragon's Tail",
+          "rarity": "semi-rare",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Dragolisk Poison Gland",
+          "rarity": "uncommon",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Nimmersatt's Seal",
+          "rarity": "uncommon",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Dragolisk Eye",
+          "rarity": "uncommon",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Molten Dragon Essence",
+          "rarity": "uncommon",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Mega Dragon Heart",
+          "rarity": "semi-rare",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Wardragon Claw",
+          "rarity": "uncommon",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Wardragon Tooth",
+          "rarity": "uncommon",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Prismatic Quartz",
+          "rarity": "uncommon",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Onyx Chip",
+          "rarity": "uncommon",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Rainbow Quartz",
+          "rarity": "uncommon",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Green Gem",
+          "rarity": "uncommon",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Red Gem",
+          "rarity": "uncommon",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Blue Gem",
+          "rarity": "uncommon",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Violet Gem",
+          "rarity": "semi-rare",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "White Gem",
+          "rarity": "semi-rare",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Black Pearl",
+          "rarity": "semi-rare",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        },
+        {
+          "name": "Platinum Coin",
+          "rarity": "common",
+          "imbuementSlots": null,
+          "probability": null,
+          "quantityRange": null,
+          "creatureName": null
+        }
+      ],
+      "lootScope": "hunt detail possible loot shown with the selected pull; no per-creature attribution or probabilities",
+      "source": "nimmersatt-dragons-detail-20261019.txt",
+      "evidence": "ui-observed"
+    }
+  ],
+  "creatures": [
+    {
+      "name": "Flimsy Lost Soul",
+      "category": "MORTO-VIVO",
+      "hp": 4000,
+      "experience": 3150,
+      "meleeMin": 100,
+      "meleeMax": 500,
+      "attackIntervalMs": 2000,
+      "speed": 535,
+      "resistances": {
+        "physical": 50,
+        "fire": 100,
+        "earth": 80,
+        "energy": 80,
+        "ice": 100,
+        "holy": 120,
+        "death": 0,
+        "lifeDrain": 100
+      },
+      "lootRarities": [
+        "common",
+        "uncommon",
+        "semi-rare",
+        "rare"
+      ],
+      "source": "ui-observed"
+    },
+    {
+      "name": "Mean Lost Soul",
+      "category": "MORTO-VIVO",
+      "hp": 5000,
+      "experience": 3906,
+      "meleeMin": 100,
+      "meleeMax": 500,
+      "attackIntervalMs": 2000,
+      "speed": 552,
+      "resistances": {
+        "physical": 45,
+        "fire": 100,
+        "earth": 80,
+        "energy": 70,
+        "ice": 100,
+        "holy": 130,
+        "death": 0,
+        "lifeDrain": 100
+      },
+      "lootRarities": [
+        "common",
+        "semi-rare",
+        "rare"
+      ],
+      "source": "ui-observed"
+    },
+    {
+      "name": "Freakish Lost Soul",
+      "category": "MORTO-VIVO",
+      "hp": 7000,
+      "experience": 4914,
+      "meleeMin": 100,
+      "meleeMax": 500,
+      "attackIntervalMs": 2000,
+      "speed": 569,
+      "resistances": {
+        "physical": 40,
+        "fire": 100,
+        "earth": 30,
+        "energy": 65,
+        "ice": 100,
+        "holy": 140,
+        "death": 0,
+        "lifeDrain": 100
+      },
+      "lootRarities": [
+        "common",
+        "uncommon",
+        "semi-rare",
+        "rare"
+      ],
+      "source": "ui-observed"
+    },
+    {
+      "name": "Dragolisk",
+      "category": "DRAGÃO",
+      "hp": 7400,
+      "experience": 3000,
+      "meleeMin": 216,
+      "meleeMax": 270,
+      "attackIntervalMs": 2000,
+      "speed": 396,
+      "resistances": {
+        "physical": 85,
+        "fire": 100,
+        "earth": 110,
+        "energy": 100,
+        "ice": 105,
+        "holy": 115,
+        "death": 110,
+        "lifeDrain": 100
+      },
+      "lootRarities": [
+        "common",
+        "uncommon",
+        "semi-rare",
+        "rare"
+      ],
+      "source": "ui-observed"
+    },
+    {
+      "name": "Mega Dragon",
+      "category": "DRAGÃO",
+      "hp": 8700,
+      "experience": 4700,
+      "meleeMin": 486,
+      "meleeMax": 608,
+      "attackIntervalMs": 2000,
+      "speed": 406,
+      "resistances": {
+        "physical": 100,
+        "fire": 100,
+        "earth": 110,
+        "energy": 110,
+        "ice": 100,
+        "holy": 110,
+        "death": 100,
+        "lifeDrain": 100
+      },
+      "lootRarities": [
+        "common",
+        "uncommon",
+        "semi-rare",
+        "rare"
+      ],
+      "source": "ui-observed"
+    },
+    {
+      "name": "Wardragon",
+      "category": "DRAGÃO",
+      "hp": 8600,
+      "experience": 3400,
+      "meleeMin": 486,
+      "meleeMax": 608,
+      "attackIntervalMs": 2000,
+      "speed": 396,
+      "resistances": {
+        "physical": 100,
+        "fire": 100,
+        "earth": 110,
+        "energy": 105,
+        "ice": 110,
+        "holy": 105,
+        "death": 100,
+        "lifeDrain": 100
+      },
+      "lootRarities": [
+        "common",
+        "uncommon",
+        "semi-rare",
+        "rare"
+      ],
+      "source": "ui-observed"
+    }
+  ],
+  "creatureProvenance": [
+    {
+      "creatureName": "Flimsy Lost Soul",
+      "sourceFile": "flimsy-lost-soul-20261019.txt",
+      "evidence": "ui-observed",
+      "resistanceUnit": "percent of damage received",
+      "bestiaryTotalDisplayed": 192,
+      "huntAssociationSource": "netherworld-detail-20261019.txt",
+      "rawServerId": null
+    },
+    {
+      "creatureName": "Mean Lost Soul",
+      "sourceFile": "mean-lost-soul-20261019.txt",
+      "evidence": "ui-observed",
+      "resistanceUnit": "percent of damage received",
+      "bestiaryTotalDisplayed": 192,
+      "huntAssociationSource": "netherworld-detail-20261019.txt",
+      "rawServerId": null
+    },
+    {
+      "creatureName": "Freakish Lost Soul",
+      "sourceFile": "freakish-lost-soul-20261019.txt",
+      "evidence": "ui-observed",
+      "resistanceUnit": "percent of damage received",
+      "bestiaryTotalDisplayed": 192,
+      "huntAssociationSource": "netherworld-detail-20261019.txt",
+      "rawServerId": null
+    },
+    {
+      "creatureName": "Dragolisk",
+      "sourceFile": "dragolisk-20261019.txt",
+      "evidence": "ui-observed",
+      "resistanceUnit": "percent of damage received",
+      "bestiaryTotalDisplayed": 192,
+      "huntAssociationSource": "nimmersatt-dragons-detail-20261019.txt",
+      "rawServerId": null
+    },
+    {
+      "creatureName": "Mega Dragon",
+      "sourceFile": "mega-dragon-20261019.txt",
+      "evidence": "ui-observed",
+      "resistanceUnit": "percent of damage received",
+      "bestiaryTotalDisplayed": 192,
+      "huntAssociationSource": "nimmersatt-dragons-detail-20261019.txt",
+      "rawServerId": null
+    },
+    {
+      "creatureName": "Wardragon",
+      "sourceFile": "wardragon-20261019.txt",
+      "evidence": "ui-observed",
+      "resistanceUnit": "percent of damage received",
+      "bestiaryTotalDisplayed": 192,
+      "huntAssociationSource": "nimmersatt-dragons-detail-20261019.txt",
+      "rawServerId": null
+    }
+  ],
+  "catalogOrderComparison": [
+    {
+      "name": "Rat Cellars",
+      "observedOrdinal": 1,
+      "catalogCreatureNames": [
+        "Rat"
+      ],
+      "stableLegacyIndex": 0,
+      "legacyObservedOrdinal": 1,
+      "legacyReferenceId": "rat-hunt",
+      "proposedRuntimeIndex": 0,
+      "proposedFutureNameKey": "Rat Cellars",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Spider Nest",
+      "observedOrdinal": 2,
+      "catalogCreatureNames": [
+        "Spider"
+      ],
+      "stableLegacyIndex": 1,
+      "legacyObservedOrdinal": 2,
+      "legacyReferenceId": "spider-hunt",
+      "proposedRuntimeIndex": 1,
+      "proposedFutureNameKey": "Spider Nest",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Troll Hills",
+      "observedOrdinal": 3,
+      "catalogCreatureNames": [
+        "Troll"
+      ],
+      "stableLegacyIndex": 2,
+      "legacyObservedOrdinal": 3,
+      "legacyReferenceId": "troll-hunt",
+      "proposedRuntimeIndex": 2,
+      "proposedFutureNameKey": "Troll Hills",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Swamp Troll Cave",
+      "observedOrdinal": 4,
+      "catalogCreatureNames": [
+        "Swamp Troll"
+      ],
+      "stableLegacyIndex": 3,
+      "legacyObservedOrdinal": 4,
+      "legacyReferenceId": "swamp-troll-hunt",
+      "proposedRuntimeIndex": 3,
+      "proposedFutureNameKey": "Swamp Troll Cave",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Orc Camp",
+      "observedOrdinal": 5,
+      "catalogCreatureNames": [
+        "Orc"
+      ],
+      "stableLegacyIndex": 4,
+      "legacyObservedOrdinal": 5,
+      "legacyReferenceId": "orc-hunt",
+      "proposedRuntimeIndex": 4,
+      "proposedFutureNameKey": "Orc Camp",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Folda Icefields",
+      "observedOrdinal": 6,
+      "catalogCreatureNames": [
+        "Frost Troll",
+        "Winter Wolf",
+        "Polar Bear"
+      ],
+      "stableLegacyIndex": 5,
+      "legacyObservedOrdinal": 6,
+      "legacyReferenceId": "folda-hunt",
+      "proposedRuntimeIndex": 5,
+      "proposedFutureNameKey": "Folda Icefields",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Bone Crypt",
+      "observedOrdinal": 7,
+      "catalogCreatureNames": [
+        "Skeleton"
+      ],
+      "stableLegacyIndex": 6,
+      "legacyObservedOrdinal": 7,
+      "legacyReferenceId": "skeleton-hunt",
+      "proposedRuntimeIndex": 6,
+      "proposedFutureNameKey": "Bone Crypt",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Rotworm Caves",
+      "observedOrdinal": 8,
+      "catalogCreatureNames": [
+        "Rotworm"
+      ],
+      "stableLegacyIndex": 7,
+      "legacyObservedOrdinal": 8,
+      "legacyReferenceId": "rotworm-hunt",
+      "proposedRuntimeIndex": 7,
+      "proposedFutureNameKey": "Rotworm Caves",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Dwarf Mines",
+      "observedOrdinal": 9,
+      "catalogCreatureNames": [
+        "Dwarf"
+      ],
+      "stableLegacyIndex": 8,
+      "legacyObservedOrdinal": 9,
+      "legacyReferenceId": "dwarf-hunt",
+      "proposedRuntimeIndex": 8,
+      "proposedFutureNameKey": "Dwarf Mines",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Minotaur Maze",
+      "observedOrdinal": 10,
+      "catalogCreatureNames": [
+        "Minotaur"
+      ],
+      "stableLegacyIndex": 9,
+      "legacyObservedOrdinal": 10,
+      "legacyReferenceId": "minotaur-hunt",
+      "proposedRuntimeIndex": 9,
+      "proposedFutureNameKey": "Minotaur Maze",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Gloomy Poacher Caves",
+      "observedOrdinal": 11,
+      "catalogCreatureNames": [
+        "Gloom Wolf",
+        "Ghost Wolf",
+        "Hunter"
+      ],
+      "stableLegacyIndex": 10,
+      "legacyObservedOrdinal": 11,
+      "legacyReferenceId": "gloom-ghost-wolf-hunt",
+      "proposedRuntimeIndex": 10,
+      "proposedFutureNameKey": "Gloomy Poacher Caves",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Amazon Camp",
+      "observedOrdinal": 12,
+      "catalogCreatureNames": [
+        "Amazon",
+        "Valkyrie"
+      ],
+      "stableLegacyIndex": 11,
+      "legacyObservedOrdinal": 12,
+      "legacyReferenceId": "amazon-hunt",
+      "proposedRuntimeIndex": 11,
+      "proposedFutureNameKey": "Amazon Camp",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Dark Cathedral",
+      "observedOrdinal": 13,
+      "catalogCreatureNames": [
+        "Smuggler",
+        "Wild Warrior",
+        "Bandit",
+        "Assassin",
+        "Dark Monk"
+      ],
+      "stableLegacyIndex": 12,
+      "legacyObservedOrdinal": 13,
+      "legacyReferenceId": "dark-cathedral-hunt",
+      "proposedRuntimeIndex": 12,
+      "proposedFutureNameKey": "Dark Cathedral",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Ghoul Graveyard",
+      "observedOrdinal": 14,
+      "catalogCreatureNames": [
+        "Ghoul"
+      ],
+      "stableLegacyIndex": 13,
+      "legacyObservedOrdinal": 14,
+      "legacyReferenceId": "ghoul-hunt",
+      "proposedRuntimeIndex": 13,
+      "proposedFutureNameKey": "Ghoul Graveyard",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Rorc Camp",
+      "observedOrdinal": 15,
+      "catalogCreatureNames": [
+        "Rorc",
+        "Wolf"
+      ],
+      "stableLegacyIndex": 14,
+      "legacyObservedOrdinal": 15,
+      "legacyReferenceId": "rorc-hunt",
+      "proposedRuntimeIndex": 14,
+      "proposedFutureNameKey": "Rorc Camp",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Yalahar Elf Quarter",
+      "observedOrdinal": 16,
+      "catalogCreatureNames": [
+        "Elf",
+        "Elf Scout",
+        "Elf Arcanist"
+      ],
+      "stableLegacyIndex": 15,
+      "legacyObservedOrdinal": 16,
+      "legacyReferenceId": "yalahar-elf-hunt",
+      "proposedRuntimeIndex": 15,
+      "proposedFutureNameKey": "Yalahar Elf Quarter",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Tarantula Burrows",
+      "observedOrdinal": 17,
+      "catalogCreatureNames": [
+        "Tarantula"
+      ],
+      "stableLegacyIndex": 16,
+      "legacyObservedOrdinal": 17,
+      "legacyReferenceId": "tarantula-hunt",
+      "proposedRuntimeIndex": 16,
+      "proposedFutureNameKey": "Tarantula Burrows",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Scarab Tombs",
+      "observedOrdinal": 18,
+      "catalogCreatureNames": [
+        "Scarab"
+      ],
+      "stableLegacyIndex": 17,
+      "legacyObservedOrdinal": 18,
+      "legacyReferenceId": "scarab-hunt",
+      "proposedRuntimeIndex": 17,
+      "proposedFutureNameKey": "Scarab Tombs",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Venore Swamp",
+      "observedOrdinal": 19,
+      "catalogCreatureNames": [
+        "Bug",
+        "Swampling",
+        "Leaf Golem",
+        "Wilting Leaf Golem",
+        "Haunted Treeling"
+      ],
+      "stableLegacyIndex": 18,
+      "legacyObservedOrdinal": 19,
+      "legacyReferenceId": "swampling-hunt",
+      "proposedRuntimeIndex": 18,
+      "proposedFutureNameKey": "Venore Swamp",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Tortoise Shore",
+      "observedOrdinal": 20,
+      "catalogCreatureNames": [
+        "Tortoise",
+        "Thornback Tortoise",
+        "Blood Crab"
+      ],
+      "stableLegacyIndex": 19,
+      "legacyObservedOrdinal": 20,
+      "legacyReferenceId": "tortoise-hunt",
+      "proposedRuntimeIndex": 19,
+      "proposedFutureNameKey": "Tortoise Shore",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Plagued Quarter",
+      "observedOrdinal": 21,
+      "catalogCreatureNames": [
+        "Mutated Human"
+      ],
+      "stableLegacyIndex": 20,
+      "legacyObservedOrdinal": 21,
+      "legacyReferenceId": "mutated-human-hunt",
+      "proposedRuntimeIndex": 20,
+      "proposedFutureNameKey": "Plagued Quarter",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Cyclop Hills",
+      "observedOrdinal": 22,
+      "catalogCreatureNames": [
+        "Cyclops"
+      ],
+      "stableLegacyIndex": 21,
+      "legacyObservedOrdinal": 22,
+      "legacyReferenceId": "cyclops-hunt",
+      "proposedRuntimeIndex": 21,
+      "proposedFutureNameKey": "Cyclop Hills",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Burial Chambers",
+      "observedOrdinal": 23,
+      "catalogCreatureNames": [
+        "Mummy"
+      ],
+      "stableLegacyIndex": 22,
+      "legacyObservedOrdinal": 23,
+      "legacyReferenceId": "mummy-hunt",
+      "proposedRuntimeIndex": 22,
+      "proposedFutureNameKey": "Burial Chambers",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Hell Gate",
+      "observedOrdinal": 24,
+      "catalogCreatureNames": [
+        "Bonelord"
+      ],
+      "stableLegacyIndex": 23,
+      "legacyObservedOrdinal": 24,
+      "legacyReferenceId": "bonelord-hunt",
+      "proposedRuntimeIndex": 23,
+      "proposedFutureNameKey": "Hell Gate",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Orc Fortress",
+      "observedOrdinal": 25,
+      "catalogCreatureNames": [
+        "Orc",
+        "Orc Spearman",
+        "Orc Warrior",
+        "Orc Shaman",
+        "Orc Rider",
+        "Orc Berserker",
+        "Orc Leader",
+        "Orc Warlord"
+      ],
+      "stableLegacyIndex": 24,
+      "legacyObservedOrdinal": 25,
+      "legacyReferenceId": "orc-fortress-hunt",
+      "proposedRuntimeIndex": 24,
+      "proposedFutureNameKey": "Orc Fortress",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Yalahar Green Djinn Fortress",
+      "observedOrdinal": 26,
+      "catalogCreatureNames": [
+        "Green Djinn"
+      ],
+      "stableLegacyIndex": 25,
+      "legacyObservedOrdinal": 26,
+      "legacyReferenceId": "green-djinn-hunt",
+      "proposedRuntimeIndex": 25,
+      "proposedFutureNameKey": "Yalahar Green Djinn Fortress",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Yalahar Blue Djinn Fortress",
+      "observedOrdinal": 27,
+      "catalogCreatureNames": [
+        "Blue Djinn"
+      ],
+      "stableLegacyIndex": 26,
+      "legacyObservedOrdinal": 27,
+      "legacyReferenceId": "blue-djinn-hunt",
+      "proposedRuntimeIndex": 26,
+      "proposedFutureNameKey": "Yalahar Blue Djinn Fortress",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Carlin Corym Cave",
+      "observedOrdinal": 28,
+      "catalogCreatureNames": [
+        "Corym Charlatan",
+        "Corym Skirmisher",
+        "Corym Vanguard"
+      ],
+      "stableLegacyIndex": 27,
+      "legacyObservedOrdinal": 28,
+      "legacyReferenceId": "carlin-corym-hunt",
+      "proposedRuntimeIndex": 27,
+      "proposedFutureNameKey": "Carlin Corym Cave",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Magician Cults",
+      "observedOrdinal": 29,
+      "catalogCreatureNames": [
+        "Novice of the Cult",
+        "Acolyte of the Cult",
+        "Adept of the Cult",
+        "Enlightened of the Cult"
+      ],
+      "stableLegacyIndex": 28,
+      "legacyObservedOrdinal": 29,
+      "legacyReferenceId": "cult-hunt",
+      "proposedRuntimeIndex": 28,
+      "proposedFutureNameKey": "Magician Cults",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Elder Forest",
+      "observedOrdinal": 30,
+      "catalogCreatureNames": [
+        "Leaf Golem",
+        "Wilting Leaf Golem",
+        "Haunted Treeling",
+        "Forest Fury",
+        "Emerald Damselfly",
+        "Marsh Stalker",
+        "Elder Forest Fury"
+      ],
+      "stableLegacyIndex": 29,
+      "legacyObservedOrdinal": 30,
+      "legacyReferenceId": "elder-forest-hunt",
+      "proposedRuntimeIndex": 29,
+      "proposedFutureNameKey": "Elder Forest",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Drefia",
+      "observedOrdinal": 31,
+      "catalogCreatureNames": [
+        "Demon Skeleton",
+        "Ghoul",
+        "Skeleton",
+        "Skeleton Warrior",
+        "Necromancer",
+        "Priestess",
+        "Blood Priest"
+      ],
+      "stableLegacyIndex": 30,
+      "legacyObservedOrdinal": 31,
+      "legacyReferenceId": "drefia-hunt",
+      "proposedRuntimeIndex": 30,
+      "proposedFutureNameKey": "Drefia",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Braindeath Caves",
+      "observedOrdinal": 32,
+      "catalogCreatureNames": [
+        "Bonelord",
+        "Elder Bonelord",
+        "Braindeath"
+      ],
+      "stableLegacyIndex": 31,
+      "legacyObservedOrdinal": 32,
+      "legacyReferenceId": "ab-bonelord-hunt",
+      "proposedRuntimeIndex": 31,
+      "proposedFutureNameKey": "Braindeath Caves",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Frost Mines",
+      "observedOrdinal": 33,
+      "catalogCreatureNames": [
+        "Ice Golem"
+      ],
+      "stableLegacyIndex": 32,
+      "legacyObservedOrdinal": 33,
+      "legacyReferenceId": "ice-golem-hunt",
+      "proposedRuntimeIndex": 32,
+      "proposedFutureNameKey": "Frost Mines",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Lizard Steppe",
+      "observedOrdinal": 34,
+      "catalogCreatureNames": [
+        "Lizard Sentinel",
+        "Lizard Templar",
+        "Lizard Snakecharmer",
+        "Killer Caiman",
+        "Lizard Zaogun"
+      ],
+      "stableLegacyIndex": 33,
+      "legacyObservedOrdinal": 34,
+      "legacyReferenceId": "lizard-steppe-hunt",
+      "proposedRuntimeIndex": 33,
+      "proposedFutureNameKey": "Lizard Steppe",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Brimstone Cave",
+      "observedOrdinal": 35,
+      "catalogCreatureNames": [
+        "Brimstone Bug",
+        "Lancer Beetle",
+        "Wailing Widow"
+      ],
+      "stableLegacyIndex": 34,
+      "legacyObservedOrdinal": 35,
+      "legacyReferenceId": "brimstone-cave-hunt",
+      "proposedRuntimeIndex": 34,
+      "proposedFutureNameKey": "Brimstone Cave",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Quirefang Surface",
+      "observedOrdinal": 36,
+      "catalogCreatureNames": [
+        "Waspoid",
+        "Crawler",
+        "Ladybug",
+        "Insectoid Worker"
+      ],
+      "stableLegacyIndex": 35,
+      "legacyObservedOrdinal": 36,
+      "legacyReferenceId": "quirefang-surface-hunt",
+      "proposedRuntimeIndex": 35,
+      "proposedFutureNameKey": "Quirefang Surface",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Warzone Earth Plague",
+      "observedOrdinal": 37,
+      "catalogCreatureNames": [
+        "Wyvern",
+        "Massive Earth Elemental",
+        "Wiggler"
+      ],
+      "stableLegacyIndex": 36,
+      "legacyObservedOrdinal": 37,
+      "legacyReferenceId": "warzone-wyverns-hunt",
+      "proposedRuntimeIndex": 36,
+      "proposedFutureNameKey": "Warzone Earth Plague",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Dragon Lair",
+      "observedOrdinal": 38,
+      "catalogCreatureNames": [
+        "Dragon"
+      ],
+      "stableLegacyIndex": 37,
+      "legacyObservedOrdinal": 38,
+      "legacyReferenceId": "dragon-hunt",
+      "proposedRuntimeIndex": 37,
+      "proposedFutureNameKey": "Dragon Lair",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Vampire Crypt",
+      "observedOrdinal": 39,
+      "catalogCreatureNames": [
+        "Vampire",
+        "Vampire Viscount",
+        "Vampire Bride"
+      ],
+      "stableLegacyIndex": 38,
+      "legacyObservedOrdinal": 39,
+      "legacyReferenceId": "vampire-hunt",
+      "proposedRuntimeIndex": 38,
+      "proposedFutureNameKey": "Vampire Crypt",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Mutated Cave",
+      "observedOrdinal": 40,
+      "catalogCreatureNames": [
+        "Mutated Bat",
+        "Mutated Tiger"
+      ],
+      "stableLegacyIndex": 39,
+      "legacyObservedOrdinal": 40,
+      "legacyReferenceId": "mutated-cave-hunt",
+      "proposedRuntimeIndex": 39,
+      "proposedFutureNameKey": "Mutated Cave",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Yalahar Bog",
+      "observedOrdinal": 41,
+      "catalogCreatureNames": [
+        "Bog Raider"
+      ],
+      "stableLegacyIndex": 40,
+      "legacyObservedOrdinal": 41,
+      "legacyReferenceId": "bog-raider-hunt",
+      "proposedRuntimeIndex": 40,
+      "proposedFutureNameKey": "Yalahar Bog",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Giant Spider Cavern",
+      "observedOrdinal": 42,
+      "catalogCreatureNames": [
+        "Giant Spider"
+      ],
+      "stableLegacyIndex": 41,
+      "legacyObservedOrdinal": 42,
+      "legacyReferenceId": "giant-spider-hunt",
+      "proposedRuntimeIndex": 41,
+      "proposedFutureNameKey": "Giant Spider Cavern",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "The Deep",
+      "observedOrdinal": 43,
+      "catalogCreatureNames": [
+        "Shark",
+        "Deepling Scout",
+        "Deepling Guard",
+        "Deepling Spellsinger",
+        "Deepling Warrior"
+      ],
+      "stableLegacyIndex": 42,
+      "legacyObservedOrdinal": 43,
+      "legacyReferenceId": "deeplings-hunt",
+      "proposedRuntimeIndex": 42,
+      "proposedFutureNameKey": "The Deep",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Hero Fortress",
+      "observedOrdinal": 44,
+      "catalogCreatureNames": [
+        "Hero"
+      ],
+      "stableLegacyIndex": 43,
+      "legacyObservedOrdinal": 44,
+      "legacyReferenceId": "hero-hunt",
+      "proposedRuntimeIndex": 43,
+      "proposedFutureNameKey": "Hero Fortress",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Wyrm Caverns",
+      "observedOrdinal": 45,
+      "catalogCreatureNames": [
+        "Wyrm"
+      ],
+      "stableLegacyIndex": 44,
+      "legacyObservedOrdinal": 45,
+      "legacyReferenceId": "wyrm-hunt",
+      "proposedRuntimeIndex": 44,
+      "proposedFutureNameKey": "Wyrm Caverns",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Zao Stronghold",
+      "observedOrdinal": 46,
+      "catalogCreatureNames": [
+        "Lizard Legionnaire",
+        "Lizard Dragon Priest",
+        "Lizard High Guard"
+      ],
+      "stableLegacyIndex": 45,
+      "legacyObservedOrdinal": 46,
+      "legacyReferenceId": "zao-stronghold-hunt",
+      "proposedRuntimeIndex": 45,
+      "proposedFutureNameKey": "Zao Stronghold",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Grimvale Warrens",
+      "observedOrdinal": 47,
+      "catalogCreatureNames": [
+        "Werebadger"
+      ],
+      "stableLegacyIndex": 46,
+      "legacyObservedOrdinal": 47,
+      "legacyReferenceId": "grimvale-warrens-hunt",
+      "proposedRuntimeIndex": 46,
+      "proposedFutureNameKey": "Grimvale Warrens",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Rathleton Minotaur Camp",
+      "observedOrdinal": 48,
+      "catalogCreatureNames": [
+        "Mooh'Tah Warrior",
+        "Worm Priestess",
+        "Minotaur Hunter",
+        "Minotaur Amazon",
+        "Execowtioner",
+        "Moohtant"
+      ],
+      "stableLegacyIndex": 47,
+      "legacyObservedOrdinal": 48,
+      "legacyReferenceId": "rathleton-minotaurs-hunt",
+      "proposedRuntimeIndex": 47,
+      "proposedFutureNameKey": "Rathleton Minotaur Camp",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Grimvale Dens",
+      "observedOrdinal": 49,
+      "catalogCreatureNames": [
+        "Wereboar",
+        "Werebear"
+      ],
+      "stableLegacyIndex": 48,
+      "legacyObservedOrdinal": 49,
+      "legacyReferenceId": "grimvale-dens-hunt",
+      "proposedRuntimeIndex": 48,
+      "proposedFutureNameKey": "Grimvale Dens",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Dragon Lord Peak",
+      "observedOrdinal": 50,
+      "catalogCreatureNames": [
+        "Dragon Lord"
+      ],
+      "stableLegacyIndex": 49,
+      "legacyObservedOrdinal": 50,
+      "legacyReferenceId": "dragon-lord-hunt",
+      "proposedRuntimeIndex": 49,
+      "proposedFutureNameKey": "Dragon Lord Peak",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Factory Quarter",
+      "observedOrdinal": 51,
+      "catalogCreatureNames": [
+        "War Golem"
+      ],
+      "stableLegacyIndex": 50,
+      "legacyObservedOrdinal": 51,
+      "legacyReferenceId": "war-golem-hunt",
+      "proposedRuntimeIndex": 50,
+      "proposedFutureNameKey": "Factory Quarter",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Corrupted Terraces",
+      "observedOrdinal": 52,
+      "catalogCreatureNames": [
+        "Lizard Chosen"
+      ],
+      "stableLegacyIndex": 51,
+      "legacyObservedOrdinal": 52,
+      "legacyReferenceId": "lizard-chosen-hunt",
+      "proposedRuntimeIndex": 51,
+      "proposedFutureNameKey": "Corrupted Terraces",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Hyaena Lairs",
+      "observedOrdinal": 53,
+      "catalogCreatureNames": [
+        "Werehyaena",
+        "Werehyaena Shaman"
+      ],
+      "stableLegacyIndex": 52,
+      "legacyObservedOrdinal": 53,
+      "legacyReferenceId": "werehyaena-hunt",
+      "proposedRuntimeIndex": 52,
+      "proposedFutureNameKey": "Hyaena Lairs",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Lion Sanctum",
+      "observedOrdinal": 54,
+      "catalogCreatureNames": [
+        "Werelion",
+        "Werelioness",
+        "White Lion"
+      ],
+      "stableLegacyIndex": 53,
+      "legacyObservedOrdinal": 54,
+      "legacyReferenceId": "werelion-hunt",
+      "proposedRuntimeIndex": 53,
+      "proposedFutureNameKey": "Lion Sanctum",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Behemoth Quarry",
+      "observedOrdinal": 55,
+      "catalogCreatureNames": [
+        "Behemoth"
+      ],
+      "stableLegacyIndex": 54,
+      "legacyObservedOrdinal": 55,
+      "legacyReferenceId": "behemoth-hunt",
+      "proposedRuntimeIndex": 54,
+      "proposedFutureNameKey": "Behemoth Quarry",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Magician Quarter",
+      "observedOrdinal": 56,
+      "catalogCreatureNames": [
+        "Hellspawn",
+        "Plaguesmith"
+      ],
+      "stableLegacyIndex": 55,
+      "legacyObservedOrdinal": 56,
+      "legacyReferenceId": "hellspawn-hunt",
+      "proposedRuntimeIndex": 55,
+      "proposedFutureNameKey": "Magician Quarter",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Banuta Ruins",
+      "observedOrdinal": 57,
+      "catalogCreatureNames": [
+        "Hydra",
+        "Eternal Guardian",
+        "Medusa"
+      ],
+      "stableLegacyIndex": 56,
+      "legacyObservedOrdinal": 57,
+      "legacyReferenceId": "hydra-hunt",
+      "proposedRuntimeIndex": 56,
+      "proposedFutureNameKey": "Banuta Ruins",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Seacrest Caves",
+      "observedOrdinal": 58,
+      "catalogCreatureNames": [
+        "Seacrest Serpent"
+      ],
+      "stableLegacyIndex": 57,
+      "legacyObservedOrdinal": 58,
+      "legacyReferenceId": "seacrest-serpent-hunt",
+      "proposedRuntimeIndex": 57,
+      "proposedFutureNameKey": "Seacrest Caves",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Draken Walls",
+      "observedOrdinal": 59,
+      "catalogCreatureNames": [
+        "Draken Warmaster",
+        "Draken Spellweaver"
+      ],
+      "stableLegacyIndex": 58,
+      "legacyObservedOrdinal": 59,
+      "legacyReferenceId": "draken-walls-hunt",
+      "proposedRuntimeIndex": 58,
+      "proposedFutureNameKey": "Draken Walls",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Haunted Cellar",
+      "observedOrdinal": 60,
+      "catalogCreatureNames": [
+        "Ripper Spectre"
+      ],
+      "stableLegacyIndex": 59,
+      "legacyObservedOrdinal": 60,
+      "legacyReferenceId": "ripper-spectre-hunt",
+      "proposedRuntimeIndex": 59,
+      "proposedFutureNameKey": "Haunted Cellar",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Goroma Serpent Caves",
+      "observedOrdinal": 61,
+      "catalogCreatureNames": [
+        "Serpent Spawn",
+        "Medusa"
+      ],
+      "stableLegacyIndex": 60,
+      "legacyObservedOrdinal": 61,
+      "legacyReferenceId": "goroma-serpent-spawn-hunt",
+      "proposedRuntimeIndex": 60,
+      "proposedFutureNameKey": "Goroma Serpent Caves",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Asura Palace",
+      "observedOrdinal": 62,
+      "catalogCreatureNames": [
+        "Dawnfire Asura",
+        "Midnight Asura",
+        "Hellspawn",
+        "Frost Flower Asura"
+      ],
+      "stableLegacyIndex": 61,
+      "legacyObservedOrdinal": 62,
+      "legacyReferenceId": "asura-hunt",
+      "proposedRuntimeIndex": 61,
+      "proposedFutureNameKey": "Asura Palace",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Haunted Temple",
+      "observedOrdinal": 63,
+      "catalogCreatureNames": [
+        "Gazer Spectre"
+      ],
+      "stableLegacyIndex": 62,
+      "legacyObservedOrdinal": 63,
+      "legacyReferenceId": "gazer-spectre-hunt",
+      "proposedRuntimeIndex": 62,
+      "proposedFutureNameKey": "Haunted Temple",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Lower Roshamuul",
+      "observedOrdinal": 64,
+      "catalogCreatureNames": [
+        "Frazzlemaw",
+        "Silencer"
+      ],
+      "stableLegacyIndex": 63,
+      "legacyObservedOrdinal": 64,
+      "legacyReferenceId": "roshamuul-lower-hunt",
+      "proposedRuntimeIndex": 63,
+      "proposedFutureNameKey": "Lower Roshamuul",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Haunted Tomb",
+      "observedOrdinal": 65,
+      "catalogCreatureNames": [
+        "Burster Spectre"
+      ],
+      "stableLegacyIndex": 64,
+      "legacyObservedOrdinal": 65,
+      "legacyReferenceId": "burster-spectre-hunt",
+      "proposedRuntimeIndex": 64,
+      "proposedFutureNameKey": "Haunted Tomb",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Halls of the Reaper",
+      "observedOrdinal": 66,
+      "catalogCreatureNames": [
+        "Grim Reaper"
+      ],
+      "stableLegacyIndex": 65,
+      "legacyObservedOrdinal": 66,
+      "legacyReferenceId": "grim-reaper-hunt",
+      "proposedRuntimeIndex": 65,
+      "proposedFutureNameKey": "Halls of the Reaper",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Infernal Gate",
+      "observedOrdinal": 67,
+      "catalogCreatureNames": [
+        "Demon"
+      ],
+      "stableLegacyIndex": 66,
+      "legacyObservedOrdinal": 67,
+      "legacyReferenceId": "demon-hunt",
+      "proposedRuntimeIndex": 66,
+      "proposedFutureNameKey": "Infernal Gate",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Falcon's Eye",
+      "observedOrdinal": 68,
+      "catalogCreatureNames": [
+        "Falcon Knight",
+        "Falcon Paladin"
+      ],
+      "stableLegacyIndex": 67,
+      "legacyObservedOrdinal": 68,
+      "legacyReferenceId": "falcon-hunt",
+      "proposedRuntimeIndex": 67,
+      "proposedFutureNameKey": "Falcon's Eye",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Falcon Bastion",
+      "observedOrdinal": 69,
+      "catalogCreatureNames": [
+        "Falcon Knight",
+        "Falcon Paladin"
+      ],
+      "stableLegacyIndex": 68,
+      "legacyObservedOrdinal": 69,
+      "legacyReferenceId": "falcon-bastion-hunt",
+      "proposedRuntimeIndex": 68,
+      "proposedFutureNameKey": "Falcon Bastion",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Lion Bastion",
+      "observedOrdinal": 70,
+      "catalogCreatureNames": [
+        "Usurper Archer",
+        "Usurper Knight",
+        "Usurper Warlock",
+        "Chicken"
+      ],
+      "stableLegacyIndex": 69,
+      "legacyObservedOrdinal": 70,
+      "legacyReferenceId": "lion-bastion-hunt",
+      "proposedRuntimeIndex": 69,
+      "proposedFutureNameKey": "Lion Bastion",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Cobra Bastion",
+      "observedOrdinal": 71,
+      "catalogCreatureNames": [
+        "Cobra Assassin",
+        "Cobra Scout",
+        "Cobra Vizier"
+      ],
+      "stableLegacyIndex": 70,
+      "legacyObservedOrdinal": 71,
+      "legacyReferenceId": "cobra-bastion-hunt",
+      "proposedRuntimeIndex": 70,
+      "proposedFutureNameKey": "Cobra Bastion",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Hell Hub",
+      "observedOrdinal": 72,
+      "catalogCreatureNames": [
+        "Demon",
+        "Vexclaw",
+        "Grimeleech",
+        "Hellflayer"
+      ],
+      "stableLegacyIndex": 71,
+      "legacyObservedOrdinal": 72,
+      "legacyReferenceId": "hell-hub-hunt",
+      "proposedRuntimeIndex": 71,
+      "proposedFutureNameKey": "Hell Hub",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Marapur Naga",
+      "observedOrdinal": 73,
+      "catalogCreatureNames": [
+        "Naga Archer",
+        "Naga Warrior",
+        "Makara"
+      ],
+      "stableLegacyIndex": 72,
+      "legacyObservedOrdinal": 73,
+      "legacyReferenceId": "marapur-naga-hunt",
+      "proposedRuntimeIndex": 72,
+      "proposedFutureNameKey": "Marapur Naga",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Netherworld",
+      "observedOrdinal": 74,
+      "catalogCreatureNames": [
+        "Flimsy Lost Soul",
+        "Mean Lost Soul",
+        "Freakish Lost Soul"
+      ],
+      "stableLegacyIndex": null,
+      "legacyObservedOrdinal": null,
+      "legacyReferenceId": null,
+      "proposedRuntimeIndex": 81,
+      "proposedFutureNameKey": "Netherworld",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Summer Court",
+      "observedOrdinal": 75,
+      "catalogCreatureNames": [
+        "Crazed Summer Rearguard",
+        "Crazed Summer Vanguard",
+        "Arachnophobica",
+        "Insane Siren",
+        "Thanatursus"
+      ],
+      "stableLegacyIndex": 73,
+      "legacyObservedOrdinal": 74,
+      "legacyReferenceId": "summer-court-hunt",
+      "proposedRuntimeIndex": 73,
+      "proposedFutureNameKey": "Summer Court",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Winter Court",
+      "observedOrdinal": 76,
+      "catalogCreatureNames": [
+        "Crazed Winter Rearguard",
+        "Crazed Winter Vanguard",
+        "Soul-Broken Harbinger",
+        "Arachnophobica",
+        "Thanatursus"
+      ],
+      "stableLegacyIndex": 74,
+      "legacyObservedOrdinal": 75,
+      "legacyReferenceId": "winter-court-hunt",
+      "proposedRuntimeIndex": 74,
+      "proposedFutureNameKey": "Winter Court",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Catacombs",
+      "observedOrdinal": 77,
+      "catalogCreatureNames": [
+        "Hellspawn",
+        "Grim Reaper",
+        "Demon",
+        "Destroyer",
+        "Dark Torturer",
+        "Juggernaut"
+      ],
+      "stableLegacyIndex": 75,
+      "legacyObservedOrdinal": 76,
+      "legacyReferenceId": "catacombs-hunt",
+      "proposedRuntimeIndex": 75,
+      "proposedFutureNameKey": "Catacombs",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Kilmaresh Steppe",
+      "observedOrdinal": 78,
+      "catalogCreatureNames": [
+        "Sphinx",
+        "Lamassu"
+      ],
+      "stableLegacyIndex": 76,
+      "legacyObservedOrdinal": 77,
+      "legacyReferenceId": "issavi-hunt",
+      "proposedRuntimeIndex": 76,
+      "proposedFutureNameKey": "Kilmaresh Steppe",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Issavi Steppe",
+      "observedOrdinal": 79,
+      "catalogCreatureNames": [
+        "Young Goanna",
+        "Ogre Rowdy",
+        "Adult Goanna",
+        "Manticore",
+        "Ogre Sage",
+        "Sphinx",
+        "Clomp",
+        "Feral Sphinx",
+        "Lamassu"
+      ],
+      "stableLegacyIndex": 77,
+      "legacyObservedOrdinal": 78,
+      "legacyReferenceId": "issavi-south-hunt",
+      "proposedRuntimeIndex": 77,
+      "proposedFutureNameKey": "Issavi Steppe",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Ice Library",
+      "observedOrdinal": 80,
+      "catalogCreatureNames": [
+        "Animated Feather",
+        "Icecold Book",
+        "Squid Warden"
+      ],
+      "stableLegacyIndex": 78,
+      "legacyObservedOrdinal": 79,
+      "legacyReferenceId": "ice-library-hunt",
+      "proposedRuntimeIndex": 78,
+      "proposedFutureNameKey": "Ice Library",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Fire Library",
+      "observedOrdinal": 81,
+      "catalogCreatureNames": [
+        "Burning Book",
+        "Rage Squid",
+        "Guardian of Tales",
+        "Ink Blob"
+      ],
+      "stableLegacyIndex": 79,
+      "legacyObservedOrdinal": 80,
+      "legacyReferenceId": "fire-library-hunt",
+      "proposedRuntimeIndex": 79,
+      "proposedFutureNameKey": "Fire Library",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Nimmersatt Dragons",
+      "observedOrdinal": 82,
+      "catalogCreatureNames": [
+        "Dragolisk",
+        "Mega Dragon",
+        "Wardragon"
+      ],
+      "stableLegacyIndex": null,
+      "legacyObservedOrdinal": null,
+      "legacyReferenceId": null,
+      "proposedRuntimeIndex": 82,
+      "proposedFutureNameKey": "Nimmersatt Dragons",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Energy Library",
+      "observedOrdinal": 83,
+      "catalogCreatureNames": [
+        "Energetic Book",
+        "Brain Squid",
+        "Energuardian of Tales",
+        "Knowledge Elemental"
+      ],
+      "stableLegacyIndex": 80,
+      "legacyObservedOrdinal": 81,
+      "legacyReferenceId": "energy-library-hunt",
+      "proposedRuntimeIndex": 80,
+      "proposedFutureNameKey": "Energy Library",
+      "source": "hunts-menu-83-20261019.txt"
+    }
+  ],
+  "changedExistingOrdinals": [
+    {
+      "name": "Summer Court",
+      "observedOrdinal": 75,
+      "catalogCreatureNames": [
+        "Crazed Summer Rearguard",
+        "Crazed Summer Vanguard",
+        "Arachnophobica",
+        "Insane Siren",
+        "Thanatursus"
+      ],
+      "stableLegacyIndex": 73,
+      "legacyObservedOrdinal": 74,
+      "legacyReferenceId": "summer-court-hunt",
+      "proposedRuntimeIndex": 73,
+      "proposedFutureNameKey": "Summer Court",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Winter Court",
+      "observedOrdinal": 76,
+      "catalogCreatureNames": [
+        "Crazed Winter Rearguard",
+        "Crazed Winter Vanguard",
+        "Soul-Broken Harbinger",
+        "Arachnophobica",
+        "Thanatursus"
+      ],
+      "stableLegacyIndex": 74,
+      "legacyObservedOrdinal": 75,
+      "legacyReferenceId": "winter-court-hunt",
+      "proposedRuntimeIndex": 74,
+      "proposedFutureNameKey": "Winter Court",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Catacombs",
+      "observedOrdinal": 77,
+      "catalogCreatureNames": [
+        "Hellspawn",
+        "Grim Reaper",
+        "Demon",
+        "Destroyer",
+        "Dark Torturer",
+        "Juggernaut"
+      ],
+      "stableLegacyIndex": 75,
+      "legacyObservedOrdinal": 76,
+      "legacyReferenceId": "catacombs-hunt",
+      "proposedRuntimeIndex": 75,
+      "proposedFutureNameKey": "Catacombs",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Kilmaresh Steppe",
+      "observedOrdinal": 78,
+      "catalogCreatureNames": [
+        "Sphinx",
+        "Lamassu"
+      ],
+      "stableLegacyIndex": 76,
+      "legacyObservedOrdinal": 77,
+      "legacyReferenceId": "issavi-hunt",
+      "proposedRuntimeIndex": 76,
+      "proposedFutureNameKey": "Kilmaresh Steppe",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Issavi Steppe",
+      "observedOrdinal": 79,
+      "catalogCreatureNames": [
+        "Young Goanna",
+        "Ogre Rowdy",
+        "Adult Goanna",
+        "Manticore",
+        "Ogre Sage",
+        "Sphinx",
+        "Clomp",
+        "Feral Sphinx",
+        "Lamassu"
+      ],
+      "stableLegacyIndex": 77,
+      "legacyObservedOrdinal": 78,
+      "legacyReferenceId": "issavi-south-hunt",
+      "proposedRuntimeIndex": 77,
+      "proposedFutureNameKey": "Issavi Steppe",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Ice Library",
+      "observedOrdinal": 80,
+      "catalogCreatureNames": [
+        "Animated Feather",
+        "Icecold Book",
+        "Squid Warden"
+      ],
+      "stableLegacyIndex": 78,
+      "legacyObservedOrdinal": 79,
+      "legacyReferenceId": "ice-library-hunt",
+      "proposedRuntimeIndex": 78,
+      "proposedFutureNameKey": "Ice Library",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Fire Library",
+      "observedOrdinal": 81,
+      "catalogCreatureNames": [
+        "Burning Book",
+        "Rage Squid",
+        "Guardian of Tales",
+        "Ink Blob"
+      ],
+      "stableLegacyIndex": 79,
+      "legacyObservedOrdinal": 80,
+      "legacyReferenceId": "fire-library-hunt",
+      "proposedRuntimeIndex": 79,
+      "proposedFutureNameKey": "Fire Library",
+      "source": "hunts-menu-83-20261019.txt"
+    },
+    {
+      "name": "Energy Library",
+      "observedOrdinal": 83,
+      "catalogCreatureNames": [
+        "Energetic Book",
+        "Brain Squid",
+        "Energuardian of Tales",
+        "Knowledge Elemental"
+      ],
+      "stableLegacyIndex": 80,
+      "legacyObservedOrdinal": 81,
+      "legacyReferenceId": "energy-library-hunt",
+      "proposedRuntimeIndex": 80,
+      "proposedFutureNameKey": "Energy Library",
+      "source": "hunts-menu-83-20261019.txt"
+    }
+  ],
+  "sourceFiles": {
+    "hunts-menu-83-20261019.txt": {
+      "sha256": "c3952c0cf617327c147ab915731499889698c347d8e1181b3c753ecc8ec2b0f8"
+    },
+    "hunts.json": {
+      "sha256": "f23d986dd9d1ec82b93867c88105cc376d022af855d90b3fcdfa5d461e226bc5"
+    },
+    "game-data.json": {
+      "sha256": "eee5b9ea0c2cea7fa343bf4a6e54906a8d9b0a308d9b07dd8a31984ae67dca24"
+    },
+    "bestiary.json": {
+      "sha256": "ffd9069ad2029cb31412969d274d8f82143e94be79eb595cfb3081b32ef07d32"
+    },
+    "normalize-bestiary.py": {
+      "sha256": "1b92a1d2e017828cc87a820dab2545be3b02c42a80667f8208868116b21d1160"
+    },
+    "netherworld-detail-20261019.txt": {
+      "sha256": "2785c0ab7bfcf82f54b08ed3b4c468b85a8f0cdfd4714fe9dd45d231cdb7fab8"
+    },
+    "flimsy-lost-soul-20261019.txt": {
+      "sha256": "c2f0e36d31d8ead3946efe9397617e944caed7d0638ca401cfdd6c3a0d88afba"
+    },
+    "mean-lost-soul-20261019.txt": {
+      "sha256": "db9b55c0b00d37d85006aa22e223ef371172b12e2c904c760f4670a4d31e690a"
+    },
+    "freakish-lost-soul-20261019.txt": {
+      "sha256": "4f392ee42d58ddd041f026306e1f4fb98ee68fd2158dd1364b9450d638f224e2"
+    },
+    "nimmersatt-dragons-detail-20261019.txt": {
+      "sha256": "17551161f8a1c4b7167688795314374ce9c14da160f6d9a718bb86262872d7de"
+    },
+    "dragolisk-20261019.txt": {
+      "sha256": "9d946c74c911224d50030618092f36987e37cfcc2c3b8058dae365274d84eada"
+    },
+    "mega-dragon-20261019.txt": {
+      "sha256": "77556fc3d576488521d5542a448ed604d671c1da56d8895763a571386b8535ce"
+    },
+    "wardragon-20261019.txt": {
+      "sha256": "4fa183e8977fc011018bedf3a7e1c47922b362633a7046065a07955857759e53"
+    }
+  },
+  "integrationPlan": {
+    "authority": "parent inspected engine: huntIndex and records use numeric catalog index",
+    "kind": "proposed reconstruction migration, not observed Huntera server IDs",
+    "preserveLegacyIndices": true,
+    "legacyIndexRange": [
+      0,
+      80
+    ],
+    "appendNewRuntimeIndices": {
+      "Netherworld": 81,
+      "Nimmersatt Dragons": 82
+    },
+    "uiSortField": "observedOrdinal",
+    "doNotReorderAuthoritativeArray": true,
+    "futureSaveNameKey": "exact existing hunt name, with an explicit alias migration for any later rename",
+    "ordinalIsIdentity": false
+  },
+  "inferences": [
+    {
+      "field": "catalogOrderComparison.legacyReferenceId",
+      "source": "prior game-data.json",
+      "basis": "matching earlier ordered captured client enum and UI lists",
+      "limit": "preserved prior reference association; not a captured current server ID"
+    },
+    {
+      "field": "proposedRuntimeIndex / proposedFutureNameKey",
+      "basis": "parent-authorized save compatibility design",
+      "limit": "not observed game facts or raw server IDs"
+    }
+  ],
+  "gaps": [
+    "Required/recommended levels, vocation and premium requirements not displayed.",
+    "Pull labels observed; numeric tier IDs, counts, spawn weights and other-pull compositions unavailable.",
+    "Hunt possible loot is not a per-creature drop table; exact probabilities and quantity distributions unavailable.",
+    "No hunts started; no spell/projectile behavior, authoritative formulas or entry eligibility tested."
+  ]
+}

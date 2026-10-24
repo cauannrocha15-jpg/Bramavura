@@ -1,0 +1,5009 @@
+[
+  {
+    "name": "Acolyte of the Cult",
+    "category": "HUMANO",
+    "hp": 390,
+    "experience": 300,
+    "meleeMin": 80,
+    "meleeMax": 100,
+    "attackIntervalMs": 2000,
+    "speed": 255,
+    "resistances": {
+      "physical": 110,
+      "fire": 100,
+      "earth": 80,
+      "energy": 110,
+      "ice": 80,
+      "holy": 80,
+      "death": 105,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Adept of the Cult",
+    "category": "HUMANO",
+    "hp": 430,
+    "experience": 400,
+    "meleeMin": 72,
+    "meleeMax": 90,
+    "attackIntervalMs": 2000,
+    "speed": 243,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 60,
+      "energy": 105,
+      "ice": 80,
+      "holy": 70,
+      "death": 105,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Adult Goanna",
+    "category": "RÉPTIL",
+    "hp": 8300,
+    "experience": 5827,
+    "meleeMin": 320,
+    "meleeMax": 400,
+    "attackIntervalMs": 2000,
+    "speed": 482,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 75,
+      "energy": 110,
+      "ice": 100,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Amazon",
+    "category": "HUMANO",
+    "hp": 110,
+    "experience": 60,
+    "meleeMin": 36,
+    "meleeMax": 45,
+    "attackIntervalMs": 2000,
+    "speed": 221,
+    "resistances": {
+      "physical": 105,
+      "fire": 100,
+      "earth": 100,
+      "energy": 100,
+      "ice": 100,
+      "holy": 100,
+      "death": 105,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Animated Feather",
+    "category": "MÁGICO",
+    "hp": 13000,
+    "experience": 8460,
+    "meleeMin": 150,
+    "meleeMax": 300,
+    "attackIntervalMs": 2000,
+    "speed": 482,
+    "resistances": {
+      "physical": 100,
+      "fire": 118,
+      "earth": 100,
+      "energy": 100,
+      "ice": 0,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Arachnophobica",
+    "category": "MÁGICO",
+    "hp": 5000,
+    "experience": 4700,
+    "meleeMin": 280,
+    "meleeMax": 350,
+    "attackIntervalMs": 2000,
+    "speed": 464,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 100,
+      "energy": 50,
+      "ice": 100,
+      "holy": 140,
+      "death": 50,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Assassin",
+    "category": "HUMANO",
+    "hp": 175,
+    "experience": 105,
+    "meleeMin": 96,
+    "meleeMax": 120,
+    "attackIntervalMs": 2000,
+    "speed": 283,
+    "resistances": {
+      "physical": 110,
+      "fire": 100,
+      "earth": 100,
+      "energy": 100,
+      "ice": 100,
+      "holy": 100,
+      "death": 105,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Bandit",
+    "category": "HUMANO",
+    "hp": 245,
+    "experience": 65,
+    "meleeMin": 36,
+    "meleeMax": 45,
+    "attackIntervalMs": 2000,
+    "speed": 231,
+    "resistances": {
+      "physical": 110,
+      "fire": 100,
+      "earth": 100,
+      "energy": 100,
+      "ice": 100,
+      "holy": 100,
+      "death": 105,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Behemoth",
+    "category": "GIGANTE",
+    "hp": 4000,
+    "experience": 2500,
+    "meleeMin": 180,
+    "meleeMax": 450,
+    "attackIntervalMs": 2000,
+    "speed": 406,
+    "resistances": {
+      "physical": 90,
+      "fire": 70,
+      "earth": 20,
+      "energy": 90,
+      "ice": 110,
+      "holy": 70,
+      "death": 105,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Blood Crab",
+    "category": "AQUÁTICO",
+    "hp": 290,
+    "experience": 160,
+    "meleeMin": 88,
+    "meleeMax": 110,
+    "attackIntervalMs": 2000,
+    "speed": 206,
+    "resistances": {
+      "physical": 95,
+      "fire": 110,
+      "earth": 0,
+      "energy": 105,
+      "ice": 0,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Blood Priest",
+    "category": "HUMANO",
+    "hp": 820,
+    "experience": 900,
+    "meleeMin": 104,
+    "meleeMax": 130,
+    "attackIntervalMs": 2000,
+    "speed": 252,
+    "resistances": {
+      "physical": 108,
+      "fire": 108,
+      "earth": 0,
+      "energy": 85,
+      "ice": 85,
+      "holy": 108,
+      "death": 50,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Blue Djinn",
+    "category": "MÁGICO",
+    "hp": 330,
+    "experience": 215,
+    "meleeMin": 88,
+    "meleeMax": 110,
+    "attackIntervalMs": 2000,
+    "speed": 278,
+    "resistances": {
+      "physical": 100,
+      "fire": 20,
+      "earth": 100,
+      "energy": 50,
+      "ice": 110,
+      "holy": 80,
+      "death": 113,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Bog Raider",
+    "category": "MÁGICO",
+    "hp": 1300,
+    "experience": 800,
+    "meleeMin": 146,
+    "meleeMax": 183,
+    "attackIntervalMs": 2000,
+    "speed": 312,
+    "resistances": {
+      "physical": 105,
+      "fire": 15,
+      "earth": 70,
+      "energy": 110,
+      "ice": 105,
+      "holy": 105,
+      "death": 95,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Bonelord",
+    "category": "MÁGICO",
+    "hp": 260,
+    "experience": 170,
+    "meleeMin": 8,
+    "meleeMax": 10,
+    "attackIntervalMs": 2000,
+    "speed": 193,
+    "resistances": {
+      "physical": 100,
+      "fire": 110,
+      "earth": 0,
+      "energy": 100,
+      "ice": 80,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 0
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Brain Squid",
+    "category": "MÁGICO",
+    "hp": 18500,
+    "experience": 19095,
+    "meleeMin": 348,
+    "meleeMax": 694,
+    "attackIntervalMs": 2000,
+    "speed": 491,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 100,
+      "energy": 0,
+      "ice": 100,
+      "holy": 0,
+      "death": 115,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Braindeath",
+    "category": "MORTO-VIVO",
+    "hp": 1225,
+    "experience": 985,
+    "meleeMin": 80,
+    "meleeMax": 100,
+    "attackIntervalMs": 2000,
+    "speed": 276,
+    "resistances": {
+      "physical": 85,
+      "fire": 115,
+      "earth": 0,
+      "energy": 90,
+      "ice": 80,
+      "holy": 120,
+      "death": 0,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Brimstone Bug",
+    "category": "VERME",
+    "hp": 1300,
+    "experience": 900,
+    "meleeMin": 170,
+    "meleeMax": 213,
+    "attackIntervalMs": 2000,
+    "speed": 301,
+    "resistances": {
+      "physical": 110,
+      "fire": 110,
+      "earth": 0,
+      "energy": 110,
+      "ice": 110,
+      "holy": 110,
+      "death": 0,
+      "lifeDrain": 0
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Bug",
+    "category": "VERME",
+    "hp": 29,
+    "experience": 18,
+    "meleeMin": 18,
+    "meleeMax": 23,
+    "attackIntervalMs": 2000,
+    "speed": 206,
+    "resistances": {
+      "physical": 100,
+      "fire": 110,
+      "earth": 100,
+      "energy": 100,
+      "ice": 100,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "semi-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Burning Book",
+    "category": "MÁGICO",
+    "hp": 18000,
+    "experience": 11286,
+    "meleeMin": 300,
+    "meleeMax": 1050,
+    "attackIntervalMs": 2000,
+    "speed": 500,
+    "resistances": {
+      "physical": 100,
+      "fire": 0,
+      "earth": 100,
+      "energy": 100,
+      "ice": 110,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Burster Spectre",
+    "category": "MORTO-VIVO",
+    "hp": 6500,
+    "experience": 4200,
+    "meleeMin": 320,
+    "meleeMax": 400,
+    "attackIntervalMs": 2000,
+    "speed": 464,
+    "resistances": {
+      "physical": 0,
+      "fire": 120,
+      "earth": 100,
+      "energy": 100,
+      "ice": 30,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Chicken",
+    "category": "AVE",
+    "hp": 15,
+    "experience": 0,
+    "meleeMin": 0,
+    "meleeMax": 0,
+    "attackIntervalMs": 2000,
+    "speed": 165,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 100,
+      "energy": 100,
+      "ice": 100,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Clomp",
+    "category": "MAMÍFERO",
+    "hp": 900,
+    "experience": 416,
+    "meleeMin": 40,
+    "meleeMax": 289,
+    "attackIntervalMs": 2000,
+    "speed": 491,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 100,
+      "energy": 100,
+      "ice": 100,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Cobra Assassin",
+    "category": "HUMANO",
+    "hp": 8200,
+    "experience": 6980,
+    "meleeMin": 360,
+    "meleeMax": 450,
+    "attackIntervalMs": 2000,
+    "speed": 345,
+    "resistances": {
+      "physical": 80,
+      "fire": 100,
+      "earth": 0,
+      "energy": 100,
+      "ice": 100,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Cobra Scout",
+    "category": "HUMANO",
+    "hp": 8500,
+    "experience": 7310,
+    "meleeMin": 400,
+    "meleeMax": 500,
+    "attackIntervalMs": 2000,
+    "speed": 366,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 0,
+      "energy": 100,
+      "ice": 100,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Cobra Vizier",
+    "category": "HUMANO",
+    "hp": 8500,
+    "experience": 7650,
+    "meleeMin": 384,
+    "meleeMax": 480,
+    "attackIntervalMs": 2000,
+    "speed": 386,
+    "resistances": {
+      "physical": 90,
+      "fire": 100,
+      "earth": 0,
+      "energy": 100,
+      "ice": 100,
+      "holy": 110,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Corym Charlatan",
+    "category": "HUMANOIDE",
+    "hp": 250,
+    "experience": 150,
+    "meleeMin": 84,
+    "meleeMax": 105,
+    "attackIntervalMs": 2000,
+    "speed": 243,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 75,
+      "energy": 75,
+      "ice": 100,
+      "holy": 105,
+      "death": 85,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Corym Skirmisher",
+    "category": "HUMANOIDE",
+    "hp": 450,
+    "experience": 260,
+    "meleeMin": 88,
+    "meleeMax": 110,
+    "attackIntervalMs": 2000,
+    "speed": 255,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 75,
+      "energy": 85,
+      "ice": 100,
+      "holy": 105,
+      "death": 80,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Corym Vanguard",
+    "category": "HUMANOIDE",
+    "hp": 700,
+    "experience": 490,
+    "meleeMin": 112,
+    "meleeMax": 140,
+    "attackIntervalMs": 2000,
+    "speed": 255,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 100,
+      "energy": 80,
+      "ice": 90,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Crawler",
+    "category": "VERME",
+    "hp": 1450,
+    "experience": 1000,
+    "meleeMin": 182,
+    "meleeMax": 228,
+    "attackIntervalMs": 2000,
+    "speed": 312,
+    "resistances": {
+      "physical": 100,
+      "fire": 108,
+      "earth": 0,
+      "energy": 100,
+      "ice": 107,
+      "holy": 105,
+      "death": 95,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Crazed Summer Rearguard",
+    "category": "HUMANOIDE",
+    "hp": 5300,
+    "experience": 4700,
+    "meleeMin": 360,
+    "meleeMax": 450,
+    "attackIntervalMs": 2000,
+    "speed": 464,
+    "resistances": {
+      "physical": 110,
+      "fire": 60,
+      "earth": 100,
+      "energy": 100,
+      "ice": 125,
+      "holy": 80,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Crazed Summer Vanguard",
+    "category": "HUMANOIDE",
+    "hp": 5500,
+    "experience": 5000,
+    "meleeMin": 360,
+    "meleeMax": 450,
+    "attackIntervalMs": 2000,
+    "speed": 455,
+    "resistances": {
+      "physical": 100,
+      "fire": 50,
+      "earth": 100,
+      "energy": 100,
+      "ice": 130,
+      "holy": 80,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Crazed Winter Rearguard",
+    "category": "HUMANOIDE",
+    "hp": 5200,
+    "experience": 4700,
+    "meleeMin": 320,
+    "meleeMax": 400,
+    "attackIntervalMs": 2000,
+    "speed": 464,
+    "resistances": {
+      "physical": 100,
+      "fire": 120,
+      "earth": 120,
+      "energy": 115,
+      "ice": 60,
+      "holy": 100,
+      "death": 80,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Crazed Winter Vanguard",
+    "category": "HUMANOIDE",
+    "hp": 5800,
+    "experience": 5400,
+    "meleeMin": 320,
+    "meleeMax": 400,
+    "attackIntervalMs": 2000,
+    "speed": 445,
+    "resistances": {
+      "physical": 100,
+      "fire": 130,
+      "earth": 115,
+      "energy": 120,
+      "ice": 50,
+      "holy": 100,
+      "death": 85,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Cyclops",
+    "category": "GIGANTE",
+    "hp": 400,
+    "experience": 150,
+    "meleeMin": 64,
+    "meleeMax": 80,
+    "attackIntervalMs": 2000,
+    "speed": 243,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 110,
+      "energy": 75,
+      "ice": 100,
+      "holy": 80,
+      "death": 110,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Dark Monk",
+    "category": "HUMANO",
+    "hp": 190,
+    "experience": 145,
+    "meleeMin": 80,
+    "meleeMax": 100,
+    "attackIntervalMs": 2000,
+    "speed": 289,
+    "resistances": {
+      "physical": 110,
+      "fire": 100,
+      "earth": 100,
+      "energy": 100,
+      "ice": 100,
+      "holy": 110,
+      "death": 60,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Dark Torturer",
+    "category": "DEMÔNIO",
+    "hp": 7350,
+    "experience": 4650,
+    "meleeMin": 400,
+    "meleeMax": 500,
+    "attackIntervalMs": 2000,
+    "speed": 436,
+    "resistances": {
+      "physical": 100,
+      "fire": 0,
+      "earth": 10,
+      "energy": 70,
+      "ice": 110,
+      "holy": 110,
+      "death": 90,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Dawnfire Asura",
+    "category": "DEMÔNIO",
+    "hp": 2900,
+    "experience": 4100,
+    "meleeMin": 215,
+    "meleeMax": 269,
+    "attackIntervalMs": 2000,
+    "speed": 345,
+    "resistances": {
+      "physical": 110,
+      "fire": 0,
+      "earth": 100,
+      "energy": 105,
+      "ice": 110,
+      "holy": 110,
+      "death": 80,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Deepling Guard",
+    "category": "AQUÁTICO",
+    "hp": 1900,
+    "experience": 2100,
+    "meleeMin": 320,
+    "meleeMax": 400,
+    "attackIntervalMs": 2000,
+    "speed": 334,
+    "resistances": {
+      "physical": 100,
+      "fire": 0,
+      "earth": 110,
+      "energy": 110,
+      "ice": 0,
+      "holy": 100,
+      "death": 90,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Deepling Scout",
+    "category": "AQUÁTICO",
+    "hp": 240,
+    "experience": 160,
+    "meleeMin": 84,
+    "meleeMax": 105,
+    "attackIntervalMs": 2000,
+    "speed": 167,
+    "resistances": {
+      "physical": 100,
+      "fire": 0,
+      "earth": 110,
+      "energy": 110,
+      "ice": 0,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Deepling Spellsinger",
+    "category": "AQUÁTICO",
+    "hp": 850,
+    "experience": 1000,
+    "meleeMin": 122,
+    "meleeMax": 152,
+    "attackIntervalMs": 2000,
+    "speed": 243,
+    "resistances": {
+      "physical": 100,
+      "fire": 0,
+      "earth": 110,
+      "energy": 110,
+      "ice": 0,
+      "holy": 100,
+      "death": 50,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Deepling Warrior",
+    "category": "AQUÁTICO",
+    "hp": 1600,
+    "experience": 1500,
+    "meleeMin": 240,
+    "meleeMax": 300,
+    "attackIntervalMs": 2000,
+    "speed": 355,
+    "resistances": {
+      "physical": 100,
+      "fire": 0,
+      "earth": 110,
+      "energy": 110,
+      "ice": 0,
+      "holy": 100,
+      "death": 90,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Demon",
+    "category": "DEMÔNIO",
+    "hp": 8200,
+    "experience": 6000,
+    "meleeMin": 250,
+    "meleeMax": 500,
+    "attackIntervalMs": 2000,
+    "speed": 319,
+    "resistances": {
+      "physical": 75,
+      "fire": 0,
+      "earth": 60,
+      "energy": 50,
+      "ice": 112,
+      "holy": 112,
+      "death": 80,
+      "lifeDrain": 0
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Demon Skeleton",
+    "category": "MORTO-VIVO",
+    "hp": 400,
+    "experience": 240,
+    "meleeMin": 112,
+    "meleeMax": 140,
+    "attackIntervalMs": 2000,
+    "speed": 231,
+    "resistances": {
+      "physical": 100,
+      "fire": 0,
+      "earth": 0,
+      "energy": 100,
+      "ice": 100,
+      "holy": 125,
+      "death": 0,
+      "lifeDrain": 0
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Destroyer",
+    "category": "DEMÔNIO",
+    "hp": 3700,
+    "experience": 2500,
+    "meleeMin": 400,
+    "meleeMax": 500,
+    "attackIntervalMs": 2000,
+    "speed": 366,
+    "resistances": {
+      "physical": 80,
+      "fire": 70,
+      "earth": 80,
+      "energy": 0,
+      "ice": 115,
+      "holy": 103,
+      "death": 80,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Dragon",
+    "category": "DRAGÃO",
+    "hp": 1000,
+    "experience": 700,
+    "meleeMin": 104,
+    "meleeMax": 130,
+    "attackIntervalMs": 2000,
+    "speed": 221,
+    "resistances": {
+      "physical": 100,
+      "fire": 0,
+      "earth": 20,
+      "energy": 80,
+      "ice": 110,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Dragon Lord",
+    "category": "DRAGÃO",
+    "hp": 1900,
+    "experience": 2100,
+    "meleeMin": 184,
+    "meleeMax": 230,
+    "attackIntervalMs": 2000,
+    "speed": 255,
+    "resistances": {
+      "physical": 100,
+      "fire": 0,
+      "earth": 20,
+      "energy": 80,
+      "ice": 110,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Draken Spellweaver",
+    "category": "DRAGÃO",
+    "hp": 5000,
+    "experience": 3100,
+    "meleeMin": 202,
+    "meleeMax": 252,
+    "attackIntervalMs": 2000,
+    "speed": 402,
+    "resistances": {
+      "physical": 110,
+      "fire": 0,
+      "earth": 0,
+      "energy": 110,
+      "ice": 110,
+      "holy": 105,
+      "death": 20,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Draken Warmaster",
+    "category": "DRAGÃO",
+    "hp": 4150,
+    "experience": 2400,
+    "meleeMin": 240,
+    "meleeMax": 300,
+    "attackIntervalMs": 2000,
+    "speed": 390,
+    "resistances": {
+      "physical": 100,
+      "fire": 0,
+      "earth": 0,
+      "energy": 95,
+      "ice": 105,
+      "holy": 95,
+      "death": 50,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Dwarf",
+    "category": "HUMANOIDE",
+    "hp": 90,
+    "experience": 45,
+    "meleeMin": 24,
+    "meleeMax": 30,
+    "attackIntervalMs": 2000,
+    "speed": 218,
+    "resistances": {
+      "physical": 100,
+      "fire": 105,
+      "earth": 90,
+      "energy": 100,
+      "ice": 100,
+      "holy": 100,
+      "death": 105,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Elder Bonelord",
+    "category": "MÁGICO",
+    "hp": 500,
+    "experience": 280,
+    "meleeMin": 44,
+    "meleeMax": 55,
+    "attackIntervalMs": 2000,
+    "speed": 218,
+    "resistances": {
+      "physical": 100,
+      "fire": 110,
+      "earth": 0,
+      "energy": 80,
+      "ice": 70,
+      "holy": 100,
+      "death": 70,
+      "lifeDrain": 0
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Elder Forest Fury",
+    "category": "MÁGICO",
+    "hp": 670,
+    "experience": 480,
+    "meleeMin": 143,
+    "meleeMax": 179,
+    "attackIntervalMs": 2000,
+    "speed": 301,
+    "resistances": {
+      "physical": 100,
+      "fire": 105,
+      "earth": 100,
+      "energy": 100,
+      "ice": 100,
+      "holy": 90,
+      "death": 60,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Elf",
+    "category": "HUMANOIDE",
+    "hp": 100,
+    "experience": 42,
+    "meleeMin": 12,
+    "meleeMax": 15,
+    "attackIntervalMs": 2000,
+    "speed": 243,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 100,
+      "energy": 100,
+      "ice": 100,
+      "holy": 80,
+      "death": 110,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Elf Arcanist",
+    "category": "HUMANOIDE",
+    "hp": 220,
+    "experience": 175,
+    "meleeMin": 28,
+    "meleeMax": 35,
+    "attackIntervalMs": 2000,
+    "speed": 278,
+    "resistances": {
+      "physical": 100,
+      "fire": 50,
+      "earth": 100,
+      "energy": 80,
+      "ice": 100,
+      "holy": 110,
+      "death": 80,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Elf Scout",
+    "category": "HUMANOIDE",
+    "hp": 160,
+    "experience": 75,
+    "meleeMin": 24,
+    "meleeMax": 30,
+    "attackIntervalMs": 2000,
+    "speed": 278,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 100,
+      "energy": 100,
+      "ice": 100,
+      "holy": 80,
+      "death": 110,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Emerald Damselfly",
+    "category": "VERME",
+    "hp": 90,
+    "experience": 35,
+    "meleeMin": 3,
+    "meleeMax": 4,
+    "attackIntervalMs": 2000,
+    "speed": 255,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 100,
+      "energy": 100,
+      "ice": 100,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Energetic Book",
+    "category": "MÁGICO",
+    "hp": 19000,
+    "experience": 14790,
+    "meleeMin": 348,
+    "meleeMax": 694,
+    "attackIntervalMs": 2000,
+    "speed": 500,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 110,
+      "energy": 0,
+      "ice": 100,
+      "holy": 0,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Energuardian of Tales",
+    "category": "MÁGICO",
+    "hp": 13000,
+    "experience": 12274,
+    "meleeMin": 35,
+    "meleeMax": 1908,
+    "attackIntervalMs": 2000,
+    "speed": 482,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 112,
+      "energy": 0,
+      "ice": 100,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "uncommon",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Enlightened of the Cult",
+    "category": "HUMANO",
+    "hp": 700,
+    "experience": 500,
+    "meleeMin": 80,
+    "meleeMax": 100,
+    "attackIntervalMs": 2000,
+    "speed": 255,
+    "resistances": {
+      "physical": 105,
+      "fire": 100,
+      "earth": 100,
+      "energy": 105,
+      "ice": 80,
+      "holy": 80,
+      "death": 105,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Eternal Guardian",
+    "category": "CONSTRUCTO",
+    "hp": 2500,
+    "experience": 1800,
+    "meleeMin": 240,
+    "meleeMax": 300,
+    "attackIntervalMs": 2000,
+    "speed": 259,
+    "resistances": {
+      "physical": 80,
+      "fire": 30,
+      "earth": 0,
+      "energy": 90,
+      "ice": 90,
+      "holy": 80,
+      "death": 80,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Execowtioner",
+    "category": "HUMANOIDE",
+    "hp": 3500,
+    "experience": 2400,
+    "meleeMin": 320,
+    "meleeMax": 400,
+    "attackIntervalMs": 2000,
+    "speed": 334,
+    "resistances": {
+      "physical": 90,
+      "fire": 100,
+      "earth": 85,
+      "energy": 90,
+      "ice": 90,
+      "holy": 100,
+      "death": 85,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Falcon Knight",
+    "category": "MORTO-VIVO",
+    "hp": 9000,
+    "experience": 6300,
+    "meleeMin": 320,
+    "meleeMax": 400,
+    "attackIntervalMs": 2000,
+    "speed": 278,
+    "resistances": {
+      "physical": 70,
+      "fire": 100,
+      "earth": 100,
+      "energy": 100,
+      "ice": 100,
+      "holy": 110,
+      "death": 50,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Falcon Paladin",
+    "category": "MORTO-VIVO",
+    "hp": 8500,
+    "experience": 6900,
+    "meleeMin": 200,
+    "meleeMax": 250,
+    "attackIntervalMs": 2000,
+    "speed": 278,
+    "resistances": {
+      "physical": 90,
+      "fire": 100,
+      "earth": 100,
+      "energy": 100,
+      "ice": 100,
+      "holy": 110,
+      "death": 50,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Feral Sphinx",
+    "category": "MÁGICO",
+    "hp": 9800,
+    "experience": 7711,
+    "meleeMin": 360,
+    "meleeMax": 450,
+    "attackIntervalMs": 2000,
+    "speed": 386,
+    "resistances": {
+      "physical": 100,
+      "fire": 80,
+      "earth": 100,
+      "energy": 100,
+      "ice": 115,
+      "holy": 80,
+      "death": 115,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Forest Fury",
+    "category": "MÁGICO",
+    "hp": 480,
+    "experience": 330,
+    "meleeMin": 100,
+    "meleeMax": 125,
+    "attackIntervalMs": 2000,
+    "speed": 278,
+    "resistances": {
+      "physical": 100,
+      "fire": 105,
+      "earth": 100,
+      "energy": 100,
+      "ice": 100,
+      "holy": 90,
+      "death": 60,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Frazzlemaw",
+    "category": "MÁGICO",
+    "hp": 4100,
+    "experience": 3740,
+    "meleeMin": 320,
+    "meleeMax": 400,
+    "attackIntervalMs": 2000,
+    "speed": 464,
+    "resistances": {
+      "physical": 95,
+      "fire": 90,
+      "earth": 80,
+      "energy": 85,
+      "ice": 95,
+      "holy": 105,
+      "death": 90,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Frost Flower Asura",
+    "category": "DEMÔNIO",
+    "hp": 3500,
+    "experience": 4200,
+    "meleeMin": 130,
+    "meleeMax": 440,
+    "attackIntervalMs": 2000,
+    "speed": 278,
+    "resistances": {
+      "physical": 105,
+      "fire": 115,
+      "earth": 110,
+      "energy": 100,
+      "ice": 0,
+      "holy": 70,
+      "death": 80,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Frost Troll",
+    "category": "HUMANOIDE",
+    "hp": 55,
+    "experience": 23,
+    "meleeMin": 16,
+    "meleeMax": 20,
+    "attackIntervalMs": 2000,
+    "speed": 180,
+    "resistances": {
+      "physical": 100,
+      "fire": 60,
+      "earth": 110,
+      "energy": 115,
+      "ice": 100,
+      "holy": 90,
+      "death": 110,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Gazer Spectre",
+    "category": "MORTO-VIVO",
+    "hp": 4500,
+    "experience": 4200,
+    "meleeMin": 360,
+    "meleeMax": 450,
+    "attackIntervalMs": 2000,
+    "speed": 455,
+    "resistances": {
+      "physical": 15,
+      "fire": 30,
+      "earth": 100,
+      "energy": 100,
+      "ice": 130,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Ghost Wolf",
+    "category": "MORTO-VIVO",
+    "hp": 160,
+    "experience": 65,
+    "meleeMin": 40,
+    "meleeMax": 50,
+    "attackIntervalMs": 2000,
+    "speed": 334,
+    "resistances": {
+      "physical": 65,
+      "fire": 105,
+      "earth": 90,
+      "energy": 100,
+      "ice": 100,
+      "holy": 105,
+      "death": 80,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Ghoul",
+    "category": "MORTO-VIVO",
+    "hp": 100,
+    "experience": 85,
+    "meleeMin": 52,
+    "meleeMax": 65,
+    "attackIntervalMs": 2000,
+    "speed": 185,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 80,
+      "energy": 70,
+      "ice": 90,
+      "holy": 125,
+      "death": 0,
+      "lifeDrain": 0
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Giant Spider",
+    "category": "VERME",
+    "hp": 1300,
+    "experience": 900,
+    "meleeMin": 240,
+    "meleeMax": 300,
+    "attackIntervalMs": 2000,
+    "speed": 301,
+    "resistances": {
+      "physical": 100,
+      "fire": 110,
+      "earth": 0,
+      "energy": 80,
+      "ice": 80,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Gloom Wolf",
+    "category": "MAMÍFERO",
+    "hp": 200,
+    "experience": 70,
+    "meleeMin": 74,
+    "meleeMax": 92,
+    "attackIntervalMs": 2000,
+    "speed": 312,
+    "resistances": {
+      "physical": 100,
+      "fire": 105,
+      "earth": 80,
+      "energy": 100,
+      "ice": 105,
+      "holy": 105,
+      "death": 90,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Green Djinn",
+    "category": "MÁGICO",
+    "hp": 330,
+    "experience": 215,
+    "meleeMin": 88,
+    "meleeMax": 110,
+    "attackIntervalMs": 2000,
+    "speed": 278,
+    "resistances": {
+      "physical": 80,
+      "fire": 20,
+      "earth": 100,
+      "energy": 50,
+      "ice": 110,
+      "holy": 113,
+      "death": 80,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Grim Reaper",
+    "category": "MORTO-VIVO",
+    "hp": 3900,
+    "experience": 5500,
+    "meleeMin": 256,
+    "meleeMax": 320,
+    "attackIntervalMs": 2000,
+    "speed": 386,
+    "resistances": {
+      "physical": 75,
+      "fire": 110,
+      "earth": 60,
+      "energy": 110,
+      "ice": 35,
+      "holy": 110,
+      "death": 20,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Grimeleech",
+    "category": "DEMÔNIO",
+    "hp": 9500,
+    "experience": 7216,
+    "meleeMin": 256,
+    "meleeMax": 320,
+    "attackIntervalMs": 2000,
+    "speed": 406,
+    "resistances": {
+      "physical": 100,
+      "fire": 80,
+      "earth": 60,
+      "energy": 105,
+      "ice": 100,
+      "holy": 100,
+      "death": 40,
+      "lifeDrain": 0
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Guardian of Tales",
+    "category": "MÁGICO",
+    "hp": 15000,
+    "experience": 9000,
+    "meleeMin": 300,
+    "meleeMax": 825,
+    "attackIntervalMs": 2000,
+    "speed": 482,
+    "resistances": {
+      "physical": 100,
+      "fire": 0,
+      "earth": 100,
+      "energy": 100,
+      "ice": 112,
+      "holy": 100,
+      "death": 50,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Haunted Treeling",
+    "category": "PLANTA",
+    "hp": 450,
+    "experience": 310,
+    "meleeMin": 120,
+    "meleeMax": 150,
+    "attackIntervalMs": 2000,
+    "speed": 289,
+    "resistances": {
+      "physical": 100,
+      "fire": 105,
+      "earth": 0,
+      "energy": 100,
+      "ice": 90,
+      "holy": 80,
+      "death": 90,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Hellflayer",
+    "category": "DEMÔNIO",
+    "hp": 14000,
+    "experience": 11720,
+    "meleeMin": 200,
+    "meleeMax": 869,
+    "attackIntervalMs": 2000,
+    "speed": 396,
+    "resistances": {
+      "physical": 100,
+      "fire": 30,
+      "earth": 80,
+      "energy": 105,
+      "ice": 95,
+      "holy": 105,
+      "death": 75,
+      "lifeDrain": 0
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Hellspawn",
+    "category": "DEMÔNIO",
+    "hp": 3500,
+    "experience": 2550,
+    "meleeMin": 282,
+    "meleeMax": 352,
+    "attackIntervalMs": 2000,
+    "speed": 410,
+    "resistances": {
+      "physical": 90,
+      "fire": 60,
+      "earth": 20,
+      "energy": 90,
+      "ice": 110,
+      "holy": 70,
+      "death": 105,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Hero",
+    "category": "HUMANO",
+    "hp": 1400,
+    "experience": 1200,
+    "meleeMin": 192,
+    "meleeMax": 240,
+    "attackIntervalMs": 2000,
+    "speed": 345,
+    "resistances": {
+      "physical": 90,
+      "fire": 70,
+      "earth": 50,
+      "energy": 60,
+      "ice": 90,
+      "holy": 50,
+      "death": 120,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Hunter",
+    "category": "HUMANO",
+    "hp": 150,
+    "experience": 150,
+    "meleeMin": 16,
+    "meleeMax": 20,
+    "attackIntervalMs": 2000,
+    "speed": 266,
+    "resistances": {
+      "physical": 105,
+      "fire": 100,
+      "earth": 100,
+      "energy": 100,
+      "ice": 100,
+      "holy": 80,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Hydra",
+    "category": "DRAGÃO",
+    "hp": 2350,
+    "experience": 2100,
+    "meleeMin": 216,
+    "meleeMax": 270,
+    "attackIntervalMs": 2000,
+    "speed": 426,
+    "resistances": {
+      "physical": 105,
+      "fire": 100,
+      "earth": 0,
+      "energy": 110,
+      "ice": 50,
+      "holy": 70,
+      "death": 100,
+      "lifeDrain": 0
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Ice Golem",
+    "category": "CONSTRUCTO",
+    "hp": 385,
+    "experience": 295,
+    "meleeMin": 176,
+    "meleeMax": 220,
+    "attackIntervalMs": 2000,
+    "speed": 243,
+    "resistances": {
+      "physical": 80,
+      "fire": 0,
+      "earth": 100,
+      "energy": 120,
+      "ice": 0,
+      "holy": 0,
+      "death": 0,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Icecold Book",
+    "category": "MÁGICO",
+    "hp": 21000,
+    "experience": 10940,
+    "meleeMin": 150,
+    "meleeMax": 300,
+    "attackIntervalMs": 2000,
+    "speed": 500,
+    "resistances": {
+      "physical": 100,
+      "fire": 110,
+      "earth": 100,
+      "energy": 100,
+      "ice": 0,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Ink Blob",
+    "category": "GOSMA",
+    "hp": 9500,
+    "experience": 12350,
+    "meleeMin": 156,
+    "meleeMax": 195,
+    "attackIntervalMs": 2000,
+    "speed": 445,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 0,
+      "energy": 108,
+      "ice": 100,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Insane Siren",
+    "category": "HUMANOIDE",
+    "hp": 6500,
+    "experience": 6000,
+    "meleeMin": 360,
+    "meleeMax": 450,
+    "attackIntervalMs": 2000,
+    "speed": 482,
+    "resistances": {
+      "physical": 110,
+      "fire": 45,
+      "earth": 100,
+      "energy": 100,
+      "ice": 120,
+      "holy": 75,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Insectoid Worker",
+    "category": "VERME",
+    "hp": 950,
+    "experience": 650,
+    "meleeMin": 194,
+    "meleeMax": 243,
+    "attackIntervalMs": 2000,
+    "speed": 301,
+    "resistances": {
+      "physical": 95,
+      "fire": 110,
+      "earth": 0,
+      "energy": 105,
+      "ice": 110,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Juggernaut",
+    "category": "DEMÔNIO",
+    "hp": 18000,
+    "experience": 11200,
+    "meleeMin": 1176,
+    "meleeMax": 1470,
+    "attackIntervalMs": 2000,
+    "speed": 406,
+    "resistances": {
+      "physical": 70,
+      "fire": 70,
+      "earth": 80,
+      "energy": 110,
+      "ice": 90,
+      "holy": 105,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Killer Caiman",
+    "category": "RÉPTIL",
+    "hp": 1500,
+    "experience": 900,
+    "meleeMin": 144,
+    "meleeMax": 180,
+    "attackIntervalMs": 2000,
+    "speed": 238,
+    "resistances": {
+      "physical": 90,
+      "fire": 100,
+      "earth": 80,
+      "energy": 105,
+      "ice": 90,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Knowledge Elemental",
+    "category": "ELEMENTAL",
+    "hp": 10500,
+    "experience": 11457,
+    "meleeMin": 348,
+    "meleeMax": 1388,
+    "attackIntervalMs": 2000,
+    "speed": 518,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 100,
+      "energy": 0,
+      "ice": 100,
+      "holy": 50,
+      "death": 120,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Ladybug",
+    "category": "VERME",
+    "hp": 255,
+    "experience": 70,
+    "meleeMin": 3,
+    "meleeMax": 4,
+    "attackIntervalMs": 2000,
+    "speed": 132,
+    "resistances": {
+      "physical": 110,
+      "fire": 115,
+      "earth": 50,
+      "energy": 100,
+      "ice": 105,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Lamassu",
+    "category": "MÁGICO",
+    "hp": 8700,
+    "experience": 9000,
+    "meleeMin": 400,
+    "meleeMax": 500,
+    "attackIntervalMs": 2000,
+    "speed": 386,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 80,
+      "energy": 100,
+      "ice": 100,
+      "holy": 80,
+      "death": 130,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Lancer Beetle",
+    "category": "VERME",
+    "hp": 400,
+    "experience": 275,
+    "meleeMin": 92,
+    "meleeMax": 115,
+    "attackIntervalMs": 2000,
+    "speed": 330,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 0,
+      "energy": 100,
+      "ice": 100,
+      "holy": 100,
+      "death": 50,
+      "lifeDrain": 0
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Leaf Golem",
+    "category": "PLANTA",
+    "hp": 90,
+    "experience": 45,
+    "meleeMin": 72,
+    "meleeMax": 90,
+    "attackIntervalMs": 2000,
+    "speed": 175,
+    "resistances": {
+      "physical": 100,
+      "fire": 105,
+      "earth": 60,
+      "energy": 100,
+      "ice": 105,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Lizard Chosen",
+    "category": "RÉPTIL",
+    "hp": 3050,
+    "experience": 2200,
+    "meleeMin": 288,
+    "meleeMax": 360,
+    "attackIntervalMs": 2000,
+    "speed": 336,
+    "resistances": {
+      "physical": 100,
+      "fire": 90,
+      "earth": 0,
+      "energy": 80,
+      "ice": 90,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Lizard Dragon Priest",
+    "category": "RÉPTIL",
+    "hp": 1450,
+    "experience": 1320,
+    "meleeMin": 40,
+    "meleeMax": 50,
+    "attackIntervalMs": 2000,
+    "speed": 319,
+    "resistances": {
+      "physical": 100,
+      "fire": 15,
+      "earth": 0,
+      "energy": 100,
+      "ice": 100,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Lizard High Guard",
+    "category": "RÉPTIL",
+    "hp": 1800,
+    "experience": 1450,
+    "meleeMin": 245,
+    "meleeMax": 306,
+    "attackIntervalMs": 2000,
+    "speed": 299,
+    "resistances": {
+      "physical": 100,
+      "fire": 55,
+      "earth": 0,
+      "energy": 100,
+      "ice": 110,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Lizard Legionnaire",
+    "category": "RÉPTIL",
+    "hp": 1400,
+    "experience": 1100,
+    "meleeMin": 144,
+    "meleeMax": 180,
+    "attackIntervalMs": 2000,
+    "speed": 330,
+    "resistances": {
+      "physical": 100,
+      "fire": 55,
+      "earth": 0,
+      "energy": 100,
+      "ice": 110,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Lizard Sentinel",
+    "category": "RÉPTIL",
+    "hp": 265,
+    "experience": 110,
+    "meleeMin": 36,
+    "meleeMax": 45,
+    "attackIntervalMs": 2000,
+    "speed": 231,
+    "resistances": {
+      "physical": 100,
+      "fire": 110,
+      "earth": 0,
+      "energy": 90,
+      "ice": 80,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Lizard Snakecharmer",
+    "category": "RÉPTIL",
+    "hp": 325,
+    "experience": 210,
+    "meleeMin": 24,
+    "meleeMax": 30,
+    "attackIntervalMs": 2000,
+    "speed": 410,
+    "resistances": {
+      "physical": 110,
+      "fire": 110,
+      "earth": 0,
+      "energy": 80,
+      "ice": 80,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Lizard Templar",
+    "category": "RÉPTIL",
+    "hp": 410,
+    "experience": 155,
+    "meleeMin": 56,
+    "meleeMax": 70,
+    "attackIntervalMs": 2000,
+    "speed": 223,
+    "resistances": {
+      "physical": 100,
+      "fire": 110,
+      "earth": 0,
+      "energy": 80,
+      "ice": 90,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Lizard Zaogun",
+    "category": "RÉPTIL",
+    "hp": 2955,
+    "experience": 1700,
+    "meleeMin": 279,
+    "meleeMax": 349,
+    "attackIntervalMs": 2000,
+    "speed": 340,
+    "resistances": {
+      "physical": 95,
+      "fire": 55,
+      "earth": 0,
+      "energy": 80,
+      "ice": 85,
+      "holy": 100,
+      "death": 90,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Makara",
+    "category": "ANFÍBIO",
+    "hp": 5050,
+    "experience": 5720,
+    "meleeMin": 145,
+    "meleeMax": 390,
+    "attackIntervalMs": 2000,
+    "speed": 416,
+    "resistances": {
+      "physical": 110,
+      "fire": 95,
+      "earth": 115,
+      "energy": 115,
+      "ice": 75,
+      "holy": 100,
+      "death": 105,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Manticore",
+    "category": "MÁGICO",
+    "hp": 6700,
+    "experience": 4469,
+    "meleeMin": 400,
+    "meleeMax": 500,
+    "attackIntervalMs": 2000,
+    "speed": 366,
+    "resistances": {
+      "physical": 100,
+      "fire": 80,
+      "earth": 100,
+      "energy": 100,
+      "ice": 120,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Marsh Stalker",
+    "category": "AVE",
+    "hp": 100,
+    "experience": 50,
+    "meleeMin": 8,
+    "meleeMax": 10,
+    "attackIntervalMs": 2000,
+    "speed": 193,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 105,
+      "energy": 100,
+      "ice": 95,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Massive Earth Elemental",
+    "category": "ELEMENTAL",
+    "hp": 1330,
+    "experience": 1100,
+    "meleeMin": 88,
+    "meleeMax": 110,
+    "attackIntervalMs": 2000,
+    "speed": 436,
+    "resistances": {
+      "physical": 80,
+      "fire": 115,
+      "earth": 0,
+      "energy": 10,
+      "ice": 85,
+      "holy": 50,
+      "death": 55,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Medusa",
+    "category": "MÁGICO",
+    "hp": 4500,
+    "experience": 4050,
+    "meleeMin": 360,
+    "meleeMax": 450,
+    "attackIntervalMs": 2000,
+    "speed": 312,
+    "resistances": {
+      "physical": 100,
+      "fire": 110,
+      "earth": 0,
+      "energy": 110,
+      "ice": 80,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 0
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Midnight Asura",
+    "category": "DEMÔNIO",
+    "hp": 3100,
+    "experience": 4100,
+    "meleeMin": 310,
+    "meleeMax": 387,
+    "attackIntervalMs": 2000,
+    "speed": 301,
+    "resistances": {
+      "physical": 100,
+      "fire": 90,
+      "earth": 110,
+      "energy": 110,
+      "ice": 90,
+      "holy": 70,
+      "death": 0,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Minotaur",
+    "category": "HUMANOIDE",
+    "hp": 100,
+    "experience": 50,
+    "meleeMin": 30,
+    "meleeMax": 38,
+    "attackIntervalMs": 2000,
+    "speed": 216,
+    "resistances": {
+      "physical": 100,
+      "fire": 80,
+      "earth": 100,
+      "energy": 100,
+      "ice": 110,
+      "holy": 90,
+      "death": 110,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Minotaur Amazon",
+    "category": "HUMANOIDE",
+    "hp": 2600,
+    "experience": 2200,
+    "meleeMin": 120,
+    "meleeMax": 150,
+    "attackIntervalMs": 2000,
+    "speed": 312,
+    "resistances": {
+      "physical": 100,
+      "fire": 105,
+      "earth": 100,
+      "energy": 110,
+      "ice": 95,
+      "holy": 90,
+      "death": 90,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Minotaur Hunter",
+    "category": "HUMANOIDE",
+    "hp": 1400,
+    "experience": 1700,
+    "meleeMin": 120,
+    "meleeMax": 150,
+    "attackIntervalMs": 2000,
+    "speed": 289,
+    "resistances": {
+      "physical": 100,
+      "fire": 90,
+      "earth": 100,
+      "energy": 100,
+      "ice": 105,
+      "holy": 90,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Mooh'Tah Warrior",
+    "category": "HUMANOIDE",
+    "hp": 1200,
+    "experience": 900,
+    "meleeMin": 176,
+    "meleeMax": 220,
+    "attackIntervalMs": 2000,
+    "speed": 278,
+    "resistances": {
+      "physical": 95,
+      "fire": 85,
+      "earth": 90,
+      "energy": 95,
+      "ice": 90,
+      "holy": 100,
+      "death": 85,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Moohtant",
+    "category": "HUMANOIDE",
+    "hp": 3200,
+    "experience": 2600,
+    "meleeMin": 240,
+    "meleeMax": 300,
+    "attackIntervalMs": 2000,
+    "speed": 323,
+    "resistances": {
+      "physical": 100,
+      "fire": 95,
+      "earth": 0,
+      "energy": 85,
+      "ice": 85,
+      "holy": 100,
+      "death": 90,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Mummy",
+    "category": "MORTO-VIVO",
+    "hp": 240,
+    "experience": 150,
+    "meleeMin": 68,
+    "meleeMax": 85,
+    "attackIntervalMs": 2000,
+    "speed": 193,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 0,
+      "energy": 100,
+      "ice": 80,
+      "holy": 125,
+      "death": 0,
+      "lifeDrain": 0
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Mutated Bat",
+    "category": "MAMÍFERO",
+    "hp": 900,
+    "experience": 750,
+    "meleeMin": 134,
+    "meleeMax": 168,
+    "attackIntervalMs": 2000,
+    "speed": 238,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 0,
+      "energy": 100,
+      "ice": 100,
+      "holy": 100,
+      "death": 0,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Mutated Human",
+    "category": "HUMANO",
+    "hp": 300,
+    "experience": 150,
+    "meleeMin": 60,
+    "meleeMax": 75,
+    "attackIntervalMs": 2000,
+    "speed": 198,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 0,
+      "energy": 100,
+      "ice": 80,
+      "holy": 125,
+      "death": 0,
+      "lifeDrain": 0
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Mutated Tiger",
+    "category": "MAMÍFERO",
+    "hp": 1100,
+    "experience": 750,
+    "meleeMin": 120,
+    "meleeMax": 150,
+    "attackIntervalMs": 2000,
+    "speed": 255,
+    "resistances": {
+      "physical": 100,
+      "fire": 80,
+      "earth": 20,
+      "energy": 80,
+      "ice": 80,
+      "holy": 100,
+      "death": 105,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Naga Archer",
+    "category": "RÉPTIL",
+    "hp": 4640,
+    "experience": 5150,
+    "meleeMin": 95,
+    "meleeMax": 390,
+    "attackIntervalMs": 2000,
+    "speed": 430,
+    "resistances": {
+      "physical": 110,
+      "fire": 80,
+      "earth": 115,
+      "energy": 110,
+      "ice": 80,
+      "holy": 120,
+      "death": 90,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Naga Warrior",
+    "category": "RÉPTIL",
+    "hp": 5530,
+    "experience": 5890,
+    "meleeMin": 120,
+    "meleeMax": 340,
+    "attackIntervalMs": 2000,
+    "speed": 426,
+    "resistances": {
+      "physical": 80,
+      "fire": 90,
+      "earth": 105,
+      "energy": 105,
+      "ice": 90,
+      "holy": 120,
+      "death": 90,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Necromancer",
+    "category": "HUMANO",
+    "hp": 580,
+    "experience": 580,
+    "meleeMin": 128,
+    "meleeMax": 160,
+    "attackIntervalMs": 2000,
+    "speed": 240,
+    "resistances": {
+      "physical": 105,
+      "fire": 105,
+      "earth": 0,
+      "energy": 80,
+      "ice": 90,
+      "holy": 105,
+      "death": 50,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Novice of the Cult",
+    "category": "HUMANO",
+    "hp": 285,
+    "experience": 100,
+    "meleeMin": 52,
+    "meleeMax": 65,
+    "attackIntervalMs": 2000,
+    "speed": 255,
+    "resistances": {
+      "physical": 110,
+      "fire": 105,
+      "earth": 90,
+      "energy": 108,
+      "ice": 90,
+      "holy": 90,
+      "death": 108,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Ogre Rowdy",
+    "category": "GIGANTE",
+    "hp": 4500,
+    "experience": 3680,
+    "meleeMin": 360,
+    "meleeMax": 450,
+    "attackIntervalMs": 2000,
+    "speed": 482,
+    "resistances": {
+      "physical": 100,
+      "fire": 70,
+      "earth": 0,
+      "energy": 110,
+      "ice": 130,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Ogre Sage",
+    "category": "GIGANTE",
+    "hp": 4800,
+    "experience": 4820,
+    "meleeMin": 360,
+    "meleeMax": 450,
+    "attackIntervalMs": 2000,
+    "speed": 518,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 75,
+      "energy": 130,
+      "ice": 100,
+      "holy": 110,
+      "death": 0,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Orc",
+    "category": "HUMANOIDE",
+    "hp": 70,
+    "experience": 25,
+    "meleeMin": 16,
+    "meleeMax": 20,
+    "attackIntervalMs": 2000,
+    "speed": 255,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 110,
+      "energy": 80,
+      "ice": 100,
+      "holy": 90,
+      "death": 110,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Orc Berserker",
+    "category": "HUMANOIDE",
+    "hp": 210,
+    "experience": 195,
+    "meleeMin": 76,
+    "meleeMax": 95,
+    "attackIntervalMs": 2000,
+    "speed": 312,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 110,
+      "energy": 85,
+      "ice": 100,
+      "holy": 90,
+      "death": 110,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Orc Leader",
+    "category": "HUMANOIDE",
+    "hp": 450,
+    "experience": 270,
+    "meleeMin": 88,
+    "meleeMax": 110,
+    "attackIntervalMs": 2000,
+    "speed": 289,
+    "resistances": {
+      "physical": 100,
+      "fire": 0,
+      "earth": 110,
+      "energy": 80,
+      "ice": 100,
+      "holy": 80,
+      "death": 110,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Orc Rider",
+    "category": "HUMANOIDE",
+    "hp": 180,
+    "experience": 110,
+    "meleeMin": 56,
+    "meleeMax": 70,
+    "attackIntervalMs": 2000,
+    "speed": 323,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 110,
+      "energy": 80,
+      "ice": 100,
+      "holy": 90,
+      "death": 110,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Orc Shaman",
+    "category": "HUMANOIDE",
+    "hp": 115,
+    "experience": 110,
+    "meleeMin": 8,
+    "meleeMax": 10,
+    "attackIntervalMs": 2000,
+    "speed": 180,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 110,
+      "energy": 50,
+      "ice": 100,
+      "holy": 90,
+      "death": 105,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Orc Spearman",
+    "category": "HUMANOIDE",
+    "hp": 105,
+    "experience": 38,
+    "meleeMin": 12,
+    "meleeMax": 15,
+    "attackIntervalMs": 2000,
+    "speed": 226,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 110,
+      "energy": 80,
+      "ice": 100,
+      "holy": 80,
+      "death": 110,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Orc Warlord",
+    "category": "HUMANOIDE",
+    "hp": 950,
+    "experience": 670,
+    "meleeMin": 120,
+    "meleeMax": 150,
+    "attackIntervalMs": 2000,
+    "speed": 294,
+    "resistances": {
+      "physical": 100,
+      "fire": 20,
+      "earth": 110,
+      "energy": 80,
+      "ice": 100,
+      "holy": 90,
+      "death": 105,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Orc Warrior",
+    "category": "HUMANOIDE",
+    "hp": 125,
+    "experience": 50,
+    "meleeMin": 28,
+    "meleeMax": 35,
+    "attackIntervalMs": 2000,
+    "speed": 243,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 110,
+      "energy": 70,
+      "ice": 100,
+      "holy": 90,
+      "death": 110,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Plaguesmith",
+    "category": "DEMÔNIO",
+    "hp": 8250,
+    "experience": 3800,
+    "meleeMin": 200,
+    "meleeMax": 539,
+    "attackIntervalMs": 2000,
+    "speed": 386,
+    "resistances": {
+      "physical": 100,
+      "fire": 70,
+      "earth": 0,
+      "energy": 110,
+      "ice": 80,
+      "holy": 110,
+      "death": 90,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Polar Bear",
+    "category": "MAMÍFERO",
+    "hp": 85,
+    "experience": 28,
+    "meleeMin": 24,
+    "meleeMax": 30,
+    "attackIntervalMs": 2000,
+    "speed": 201,
+    "resistances": {
+      "physical": 100,
+      "fire": 90,
+      "earth": 100,
+      "energy": 105,
+      "ice": 80,
+      "holy": 100,
+      "death": 110,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Priestess",
+    "category": "HUMANO",
+    "hp": 390,
+    "experience": 420,
+    "meleeMin": 60,
+    "meleeMax": 75,
+    "attackIntervalMs": 2000,
+    "speed": 218,
+    "resistances": {
+      "physical": 110,
+      "fire": 60,
+      "earth": 30,
+      "energy": 100,
+      "ice": 100,
+      "holy": 110,
+      "death": 90,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Rage Squid",
+    "category": "MÁGICO",
+    "hp": 17000,
+    "experience": 13900,
+    "meleeMin": 0,
+    "meleeMax": 750,
+    "attackIntervalMs": 2000,
+    "speed": 491,
+    "resistances": {
+      "physical": 100,
+      "fire": 0,
+      "earth": 100,
+      "energy": 100,
+      "ice": 115,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Rat",
+    "category": "MAMÍFERO",
+    "hp": 20,
+    "experience": 5,
+    "meleeMin": 3,
+    "meleeMax": 4,
+    "attackIntervalMs": 2000,
+    "speed": 172,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 80,
+      "energy": 100,
+      "ice": 110,
+      "holy": 80,
+      "death": 110,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Ripper Spectre",
+    "category": "MORTO-VIVO",
+    "hp": 3800,
+    "experience": 3500,
+    "meleeMin": 296,
+    "meleeMax": 370,
+    "attackIntervalMs": 2000,
+    "speed": 445,
+    "resistances": {
+      "physical": 30,
+      "fire": 120,
+      "earth": 80,
+      "energy": 110,
+      "ice": 100,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Rorc",
+    "category": "MÁGICO",
+    "hp": 260,
+    "experience": 105,
+    "meleeMin": 80,
+    "meleeMax": 100,
+    "attackIntervalMs": 2000,
+    "speed": 226,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 110,
+      "energy": 80,
+      "ice": 100,
+      "holy": 90,
+      "death": 110,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Rotworm",
+    "category": "VERME",
+    "hp": 65,
+    "experience": 40,
+    "meleeMin": 24,
+    "meleeMax": 30,
+    "attackIntervalMs": 2000,
+    "speed": 180,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 100,
+      "energy": 100,
+      "ice": 100,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Scarab",
+    "category": "VERME",
+    "hp": 550,
+    "experience": 120,
+    "meleeMin": 76,
+    "meleeMax": 95,
+    "attackIntervalMs": 2000,
+    "speed": 206,
+    "resistances": {
+      "physical": 95,
+      "fire": 118,
+      "earth": 0,
+      "energy": 90,
+      "ice": 80,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Seacrest Serpent",
+    "category": "RÉPTIL",
+    "hp": 3000,
+    "experience": 2900,
+    "meleeMin": 426,
+    "meleeMax": 533,
+    "attackIntervalMs": 2000,
+    "speed": 552,
+    "resistances": {
+      "physical": 90,
+      "fire": 80,
+      "earth": 90,
+      "energy": 90,
+      "ice": 0,
+      "holy": 100,
+      "death": 90,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Serpent Spawn",
+    "category": "RÉPTIL",
+    "hp": 3000,
+    "experience": 3050,
+    "meleeMin": 202,
+    "meleeMax": 252,
+    "attackIntervalMs": 2000,
+    "speed": 294,
+    "resistances": {
+      "physical": 100,
+      "fire": 110,
+      "earth": 0,
+      "energy": 110,
+      "ice": 80,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Shark",
+    "category": "AQUÁTICO",
+    "hp": 1200,
+    "experience": 700,
+    "meleeMin": 140,
+    "meleeMax": 175,
+    "attackIntervalMs": 2000,
+    "speed": 355,
+    "resistances": {
+      "physical": 95,
+      "fire": 45,
+      "earth": 80,
+      "energy": 105,
+      "ice": 90,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Silencer",
+    "category": "MÁGICO",
+    "hp": 5400,
+    "experience": 5100,
+    "meleeMin": 252,
+    "meleeMax": 315,
+    "attackIntervalMs": 2000,
+    "speed": 527,
+    "resistances": {
+      "physical": 95,
+      "fire": 70,
+      "earth": 0,
+      "energy": 85,
+      "ice": 85,
+      "holy": 125,
+      "death": 35,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Skeleton",
+    "category": "MORTO-VIVO",
+    "hp": 50,
+    "experience": 35,
+    "meleeMin": 24,
+    "meleeMax": 30,
+    "attackIntervalMs": 2000,
+    "speed": 198,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 100,
+      "energy": 100,
+      "ice": 100,
+      "holy": 125,
+      "death": 0,
+      "lifeDrain": 0
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Skeleton Warrior",
+    "category": "MORTO-VIVO",
+    "hp": 65,
+    "experience": 45,
+    "meleeMin": 24,
+    "meleeMax": 30,
+    "attackIntervalMs": 2000,
+    "speed": 198,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 100,
+      "energy": 100,
+      "ice": 100,
+      "holy": 125,
+      "death": 0,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Smuggler",
+    "category": "HUMANO",
+    "hp": 130,
+    "experience": 48,
+    "meleeMin": 48,
+    "meleeMax": 60,
+    "attackIntervalMs": 2000,
+    "speed": 226,
+    "resistances": {
+      "physical": 105,
+      "fire": 100,
+      "earth": 100,
+      "energy": 100,
+      "ice": 100,
+      "holy": 100,
+      "death": 105,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Soul-Broken Harbinger",
+    "category": "HUMANOIDE",
+    "hp": 6300,
+    "experience": 5800,
+    "meleeMin": 320,
+    "meleeMax": 400,
+    "attackIntervalMs": 2000,
+    "speed": 482,
+    "resistances": {
+      "physical": 100,
+      "fire": 130,
+      "earth": 100,
+      "energy": 105,
+      "ice": 45,
+      "holy": 100,
+      "death": 80,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Sphinx",
+    "category": "MÁGICO",
+    "hp": 8500,
+    "experience": 7500,
+    "meleeMin": 320,
+    "meleeMax": 400,
+    "attackIntervalMs": 2000,
+    "speed": 355,
+    "resistances": {
+      "physical": 100,
+      "fire": 90,
+      "earth": 100,
+      "energy": 100,
+      "ice": 115,
+      "holy": 85,
+      "death": 120,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Spider",
+    "category": "VERME",
+    "hp": 30,
+    "experience": 12,
+    "meleeMin": 5,
+    "meleeMax": 6,
+    "attackIntervalMs": 2000,
+    "speed": 196,
+    "resistances": {
+      "physical": 100,
+      "fire": 120,
+      "earth": 100,
+      "energy": 100,
+      "ice": 100,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Squid Warden",
+    "category": "MÁGICO",
+    "hp": 16500,
+    "experience": 13127,
+    "meleeMin": 150,
+    "meleeMax": 450,
+    "attackIntervalMs": 2000,
+    "speed": 491,
+    "resistances": {
+      "physical": 100,
+      "fire": 115,
+      "earth": 100,
+      "energy": 100,
+      "ice": 0,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Swamp Troll",
+    "category": "HUMANOIDE",
+    "hp": 55,
+    "experience": 25,
+    "meleeMin": 10,
+    "meleeMax": 13,
+    "attackIntervalMs": 2000,
+    "speed": 165,
+    "resistances": {
+      "physical": 100,
+      "fire": 105,
+      "earth": 85,
+      "energy": 100,
+      "ice": 100,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Swampling",
+    "category": "PLANTA",
+    "hp": 80,
+    "experience": 45,
+    "meleeMin": 64,
+    "meleeMax": 80,
+    "attackIntervalMs": 2000,
+    "speed": 243,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 100,
+      "energy": 100,
+      "ice": 100,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Tarantula",
+    "category": "VERME",
+    "hp": 225,
+    "experience": 120,
+    "meleeMin": 56,
+    "meleeMax": 70,
+    "attackIntervalMs": 2000,
+    "speed": 271,
+    "resistances": {
+      "physical": 100,
+      "fire": 115,
+      "earth": 0,
+      "energy": 90,
+      "ice": 110,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Thanatursus",
+    "category": "MÁGICO",
+    "hp": 7200,
+    "experience": 6300,
+    "meleeMin": 200,
+    "meleeMax": 450,
+    "attackIntervalMs": 2000,
+    "speed": 464,
+    "resistances": {
+      "physical": 70,
+      "fire": 100,
+      "earth": 100,
+      "energy": 50,
+      "ice": 100,
+      "holy": 80,
+      "death": 120,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Thornback Tortoise",
+    "category": "RÉPTIL",
+    "hp": 300,
+    "experience": 150,
+    "meleeMin": 88,
+    "meleeMax": 110,
+    "attackIntervalMs": 2000,
+    "speed": 193,
+    "resistances": {
+      "physical": 70,
+      "fire": 110,
+      "earth": 80,
+      "energy": 100,
+      "ice": 80,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Tortoise",
+    "category": "RÉPTIL",
+    "hp": 185,
+    "experience": 90,
+    "meleeMin": 40,
+    "meleeMax": 50,
+    "attackIntervalMs": 2000,
+    "speed": 167,
+    "resistances": {
+      "physical": 80,
+      "fire": 110,
+      "earth": 80,
+      "energy": 100,
+      "ice": 80,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Troll",
+    "category": "HUMANOIDE",
+    "hp": 50,
+    "experience": 20,
+    "meleeMin": 12,
+    "meleeMax": 15,
+    "attackIntervalMs": 2000,
+    "speed": 162,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 110,
+      "energy": 80,
+      "ice": 100,
+      "holy": 90,
+      "death": 110,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Usurper Archer",
+    "category": "HUMANO",
+    "hp": 7300,
+    "experience": 6800,
+    "meleeMin": 344,
+    "meleeMax": 430,
+    "attackIntervalMs": 2000,
+    "speed": 312,
+    "resistances": {
+      "physical": 90,
+      "fire": 90,
+      "earth": 100,
+      "energy": 100,
+      "ice": 80,
+      "holy": 90,
+      "death": 120,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Usurper Knight",
+    "category": "HUMANO",
+    "hp": 8200,
+    "experience": 6900,
+    "meleeMin": 400,
+    "meleeMax": 500,
+    "attackIntervalMs": 2000,
+    "speed": 323,
+    "resistances": {
+      "physical": 65,
+      "fire": 90,
+      "earth": 100,
+      "energy": 100,
+      "ice": 80,
+      "holy": 85,
+      "death": 115,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Usurper Warlock",
+    "category": "HUMANO",
+    "hp": 7500,
+    "experience": 7000,
+    "meleeMin": 200,
+    "meleeMax": 250,
+    "attackIntervalMs": 2000,
+    "speed": 396,
+    "resistances": {
+      "physical": 90,
+      "fire": 95,
+      "earth": 100,
+      "energy": 100,
+      "ice": 70,
+      "holy": 68,
+      "death": 110,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Valkyrie",
+    "category": "HUMANO",
+    "hp": 190,
+    "experience": 85,
+    "meleeMin": 56,
+    "meleeMax": 70,
+    "attackIntervalMs": 2000,
+    "speed": 226,
+    "resistances": {
+      "physical": 110,
+      "fire": 90,
+      "earth": 100,
+      "energy": 100,
+      "ice": 90,
+      "holy": 95,
+      "death": 105,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Vampire",
+    "category": "MORTO-VIVO",
+    "hp": 475,
+    "experience": 305,
+    "meleeMin": 120,
+    "meleeMax": 150,
+    "attackIntervalMs": 2000,
+    "speed": 299,
+    "resistances": {
+      "physical": 75,
+      "fire": 110,
+      "earth": 0,
+      "energy": 100,
+      "ice": 100,
+      "holy": 125,
+      "death": 0,
+      "lifeDrain": 0
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Vampire Bride",
+    "category": "MORTO-VIVO",
+    "hp": 1200,
+    "experience": 1050,
+    "meleeMin": 152,
+    "meleeMax": 190,
+    "attackIntervalMs": 2000,
+    "speed": 255,
+    "resistances": {
+      "physical": 100,
+      "fire": 110,
+      "earth": 80,
+      "energy": 90,
+      "ice": 80,
+      "holy": 110,
+      "death": 0,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Vampire Viscount",
+    "category": "MORTO-VIVO",
+    "hp": 1200,
+    "experience": 800,
+    "meleeMin": 120,
+    "meleeMax": 150,
+    "attackIntervalMs": 2000,
+    "speed": 278,
+    "resistances": {
+      "physical": 90,
+      "fire": 105,
+      "earth": 0,
+      "energy": 100,
+      "ice": 90,
+      "holy": 125,
+      "death": 0,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Vexclaw",
+    "category": "DEMÔNIO",
+    "hp": 8500,
+    "experience": 6248,
+    "meleeMin": 510,
+    "meleeMax": 638,
+    "attackIntervalMs": 2000,
+    "speed": 334,
+    "resistances": {
+      "physical": 95,
+      "fire": 25,
+      "earth": 60,
+      "energy": 90,
+      "ice": 105,
+      "holy": 110,
+      "death": 80,
+      "lifeDrain": 0
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Wailing Widow",
+    "category": "VERME",
+    "hp": 850,
+    "experience": 450,
+    "meleeMin": 96,
+    "meleeMax": 120,
+    "attackIntervalMs": 2000,
+    "speed": 316,
+    "resistances": {
+      "physical": 100,
+      "fire": 110,
+      "earth": 0,
+      "energy": 100,
+      "ice": 100,
+      "holy": 90,
+      "death": 0,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "War Golem",
+    "category": "CONSTRUCTO",
+    "hp": 4300,
+    "experience": 2310,
+    "meleeMin": 440,
+    "meleeMax": 550,
+    "attackIntervalMs": 2000,
+    "speed": 386,
+    "resistances": {
+      "physical": 90,
+      "fire": 85,
+      "earth": 50,
+      "energy": 95,
+      "ice": 70,
+      "holy": 50,
+      "death": 80,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Waspoid",
+    "category": "VERME",
+    "hp": 1100,
+    "experience": 830,
+    "meleeMin": 198,
+    "meleeMax": 248,
+    "attackIntervalMs": 2000,
+    "speed": 376,
+    "resistances": {
+      "physical": 102,
+      "fire": 110,
+      "earth": 0,
+      "energy": 75,
+      "ice": 100,
+      "holy": 107,
+      "death": 95,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Werebadger",
+    "category": "LICANTROPO",
+    "hp": 1700,
+    "experience": 1600,
+    "meleeMin": 144,
+    "meleeMax": 180,
+    "attackIntervalMs": 2000,
+    "speed": 323,
+    "resistances": {
+      "physical": 95,
+      "fire": 105,
+      "earth": 50,
+      "energy": 90,
+      "ice": 105,
+      "holy": 105,
+      "death": 60,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Werebear",
+    "category": "LICANTROPO",
+    "hp": 2400,
+    "experience": 2100,
+    "meleeMin": 50,
+    "meleeMax": 485,
+    "attackIntervalMs": 2000,
+    "speed": 278,
+    "resistances": {
+      "physical": 95,
+      "fire": 105,
+      "earth": 50,
+      "energy": 85,
+      "ice": 90,
+      "holy": 105,
+      "death": 55,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Wereboar",
+    "category": "LICANTROPO",
+    "hp": 2200,
+    "experience": 2000,
+    "meleeMin": 308,
+    "meleeMax": 385,
+    "attackIntervalMs": 2000,
+    "speed": 366,
+    "resistances": {
+      "physical": 100,
+      "fire": 105,
+      "earth": 50,
+      "energy": 85,
+      "ice": 95,
+      "holy": 105,
+      "death": 50,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Werehyaena",
+    "category": "LICANTROPO",
+    "hp": 2700,
+    "experience": 2200,
+    "meleeMin": 240,
+    "meleeMax": 300,
+    "attackIntervalMs": 2000,
+    "speed": 301,
+    "resistances": {
+      "physical": 100,
+      "fire": 50,
+      "earth": 60,
+      "energy": 100,
+      "ice": 120,
+      "holy": 125,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Werehyaena Shaman",
+    "category": "LICANTROPO",
+    "hp": 2500,
+    "experience": 2200,
+    "meleeMin": 208,
+    "meleeMax": 260,
+    "attackIntervalMs": 2000,
+    "speed": 278,
+    "resistances": {
+      "physical": 100,
+      "fire": 75,
+      "earth": 60,
+      "energy": 100,
+      "ice": 120,
+      "holy": 95,
+      "death": 105,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Werelion",
+    "category": "LICANTROPO",
+    "hp": 2800,
+    "experience": 2200,
+    "meleeMin": 240,
+    "meleeMax": 300,
+    "attackIntervalMs": 2000,
+    "speed": 278,
+    "resistances": {
+      "physical": 100,
+      "fire": 75,
+      "earth": 50,
+      "energy": 100,
+      "ice": 125,
+      "holy": 100,
+      "death": 55,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Werelioness",
+    "category": "LICANTROPO",
+    "hp": 3000,
+    "experience": 2300,
+    "meleeMin": 240,
+    "meleeMax": 300,
+    "attackIntervalMs": 2000,
+    "speed": 278,
+    "resistances": {
+      "physical": 100,
+      "fire": 65,
+      "earth": 60,
+      "energy": 100,
+      "ice": 125,
+      "holy": 105,
+      "death": 50,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "White Lion",
+    "category": "MAMÍFERO",
+    "hp": 2700,
+    "experience": 2300,
+    "meleeMin": 250,
+    "meleeMax": 350,
+    "attackIntervalMs": 2000,
+    "speed": 278,
+    "resistances": {
+      "physical": 100,
+      "fire": 75,
+      "earth": 70,
+      "energy": 100,
+      "ice": 120,
+      "holy": 100,
+      "death": 60,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Wiggler",
+    "category": "VERME",
+    "hp": 1200,
+    "experience": 900,
+    "meleeMin": 360,
+    "meleeMax": 450,
+    "attackIntervalMs": 2000,
+    "speed": 426,
+    "resistances": {
+      "physical": 100,
+      "fire": 105,
+      "earth": 0,
+      "energy": 95,
+      "ice": 100,
+      "holy": 100,
+      "death": 90,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Wild Warrior",
+    "category": "HUMANO",
+    "hp": 135,
+    "experience": 60,
+    "meleeMin": 56,
+    "meleeMax": 70,
+    "attackIntervalMs": 2000,
+    "speed": 243,
+    "resistances": {
+      "physical": 105,
+      "fire": 100,
+      "earth": 100,
+      "energy": 100,
+      "ice": 100,
+      "holy": 90,
+      "death": 105,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Wilting Leaf Golem",
+    "category": "PLANTA",
+    "hp": 380,
+    "experience": 225,
+    "meleeMin": 96,
+    "meleeMax": 120,
+    "attackIntervalMs": 1500,
+    "speed": 191,
+    "resistances": {
+      "physical": 100,
+      "fire": 105,
+      "earth": 60,
+      "energy": 100,
+      "ice": 105,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Winter Wolf",
+    "category": "MAMÍFERO",
+    "hp": 30,
+    "experience": 20,
+    "meleeMin": 16,
+    "meleeMax": 20,
+    "attackIntervalMs": 2000,
+    "speed": 218,
+    "resistances": {
+      "physical": 100,
+      "fire": 90,
+      "earth": 100,
+      "energy": 105,
+      "ice": 80,
+      "holy": 90,
+      "death": 110,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "semi-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Wolf",
+    "category": "MAMÍFERO",
+    "hp": 25,
+    "experience": 18,
+    "meleeMin": 16,
+    "meleeMax": 20,
+    "attackIntervalMs": 2000,
+    "speed": 211,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 100,
+      "energy": 100,
+      "ice": 110,
+      "holy": 70,
+      "death": 105,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Worm Priestess",
+    "category": "HUMANOIDE",
+    "hp": 1100,
+    "experience": 1500,
+    "meleeMin": 120,
+    "meleeMax": 150,
+    "attackIntervalMs": 2000,
+    "speed": 252,
+    "resistances": {
+      "physical": 100,
+      "fire": 90,
+      "earth": 80,
+      "energy": 100,
+      "ice": 95,
+      "holy": 100,
+      "death": 95,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Wyrm",
+    "category": "DRAGÃO",
+    "hp": 1825,
+    "experience": 1550,
+    "meleeMin": 188,
+    "meleeMax": 235,
+    "attackIntervalMs": 2000,
+    "speed": 345,
+    "resistances": {
+      "physical": 100,
+      "fire": 80,
+      "earth": 25,
+      "energy": 0,
+      "ice": 105,
+      "holy": 100,
+      "death": 105,
+      "lifeDrain": 0
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Wyvern",
+    "category": "RÉPTIL",
+    "hp": 795,
+    "experience": 515,
+    "meleeMin": 96,
+    "meleeMax": 120,
+    "attackIntervalMs": 2000,
+    "speed": 238,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 0,
+      "energy": 80,
+      "ice": 90,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare"
+    ],
+    "source": "ui-observed"
+  },
+  {
+    "name": "Young Goanna",
+    "category": "RÉPTIL",
+    "hp": 6200,
+    "experience": 5345,
+    "meleeMin": 400,
+    "meleeMax": 500,
+    "attackIntervalMs": 2000,
+    "speed": 445,
+    "resistances": {
+      "physical": 100,
+      "fire": 100,
+      "earth": 80,
+      "energy": 120,
+      "ice": 100,
+      "holy": 100,
+      "death": 100,
+      "lifeDrain": 100
+    },
+    "lootRarities": [
+      "common",
+      "uncommon",
+      "semi-rare",
+      "rare",
+      "very-rare"
+    ],
+    "source": "ui-observed"
+  }
+]

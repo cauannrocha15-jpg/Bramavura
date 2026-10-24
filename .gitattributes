@@ -1,0 +1,6 @@
+*.cjs text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.cmd text eol=crlf
+# Preserve captured bytes so capture-integrity.json remains valid after clone.
+public/** -text

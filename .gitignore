@@ -1,0 +1,7 @@
+data/local-state.json
+*.log
+node_modules/
+.env
+.env.*
+*.pem
+tests/backend-fixture-*/
