@@ -1,0 +1,920 @@
+{
+  "captureType": "huntera-outfit-render-representatives-observed-v1",
+  "profileId": "huntera-five-reviewed-render-representatives-v1",
+  "complete": true,
+  "expectedRecords": 5,
+  "canonicalAssignments": 0,
+  "method": "Curated visual review of captured grade and eligible detail screenshots against local original-helper renders; not recovered server IDs.",
+  "scope": {
+    "staticSouth": true,
+    "sampledAnimatedSouth": true,
+    "otherDirectionsObserved": false,
+    "completeCycleObserved": false,
+    "colorsAssigned": false
+  },
+  "source": {
+    "assets": {
+      "appearancesFile": "appearances-3a2006c112dfb9c8c9576a4c74c41d219e4f29b5ec5c4b583f6476280878451d.dat",
+      "appearancesSha256": "3a2006c112dfb9c8c9576a4c74c41d219e4f29b5ec5c4b583f6476280878451d",
+      "catalogSha256": "0db63b7341cd056efe86e3e9d903bb3097c04b73dccfce552f7ccfbfa947d95c",
+      "parserSha256": "00c04ae3c10d3b7f58b8789282c9acbd69cb4ee156810d3ed1ef0464c4c19379",
+      "helperHashes": {
+        "chunk-6NUS5ELR.js": "4545bad96b8264ca7c24f29759e5dc49bd693e4b943f47e623586b6e6122c094",
+        "chunk-TXVO7XLA.js": "8cc6ddab37307bcbfb73daa08b6e2db32654b8bb8ced131cae781da80326a5a6",
+        "chunk-WTB5UT3V.js": "70901dae4c47514dfa2ee6813a076381b701c4d5f36a6d45fe3f61bb1ce7ce96"
+      }
+    },
+    "staticCapture": {
+      "file": "work/outfit-research/captures/bestiary-static.json",
+      "sha256": "165d97efd48bdecd10a39e274f1db3c0451551fd3b13560b462ddda3e3012bcd"
+    },
+    "shortlist": {
+      "file": "work/outfit-research/analysis/review-shortlist.json",
+      "sha256": "9ecb96ddbea6bfdc1dddef6188d2919b1a61fc6a7768d9f27cfca15c7391696e"
+    },
+    "staticReview": {
+      "file": "work/outfit-research/analysis/visual-review.json",
+      "sha256": "b3f887238b8c7a3c9c63501163b90ec0ab6e4a056fc7f1752f107e19c28b544a"
+    },
+    "staticIndex": {
+      "file": "work/outfit-research/artifacts/outfit-index.json",
+      "sha256": "7266b06d1b764c372fc9a809022c5497972a87172ad1070010fbca1645fb9f0c"
+    },
+    "animatedManifest": {
+      "file": "work/outfit-research/artifacts/animated-south128/index.json",
+      "sha256": "2a3d23e78f68b3547cb3dd9b641117afddad9a5306a065d2756ca41b0ce4af20"
+    },
+    "detailExtraction": {
+      "file": "work/outfit-research/analysis/detail-reference/extraction.json",
+      "sha256": "b6650f5a5ccffd296bc449c647956be09d5b9cd0ed737a129ff620f90ffd5873"
+    },
+    "detailComparisons": {
+      "file": "work/outfit-research/analysis/animated-detail-review/b6650f5a5ccf-2a3d23e78f68/comparisons.json",
+      "sha256": "919693c292277625c403f2525d391fa29b51bf96868b4ec3fd54024d8310056f"
+    },
+    "detailReview": {
+      "file": "work/outfit-research/analysis/animated-detail-review/b6650f5a5ccf-2a3d23e78f68/sampled-visual-review.json",
+      "sha256": "6d4cbbbccc94a6515979b9c4ee4d31980cc9d0f83ee6a6c5548fbd3a05f64abd"
+    },
+    "rendererCompatibility": {
+      "file": "work/reference-20261026/comparison.json",
+      "sha256": "326a338d061cb6d65f35594cfd0dca2055f18e3861a70de3eef711822c1794c3"
+    },
+    "selectionAuthorization": {
+      "kind": "coordinating-task-instruction",
+      "date": "2026-10-26",
+      "note": "Exactly these five representatives were selected after grade and sampled detail review. Adult Goanna reference1/2 repeat the same crop;3/4 differ. Seven invalid Batch02 references are excluded."
+    }
+  },
+  "records": [
+    {
+      "name": "Adult Goanna",
+      "renderCandidateId": 1195,
+      "canonicalOutfitId": null,
+      "canonicalColors": null,
+      "reviewStatus": "sampled-appearance-coherent",
+      "scope": {
+        "staticSouth": true,
+        "sampledAnimatedSouth": true,
+        "otherDirectionsObserved": false,
+        "completeCycleObserved": false,
+        "exactPhaseObserved": false
+      },
+      "staticEvidence": {
+        "profileId": "south-idle64-world-no-colors-v1",
+        "reference": {
+          "file": "work/outfit-research/analysis/reference-crops/004-adult-goanna-64.png",
+          "sha256": "b5207ae60a3fd4361183bb3eeb0b872a01f1b3e718320ed5f66cec22cd005a59"
+        },
+        "renderedPng": {
+          "file": "work/outfit-research/artifacts/outfits64/outfit-1195.png",
+          "sha256": "909a34f75248b0469623489c52c9ad2ea5a297d0de2275493375502f38173eff"
+        },
+        "priorDecision": "hold-color-detail",
+        "effectiveDecision": "static-appearance-coherent",
+        "reviewNote": "The earlier color-detail hold was superseded by explicit coordinating-agent acceptance after three distinct detail crops were inspected; server ID remains unknown."
+      },
+      "animatedEvidence": {
+        "profileId": "south-animated128-world-no-colors-v1",
+        "selectedFrameGroup": 1,
+        "declaredPhases": 8,
+        "effectivePhases": 8,
+        "directionUsed": 2,
+        "unionBounds": {
+          "x": 38,
+          "y": 5,
+          "w": 25,
+          "h": 58
+        },
+        "renderedFrames": [
+          {
+            "phase": 0,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-1195/phase-000.png",
+            "sha256": "d3d30d977c5c85e317ed4657425c925d928232eb85bdc493927c434214799a5d"
+          },
+          {
+            "phase": 1,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-1195/phase-001.png",
+            "sha256": "da59593a36c2c03b3bc894f0ddb823213501e35ad0f2b5c74fc520462659f551"
+          },
+          {
+            "phase": 2,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-1195/phase-002.png",
+            "sha256": "bc0ff79bf61e8f5afb7053a24174f2fbfb5ea829786002a5d4c48febb3ecb640"
+          },
+          {
+            "phase": 3,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-1195/phase-003.png",
+            "sha256": "2d1928fdf52a91df893bd2e093e149607da93d669739ca4a2e4c40f6cf76e8ff"
+          },
+          {
+            "phase": 4,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-1195/phase-004.png",
+            "sha256": "497ec4d7367e63fa4dc0ce4eb18e91b10a20ef0e92259c4c8892d6c3b77e8d18"
+          },
+          {
+            "phase": 5,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-1195/phase-005.png",
+            "sha256": "a7ad3f7eaf57846c4cac9f17913e85bf040e960e855bfd3451f8239f0fefc3a8"
+          },
+          {
+            "phase": 6,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-1195/phase-006.png",
+            "sha256": "7d579080717d88d521f11c0124a8506df84451c15e58ce4023b21f8e0dc9f8d8"
+          },
+          {
+            "phase": 7,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-1195/phase-007.png",
+            "sha256": "f44c2b62f8efbe5bba5cb99bd30a01682fd1dc776b8b7ef9c931a622854983c2"
+          }
+        ],
+        "sampledReferences": [
+          {
+            "referenceFrame": 1,
+            "validity": "usable-species-visible",
+            "assessment": "sampled-appearance-coherent",
+            "capture": {
+              "file": "work/outfit-research/captures/bestiary-detail-01.json",
+              "sha256": "df1b91479dc33024797973371732160a85652bd5765c28ec03651f55e3243063"
+            },
+            "capturedAt": "2026-10-24T11:47:41.100Z",
+            "screenshot": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-01-row-01-frame-01.jpg",
+              "sha256": "cd146209e0de1d56bb8946d0225ca1cb15214864d19bfdfd7717ffdbd866f97c"
+            },
+            "nativeCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-01-row-01-frame-01-native.png",
+              "sha256": "7d4dc10894e5e2985462a7a5c35e68803b3b3655ed07027b20fb9b4f7106d712"
+            },
+            "normalizedCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-01-row-01-frame-01-128.png",
+              "sha256": "b4148572d2cd0d39294f2aaaa341d423f6aa0ca7b0b55b34c6be88a247b8b84e"
+            },
+            "exactPhase": null
+          },
+          {
+            "referenceFrame": 2,
+            "validity": "usable-species-visible",
+            "assessment": "sampled-appearance-coherent",
+            "capture": {
+              "file": "work/outfit-research/captures/bestiary-detail-01.json",
+              "sha256": "df1b91479dc33024797973371732160a85652bd5765c28ec03651f55e3243063"
+            },
+            "capturedAt": "2026-10-24T11:47:41.344Z",
+            "screenshot": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-01-row-01-frame-02.jpg",
+              "sha256": "cd146209e0de1d56bb8946d0225ca1cb15214864d19bfdfd7717ffdbd866f97c"
+            },
+            "nativeCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-01-row-01-frame-02-native.png",
+              "sha256": "7d4dc10894e5e2985462a7a5c35e68803b3b3655ed07027b20fb9b4f7106d712"
+            },
+            "normalizedCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-01-row-01-frame-02-128.png",
+              "sha256": "b4148572d2cd0d39294f2aaaa341d423f6aa0ca7b0b55b34c6be88a247b8b84e"
+            },
+            "exactPhase": null
+          },
+          {
+            "referenceFrame": 3,
+            "validity": "usable-species-visible",
+            "assessment": "sampled-appearance-coherent",
+            "capture": {
+              "file": "work/outfit-research/captures/bestiary-detail-01.json",
+              "sha256": "df1b91479dc33024797973371732160a85652bd5765c28ec03651f55e3243063"
+            },
+            "capturedAt": "2026-10-24T11:47:41.645Z",
+            "screenshot": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-01-row-01-frame-03.jpg",
+              "sha256": "992694c02db4e411a930a69417c2eb0858a722bb4df32fb8e770f408b2d0324e"
+            },
+            "nativeCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-01-row-01-frame-03-native.png",
+              "sha256": "7c19a6fc2faf355b03f3a3c468fd7690788f311dedef77a6ba1bbe30bd54430c"
+            },
+            "normalizedCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-01-row-01-frame-03-128.png",
+              "sha256": "e8879ef54157964b2469f75841e5a7408f1b00e21f11845c30f142a4793f746b"
+            },
+            "exactPhase": null
+          },
+          {
+            "referenceFrame": 4,
+            "validity": "usable-species-visible",
+            "assessment": "sampled-appearance-coherent",
+            "capture": {
+              "file": "work/outfit-research/captures/bestiary-detail-01.json",
+              "sha256": "df1b91479dc33024797973371732160a85652bd5765c28ec03651f55e3243063"
+            },
+            "capturedAt": "2026-10-24T11:47:41.846Z",
+            "screenshot": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-01-row-01-frame-04.jpg",
+              "sha256": "6610ab8d583ea98ce305527f2f0cd9404246bdca5c384a5be981cdbe177af228"
+            },
+            "nativeCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-01-row-01-frame-04-native.png",
+              "sha256": "40c5ed82fb9f5e086d75dfd2c78d6844a85477ddd72e455752fff9272264b744"
+            },
+            "normalizedCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-01-row-01-frame-04-128.png",
+              "sha256": "0f1eba8fd6f64088173bbcca714c2ed5c0ed05a4b0a5b8173a0556e756a47352"
+            },
+            "exactPhase": null
+          }
+        ],
+        "rejectedReferences": []
+      },
+      "limits": [
+        "Visual representative for local rendering; canonical server outfit ID and outfit colors remain unknown.",
+        "Only south static shape/colors and sampled south animation poses were reviewed.",
+        "Other directions, exact phase correspondence, complete cycle and pixel equality were not established."
+      ]
+    },
+    {
+      "name": "Arachnophobica",
+      "renderCandidateId": 1135,
+      "canonicalOutfitId": null,
+      "canonicalColors": null,
+      "reviewStatus": "sampled-appearance-coherent",
+      "scope": {
+        "staticSouth": true,
+        "sampledAnimatedSouth": true,
+        "otherDirectionsObserved": false,
+        "completeCycleObserved": false,
+        "exactPhaseObserved": false
+      },
+      "staticEvidence": {
+        "profileId": "south-idle64-world-no-colors-v1",
+        "reference": {
+          "file": "work/outfit-research/analysis/reference-crops/007-arachnophobica-64.png",
+          "sha256": "5d74ec07f4fa104de1c06904fc57f8063260b96ff84f20f44b772be4f18041cf"
+        },
+        "renderedPng": {
+          "file": "work/outfit-research/artifacts/outfits64/outfit-1135.png",
+          "sha256": "65d8469d5798913a929dc6711a2152b35354de60beffa3280e428488eebbd810"
+        },
+        "priorDecision": "static-appearance-coherent",
+        "effectiveDecision": "static-appearance-coherent",
+        "reviewNote": "Static sheet reviewed as coherent; sampled detail crops independently reviewed as coherent."
+      },
+      "animatedEvidence": {
+        "profileId": "south-animated128-world-no-colors-v1",
+        "selectedFrameGroup": 1,
+        "declaredPhases": 8,
+        "effectivePhases": 8,
+        "directionUsed": 2,
+        "unionBounds": {
+          "x": 20,
+          "y": 13,
+          "w": 44,
+          "h": 49
+        },
+        "renderedFrames": [
+          {
+            "phase": 0,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-1135/phase-000.png",
+            "sha256": "7832af12d8ce97dcdb2670a66be44c9cd208edcb1f17470d198af34f1e7cba00"
+          },
+          {
+            "phase": 1,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-1135/phase-001.png",
+            "sha256": "83add7f28ca35d61d5d68beefa2ba3ebb88d570ead43a8563299718d07e10d18"
+          },
+          {
+            "phase": 2,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-1135/phase-002.png",
+            "sha256": "985f45ebb89ede673ef2c1f8a3db720a824dd0b4765654b6933276fc7a59c9c9"
+          },
+          {
+            "phase": 3,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-1135/phase-003.png",
+            "sha256": "7631b70805f8ff0cd3afcc1ce1cf46a1636abf6331d3ee925408edfa03f5911e"
+          },
+          {
+            "phase": 4,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-1135/phase-004.png",
+            "sha256": "b7ac438554be2319700008dd5e1ce47782c3ff01fbda710f86f7ed51fe314172"
+          },
+          {
+            "phase": 5,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-1135/phase-005.png",
+            "sha256": "5c31acd5d9a50a8e2d5a62579628b350f2cd37a89078f48f8c44eacf6a6082b2"
+          },
+          {
+            "phase": 6,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-1135/phase-006.png",
+            "sha256": "a1915e6a559a5d4faf11c5e33a68e776bc01c58afb29c8129ba1b0eb625d593a"
+          },
+          {
+            "phase": 7,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-1135/phase-007.png",
+            "sha256": "0cb7b20ac9c096fc6d36fe22af47b0d1a22e2bf3176bcd21eae0345a2ca96bbe"
+          }
+        ],
+        "sampledReferences": [
+          {
+            "referenceFrame": 4,
+            "validity": "usable-species-visible",
+            "assessment": "sampled-appearance-coherent",
+            "capture": {
+              "file": "work/outfit-research/captures/bestiary-detail-02.json",
+              "sha256": "0a7649875f4433843e110d608a3abdd480d2f7542607def69a3bff6a56871c91"
+            },
+            "capturedAt": "2026-10-26T13:10:34.399Z",
+            "screenshot": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-01-frame-04.jpg",
+              "sha256": "6ee0943e37919e1be9f93da84e209ef9a012fce777a0a61379586c5d91024c34"
+            },
+            "nativeCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-01-frame-04-native.png",
+              "sha256": "6230a95bc9b226a1232e1c43078ce0d3cc42d6da8813a72b3c7acba2491fc9fb"
+            },
+            "normalizedCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-01-frame-04-128.png",
+              "sha256": "fd093ac9ff72164f0286b234bab5174c5cb33202416626ab13623b582cf5e003"
+            },
+            "exactPhase": null
+          }
+        ],
+        "rejectedReferences": [
+          {
+            "referenceFrame": 1,
+            "validity": "ui-content-in-crop",
+            "assessment": "not-assessable",
+            "screenshot": {
+              "file": "batch-02-row-01-frame-01.jpg",
+              "sha256": "5c7494966074cd98c3fbb67d474aa17dde5401d272cbcf1f868c9480a4de6a55"
+            },
+            "normalizedCrop": {
+              "file": "batch-02-row-01-frame-01-128.png",
+              "sha256": "edf6743f142607053d67d9390cfb4c7eb654f52a8903372dfd263b5a88fd055b"
+            }
+          },
+          {
+            "referenceFrame": 2,
+            "validity": "blank-crop",
+            "assessment": "not-assessable",
+            "screenshot": {
+              "file": "batch-02-row-01-frame-02.jpg",
+              "sha256": "624f8bd810137e02695e8ee6ec5d434429f2dbf495aef2284bb753447242ab69"
+            },
+            "normalizedCrop": {
+              "file": "batch-02-row-01-frame-02-128.png",
+              "sha256": "d55b38f9160c4116a3f8544e208926b115fb9f7fcd281672af42c084313d411a"
+            }
+          },
+          {
+            "referenceFrame": 3,
+            "validity": "blank-crop",
+            "assessment": "not-assessable",
+            "screenshot": {
+              "file": "batch-02-row-01-frame-03.jpg",
+              "sha256": "624f8bd810137e02695e8ee6ec5d434429f2dbf495aef2284bb753447242ab69"
+            },
+            "normalizedCrop": {
+              "file": "batch-02-row-01-frame-03-128.png",
+              "sha256": "d55b38f9160c4116a3f8544e208926b115fb9f7fcd281672af42c084313d411a"
+            }
+          }
+        ]
+      },
+      "limits": [
+        "Visual representative for local rendering; canonical server outfit ID and outfit colors remain unknown.",
+        "Only south static shape/colors and sampled south animation poses were reviewed.",
+        "Other directions, exact phase correspondence, complete cycle and pixel equality were not established."
+      ]
+    },
+    {
+      "name": "Blood Crab",
+      "renderCandidateId": 200,
+      "canonicalOutfitId": null,
+      "canonicalColors": null,
+      "reviewStatus": "sampled-appearance-coherent",
+      "scope": {
+        "staticSouth": true,
+        "sampledAnimatedSouth": true,
+        "otherDirectionsObserved": false,
+        "completeCycleObserved": false,
+        "exactPhaseObserved": false
+      },
+      "staticEvidence": {
+        "profileId": "south-idle64-world-no-colors-v1",
+        "reference": {
+          "file": "work/outfit-research/analysis/reference-crops/011-blood-crab-64.png",
+          "sha256": "5cf6106a27c5b32c01f99a3d5ca874e2b0c210d11b5bba6ba8a4cace6849b734"
+        },
+        "renderedPng": {
+          "file": "work/outfit-research/artifacts/outfits64/outfit-200.png",
+          "sha256": "f93455d36f66845966ed404f07d6b7c42aa70f45c01f2f81fac67694361bb843"
+        },
+        "priorDecision": "static-appearance-coherent",
+        "effectiveDecision": "static-appearance-coherent",
+        "reviewNote": "Static sheet reviewed as coherent; sampled detail crops independently reviewed as coherent."
+      },
+      "animatedEvidence": {
+        "profileId": "south-animated128-world-no-colors-v1",
+        "selectedFrameGroup": 1,
+        "declaredPhases": 8,
+        "effectivePhases": 8,
+        "directionUsed": 2,
+        "unionBounds": {
+          "x": 8,
+          "y": 15,
+          "w": 55,
+          "h": 49
+        },
+        "renderedFrames": [
+          {
+            "phase": 0,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-200/phase-000.png",
+            "sha256": "714d95ccfc26cf2b8b98e1a819852510441822428c7cb77f410057cffb23fbfe"
+          },
+          {
+            "phase": 1,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-200/phase-001.png",
+            "sha256": "2b55a18e3f45ffa714bd47d6a7cac1be90bb1cba651d328ed6f5fe0dfed86eec"
+          },
+          {
+            "phase": 2,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-200/phase-002.png",
+            "sha256": "e0e435cba9a5be90292f8eb22c7551f0393ebd5d5d8b8d99844e901a70ce9804"
+          },
+          {
+            "phase": 3,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-200/phase-003.png",
+            "sha256": "3c4991e6397fa0f2833e47791bd8c97e6c9046f857701aed96db2af9f4b0764c"
+          },
+          {
+            "phase": 4,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-200/phase-004.png",
+            "sha256": "15645aea9c8e49244333d6698452e9ffa38dd1231ad508f283600bbeaf171c79"
+          },
+          {
+            "phase": 5,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-200/phase-005.png",
+            "sha256": "546f93f6d3be33d2a5f00b5cab71888dff608e85ce0ffc0aa19069d3712bd012"
+          },
+          {
+            "phase": 6,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-200/phase-006.png",
+            "sha256": "def3994526362663b6a4a4b081b585317282881589e6ee4cba8e2f93b449c981"
+          },
+          {
+            "phase": 7,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-200/phase-007.png",
+            "sha256": "a5b5a72fdefcde1be674a77ed88699c3dc747d702f565e97d210df54ce02c19a"
+          }
+        ],
+        "sampledReferences": [
+          {
+            "referenceFrame": 2,
+            "validity": "usable-species-visible",
+            "assessment": "sampled-appearance-coherent",
+            "capture": {
+              "file": "work/outfit-research/captures/bestiary-detail-02.json",
+              "sha256": "0a7649875f4433843e110d608a3abdd480d2f7542607def69a3bff6a56871c91"
+            },
+            "capturedAt": "2026-10-26T13:11:01.807Z",
+            "screenshot": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-02-frame-02.jpg",
+              "sha256": "ecf298f9d6f1e4c0c203e51104996c88ddd4f5b7ab7d8c6bdb8e2833aac890b0"
+            },
+            "nativeCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-02-frame-02-native.png",
+              "sha256": "4d29e8fa9b6cc24cd9538c97e4712e53b32a66c113c4da333e2e1bf0a6708449"
+            },
+            "normalizedCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-02-frame-02-128.png",
+              "sha256": "01405fd37841c1752aa8f9ec7a5c0cdbc6cbd879531e86f031d936be8b74387e"
+            },
+            "exactPhase": null
+          },
+          {
+            "referenceFrame": 3,
+            "validity": "usable-species-visible",
+            "assessment": "sampled-appearance-coherent",
+            "capture": {
+              "file": "work/outfit-research/captures/bestiary-detail-02.json",
+              "sha256": "0a7649875f4433843e110d608a3abdd480d2f7542607def69a3bff6a56871c91"
+            },
+            "capturedAt": "2026-10-26T13:11:01.908Z",
+            "screenshot": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-02-frame-03.jpg",
+              "sha256": "6f78777a3c02a52f43caa436af70016688bc51e48b3d0bc08718d16bb0b3f626"
+            },
+            "nativeCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-02-frame-03-native.png",
+              "sha256": "1c539071174f01ed38b5b5c88a97a8d6428215c6ac59a2fe04130aa2273f97a0"
+            },
+            "normalizedCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-02-frame-03-128.png",
+              "sha256": "c94732e49897452505c76194615d300fe916cbc39f5a7041a4c62765f58edb86"
+            },
+            "exactPhase": null
+          },
+          {
+            "referenceFrame": 4,
+            "validity": "usable-species-visible",
+            "assessment": "sampled-appearance-coherent",
+            "capture": {
+              "file": "work/outfit-research/captures/bestiary-detail-02.json",
+              "sha256": "0a7649875f4433843e110d608a3abdd480d2f7542607def69a3bff6a56871c91"
+            },
+            "capturedAt": "2026-10-26T13:11:02.025Z",
+            "screenshot": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-02-frame-04.jpg",
+              "sha256": "817fe85e3e8fada42eb9a4755f0425ea6f8be24669ff39519f2ab40d39ff6c7e"
+            },
+            "nativeCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-02-frame-04-native.png",
+              "sha256": "024b36f43759c50bf45af1ea24b917fc5628a99ddeed62c0fdac6e3fe8aa0ae0"
+            },
+            "normalizedCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-02-frame-04-128.png",
+              "sha256": "fa1305eed72a4b0207a0fec6381e5dfd828a5318ebd50f43c971543e15561b62"
+            },
+            "exactPhase": null
+          }
+        ],
+        "rejectedReferences": [
+          {
+            "referenceFrame": 1,
+            "validity": "previous-entry-visible",
+            "assessment": "not-assessable",
+            "screenshot": {
+              "file": "batch-02-row-02-frame-01.jpg",
+              "sha256": "85ee582eb0ce8c9e75f1c4f2ea5688563c3a3bb55914f7b7dc80fb56d5d15501"
+            },
+            "normalizedCrop": {
+              "file": "batch-02-row-02-frame-01-128.png",
+              "sha256": "e2e28e6296dd4713c8a22eb6cc3f1964d0ac726f442b35c22ce9f4522e561273"
+            }
+          }
+        ]
+      },
+      "limits": [
+        "Visual representative for local rendering; canonical server outfit ID and outfit colors remain unknown.",
+        "Only south static shape/colors and sampled south animation poses were reviewed.",
+        "Other directions, exact phase correspondence, complete cycle and pixel equality were not established."
+      ]
+    },
+    {
+      "name": "Blood Priest",
+      "renderCandidateId": 553,
+      "canonicalOutfitId": null,
+      "canonicalColors": null,
+      "reviewStatus": "sampled-appearance-coherent",
+      "scope": {
+        "staticSouth": true,
+        "sampledAnimatedSouth": true,
+        "otherDirectionsObserved": false,
+        "completeCycleObserved": false,
+        "exactPhaseObserved": false
+      },
+      "staticEvidence": {
+        "profileId": "south-idle64-world-no-colors-v1",
+        "reference": {
+          "file": "work/outfit-research/analysis/reference-crops/012-blood-priest-64.png",
+          "sha256": "c45c724ce09c507a8fb14d81b3f7ff690404af0beabf0effd21bed43cbf5dbe2"
+        },
+        "renderedPng": {
+          "file": "work/outfit-research/artifacts/outfits64/outfit-553.png",
+          "sha256": "070845dd3954c63cd9013c2ce47856005d090d144a6647c337e29a3aedabff93"
+        },
+        "priorDecision": "static-appearance-coherent",
+        "effectiveDecision": "static-appearance-coherent",
+        "reviewNote": "Static sheet reviewed as coherent; sampled detail crops independently reviewed as coherent."
+      },
+      "animatedEvidence": {
+        "profileId": "south-animated128-world-no-colors-v1",
+        "selectedFrameGroup": 1,
+        "declaredPhases": 8,
+        "effectivePhases": 8,
+        "directionUsed": 2,
+        "unionBounds": {
+          "x": 32,
+          "y": 31,
+          "w": 32,
+          "h": 32
+        },
+        "renderedFrames": [
+          {
+            "phase": 0,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-553/phase-000.png",
+            "sha256": "396407fb5d6ae5406598d64d5d64eede917a84e5e381459d454756149c283aff"
+          },
+          {
+            "phase": 1,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-553/phase-001.png",
+            "sha256": "6ce7636e3f0ea640363c649ba882821a1cdf515efe9c92e0f4ba764ff2c9c0f3"
+          },
+          {
+            "phase": 2,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-553/phase-002.png",
+            "sha256": "262040b5ae639bc29058b6b4a99c52d806f3d7f25df86dc992d63bd6f0f5887a"
+          },
+          {
+            "phase": 3,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-553/phase-003.png",
+            "sha256": "0466186b1ac6bbe797ab20c708f7d74678b7614a1a7c86bc330b0f03b2fcaeda"
+          },
+          {
+            "phase": 4,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-553/phase-004.png",
+            "sha256": "e7fc7f4564fde96f435d8f03cc5f8b739a2b9a04700a2aff8856978eeef62faa"
+          },
+          {
+            "phase": 5,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-553/phase-005.png",
+            "sha256": "8fc56c4a7f13b2e24d22e37e9d2dc5094fd5b31aca68b720eb3814132044b397"
+          },
+          {
+            "phase": 6,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-553/phase-006.png",
+            "sha256": "91ccb5221a2c782b943b4cbec544f5a6d996995274735d7587c696ab6154bdb5"
+          },
+          {
+            "phase": 7,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-553/phase-007.png",
+            "sha256": "096d727b9c7989b8c5df4815966adcf67cd1e0ae62afb95b7ea152474f8d0c90"
+          }
+        ],
+        "sampledReferences": [
+          {
+            "referenceFrame": 3,
+            "validity": "usable-species-visible",
+            "assessment": "sampled-appearance-coherent",
+            "capture": {
+              "file": "work/outfit-research/captures/bestiary-detail-02.json",
+              "sha256": "0a7649875f4433843e110d608a3abdd480d2f7542607def69a3bff6a56871c91"
+            },
+            "capturedAt": "2026-10-26T13:11:03.510Z",
+            "screenshot": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-03-frame-03.jpg",
+              "sha256": "32bcf5ee258df8c08ad19a36c9e55571aebd44209b0a1686ccd42d37afea1de1"
+            },
+            "nativeCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-03-frame-03-native.png",
+              "sha256": "6d50a13dffa4f0c1a773d74692a39cc3a60a706f888e3cdc9fe3f4f2d86086c7"
+            },
+            "normalizedCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-03-frame-03-128.png",
+              "sha256": "6b6f24f8a42f2295e4fdb1f656a1f5a28436491cb866d1dc445e064af78ef7b5"
+            },
+            "exactPhase": null
+          },
+          {
+            "referenceFrame": 4,
+            "validity": "usable-species-visible",
+            "assessment": "sampled-appearance-coherent",
+            "capture": {
+              "file": "work/outfit-research/captures/bestiary-detail-02.json",
+              "sha256": "0a7649875f4433843e110d608a3abdd480d2f7542607def69a3bff6a56871c91"
+            },
+            "capturedAt": "2026-10-26T13:11:03.624Z",
+            "screenshot": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-03-frame-04.jpg",
+              "sha256": "9a63b75ce61593f4e7f4695580874da918fdc87dd391f054496525e3bbca8655"
+            },
+            "nativeCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-03-frame-04-native.png",
+              "sha256": "3563cecc578d7f63ee38e4b46d37ac5508f87465e4be1d1453c2d00181cf663e"
+            },
+            "normalizedCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-03-frame-04-128.png",
+              "sha256": "61855a4a47aa527172a922a0b23e1f50d90acc6d86e84698591673d3e4f0f5d7"
+            },
+            "exactPhase": null
+          }
+        ],
+        "rejectedReferences": [
+          {
+            "referenceFrame": 1,
+            "validity": "previous-entry-visible",
+            "assessment": "not-assessable",
+            "screenshot": {
+              "file": "batch-02-row-03-frame-01.jpg",
+              "sha256": "b6ca5e16226875115f57ddfdc5f7a2d46b44d0075cbd9da835c41a059bc223b0"
+            },
+            "normalizedCrop": {
+              "file": "batch-02-row-03-frame-01-128.png",
+              "sha256": "9adb49a9507cce993edf8b925ac0721349e14d8ce9851dec94f3fd04c7480372"
+            }
+          },
+          {
+            "referenceFrame": 2,
+            "validity": "blank-crop",
+            "assessment": "not-assessable",
+            "screenshot": {
+              "file": "batch-02-row-03-frame-02.jpg",
+              "sha256": "9725a602574f4671a67410f9642ce920a9a25ed22ab4b331a71a854e7cbf5b0b"
+            },
+            "normalizedCrop": {
+              "file": "batch-02-row-03-frame-02-128.png",
+              "sha256": "859ebc97f94cc3bf7931445193e9aaefc964c23cbeff55cf361f0180472581d5"
+            }
+          }
+        ]
+      },
+      "limits": [
+        "Visual representative for local rendering; canonical server outfit ID and outfit colors remain unknown.",
+        "Only south static shape/colors and sampled south animation poses were reviewed.",
+        "Other directions, exact phase correspondence, complete cycle and pixel equality were not established."
+      ]
+    },
+    {
+      "name": "Bog Raider",
+      "renderCandidateId": 299,
+      "canonicalOutfitId": null,
+      "canonicalColors": null,
+      "reviewStatus": "sampled-appearance-coherent",
+      "scope": {
+        "staticSouth": true,
+        "sampledAnimatedSouth": true,
+        "otherDirectionsObserved": false,
+        "completeCycleObserved": false,
+        "exactPhaseObserved": false
+      },
+      "staticEvidence": {
+        "profileId": "south-idle64-world-no-colors-v1",
+        "reference": {
+          "file": "work/outfit-research/analysis/reference-crops/014-bog-raider-64.png",
+          "sha256": "206e292e0beb6d7bc27aff1ab4d392886c057f18ddca8f534fb726956bec3c8d"
+        },
+        "renderedPng": {
+          "file": "work/outfit-research/artifacts/outfits64/outfit-299.png",
+          "sha256": "f2fb9f1ac1feee69c4e020b4b4d3618ee5202c3f4f857f484c357e355c1e18b2"
+        },
+        "priorDecision": "static-appearance-coherent",
+        "effectiveDecision": "static-appearance-coherent",
+        "reviewNote": "Static sheet reviewed as coherent; sampled detail crops independently reviewed as coherent."
+      },
+      "animatedEvidence": {
+        "profileId": "south-animated128-world-no-colors-v1",
+        "selectedFrameGroup": 1,
+        "declaredPhases": 8,
+        "effectivePhases": 8,
+        "directionUsed": 2,
+        "unionBounds": {
+          "x": 22,
+          "y": 21,
+          "w": 42,
+          "h": 43
+        },
+        "renderedFrames": [
+          {
+            "phase": 0,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-299/phase-000.png",
+            "sha256": "7dd0866cc21227f594c8e6ad0dd6bcda5e13b6cdee624b764ab591df2c51b781"
+          },
+          {
+            "phase": 1,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-299/phase-001.png",
+            "sha256": "a600cebcc70a438933b4b6d9860740b091728528e4611358aeecfc6686da56d8"
+          },
+          {
+            "phase": 2,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-299/phase-002.png",
+            "sha256": "b40684af35c0b6729d9c4c1c24f7b3b169959d336db9426b42da0671792e8c07"
+          },
+          {
+            "phase": 3,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-299/phase-003.png",
+            "sha256": "0f2566998ed776fa9f3a777b54ecac5d7e44ba236ee23bd60ed7b0f54cccf252"
+          },
+          {
+            "phase": 4,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-299/phase-004.png",
+            "sha256": "56efcec3adbc3c1121ae470164ee95d0ff56613221d5212006f64b689a3c5e18"
+          },
+          {
+            "phase": 5,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-299/phase-005.png",
+            "sha256": "8fc29d749c532fd1d184eb820761ccdb4a29cb83d3899bb5483db82543b5fc1a"
+          },
+          {
+            "phase": 6,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-299/phase-006.png",
+            "sha256": "2d8696caa427652e42ba6ae30c2850c764ba43d9aba4dc01f587c6bed9aad4b3"
+          },
+          {
+            "phase": 7,
+            "file": "work/outfit-research/artifacts/animated-south128/outfit-299/phase-007.png",
+            "sha256": "b285552e21bd38a72deee6cbf96d38166b53b97fc5dc94b77106cce00f12a69b"
+          }
+        ],
+        "sampledReferences": [
+          {
+            "referenceFrame": 2,
+            "validity": "usable-species-visible",
+            "assessment": "sampled-appearance-coherent",
+            "capture": {
+              "file": "work/outfit-research/captures/bestiary-detail-02.json",
+              "sha256": "0a7649875f4433843e110d608a3abdd480d2f7542607def69a3bff6a56871c91"
+            },
+            "capturedAt": "2026-10-26T13:11:05.006Z",
+            "screenshot": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-04-frame-02.jpg",
+              "sha256": "74548144508392e0c0fd30e73538cd4e62a37403434d211a62aa3cc3949ab035"
+            },
+            "nativeCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-04-frame-02-native.png",
+              "sha256": "3a222d33e935a8fbbc2d6b9a43664337902b00efedb3a8b40494bfcf15c7121d"
+            },
+            "normalizedCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-04-frame-02-128.png",
+              "sha256": "26e70c8edc6c92ba28a05e474fcadff1e14e9ee1a20e0fd2a57ade751933be86"
+            },
+            "exactPhase": null
+          },
+          {
+            "referenceFrame": 3,
+            "validity": "usable-species-visible",
+            "assessment": "sampled-appearance-coherent",
+            "capture": {
+              "file": "work/outfit-research/captures/bestiary-detail-02.json",
+              "sha256": "0a7649875f4433843e110d608a3abdd480d2f7542607def69a3bff6a56871c91"
+            },
+            "capturedAt": "2026-10-26T13:11:05.108Z",
+            "screenshot": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-04-frame-03.jpg",
+              "sha256": "c89e814cd9fe2ef789b177d8b58c06702a991139bb50596bc0d0f73b6e325f41"
+            },
+            "nativeCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-04-frame-03-native.png",
+              "sha256": "a094ab33da64c18c602824a65b6476e6b0ba24783bb52917340258ee0f70b408"
+            },
+            "normalizedCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-04-frame-03-128.png",
+              "sha256": "ab64c3c04e525261729e8fd834f41d1f569a741ea89831dfd03da6792718bf58"
+            },
+            "exactPhase": null
+          },
+          {
+            "referenceFrame": 4,
+            "validity": "usable-species-visible",
+            "assessment": "sampled-appearance-coherent",
+            "capture": {
+              "file": "work/outfit-research/captures/bestiary-detail-02.json",
+              "sha256": "0a7649875f4433843e110d608a3abdd480d2f7542607def69a3bff6a56871c91"
+            },
+            "capturedAt": "2026-10-26T13:11:05.225Z",
+            "screenshot": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-04-frame-04.jpg",
+              "sha256": "82f32788efb503338a1bc114bc6fb582f2e3a621349380fe49a2a95bb3725813"
+            },
+            "nativeCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-04-frame-04-native.png",
+              "sha256": "ad1286e00e55c033f6be3206ad2120a79e448d825171b1ae5be1e96a486585fd"
+            },
+            "normalizedCrop": {
+              "file": "work/outfit-research/analysis/detail-reference/batch-02-row-04-frame-04-128.png",
+              "sha256": "e7490c903f93b18063de02596bbad734629f65136834b732927212ffbbe907ea"
+            },
+            "exactPhase": null
+          }
+        ],
+        "rejectedReferences": [
+          {
+            "referenceFrame": 1,
+            "validity": "previous-entry-visible",
+            "assessment": "not-assessable",
+            "screenshot": {
+              "file": "batch-02-row-04-frame-01.jpg",
+              "sha256": "778fb0dce02d0dd8ccdd089c93f2ae5a0b5045243630ba0237a766cf1a3de72a"
+            },
+            "normalizedCrop": {
+              "file": "batch-02-row-04-frame-01-128.png",
+              "sha256": "5233630b6fca40e89a60deddde39fe9ea8a89359850d92fb07d97a385f726480"
+            }
+          }
+        ]
+      },
+      "limits": [
+        "Visual representative for local rendering; canonical server outfit ID and outfit colors remain unknown.",
+        "Only south static shape/colors and sampled south animation poses were reviewed.",
+        "Other directions, exact phase correspondence, complete cycle and pixel equality were not established."
+      ]
+    }
+  ]
+}

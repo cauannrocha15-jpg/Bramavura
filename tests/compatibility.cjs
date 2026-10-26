@@ -41,6 +41,55 @@ const backendModule=require('../backend.cjs');
   assert(protocol.Gc(backend.cyclopediaCatalog),'Cyclopedia must pass the original validator');
   assert.equal(backend.cyclopediaCatalog.monsters.length,192);
   assert.equal(new Set(backend.cyclopediaCatalog.monsters.map(m=>m.id)).size,192);
+  const renderRepresentativeFile='outfit-render-representatives-observed.json';
+  const expectedRenderRepresentatives=new Map([['Adult Goanna',1195],['Arachnophobica',1135],['Blood Crab',200],['Blood Priest',553],['Bog Raider',299]]);
+  for(const [name,renderCandidateId] of expectedRenderRepresentatives){
+    const monster=backend.cyclopediaCatalog.monsters.find(record=>record.name===name);
+    assert(monster,'Reviewed visual species must exist in the captured catalog: '+name);
+    assert.equal(monster.outfitId,renderCandidateId,'Use only the reviewed local render representative for '+name);
+    assert(!Object.hasOwn(monster,'outfitColors'),'A reviewed shape does not recover outfit color indices for '+name);
+  }
+  for(const monster of backend.cyclopediaCatalog.monsters)if(!expectedRenderRepresentatives.has(monster.name))assert.equal(monster.outfitId,monster.name==='Rat'?21:0,'Unreviewed species retain their previous unknown appearance: '+monster.name);
+  const canonicalUnknownNames=backend.cyclopediaCatalog.monsters.filter(record=>record.name!=='Rat').map(record=>record.name);
+  assert.equal(canonicalUnknownNames.length,191);
+  assert.deepEqual(backend.catalogEvidence.unknownOutfits,canonicalUnknownNames,'Render representatives do not reduce canonical outfit unknowns');
+  const expectedUnknownRenderNames=canonicalUnknownNames.filter(name=>!expectedRenderRepresentatives.has(name));
+  assert.equal(expectedUnknownRenderNames.length,186);
+  assert.deepEqual(backend.catalogEvidence.unknownRenderAppearances,expectedUnknownRenderNames,'Only the five reviewed local render gaps are filled');
+  const renderEvidence=backend.catalogEvidence.observedRenderRepresentatives;
+  assert.equal(renderEvidence.length,5);
+  assert.deepEqual(new Map(renderEvidence.map(record=>[record.name,record.renderCandidateId])),expectedRenderRepresentatives);
+  for(const record of renderEvidence){
+    assert.equal(record.canonicalOutfitId,null,'The local representative is not a recovered server outfit ID');
+    assert.equal(record.canonicalColors,null,'The local representative does not recover a palette');
+    assert(backend.catalogEvidence.unknownOutfits.includes(record.name),'Canonical unknown remains explicit for '+record.name);
+  }
+  const renderCapture=backend.catalogEvidence.renderRepresentativeCapture;
+  assert.equal(renderCapture.file,renderRepresentativeFile);
+  assert.equal(renderCapture.complete,true);
+  assert.equal(renderCapture.expectedRecords,5);
+  assert.equal(renderCapture.acceptedRecords,5);
+  assert.deepEqual(renderCapture.reasons,[]);
+  assert.deepEqual(backend.catalogEvidence.invalidRenderRepresentativeRecords,[]);
+  const renderRepresentativeSource=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../data',renderRepresentativeFile),'utf8'));
+  assert.equal(renderRepresentativeSource.captureType,'huntera-outfit-render-representatives-observed-v1');
+  assert.equal(renderRepresentativeSource.canonicalAssignments,0);
+  assert.equal(renderRepresentativeSource.complete,true);
+  assert.equal(renderRepresentativeSource.scope.staticSouth,true);
+  assert.equal(renderRepresentativeSource.scope.sampledAnimatedSouth,true);
+  assert.equal(renderRepresentativeSource.scope.otherDirectionsObserved,false);
+  assert.equal(renderRepresentativeSource.scope.completeCycleObserved,false);
+  assert.equal(renderRepresentativeSource.records.length,5);
+  assert.deepEqual(new Map(renderRepresentativeSource.records.map(record=>[record.name,record.renderCandidateId])),expectedRenderRepresentatives);
+  for(const record of renderRepresentativeSource.records){
+    assert.equal(record.reviewStatus,'sampled-appearance-coherent');
+    assert.equal(record.canonicalOutfitId,null);
+    assert.equal(record.canonicalColors,null);
+  }
+  for(const hunt of backend.hunts)for(const monster of hunt.monsters){
+    assert.equal(monster.outfitId,expectedRenderRepresentatives.get(monster.name)??(monster.name==='Rat'?21:0),'Hunt portraits use the same reviewed representative and preserve all other unknowns: '+hunt.id+' / '+monster.name);
+    assert(!Object.hasOwn(monster,'outfitColors'),'Hunt portraits cannot fabricate a palette');
+  }
   const bestiaryLootCapture=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../data/bestiary-loot-observed-current.json'),'utf8'));
   assert.equal(bestiaryLootCapture.completeness.complete,true);
   assert.equal(bestiaryLootCapture.records.length,192);
@@ -266,13 +315,18 @@ const backendModule=require('../backend.cjs');
   assert.equal(evidence.bestiaryLootCapture.lootEntries,2779);
   assert.deepEqual(evidence.itemCatalogCapture,backend.catalogEvidence.itemCatalogCapture,'HTTP exposes complete item-catalog provenance and coverage');
   assert.deepEqual(evidence.itemCatalogFields,backend.catalogEvidence.itemCatalogFields);
+  assert.deepEqual(evidence.unknownOutfits,canonicalUnknownNames,'HTTP preserves canonical unknowns despite local rendering');
+  assert.deepEqual(evidence.unknownRenderAppearances,expectedUnknownRenderNames);
+  assert.deepEqual(evidence.observedRenderRepresentatives,renderEvidence);
+  assert.deepEqual(evidence.renderRepresentativeCapture,renderCapture);
   const socket=new WebSocket(ticket.websocketUrl);socket.binaryType='arraybuffer';
   const cleanupSocket=own(()=>socket.close());
-  const received=[],rejected=[];
+  const received=[],originallyDecoded=[],rejected=[];
   socket.addEventListener('message',event=>{
     const raw=backendModule.decodeMessage(event.data,new Map(Object.entries(backendModule.SERVER_CODES).map(([name,code])=>[code,name])));
     if(raw&&!protocol.Gc(raw))rejected.push(raw.type);
     if(raw)received.push(raw);
+    originallyDecoded.push(...original.decodeServer(event.data));
   });
   await new Promise((resolve,reject)=>{socket.addEventListener('open',resolve,{once:true});socket.addEventListener('error',reject,{once:true});});
   const send=message=>socket.send(original.encodeClient(message));
@@ -289,6 +343,12 @@ const backendModule=require('../backend.cjs');
     assert.deepEqual(received.find(m=>m.type==='cyclopedia-catalog').monsters,backend.cyclopediaCatalog.monsters,'Binary transport preserves all observed species loot tables including duplicates and optional max');
     assert.equal(received.find(m=>m.type==='cyclopedia-catalog').items.length,1070);
     assert.deepEqual(received.find(m=>m.type==='cyclopedia-catalog').items,backend.cyclopediaCatalog.items,'Binary transport preserves every current item value and omitted unknown optional field');
+    const originalCatalog=originallyDecoded.find(message=>message.type==='cyclopedia-catalog');
+    assert(originalCatalog,'The original binary decoder must accept the representative catalog');
+    assert.deepEqual(originalCatalog.monsters,backend.cyclopediaCatalog.monsters,'Original binary decoding preserves all representative IDs without assigning canonical identities');
+    const originalHunts=originallyDecoded.find(message=>message.type==='hunt-catalog');
+    assert(originalHunts,'The original binary decoder must accept the hunt catalog');
+    assert.deepEqual(originalHunts.hunts,backend.hunts,'Original binary decoding preserves the reviewed hunt render representatives');
     assert(!received.some(m=>m.type==='system-message'&&m.text.includes('cyclopedia-request')),'Automatic catalog request must return its catalog');
     send({type:'start-hunt',huntId:'rat-hunt',tier:0});
     await until(()=>received.some(m=>m.type==='hunt-analyzer-update'));
@@ -314,11 +374,58 @@ const backendModule=require('../backend.cjs');
   const fixtureRoot=path.resolve(os.tmpdir());
   const fixtureDir=fs.mkdtempSync(path.join(fixtureRoot,'huntera-backend-'));
   own(()=>{const target=path.resolve(fixtureDir);assert.equal(path.dirname(target),fixtureRoot);assert(path.basename(target).startsWith('huntera-backend-'));fs.rmSync(target,{recursive:true,force:true});});
-  const catalogFixtureFiles=['game-data.json','bestiary.json','new-hunts-normalized-20261019.json','bestiary-records.json','equipment-observed.json','hunts-observed-current.json','bestiary-loot-observed-current.json','item-catalog-observed-current.json'];
-  const copyCatalogFixture=(target,{includeItems=true}={})=>{
+  const catalogFixtureFiles=['game-data.json','bestiary.json','new-hunts-normalized-20261019.json','bestiary-records.json','equipment-observed.json','hunts-observed-current.json','bestiary-loot-observed-current.json','item-catalog-observed-current.json',renderRepresentativeFile];
+  const copyCatalogFixture=(target,{includeItems=true,includeRepresentatives=true}={})=>{
     fs.mkdirSync(target);
-    for(const name of catalogFixtureFiles)if(includeItems||name!=='item-catalog-observed-current.json')fs.copyFileSync(path.resolve(__dirname,'../data',name),path.join(target,name));
+    for(const name of catalogFixtureFiles)if((includeItems||name!=='item-catalog-observed-current.json')&&(includeRepresentatives||name!==renderRepresentativeFile))fs.copyFileSync(path.resolve(__dirname,'../data',name),path.join(target,name));
   };
+  const assertNoRenderRepresentatives=(instance,context)=>{
+    const diagnostics=instance.catalogEvidence;
+    assert.equal(diagnostics.renderRepresentativeCapture.complete,false,'Reject the whole curated render source for '+context);
+    assert.equal(diagnostics.renderRepresentativeCapture.expectedRecords,5);
+    assert.equal(diagnostics.renderRepresentativeCapture.acceptedRecords,0);
+    assert(diagnostics.renderRepresentativeCapture.reasons.length>0,'Explain the rejected or missing representative source for '+context);
+    assert.deepEqual(diagnostics.observedRenderRepresentatives,[],'Invalid evidence cannot partially assign local representatives for '+context);
+    assert.deepEqual(diagnostics.unknownOutfits,canonicalUnknownNames,'Rejected visual evidence does not weaken canonical unknowns for '+context);
+    assert.deepEqual(diagnostics.unknownRenderAppearances,canonicalUnknownNames,'Rejected visual evidence leaves all previous render gaps unknown for '+context);
+    for(const monster of instance.cyclopediaCatalog.monsters){
+      assert.equal(monster.outfitId,monster.name==='Rat'?21:0,'No unreviewed representative for '+context+' / '+monster.name);
+      assert(!Object.hasOwn(monster,'outfitColors'),'Rejected evidence cannot add colors for '+context);
+    }
+    for(const hunt of instance.hunts)for(const monster of hunt.monsters)assert.equal(monster.outfitId,monster.name==='Rat'?21:0,'Hunts also reject unreviewed representatives for '+context+' / '+monster.name);
+    assert(protocol.Gc(instance.cyclopediaCatalog),'Representative fallback passes the original catalog validator for '+context);
+    assert.deepEqual(original.decodeServer(backendModule.encodeMessage(instance.cyclopediaCatalog)),[instance.cyclopediaCatalog],'Representative fallback is preserved by the original binary decoder for '+context);
+  };
+  const missingRepresentativesDir=path.join(fixtureDir,'missing-render-representatives');
+  copyCatalogFixture(missingRepresentativesDir,{includeRepresentatives:false});
+  const missingRepresentatives=backendModule.createBackend({memory:true,dataDir:missingRepresentativesDir});
+  const cleanupMissingRepresentatives=own(()=>missingRepresentatives.close());
+  assertNoRenderRepresentatives(missingRepresentatives,'missing file');
+  await cleanupMissingRepresentatives();
+  const invalidRepresentativeCases=[
+    {name:'incomplete',mutate:source=>{source.complete=false;}},
+    {name:'duplicate-species',mutate:source=>{source.records[1]={...source.records[0],renderCandidateId:1135};}},
+    {name:'duplicate-candidate-id',mutate:source=>{source.records[1].renderCandidateId=source.records[0].renderCandidateId;}},
+    {name:'numeric-string-id',mutate:source=>{source.records[0].renderCandidateId=String(source.records[0].renderCandidateId);}},
+    {name:'unreviewed',mutate:source=>{source.records[0].reviewStatus='unreviewed';}},
+    {name:'different-species',mutate:source=>{source.records[0].name='Amazon';}},
+    {name:'canonical-id',mutate:source=>{source.records[0].canonicalOutfitId=source.records[0].renderCandidateId;}},
+    {name:'approximate-colors',mutate:source=>{source.records[0].canonicalColors={head:0,body:0,legs:0,feet:0};}},
+    {name:'asset-hash',mutate:source=>{source.source.assets.appearancesSha256='0'.repeat(64);}},
+    {name:'review-hash',mutate:source=>{source.source.detailReview.sha256='0'.repeat(64);}}
+  ];
+  for(const testCase of invalidRepresentativeCases){
+    const target=path.join(fixtureDir,'invalid-render-'+testCase.name);
+    copyCatalogFixture(target);
+    const invalidSource=structuredClone(renderRepresentativeSource);
+    testCase.mutate(invalidSource);
+    fs.writeFileSync(path.join(target,renderRepresentativeFile),JSON.stringify(invalidSource));
+    const rejectedRepresentatives=backendModule.createBackend({memory:true,dataDir:target});
+    const dispose=own(()=>rejectedRepresentatives.close());
+    assertNoRenderRepresentatives(rejectedRepresentatives,testCase.name);
+    await dispose();
+  }
+  console.log(JSON.stringify({ok:true,renderRepresentatives:{reviewed:renderEvidence.length,canonicalUnknown:canonicalUnknownNames.length,renderUnknown:expectedUnknownRenderNames.length,rejectedSourceCases:invalidRepresentativeCases.length+1},tests:['five reviewed representatives only; no palette or canonical IDs','catalog and hunts preserved by original binary decoder','HTTP separates canonical unknowns from local render gaps','missing, altered, duplicate and unreviewed sources rejected atomically']}));
   const missingItemsDir=path.join(fixtureDir,'missing-items');
   copyCatalogFixture(missingItemsDir,{includeItems:false});
   const legacy=backendModule.createBackend({memory:true,dataDir:missingItemsDir});

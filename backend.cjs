@@ -216,6 +216,60 @@ function priorTooltipFields(record){
   return fields;
 }
 
+const RENDER_REPRESENTATIVE_FILE='outfit-render-representatives-observed.json';
+// This pin is a reviewed, five-species selection. A changed flag or new row
+// cannot silently promote a research candidate into the local renderer.
+const RENDER_REPRESENTATIVE_SHA256='9babe93dbb4ecb5b9838c1adfadf01b008470ad1ad6bb38092a7cf37ecff0246';
+function observedRenderRepresentatives(directory,clientDirectory,knownNames){
+  const capture={file:RENDER_REPRESENTATIVE_FILE,complete:false,expectedRecords:5,acceptedRecords:0,reasons:[]};
+  const result={records:[],byName:new Map(),invalid:[],capture};
+  const check=(condition,reason)=>{if(!condition)throw new Error(reason);};
+  const object=value=>value!==null&&typeof value==='object'&&!Array.isArray(value);
+  const hash=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
+  const validHash=value=>typeof value==='string'&&/^[0-9a-f]{64}$/.test(value);
+  const proof=value=>object(value)&&typeof value.file==='string'&&value.file.length>0&&validHash(value.sha256);
+  let currentName=null;
+  try{
+    const bytes=fs.readFileSync(path.join(directory,capture.file));
+    capture.sha256=hash(bytes);
+    const source=JSON.parse(bytes.toString('utf8'));
+    check(source.captureType==='huntera-outfit-render-representatives-observed-v1'&&source.profileId==='huntera-five-reviewed-render-representatives-v1','Wrong render representative profile');
+    check(source.complete===true&&source.expectedRecords===5&&source.canonicalAssignments===0&&Array.isArray(source.records)&&source.records.length===5,'Incomplete render representative selection');
+    const scope=source.scope;
+    check(object(scope)&&scope.staticSouth===true&&scope.sampledAnimatedSouth===true&&scope.otherDirectionsObserved===false&&scope.completeCycleObserved===false&&scope.colorsAssigned===false,'Invalid render representative scope');
+    const provenance=source.source,assets=provenance?.assets;
+    check(object(provenance)&&['staticCapture','shortlist','staticReview','staticIndex','animatedManifest','detailExtraction','detailComparisons','detailReview','rendererCompatibility'].every(key=>proof(provenance[key])),'Missing render representative provenance');
+    check(object(assets)&&typeof assets.appearancesFile==='string'&&/^[A-Za-z0-9._-]+\.dat$/.test(assets.appearancesFile)&&['appearancesSha256','catalogSha256','parserSha256'].every(key=>validHash(assets[key])),'Invalid appearance asset provenance');
+    const helperFiles=['chunk-6NUS5ELR.js','chunk-TXVO7XLA.js','chunk-WTB5UT3V.js'];
+    check(object(assets.helperHashes)&&Object.keys(assets.helperHashes).length===helperFiles.length&&helperFiles.every(file=>validHash(assets.helperHashes[file])),'Invalid renderer helper provenance');
+    const assetFiles=[['things/1332/'+assets.appearancesFile,assets.appearancesSha256],['things/1332/catalog-content.json',assets.catalogSha256],['chunk-OQ5TTNGV.js',assets.parserSha256],...helperFiles.map(file=>[file,assets.helperHashes[file]])];
+    for(const [file,expected] of assetFiles)check(hash(fs.readFileSync(path.join(clientDirectory,file)))===expected,'Captured rendering asset changed: '+file);
+    const names=new Set(),ids=new Set();
+    for(const record of source.records){
+      currentName=record?.name??null;
+      check(object(record)&&typeof record.name==='string'&&knownNames.has(record.name)&&!names.has(record.name),'Invalid or duplicate representative species');names.add(record.name);
+      check(Number.isSafeInteger(record.renderCandidateId)&&record.renderCandidateId>0&&!ids.has(record.renderCandidateId),'Invalid or duplicate render candidate ID');ids.add(record.renderCandidateId);
+      check(record.canonicalOutfitId===null&&record.canonicalColors===null&&record.reviewStatus==='sampled-appearance-coherent','Unreviewed or canonical render representative');
+      check(object(record.scope)&&record.scope.staticSouth===true&&record.scope.sampledAnimatedSouth===true&&record.scope.otherDirectionsObserved===false&&record.scope.completeCycleObserved===false&&record.scope.exactPhaseObserved===false,'Invalid species review scope');
+      check(object(record.staticEvidence)&&proof(record.staticEvidence.reference)&&proof(record.staticEvidence.renderedPng)&&record.staticEvidence.effectiveDecision==='static-appearance-coherent','Unreviewed static appearance');
+      const animated=record.animatedEvidence;
+      check(object(animated)&&animated.profileId==='south-animated128-world-no-colors-v1'&&animated.selectedFrameGroup===1&&animated.directionUsed===2&&Number.isSafeInteger(animated.effectivePhases)&&animated.effectivePhases>0&&Array.isArray(animated.renderedFrames)&&animated.renderedFrames.length===animated.effectivePhases,'Invalid animated appearance evidence');
+      check(animated.renderedFrames.every((frame,index)=>frame.phase===index&&proof(frame)),'Invalid rendered frame provenance');
+      check(Array.isArray(animated.sampledReferences)&&animated.sampledReferences.length>0&&animated.sampledReferences.every(reference=>reference.validity==='usable-species-visible'&&reference.assessment==='sampled-appearance-coherent'&&reference.exactPhase===null&&proof(reference.capture)&&proof(reference.screenshot)&&proof(reference.nativeCrop)&&proof(reference.normalizedCrop)),'Missing usable sampled detail references');
+      check(Array.isArray(animated.rejectedReferences)&&animated.rejectedReferences.every(reference=>reference.assessment==='not-assessable'),'Invalid rejected-reference classification');
+    }
+    currentName=null;
+    check(capture.sha256===RENDER_REPRESENTATIVE_SHA256,'Curated render representative snapshot changed; new review required');
+    result.records=source.records;
+    result.byName=new Map(source.records.map(record=>[record.name,record]));
+    capture.complete=true;capture.acceptedRecords=result.records.length;
+  }catch(error){
+    capture.reasons.push(error.message);
+    result.invalid.push({name:currentName,reason:error.message});
+  }
+  return result;
+}
+
 function observedItemCatalog(directory,appearances,priorTooltips){
   const capture={file:'item-catalog-observed-current.json',expectedItems:1070,expectedPages:134,capturedItems:0,capturedPages:0,complete:false,reasons:[],observedFields:{},listObservedFields:{},retainedTooltips:0};
   const result={items:null,fields:[],conflicts:[],invalid:[],capture};
@@ -321,6 +375,8 @@ function createBackend(options = {}) {
   const currentHuntRecords=currentHuntCapture.records||[];
   const currentBestiaryLootCapture=readJson('bestiary-loot-observed-current.json',{});
   const appearances=appearanceMetadata(path.join(__dirname,'public','things','1332'));
+  const renderRepresentatives=observedRenderRepresentatives(dataDir,path.join(__dirname,'public'),new Set(observedMonsters.map(record=>record.name)));
+  const renderOutfitId=(name,fallback=0)=>renderRepresentatives.byName.get(name)?.renderCandidateId??fallback;
   // This is the public gate preview terrain, not a capture of the server's
   // main-city terrain. Reuse its original coordinates and declared eye.
   const publicCityTerrain=(()=>{try{return JSON.parse(fs.readFileSync(path.join(__dirname,'public','assets','gate','temple-terrain.json'),'utf8'));}catch{return null;}})();
@@ -363,7 +419,7 @@ function createBackend(options = {}) {
     const index=huntFacts.findIndex(hunt=>hunt.id===before);
     huntFacts.splice(index<0?huntFacts.length:index,0,{id,name:extra.name,monsters:extra.catalogCreatureNames});
   }
-  const hunts = huntFacts.map(hunt => ({id:hunt.id,name:hunt.name,description:'',monsters:(hunt.monsters||['Rat']).map(name => ({name,outfitId:earlyOutfits[name.toLowerCase()]||0,bestiaryId:name.toLowerCase().replace(/[^a-z0-9]+/g,'-')})),loot:[],tiers:['Não observado'].map(name=>({name,monsterCount:0,monsterIndexes:[],loot:[]}))}));
+  const hunts = huntFacts.map(hunt => ({id:hunt.id,name:hunt.name,description:'',monsters:(hunt.monsters||['Rat']).map(name => ({name,outfitId:renderOutfitId(name,earlyOutfits[name.toLowerCase()]||0),bestiaryId:name.toLowerCase().replace(/[^a-z0-9]+/g,'-')})),loot:[],tiers:['Não observado'].map(name=>({name,monsterCount:0,monsterIndexes:[],loot:[]}))}));
   const huntIds=new Set(hunts.map(hunt=>hunt.id));
   // li/M in the captured protocol accept known, unique hunt IDs in order.
   const validFavorites=value=>Array.isArray(value)&&value.length<=huntIds.size&&value.every(id=>typeof id==='string'&&huntIds.has(id))&&new Set(value).size===value.length;
@@ -382,6 +438,9 @@ function createBackend(options = {}) {
   const classNames={ANFIBIO:'Amphibic',AQUATICO:'Aquatic',AVE:'Bird',CONSTRUCTO:'Construct',DEMONIO:'Demon',DRAGAO:'Dragon',ELEMENTAL:'Elemental',FADA:'Fey',GIGANTE:'Giant',HUMANO:'Human',HUMANOIDE:'Humanoid',LICANTROPO:'Lycanthrope',MAGICO:'Magical',MAMIFERO:'Mammal',PLANTA:'Plant',REPTIL:'Reptile',GOSMA:'Slime','MORTO-VIVO':'Undead',VERME:'Vermin','EXTRA DIMENSIONAL':'Extra Dimensional'};
   const catalogEvidence={unknownOutfits:[],unknownLootAssociations:[],omittedMonsters:[],omittedItems:[],unresolvedHuntLoot:[],unknownLootItemStats:[],unknownLootItemCategories:[],observedHunts:[],missingObservedHunts:[],missingObservedPulls:[],unknownTierCounts:[],huntCapture:{observedAt:currentHuntCapture.observedAt,clientObserved:currentHuntCapture.clientObserved,method:currentHuntCapture.method},equipmentStatSource:'Captured tooltip before EQUIPADO comparison; omitted positive tooltip stats represented by neutral zero, matching captured display.',monsterStatSource:'bestiary.json + six observed additions',outfitZero:'Unknown appearance; placeholder 0 is not a recovered monster outfit.',lootStatsZero:'For observed loot without a captured tooltip, combat zeros are neutral transport placeholders required by the original schema, not recovered item stats.',tierCountZero:'Unknown monsterCount uses 0 only to satisfy the original numeric wire schema; no visible client code consumes this field.'};
   Object.assign(catalogEvidence,{
+    unknownRenderAppearances:[],observedRenderRepresentatives:renderRepresentatives.records,
+    invalidRenderRepresentativeRecords:renderRepresentatives.invalid,renderRepresentativeCapture:renderRepresentatives.capture,
+    renderRepresentativeSource:'Five curated visual representatives are carried in the required outfitId wire field only for local rendering. Their canonical server IDs and colors remain unknown. South static appearance and sampled south poses were reviewed; other directions and a complete cycle were not observed.',
     observedBestiaryLoot:[],invalidBestiaryLootRecords:[],unusedBestiaryLootRecords:[],unknownBestiaryLootAppearances:[],bestiaryLootItemsOutsideItemCatalog:[],
     bestiaryLootCapture:{file:'bestiary-loot-observed-current.json',observedAt:currentBestiaryLootCapture.observedAt,clientObserved:currentBestiaryLootCapture.clientObserved,method:currentBestiaryLootCapture.method,complete:false,lootEntries:0,maxNotes:0},
     monsterLootSource:'Direct rendered Bestiary loot per species, preserving visual order, repeated items, rarity and optional observed maximum. No association inferred from hunt loot and no drop formula recovered.'
@@ -409,10 +468,11 @@ function createBackend(options = {}) {
     // Captured bestiary values are damage taken (%). The original UI's bc()
     // renders 100 - elements[channel], so the wire field is resistance (%).
     const elements=Object.fromEntries(Object.entries(record.resistances||{}).map(([channel,value])=>[channel.toLowerCase(),100-value]));
-    // The 1,280 public outfit records have no names. Use a visibly absent
-    // appearance for unobserved matches rather than assigning rat portraits.
-    const outfitId=record.name==='Rat'?21:0;
-    if(!outfitId)catalogEvidence.unknownOutfits.push(record.name);
+    // A selected rendering is independent of knowing the original server ID.
+    // Preserve the existing Rat value; the five new IDs are visual candidates.
+    const outfitId=renderOutfitId(record.name,record.name==='Rat'?21:0);
+    if(record.name!=='Rat')catalogEvidence.unknownOutfits.push(record.name);
+    if(!outfitId)catalogEvidence.unknownRenderAppearances.push(record.name);
     if(!directLoot&&!specific?.loot)catalogEvidence.unknownLootAssociations.push(record.name);
     catalogMonsters.push({id:speciesId(record.name),name:record.name,bestiaryClass,outfitId,maxHealth:record.hp,experience:record.experience,speed:record.speed,attack:{min:record.meleeMin,max:record.meleeMax,intervalMs:record.attackIntervalMs},elements,loot,killsRequired:required});
   }
@@ -479,7 +539,7 @@ function createBackend(options = {}) {
     const pulls=Array.isArray(record.pulls)?record.pulls:[];
     const monsterNames=[];
     for(const value of [...(record.monsters||[]),...pulls.flatMap(pull=>pull?.monsters||[])]){const name=typeof value==='string'?value:value.name;if(name&&!monsterNames.includes(name))monsterNames.push(name);}
-    hunt.monsters=monsterNames.map(name=>({name,outfitId:name==='Rat'?21:0,bestiaryId:speciesId(name)}));
+    hunt.monsters=monsterNames.map(name=>({name,outfitId:renderOutfitId(name,name==='Rat'?21:0),bestiaryId:speciesId(name)}));
     const loot=[],lootIndexes=new Map();
     const addLoot=raw=>{const entry=observedLoot(raw,record.id);if(!entry)return null;let index=lootIndexes.get(entry.itemId);if(index===undefined){index=loot.length;lootIndexes.set(entry.itemId,index);loot.push(entry);}return {index,rarity:entry.rarity};};
     for(const entry of record.loot||[])addLoot(entry);
