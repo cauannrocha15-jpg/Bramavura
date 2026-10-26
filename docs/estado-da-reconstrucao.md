@@ -13,6 +13,7 @@ Objetivo preservado: fazer engenharia reversa de https://huntera.com.br/characte
 | Aparência da seleção de personagens | Parcialmente verificada | Mesmo cliente/CSS/frames; seleção e entrada observadas; estados e dados de conta ainda diferem |
 | Arte e renderizador do mundo | Capturados; teste parcial | 4.171 sheets, appearances e renderizador original; mapa completo do servidor não disponível |
 | Protocolo e bootstrap local | Compatibilidade parcial | Codec/opcodes e teste com validadores reais do cliente |
+| Layout e favoritos | Persistência local verificada | 18 janelas, favoritos válidos/ordenados, reconexão e reinício; escopo por personagem é política local, não recuperada do servidor |
 | Catálogo visível de caçadas | Captura e integração verificadas nos campos observados | 83 caçadas, 251 pulls e 774 nomes de itens; testes com codec original e conferência visual de dificuldades, espécies e loot |
 | Cyclopedia e Bestiary | Lista completa de itens, atributos e loot individual integrados; equivalência parcial | 192 criaturas; 1.070 itens observados em 134 páginas, com campos e desconhecidos comparados por testes; 2.779 entradas de loot e 660 máximos preservados; retratos e atributos omitidos pela UI ainda incompletos |
 | Combate, IA, loot, progressão | Não equivalentes comprovados | Implementação local provisória; fórmulas originais desconhecidas |
@@ -21,3 +22,5 @@ Objetivo preservado: fazer engenharia reversa de https://huntera.com.br/characte
 | Cópia 100% fiel | Não alcançada | Exige evidência funcional ampla e informação adicional sobre o servidor |
 
 Não usar hashes de arquivos, testes de codec ou a presença das telas como prova de equivalência integral. Nenhum pagamento real faz parte desta versão. O repositório escolhido para guardar esta etapa é cauannrocha15-jpg/Bramavura; o jogo continua sendo executado localmente.
+
+Na referência de 26/10, a interface exibe 195 criaturas e o enum acrescenta Rotten Wasteland como a 84ª caçada. A entrega mantém a captura anterior de 192 criaturas/83 caçadas, ainda sem esses acréscimos. A pesquisa de retratos revisou as 192 referências anteriores: 134 aparências estáticas coerentes, 33 formas com paleta não verificada e 25 casos retidos; nenhuma nova atribuição canônica foi integrada. A exportação própria de 101 representantes produziu 557 frames, conferidos com o helper original em dez representantes. Animações e demais direções continuam em verificação.

@@ -42,6 +42,8 @@ As caçadas usam um mapa de teste gerado pelo backend. Esse terreno não foi rec
 
 Arquivo: `backend.cjs`, sem dependências externas. API exportada: `createBackend()` com `handleHttp`, `handleUpgrade` e `close`; o servidor estático do agente principal chama essas funções.
 
+Revisão de 26/10: layout e favoritos são persistidos por personagem local e restaurados no bootstrap. O normalizador conserva as 18 chaves e os campos open/size/pos/picks aceitos pelo cliente; favoritos são IDs conhecidos, únicos e ordenados. A mensagem inicial de layout habilita o coletor original, antes inativo. Regressões com os codecs e validadores originais cobrem filtros, reconexão, reinício, isolamento e limpeza. O wire não comprova o escopo de armazenamento do servidor original; o escopo por personagem e a rejeição de envelopes malformados são políticas locais. `docs/preferencias-locais.md` detalha os contratos e limites.
+
 Inclui conta local, seleção/criação/exclusão de personagens locais, admissão, codec binário compatível, WebSocket, snapshots, 83 caçadas, entrada/saída de caçada, combate automático de demonstração, atributos, gold/XP, inventário, equipamento, movimento na cidade, depot, loja NPC simples e configurações de barra/postura. Persiste os personagens em `data/local-state.json`.
 
 O WebSocket exige versão 13, chave válida, frames mascarados, origem local com a mesma porta quando Origin existe e limite de 4 MiB para frame/mensagem fragmentada. O backend não conecta ao Huntera.

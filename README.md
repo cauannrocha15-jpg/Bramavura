@@ -31,12 +31,15 @@ npm test
 - Seleção de personagem e entrada no mundo local observadas no navegador. O console não apresentou erros nesse fluxo após a correção dos contratos HTTP.
 - Ao abrir painéis e transitar para uma caçada, foi observado um erro `ResizeObserver loop completed with undelivered notifications` no cliente capturado. A causa ainda precisa ser verificada.
 - O backend usa o envelope binário e os opcodes reconhecidos pelo cliente capturado. Testes de compatibilidade usam o decoder e os validadores reais desse cliente.
+- Layout das 18 janelas reconhecidas e favoritos de caçadas agora são gravados e restaurados entre sessões e reinícios. A normalização segue o cliente capturado; a política local de armazenamento por personagem e seus limites estão em [preferências locais](docs/preferencias-locais.md).
 - O catálogo de caçadas tem dados observados nas 83 telas: descrições, nomes das dificuldades, 251 composições de pull, ordem e raridade do loot e 774 nomes de itens. `data/hunts-observed-current.json` conserva essas observações. As quantidades de monstros por pull não aparecem na interface e continuam desconhecidas.
 - A Cyclopedia recebeu fichas observadas de 192 criaturas. O teste usa a função real do cliente para conferir a conversão entre resistência e dano recebido (Amazon: 105% físico/morte; Flimsy Lost Soul: 0% morte).
 - O catálogo completo de itens foi percorrido pela interface: 1.070 IDs únicos em 134 páginas, com nomes, categorias e slots exibidos. `data/item-catalog-observed-current.json` conserva os textos originais e campos desconhecidos. Foram observados 1.069 pesos, 187 ataques, 193 defesas, 156 armaduras, 74 alcances, 14 bônus de velocidade e 26 danos elementais. Campos ausentes continuam desconhecidos; zeros obrigatórios do protocolo são apenas valores neutros de transporte. Atributos anteriores de tooltip só são reaproveitados quando a identidade e os valores em comum conferem.
 - O loot visível das 192 fichas do Bestiary foi capturado diretamente: 2.779 entradas, 803 IDs distintos e 660 máximos de quantidade exibidos. `data/bestiary-loot-observed-current.json` conserva raridades, ordem, duplicatas e notas originais. Isso não fornece probabilidades de drop. Retratos e propriedades de itens ainda não confirmados continuam sendo lacunas.
 
 ## Limites que continuam abertos
+
+Esta entrega conserva o cliente de 23/10 e os catálogos observados até 24/10. Na referência autenticada de 26/10, `main-DJ6ZN7HP.js`, já foram observadas 195 criaturas; o enum passou a 84 caçadas com Rotten Wasteland. Esses acréscimos ainda não estão integrados. A versão atual mantém o mesmo DAT e o mesmo algoritmo dos retratos, mas isso não comprova equivalência do cliente inteiro.
 
 O código do servidor original não foi recuperado. Fórmulas de combate e progressão, RNG, probabilidades de loot, IA, mapas de caçadas, banco de dados e regras transacionais continuam sem prova de equivalência. As rotinas locais correspondentes são simulações explícitas para permitir o teste do cliente.
 

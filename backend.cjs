@@ -14,6 +14,36 @@ const CLIENT_NAMES = new Map(Object.entries(CLIENT_CODES).map(([name, code]) => 
 const XOR_KEY = 1213550164;
 const SKILLS = ['fist', 'club', 'sword', 'axe', 'distance', 'shielding', 'fishing'];
 const EQUIPMENT = ['helmet', 'amulet', 'weapon', 'armor', 'shield', 'ring', 'legs', 'boots', 'ammo', 'backpack'];
+const WINDOW_NAMES = ['inventory','loot','analyzer','dps-analyzer','character','cyclopedia','friends','hunt','prey','chat','debug','highscores','guild','expeditions','bestiary','proficiency','imbuements','boss-route'];
+
+// Match vr in the captured chunk-JRE7IT7W.js. Commands require an object
+// envelope; malformed envelopes must not erase an existing saved snapshot.
+function normalizeWindowLayout(input) {
+  const object=value=>value!==null&&typeof value==='object';
+  if(!object(input)||Array.isArray(input))return null;
+  const windows={};
+  for(const name of WINDOW_NAMES){
+    const value=input[name];
+    if(!object(value))continue;
+    const entry={};
+    if(typeof value.open==='boolean')entry.open=value.open;
+    if(object(value.size)){
+      const size={};
+      for(const [key,number] of Object.entries(value.size)){
+        if(Object.keys(size).length>=6)break;
+        if(key.length>0&&key.length<=24&&Number.isFinite(number))size[key]=Math.max(-10000,Math.min(10000,Math.round(number*2)/2));
+      }
+      if(Object.keys(size).length)entry.size=size;
+    }
+    if(object(value.pos)&&Number.isFinite(value.pos.x)&&Number.isFinite(value.pos.y))entry.pos={x:Math.max(0,Math.min(20000,Math.round(value.pos.x))),y:Math.max(0,Math.min(20000,Math.round(value.pos.y)))};
+    if(Array.isArray(value.picks)){
+      const picks=value.picks.filter(pick=>typeof pick==='string'&&pick.length>0&&pick.length<=64).slice(0,10);
+      if(picks.length===value.picks.length||picks.length>0)entry.picks=picks;
+    }
+    if(Object.keys(entry).length)windows[name]=entry;
+  }
+  return windows;
+}
 
 function transform(bytes, seed) {
   let state = (seed ^ XOR_KEY) >>> 0;
@@ -334,6 +364,9 @@ function createBackend(options = {}) {
     huntFacts.splice(index<0?huntFacts.length:index,0,{id,name:extra.name,monsters:extra.catalogCreatureNames});
   }
   const hunts = huntFacts.map(hunt => ({id:hunt.id,name:hunt.name,description:'',monsters:(hunt.monsters||['Rat']).map(name => ({name,outfitId:earlyOutfits[name.toLowerCase()]||0,bestiaryId:name.toLowerCase().replace(/[^a-z0-9]+/g,'-')})),loot:[],tiers:['Não observado'].map(name=>({name,monsterCount:0,monsterIndexes:[],loot:[]}))}));
+  const huntIds=new Set(hunts.map(hunt=>hunt.id));
+  // li/M in the captured protocol accept known, unique hunt IDs in order.
+  const validFavorites=value=>Array.isArray(value)&&value.length<=huntIds.size&&value.every(id=>typeof id==='string'&&huntIds.has(id))&&new Set(value).size===value.length;
   const ratHunt=hunts.find(hunt=>hunt.id==='rat-hunt');
   if(ratHunt){
     ratHunt.description='Porões úmidos cheios de ratos. A clássica primeira caçada.';
@@ -535,7 +568,11 @@ function createBackend(options = {}) {
       {type:'action-bar-presets',names:['Default'],active:0},
       {type:'battle-settings-update',settings:{stance:'balanced',movement:'chase',keepDistance:2,targetStrategy:'nearest'}},
       {type:'bestiary-progress',kills:session.character.bestiaryKills||{},stages:{},bonusPercent:0,damagePercent:0,completed:0,total:catalogMonsters.length,killsRequired:2500},
-      {type:'guild-info',guild:null},{type:'vip-list',entries:[]},{type:'hunt-favorites',huntIds:[]},
+      {type:'guild-info',guild:null},{type:'vip-list',entries:[]},
+      // A window-layout message enables the original UI's debounced sender.
+      // Character scope is a local persistence policy, not a recovered server rule.
+      {type:'window-layout',windows:normalizeWindowLayout(session.character.windowLayout)||{}},
+      {type:'hunt-favorites',huntIds:validFavorites(session.character.huntFavorites)?session.character.huntFavorites:[]},
       {type:'quick-sell-update',itemIds:[]},{type:'auto-loot-update',disabledItemIds:[]},
       {type:'blessings-status',owned:[],cost:2000,freeUntilLevel:20,lossReductionPercent:0,equipmentLossPercent:10},
       {type:'item-values',npc:[],auction:[]},{type:'item-requirements',items:[]},
@@ -578,7 +615,8 @@ function createBackend(options = {}) {
       case 'battle-settings':send({type:'battle-settings-update',settings:message.settings});break;
       case 'set-action-slot':if(Number.isInteger(message.slot)&&message.slot>=0&&message.slot<20){session.actions[message.slot]=message.rule;send({type:'action-bar-update',slots:session.actions});}break;
       case 'clear-action-bar':session.actions=Array(20).fill(null);send({type:'action-bar-update',slots:session.actions});break;
-      case 'set-hunt-favorites':send({type:'hunt-favorites',huntIds:message.huntIds||[]});break;
+      case 'set-hunt-favorites':if(validFavorites(message.huntIds)){c.huntFavorites=[...message.huntIds];persist();send({type:'hunt-favorites',huntIds:c.huntFavorites});}break;
+      case 'set-window-layout':{const windows=normalizeWindowLayout(message.windows);if(windows!==null){c.windowLayout=windows;persist();}break;}
       case 'depot-open':send({type:'depot-update',slots:session.depot});break;
       case 'shop-open':send({type:'shop-offers',shopName:'Mercador',offers:[{...item(0,3607,'cheese',null),buyPrice:5,sellPrice:2,minLevel:0},{...item(0,3273,'sabre','weapon',{attack:12,defense:10}),buyPrice:9,sellPrice:3,minLevel:0}],quickSellItemIds:[3607]});break;
       case 'shop-buy': {if(![3607,3273].includes(message.itemId)||!Number.isFinite(message.amount)||message.amount<=0)break;const amount=Math.max(1,Math.min(100,Math.floor(message.amount))),cost=message.itemId===3607?5:9;if(c.gold<cost*amount)break;c.gold-=cost*amount;inventory(c).slots.push(item(allocateUid(),message.itemId,message.itemId===3607?'cheese':'sabre',message.itemId===3607?null:'weapon',{count:amount}));sendInventory(session);persist();break;}
@@ -613,7 +651,7 @@ function createBackend(options = {}) {
       case 'blessings-open':send({type:'blessings-status',owned:[],cost:2000,freeUntilLevel:20,lossReductionPercent:0,equipmentLossPercent:10});break;
       case 'logout':persist();session.socket.end(frame(Buffer.alloc(0),8));break;
       case 'walk-stop':clearInterval(session.walkTimer);session.walkTimer=null;break;
-      case 'tutorial-hint-seen':case 'set-window-layout':case 'depot-close':case 'market-close':break;
+      case 'tutorial-hint-seen':case 'depot-close':case 'market-close':break;
       default:send({type:'system-message',text:`O comando ${message.type} ainda não possui implementação local.`});
     }
   }
