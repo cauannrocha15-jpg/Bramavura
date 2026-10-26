@@ -39,8 +39,33 @@ const backendModule=require('../backend.cjs');
   assert.deepEqual(backend.catalogEvidence.missingObservedPulls,[]);
   assert.deepEqual(backend.catalogEvidence.unresolvedHuntLoot,[]);
   assert(protocol.Gc(backend.cyclopediaCatalog),'Cyclopedia must pass the original validator');
-  assert.equal(backend.cyclopediaCatalog.monsters.length,192);
-  assert.equal(new Set(backend.cyclopediaCatalog.monsters.map(m=>m.id)).size,192);
+  assert.equal(backend.cyclopediaCatalog.monsters.length,195,'Include the three observed 26 October species');
+  const newCreatureFile='new-monsters-observed-20261026.json';
+  const newCreatureSource=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../data',newCreatureFile),'utf8'));
+  const expectedNewStats=[
+    ['Branchy Crawler','Plant',27000,16843,760,950,527,[100,109,50,105,100,60,115,100]],
+    ['Mould Phantom','Undead',28000,17286,720,900,535,[110,100,50,100,100,100,100,100]],
+    ['Rotten Golem','Construct',28000,16843,760,950,464,[80,125,60,115,100,50,120,100]]
+  ];
+  assert.equal(backend.catalogEvidence.newCreatureCapture.complete,true);
+  assert.equal(backend.catalogEvidence.newCreatureCapture.acceptedRecords,3);
+  for(const [name,bestiaryClass,hp,experience,min,max,speed,percentages] of expectedNewStats){
+    const monster=backend.cyclopediaCatalog.monsters.find(record=>record.name===name);
+    assert(monster,'Include observed species '+name);
+    assert.equal(monster.bestiaryClass,bestiaryClass);
+    assert.equal(monster.maxHealth,hp);assert.equal(monster.experience,experience);assert.equal(monster.speed,speed);
+    assert.deepEqual(monster.attack,{min,max,intervalMs:2000});assert.equal(monster.killsRequired,2500);
+    assert.deepEqual(monster.elements,Object.fromEntries(['physical','fire','earth','energy','ice','holy','death','lifedrain'].map((channel,index)=>[channel,100-percentages[index]])));
+    assert.equal(monster.outfitId,0,'No new outfit is inferred from names or static graphics');
+    const raw=newCreatureSource.rawRecords.find(record=>record.name===name);
+    const fromDOM=raw.lootBands.flatMap(band=>band.items.map(item=>({itemId:Number(item.itemId),rarity:['common','uncommon','semi-rare','rare','very-rare'][Number(band.band)],...(item.note?{max:Number(item.note.replace('Até ','').replaceAll('.',''))}:{})})));
+    assert.deepEqual(monster.loot,fromDOM,'New loot retains the actual DOM band order, repetitions and maximum notes: '+name);
+  }
+  assert.equal(backend.hunts.length,83,'The new hunt requires a coherent client migration');
+  const incompatibleHuntCatalog={type:'hunt-catalog',hunts:[...backend.hunts,{...backend.hunts[0],id:'rotten-wasteland-hunt'}]};
+  assert.equal(protocol.Gc(incompatibleHuntCatalog),null,'The captured baseline rejects the new hunt enum');
+  assert.deepEqual(original.decodeServer(backendModule.encodeMessage(incompatibleHuntCatalog)),[],'Do not silently transmit a catalog that the real decoder discards');
+  assert.equal(new Set(backend.cyclopediaCatalog.monsters.map(m=>m.id)).size,195);
   const renderRepresentativeFile='outfit-render-representatives-observed.json';
   const expectedRenderRepresentatives=new Map([['Adult Goanna',1195],['Arachnophobica',1135],['Blood Crab',200],['Blood Priest',553],['Bog Raider',299]]);
   for(const [name,renderCandidateId] of expectedRenderRepresentatives){
@@ -51,10 +76,10 @@ const backendModule=require('../backend.cjs');
   }
   for(const monster of backend.cyclopediaCatalog.monsters)if(!expectedRenderRepresentatives.has(monster.name))assert.equal(monster.outfitId,monster.name==='Rat'?21:0,'Unreviewed species retain their previous unknown appearance: '+monster.name);
   const canonicalUnknownNames=backend.cyclopediaCatalog.monsters.filter(record=>record.name!=='Rat').map(record=>record.name);
-  assert.equal(canonicalUnknownNames.length,191);
+  assert.equal(canonicalUnknownNames.length,194);
   assert.deepEqual(backend.catalogEvidence.unknownOutfits,canonicalUnknownNames,'Render representatives do not reduce canonical outfit unknowns');
   const expectedUnknownRenderNames=canonicalUnknownNames.filter(name=>!expectedRenderRepresentatives.has(name));
-  assert.equal(expectedUnknownRenderNames.length,186);
+  assert.equal(expectedUnknownRenderNames.length,189);
   assert.deepEqual(backend.catalogEvidence.unknownRenderAppearances,expectedUnknownRenderNames,'Only the five reviewed local render gaps are filled');
   const renderEvidence=backend.catalogEvidence.observedRenderRepresentatives;
   assert.equal(renderEvidence.length,5);
@@ -93,10 +118,11 @@ const backendModule=require('../backend.cjs');
   const bestiaryLootCapture=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../data/bestiary-loot-observed-current.json'),'utf8'));
   assert.equal(bestiaryLootCapture.completeness.complete,true);
   assert.equal(bestiaryLootCapture.records.length,192);
-  const capturedSpecies=new Set(bestiaryLootCapture.records.map(record=>record.name));
-  assert.equal(capturedSpecies.size,192);
+  const allSpeciesLoot=[...bestiaryLootCapture.records,...newCreatureSource.records];
+  const capturedSpecies=new Set(allSpeciesLoot.map(record=>record.name));
+  assert.equal(capturedSpecies.size,195);
   assert.deepEqual(new Set(backend.cyclopediaCatalog.monsters.map(monster=>monster.name)),capturedSpecies);
-  for(const observed of bestiaryLootCapture.records){
+  for(const observed of allSpeciesLoot){
     const monster=backend.cyclopediaCatalog.monsters.find(entry=>entry.name===observed.name);
     const expectedLoot=observed.loot.map(entry=>({itemId:entry.itemId,rarity:entry.rarity,...(Object.hasOwn(entry,'max')?{max:entry.max}:{})}));
     assert.deepEqual(monster.loot,expectedLoot,'Direct Bestiary loot must retain every entry, order, rarity and observed maximum for '+observed.name);
@@ -105,10 +131,11 @@ const backendModule=require('../backend.cjs');
   assert.deepEqual(backend.catalogEvidence.invalidBestiaryLootRecords,[]);
   assert.deepEqual(backend.catalogEvidence.unusedBestiaryLootRecords,[]);
   assert.deepEqual(backend.catalogEvidence.unknownBestiaryLootAppearances,[]);
-  assert.equal(backend.catalogEvidence.observedBestiaryLoot.length,192);
+  assert.equal(backend.catalogEvidence.observedBestiaryLoot.length,195);
   assert.equal(backend.catalogEvidence.bestiaryLootCapture.complete,true);
-  assert.equal(backend.catalogEvidence.bestiaryLootCapture.lootEntries,2779);
-  assert.equal(backend.catalogEvidence.bestiaryLootCapture.maxNotes,660);
+  assert.equal(backend.catalogEvidence.bestiaryLootCapture.lootEntries,2815);
+  assert.equal(backend.catalogEvidence.bestiaryLootCapture.maxNotes,662);
+  assert.deepEqual(backend.catalogEvidence.bestiaryLootCapture.sources,[{file:'bestiary-loot-observed-current.json',expectedSpecies:192,complete:true},{file:newCreatureFile,expectedSpecies:3,complete:true}]);
   const itemCatalogCapture=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../data/item-catalog-observed-current.json'),'utf8'));
   assert.equal(itemCatalogCapture.completeness.complete,true);
   assert.equal(itemCatalogCapture.records.length,1070);
@@ -311,14 +338,15 @@ const backendModule=require('../backend.cjs');
   assert.equal(campaigns.origin,`http://127.0.0.1:${port}`);
   const evidence=await fetch(base+'/api/local/catalog-evidence').then(response=>response.json());
   assert.deepEqual(evidence.unknownLootAssociations,[]);
-  assert.equal(evidence.observedBestiaryLoot.length,192);
-  assert.equal(evidence.bestiaryLootCapture.lootEntries,2779);
+  assert.equal(evidence.observedBestiaryLoot.length,195);
+  assert.equal(evidence.bestiaryLootCapture.lootEntries,2815);
   assert.deepEqual(evidence.itemCatalogCapture,backend.catalogEvidence.itemCatalogCapture,'HTTP exposes complete item-catalog provenance and coverage');
   assert.deepEqual(evidence.itemCatalogFields,backend.catalogEvidence.itemCatalogFields);
   assert.deepEqual(evidence.unknownOutfits,canonicalUnknownNames,'HTTP preserves canonical unknowns despite local rendering');
   assert.deepEqual(evidence.unknownRenderAppearances,expectedUnknownRenderNames);
   assert.deepEqual(evidence.observedRenderRepresentatives,renderEvidence);
   assert.deepEqual(evidence.renderRepresentativeCapture,renderCapture);
+  assert.deepEqual(evidence.newCreatureCapture,backend.catalogEvidence.newCreatureCapture);
   const socket=new WebSocket(ticket.websocketUrl);socket.binaryType='arraybuffer';
   const cleanupSocket=own(()=>socket.close());
   const received=[],originallyDecoded=[],rejected=[];
@@ -339,7 +367,7 @@ const backendModule=require('../backend.cjs');
     assert(received.findIndex(m=>m.type==='scenario-terrain')<received.findIndex(m=>m.type==='instance-enter'));
     send({type:'client-ready'});send({type:'set-window-layout',windows:[]});send({type:'coins-refresh'});send({type:'cyclopedia-request'});
     await until(()=>received.some(m=>m.type==='cyclopedia-catalog'));
-    assert.equal(received.find(m=>m.type==='cyclopedia-catalog').monsters.length,192);
+    assert.equal(received.find(m=>m.type==='cyclopedia-catalog').monsters.length,195);
     assert.deepEqual(received.find(m=>m.type==='cyclopedia-catalog').monsters,backend.cyclopediaCatalog.monsters,'Binary transport preserves all observed species loot tables including duplicates and optional max');
     assert.equal(received.find(m=>m.type==='cyclopedia-catalog').items.length,1070);
     assert.deepEqual(received.find(m=>m.type==='cyclopedia-catalog').items,backend.cyclopediaCatalog.items,'Binary transport preserves every current item value and omitted unknown optional field');
@@ -374,11 +402,37 @@ const backendModule=require('../backend.cjs');
   const fixtureRoot=path.resolve(os.tmpdir());
   const fixtureDir=fs.mkdtempSync(path.join(fixtureRoot,'huntera-backend-'));
   own(()=>{const target=path.resolve(fixtureDir);assert.equal(path.dirname(target),fixtureRoot);assert(path.basename(target).startsWith('huntera-backend-'));fs.rmSync(target,{recursive:true,force:true});});
-  const catalogFixtureFiles=['game-data.json','bestiary.json','new-hunts-normalized-20261019.json','bestiary-records.json','equipment-observed.json','hunts-observed-current.json','bestiary-loot-observed-current.json','item-catalog-observed-current.json',renderRepresentativeFile];
-  const copyCatalogFixture=(target,{includeItems=true,includeRepresentatives=true}={})=>{
+  const catalogFixtureFiles=['game-data.json','bestiary.json','new-hunts-normalized-20261019.json','bestiary-records.json','equipment-observed.json','hunts-observed-current.json','bestiary-loot-observed-current.json','item-catalog-observed-current.json',renderRepresentativeFile,newCreatureFile];
+  const copyCatalogFixture=(target,{includeItems=true,includeRepresentatives=true,includeNewCreatures=true}={})=>{
     fs.mkdirSync(target);
-    for(const name of catalogFixtureFiles)if((includeItems||name!=='item-catalog-observed-current.json')&&(includeRepresentatives||name!==renderRepresentativeFile))fs.copyFileSync(path.resolve(__dirname,'../data',name),path.join(target,name));
+    for(const name of catalogFixtureFiles)if((includeItems||name!=='item-catalog-observed-current.json')&&(includeRepresentatives||name!==renderRepresentativeFile)&&(includeNewCreatures||name!==newCreatureFile))fs.copyFileSync(path.resolve(__dirname,'../data',name),path.join(target,name));
   };
+  const invalidNewCreatureCases=[
+    {name:'missing'},
+    {name:'incomplete',mutate:value=>{value.complete=false;}},
+    {name:'duplicate',mutate:value=>{value.records[1]=value.records[0];}},
+    {name:'changed-stat',mutate:value=>{value.records[0].hp=1;}},
+    {name:'canonical-id',mutate:value=>{value.records[0].canonicalOutfitId=1;}},
+    {name:'invalid-loot-max',mutate:value=>{value.records[0].loot[2].max=null;}},
+    {name:'changed-raw-note',mutate:value=>{value.rawRecords[0].lootBands[1].items[1].note='Até 999';}}
+  ];
+  for(const testCase of invalidNewCreatureCases){
+    const target=path.join(fixtureDir,'new-creatures-'+testCase.name);
+    copyCatalogFixture(target,{includeNewCreatures:false});
+    if(testCase.mutate){const changed=structuredClone(newCreatureSource);testCase.mutate(changed);fs.writeFileSync(path.join(target,newCreatureFile),JSON.stringify(changed));}
+    const rejected=backendModule.createBackend({memory:true,dataDir:target}),dispose=own(()=>rejected.close());
+    assert.equal(rejected.catalogEvidence.newCreatureCapture.complete,false);
+    assert.equal(rejected.catalogEvidence.newCreatureCapture.acceptedRecords,0);
+    assert(rejected.catalogEvidence.newCreatureCapture.reasons.length>0);
+    assert.equal(rejected.catalogEvidence.bestiaryLootCapture.complete,false,'Latest combined coverage is incomplete when additions are rejected');
+    assert.equal(rejected.catalogEvidence.bestiaryLootCapture.capturedSpecies,192);
+    assert.deepEqual(rejected.cyclopediaCatalog.monsters,backend.cyclopediaCatalog.monsters.filter(record=>!expectedNewStats.some(([name])=>name===record.name)),'Reject additions atomically while preserving all previous species: '+testCase.name);
+    assert.equal(rejected.cyclopediaCatalog.items.length,1070);
+    assert.equal(rejected.hunts.length,83);
+    assert.deepEqual(original.decodeServer(backendModule.encodeMessage(rejected.cyclopediaCatalog)),[rejected.cyclopediaCatalog]);
+    await dispose();
+  }
+  console.log(JSON.stringify({ok:true,newCreatures:{accepted:3,lootEntries:36,maxNotes:2,rejectedSourceCases:invalidNewCreatureCases.length},baselineSpeciesPreserved:192,huntsRetained:83}));
   const assertNoRenderRepresentatives=(instance,context)=>{
     const diagnostics=instance.catalogEvidence;
     assert.equal(diagnostics.renderRepresentativeCapture.complete,false,'Reject the whole curated render source for '+context);
@@ -476,7 +530,7 @@ const backendModule=require('../backend.cjs');
   assert.equal(invalidCatalog.catalogEvidence.bestiaryLootCapture.complete,false);
   assert.equal(invalidCatalog.catalogEvidence.itemCatalogCapture.complete,true,'Invalid species loot does not invalidate the independent complete item source');
   assert.equal(invalidCatalog.cyclopediaCatalog.items.length,1070);
-  assert.equal(invalidCatalog.catalogEvidence.bestiaryLootCapture.capturedSpecies,190);
+  assert.equal(invalidCatalog.catalogEvidence.bestiaryLootCapture.capturedSpecies,193);
   assert.deepEqual(invalidCatalog.catalogEvidence.invalidBestiaryLootRecords.map(record=>record.name).sort(),['Amazon','Ripper Spectre']);
   for(const name of ['Ripper Spectre','Amazon'])assert(invalidCatalog.catalogEvidence.unknownLootAssociations.includes(name),'Invalid source data must not become confirmed empty loot for '+name);
   await cleanupInvalidCatalog();
@@ -506,7 +560,7 @@ const backendModule=require('../backend.cjs');
     await until(()=>inventoryMessages===2);
     const uids=reloaded.state.characters.flatMap(c=>c.inventory?[...c.inventory.slots,...c.inventory.satchel,...Object.values(c.inventory.equipment)].filter(Boolean).map(i=>i.uid):[]);
     assert.equal(new Set(uids).size,uids.length,'Restart and purchase must retain globally unique UIDs');
-    console.log(JSON.stringify({ok:true,serverCodes:192,clientCodes:211,hunts:backend.hunts.length,observedPulls:backend.observedHuntRecords.reduce((count,hunt)=>count+(hunt.pulls||[]).length,0),unresolvedLoot:backend.catalogEvidence.unresolvedHuntLoot.length,cyclopedia:{monsters:backend.cyclopediaCatalog.monsters.length,items:backend.cyclopediaCatalog.items.length,bosses:backend.cyclopediaCatalog.bosses.length},bestiaryLoot:{species:backend.catalogEvidence.observedBestiaryLoot.length,entries:backend.catalogEvidence.bestiaryLootCapture.lootEntries,maxNotes:backend.catalogEvidence.bestiaryLootCapture.maxNotes,unknownAssociations:backend.catalogEvidence.unknownLootAssociations.length},tests:['192 directly observed species loot tables: order, rarity, duplicates and optional max','Bestiary evidence over HTTP and exact tables over binary WebSocket','invalid/null max and unconfirmed empty loot remain unknown','83 observed hunts and 251 pulls','per-pull active species/order/rarity/item IDs','damage-taken percentages rendered by captured client function','original codecs','original validators','reserved flags rejected','HTTP admission and shapes','wrong Origin rejected','text/plain rejected','null/array/boolean bodies rejected','object names rejected without crash','WebSocket bootstrap','automatic catalog request','terrain order','hunt combat','leave hunt','walk','shop','invalid inventory indices rejected; valid swap works','UID preservation and duplicate repair','UID uniqueness after restart and purchase']},null,2));
+    console.log(JSON.stringify({ok:true,serverCodes:192,clientCodes:211,hunts:backend.hunts.length,observedPulls:backend.observedHuntRecords.reduce((count,hunt)=>count+(hunt.pulls||[]).length,0),unresolvedLoot:backend.catalogEvidence.unresolvedHuntLoot.length,cyclopedia:{monsters:backend.cyclopediaCatalog.monsters.length,items:backend.cyclopediaCatalog.items.length,bosses:backend.cyclopediaCatalog.bosses.length},bestiaryLoot:{species:backend.catalogEvidence.observedBestiaryLoot.length,entries:backend.catalogEvidence.bestiaryLootCapture.lootEntries,maxNotes:backend.catalogEvidence.bestiaryLootCapture.maxNotes,unknownAssociations:backend.catalogEvidence.unknownLootAssociations.length},tests:['195 directly observed species loot tables: order, rarity, duplicates and optional max','Bestiary evidence over HTTP and exact tables over binary WebSocket','invalid/null max and unconfirmed empty loot remain unknown','83 observed hunts and 251 pulls','per-pull active species/order/rarity/item IDs','damage-taken percentages rendered by captured client function','original codecs','original validators','reserved flags rejected','HTTP admission and shapes','wrong Origin rejected','text/plain rejected','null/array/boolean bodies rejected','object names rejected without crash','WebSocket bootstrap','automatic catalog request','terrain order','hunt combat','leave hunt','walk','shop','invalid inventory indices rejected; valid swap works','UID preservation and duplicate repair','UID uniqueness after restart and purchase']},null,2));
   }finally{
     await cleanupRestartSocket();
     const stopping=cleanupReloaded();

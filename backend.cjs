@@ -216,6 +216,33 @@ function priorTooltipFields(record){
   return fields;
 }
 
+const NEW_MONSTERS_FILE='new-monsters-observed-20261026.json';
+const NEW_MONSTERS_SHA256='a277e8ebc741036e1f81c378107868455a4373eadebcce0bb3b4bdccfd9deab5';
+function observedMonsterAdditions(directory,knownNames){
+  const capture={file:NEW_MONSTERS_FILE,expectedRecords:3,acceptedRecords:0,complete:false,reasons:[]};
+  const check=(condition,message)=>{if(!condition)throw new Error(message);};
+  try{
+    const bytes=fs.readFileSync(path.join(directory,NEW_MONSTERS_FILE));
+    capture.sha256=crypto.createHash('sha256').update(bytes).digest('hex');
+    check(capture.sha256===NEW_MONSTERS_SHA256,'Curated 26 October creature observations changed');
+    const source=JSON.parse(bytes),names=['Branchy Crawler','Mould Phantom','Rotten Golem'];
+    check(source.captureType==='huntera-visible-new-monsters-normalized-20261026-v1'&&source.complete===true&&source.expectedRecords===3,'Incomplete new creature observations');
+    check(source.source?.clientMain==='main-WHI3EZUB.js'&&source.source.observedSpeciesTotal===195&&source.source.sha256==='ce855319d740baa17660cd91bbbf93ffda7cd4061f67e72d8870e52b292c9d1a','Unexpected creature observation source');
+    check(Array.isArray(source.records)&&source.records.length===3&&Array.isArray(source.rawRecords)&&source.rawRecords.length===3,'Missing normalized or raw creature records');
+    const channels=['physical','fire','earth','energy','ice','holy','death','lifeDrain'];
+    for(const [index,record] of source.records.entries()){
+      check(record.name===names[index]&&!knownNames.has(record.name)&&source.rawRecords[index].name===record.name,'Repeated or unexpected new species');
+      check(record.canonicalBestiaryId===null&&record.canonicalOutfitId===null&&record.canonicalColors===null,'Canonical creature identities remain unknown');
+      check(['hp','experience','meleeMin','meleeMax','attackIntervalMs','speed','killsRequired'].every(field=>Number.isSafeInteger(record[field])&&record[field]>0)&&record.meleeMin<=record.meleeMax,'Invalid displayed creature attributes');
+      check(channels.every(channel=>Number.isFinite(record.resistances?.[channel])&&record.resistances[channel]>=0),'Missing displayed damage-taken percentage');
+      check(Array.isArray(record.loot)&&record.loot.length>0&&record.loot.every(item=>Number.isSafeInteger(item.itemId)&&item.itemId>0&&['common','uncommon','semi-rare','rare','very-rare'].includes(item.rarity)&&(!Object.hasOwn(item,'max')||(Number.isSafeInteger(item.max)&&item.max>0))),'Invalid observed species loot');
+    }
+    check(source.records.reduce((n,r)=>n+r.loot.length,0)===36&&source.records.flatMap(r=>r.loot).filter(r=>Object.hasOwn(r,'max')).length===2,'Incomplete new species loot');
+    Object.assign(capture,{complete:true,acceptedRecords:3,clientObserved:source.source.clientMain,sourceSha256:source.source.sha256});
+    return {records:source.records,capture};
+  }catch(error){capture.reasons.push(error.message);return {records:[],capture};}
+}
+
 const RENDER_REPRESENTATIVE_FILE='outfit-render-representatives-observed.json';
 // This pin is a reviewed, five-species selection. A changed flag or new row
 // cannot silently promote a research candidate into the local renderer.
@@ -368,7 +395,9 @@ function createBackend(options = {}) {
   const readJson = (name, fallback) => { try { return JSON.parse(fs.readFileSync(path.join(dataDir, name), 'utf8')); } catch { return fallback; } };
   const facts = readJson('game-data.json', {});
   const additions = readJson('new-hunts-normalized-20261019.json', {});
-  const observedMonsters = [...readJson('bestiary.json', []),...(additions.creatures||[])];
+  const previousMonsters = [...readJson('bestiary.json', []),...(additions.creatures||[])];
+  const newCreatureObservations=observedMonsterAdditions(dataDir,new Set(previousMonsters.map(record=>record.name)));
+  const observedMonsters = [...previousMonsters,...newCreatureObservations.records];
   const bestiaryRecords=readJson('bestiary-records.json',[]);
   const equipmentRecords=readJson('equipment-observed.json',[]);
   const currentHuntCapture=readJson('hunts-observed-current.json',{});
@@ -435,19 +464,23 @@ function createBackend(options = {}) {
   // Each of these six observed 19 October snapshots explicitly displayed the
   // same 0 / 2.500 first-stage requirement; do not apply it to unknown species.
   for(const name of ['Flimsy Lost Soul','Mean Lost Soul','Freakish Lost Soul','Dragolisk','Mega Dragon','Wardragon'])killsRequired.set(name,2500);
+  for(const record of newCreatureObservations.records)killsRequired.set(record.name,record.killsRequired);
   const classNames={ANFIBIO:'Amphibic',AQUATICO:'Aquatic',AVE:'Bird',CONSTRUCTO:'Construct',DEMONIO:'Demon',DRAGAO:'Dragon',ELEMENTAL:'Elemental',FADA:'Fey',GIGANTE:'Giant',HUMANO:'Human',HUMANOIDE:'Humanoid',LICANTROPO:'Lycanthrope',MAGICO:'Magical',MAMIFERO:'Mammal',PLANTA:'Plant',REPTIL:'Reptile',GOSMA:'Slime','MORTO-VIVO':'Undead',VERME:'Vermin','EXTRA DIMENSIONAL':'Extra Dimensional'};
   const catalogEvidence={unknownOutfits:[],unknownLootAssociations:[],omittedMonsters:[],omittedItems:[],unresolvedHuntLoot:[],unknownLootItemStats:[],unknownLootItemCategories:[],observedHunts:[],missingObservedHunts:[],missingObservedPulls:[],unknownTierCounts:[],huntCapture:{observedAt:currentHuntCapture.observedAt,clientObserved:currentHuntCapture.clientObserved,method:currentHuntCapture.method},equipmentStatSource:'Captured tooltip before EQUIPADO comparison; omitted positive tooltip stats represented by neutral zero, matching captured display.',monsterStatSource:'bestiary.json + six observed additions',outfitZero:'Unknown appearance; placeholder 0 is not a recovered monster outfit.',lootStatsZero:'For observed loot without a captured tooltip, combat zeros are neutral transport placeholders required by the original schema, not recovered item stats.',tierCountZero:'Unknown monsterCount uses 0 only to satisfy the original numeric wire schema; no visible client code consumes this field.'};
   Object.assign(catalogEvidence,{
+    newCreatureCapture:newCreatureObservations.capture,
+    monsterStatSource:'bestiary.json + six observed 19 October additions + three observed 26 October additions when their curated source is accepted',
     unknownRenderAppearances:[],observedRenderRepresentatives:renderRepresentatives.records,
     invalidRenderRepresentativeRecords:renderRepresentatives.invalid,renderRepresentativeCapture:renderRepresentatives.capture,
     renderRepresentativeSource:'Five curated visual representatives are carried in the required outfitId wire field only for local rendering. Their canonical server IDs and colors remain unknown. South static appearance and sampled south poses were reviewed; other directions and a complete cycle were not observed.',
     observedBestiaryLoot:[],invalidBestiaryLootRecords:[],unusedBestiaryLootRecords:[],unknownBestiaryLootAppearances:[],bestiaryLootItemsOutsideItemCatalog:[],
-    bestiaryLootCapture:{file:'bestiary-loot-observed-current.json',observedAt:currentBestiaryLootCapture.observedAt,clientObserved:currentBestiaryLootCapture.clientObserved,method:currentBestiaryLootCapture.method,complete:false,lootEntries:0,maxNotes:0},
+    bestiaryLootCapture:{file:'bestiary-loot-observed-current.json',observedAt:currentBestiaryLootCapture.observedAt,clientObserved:currentBestiaryLootCapture.clientObserved,method:currentBestiaryLootCapture.method,complete:false,lootEntries:0,maxNotes:0,sources:[{file:'bestiary-loot-observed-current.json',expectedSpecies:192,complete:currentBestiaryLootCapture.completeness?.complete===true},{file:NEW_MONSTERS_FILE,expectedSpecies:3,complete:newCreatureObservations.capture.complete}]},
     monsterLootSource:'Direct rendered Bestiary loot per species, preserving visual order, repeated items, rarity and optional observed maximum. No association inferred from hunt loot and no drop formula recovered.'
   });
   const bestiaryLootByName=new Map(),conflictingLootNames=new Set();
   const bestiaryRarities=new Set(['common','uncommon','semi-rare','rare','very-rare']);
-  for(const record of Array.isArray(currentBestiaryLootCapture.records)?currentBestiaryLootCapture.records:[]){
+  const observedSpeciesLoot=[...(Array.isArray(currentBestiaryLootCapture.records)?currentBestiaryLootCapture.records:[]),...newCreatureObservations.records];
+  for(const record of observedSpeciesLoot){
     const valid=record&&typeof record.name==='string'&&record.name.length>0&&Array.isArray(record.loot)&&(record.loot.length>0?record.emptyMessage===null:typeof record.emptyMessage==='string'&&record.emptyMessage.trim().length>0)&&record.loot.every(entry=>entry&&Number.isSafeInteger(entry.itemId)&&entry.itemId>0&&bestiaryRarities.has(entry.rarity)&&(!Object.hasOwn(entry,'max')||(Number.isSafeInteger(entry.max)&&entry.max>0)));
     if(!valid){catalogEvidence.invalidBestiaryLootRecords.push({name:record?.name??null,reason:'Invalid name, loot identity, rarity or maximum'});continue;}
     if(bestiaryLootByName.has(record.name)||conflictingLootNames.has(record.name)){
@@ -478,7 +511,7 @@ function createBackend(options = {}) {
   }
   const catalogMonsterNames=new Set(catalogMonsters.map(record=>record.name));
   catalogEvidence.unusedBestiaryLootRecords=[...bestiaryLootByName.keys()].filter(name=>!catalogMonsterNames.has(name));
-  catalogEvidence.bestiaryLootCapture.complete=currentBestiaryLootCapture.completeness?.complete===true&&catalogEvidence.observedBestiaryLoot.length===catalogMonsters.length&&catalogMonsters.length===192&&catalogEvidence.invalidBestiaryLootRecords.length===0&&catalogEvidence.unusedBestiaryLootRecords.length===0;
+  catalogEvidence.bestiaryLootCapture.complete=currentBestiaryLootCapture.completeness?.complete===true&&newCreatureObservations.capture.complete&&catalogEvidence.observedBestiaryLoot.length===catalogMonsters.length&&catalogMonsters.length===195&&catalogEvidence.invalidBestiaryLootRecords.length===0&&catalogEvidence.unusedBestiaryLootRecords.length===0;
   const directlyObservedMonsters=catalogMonsters.filter(record=>bestiaryLootByName.has(record.name));
   catalogEvidence.bestiaryLootCapture.capturedSpecies=directlyObservedMonsters.length;
   catalogEvidence.bestiaryLootCapture.lootEntries=directlyObservedMonsters.reduce((sum,record)=>sum+record.loot.length,0);

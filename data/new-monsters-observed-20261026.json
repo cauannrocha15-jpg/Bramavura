@@ -1,0 +1,658 @@
+{
+  "schemaVersion": 1,
+  "captureType": "huntera-visible-new-monsters-normalized-20261026-v1",
+  "source": {
+    "file": "new-monsters.json",
+    "sha256": "ce855319d740baa17660cd91bbbf93ffda7cd4061f67e72d8870e52b292c9d1a",
+    "url": "https://huntera.com.br/game",
+    "clientMain": "main-WHI3EZUB.js",
+    "observedSpeciesTotal": 195,
+    "method": "Rendered DOM text and data-item/data-note on the displayed monster detail. Screenshots use the permitted tab API. No original canvas pixel or application-state reads."
+  },
+  "scope": {
+    "observed": "Rendered Bestiary attributes, displayed damage-taken percentages, first-stage requirement and ordered loot bands/notes.",
+    "notRecovered": [
+      "canonical Bestiary IDs",
+      "canonical outfit IDs/colors",
+      "drop probabilities",
+      "spawn weights",
+      "server combat and progression formulas",
+      "hunt maps"
+    ],
+    "localSpeciesId": "Derived name slug for compatibility only; not recovered from the original server.",
+    "resistances": "Historical dataset field name; values are displayed damage taken (%), requiring 100-value for the captured wire resistance field."
+  },
+  "captureEvidence": [
+    {
+      "name": "Branchy Crawler",
+      "file": "branchy-crawler.jpg",
+      "bytes": 140187,
+      "sha256": "faf3e32110e5d2bd6c77fb5af5b91b65e6bbeb3556b3240ae933bc3e785f7f5d",
+      "scope": "Captured viewport screenshot; visual eligibility is reviewed separately by the coordinator."
+    },
+    {
+      "name": "Mould Phantom",
+      "file": "mould-phantom.jpg",
+      "bytes": 140187,
+      "sha256": "c79dc26bb1681307562843566bf7bb47dc6883cc598022a7bcfe6be29af56914",
+      "scope": "Captured viewport screenshot; visual eligibility is reviewed separately by the coordinator."
+    },
+    {
+      "name": "Rotten Golem",
+      "file": "rotten-golem.jpg",
+      "bytes": 140198,
+      "sha256": "d0d7d14289d2ca9a7cd009bade3ff220f35053b70a21c62f05e8ced97d0f01f1",
+      "scope": "Captured viewport screenshot; visual eligibility is reviewed separately by the coordinator."
+    }
+  ],
+  "counts": {
+    "newSpecies": 3,
+    "lootEntries": 36,
+    "maxNotes": 2
+  },
+  "records": [
+    {
+      "name": "Branchy Crawler",
+      "localSpeciesId": "branchy-crawler",
+      "canonicalBestiaryId": null,
+      "canonicalOutfitId": null,
+      "canonicalColors": null,
+      "category": "PLANTA",
+      "hp": 27000,
+      "experience": 16843,
+      "meleeMin": 760,
+      "meleeMax": 950,
+      "attackIntervalMs": 2000,
+      "speed": 527,
+      "resistances": {
+        "physical": 100,
+        "fire": 109,
+        "earth": 50,
+        "energy": 105,
+        "ice": 100,
+        "holy": 60,
+        "death": 115,
+        "lifeDrain": 100
+      },
+      "killsRequired": 2500,
+      "lootRarities": [
+        "uncommon",
+        "semi-rare",
+        "rare",
+        "very-rare"
+      ],
+      "loot": [
+        {
+          "itemId": 3043,
+          "rarity": "uncommon",
+          "rarityLabel": "Incomum",
+          "bandIndex": 1,
+          "note": null
+        },
+        {
+          "itemId": 9058,
+          "rarity": "semi-rare",
+          "rarityLabel": "Semi-raro",
+          "bandIndex": 2,
+          "note": null
+        },
+        {
+          "itemId": 7643,
+          "rarity": "semi-rare",
+          "rarityLabel": "Semi-raro",
+          "bandIndex": 2,
+          "note": "Até 8",
+          "max": 8
+        },
+        {
+          "itemId": 3041,
+          "rarity": "rare",
+          "rarityLabel": "Raro",
+          "bandIndex": 3,
+          "note": null
+        },
+        {
+          "itemId": 812,
+          "rarity": "rare",
+          "rarityLabel": "Raro",
+          "bandIndex": 3,
+          "note": null
+        },
+        {
+          "itemId": 3038,
+          "rarity": "rare",
+          "rarityLabel": "Raro",
+          "bandIndex": 3,
+          "note": null
+        },
+        {
+          "itemId": 3332,
+          "rarity": "rare",
+          "rarityLabel": "Raro",
+          "bandIndex": 3,
+          "note": null
+        },
+        {
+          "itemId": 3036,
+          "rarity": "very-rare",
+          "rarityLabel": "Muito raro",
+          "bandIndex": 4,
+          "note": null
+        },
+        {
+          "itemId": 16163,
+          "rarity": "very-rare",
+          "rarityLabel": "Muito raro",
+          "bandIndex": 4,
+          "note": null
+        },
+        {
+          "itemId": 7418,
+          "rarity": "very-rare",
+          "rarityLabel": "Muito raro",
+          "bandIndex": 4,
+          "note": null
+        },
+        {
+          "itemId": 11657,
+          "rarity": "very-rare",
+          "rarityLabel": "Muito raro",
+          "bandIndex": 4,
+          "note": null
+        }
+      ],
+      "emptyMessage": null,
+      "source": "ui-observed",
+      "capturedAt": "2026-10-26T17:38:13.297Z"
+    },
+    {
+      "name": "Mould Phantom",
+      "localSpeciesId": "mould-phantom",
+      "canonicalBestiaryId": null,
+      "canonicalOutfitId": null,
+      "canonicalColors": null,
+      "category": "MORTO-VIVO",
+      "hp": 28000,
+      "experience": 17286,
+      "meleeMin": 720,
+      "meleeMax": 900,
+      "attackIntervalMs": 2000,
+      "speed": 535,
+      "resistances": {
+        "physical": 110,
+        "fire": 100,
+        "earth": 50,
+        "energy": 100,
+        "ice": 100,
+        "holy": 100,
+        "death": 100,
+        "lifeDrain": 100
+      },
+      "killsRequired": 2500,
+      "lootRarities": [
+        "uncommon",
+        "semi-rare",
+        "rare",
+        "very-rare"
+      ],
+      "loot": [
+        {
+          "itemId": 3043,
+          "rarity": "uncommon",
+          "rarityLabel": "Incomum",
+          "bandIndex": 1,
+          "note": null
+        },
+        {
+          "itemId": 9058,
+          "rarity": "semi-rare",
+          "rarityLabel": "Semi-raro",
+          "bandIndex": 2,
+          "note": null
+        },
+        {
+          "itemId": 8092,
+          "rarity": "rare",
+          "rarityLabel": "Raro",
+          "bandIndex": 3,
+          "note": null
+        },
+        {
+          "itemId": 3038,
+          "rarity": "rare",
+          "rarityLabel": "Raro",
+          "bandIndex": 3,
+          "note": null
+        },
+        {
+          "itemId": 3036,
+          "rarity": "rare",
+          "rarityLabel": "Raro",
+          "bandIndex": 3,
+          "note": null
+        },
+        {
+          "itemId": 16096,
+          "rarity": "rare",
+          "rarityLabel": "Raro",
+          "bandIndex": 3,
+          "note": null
+        },
+        {
+          "itemId": 3041,
+          "rarity": "rare",
+          "rarityLabel": "Raro",
+          "bandIndex": 3,
+          "note": null
+        },
+        {
+          "itemId": 8094,
+          "rarity": "rare",
+          "rarityLabel": "Raro",
+          "bandIndex": 3,
+          "note": null
+        },
+        {
+          "itemId": 23542,
+          "rarity": "rare",
+          "rarityLabel": "Raro",
+          "bandIndex": 3,
+          "note": null
+        },
+        {
+          "itemId": 23529,
+          "rarity": "rare",
+          "rarityLabel": "Raro",
+          "bandIndex": 3,
+          "note": null
+        },
+        {
+          "itemId": 14247,
+          "rarity": "rare",
+          "rarityLabel": "Raro",
+          "bandIndex": 3,
+          "note": null
+        },
+        {
+          "itemId": 16163,
+          "rarity": "very-rare",
+          "rarityLabel": "Muito raro",
+          "bandIndex": 4,
+          "note": null
+        }
+      ],
+      "emptyMessage": null,
+      "source": "ui-observed",
+      "capturedAt": "2026-10-26T17:38:40.962Z"
+    },
+    {
+      "name": "Rotten Golem",
+      "localSpeciesId": "rotten-golem",
+      "canonicalBestiaryId": null,
+      "canonicalOutfitId": null,
+      "canonicalColors": null,
+      "category": "CONSTRUCTO",
+      "hp": 28000,
+      "experience": 16843,
+      "meleeMin": 760,
+      "meleeMax": 950,
+      "attackIntervalMs": 2000,
+      "speed": 464,
+      "resistances": {
+        "physical": 80,
+        "fire": 125,
+        "earth": 60,
+        "energy": 115,
+        "ice": 100,
+        "holy": 50,
+        "death": 120,
+        "lifeDrain": 100
+      },
+      "killsRequired": 2500,
+      "lootRarities": [
+        "uncommon",
+        "semi-rare",
+        "rare",
+        "very-rare"
+      ],
+      "loot": [
+        {
+          "itemId": 3043,
+          "rarity": "uncommon",
+          "rarityLabel": "Incomum",
+          "bandIndex": 1,
+          "note": null
+        },
+        {
+          "itemId": 7642,
+          "rarity": "semi-rare",
+          "rarityLabel": "Semi-raro",
+          "bandIndex": 2,
+          "note": "Até 5",
+          "max": 5
+        },
+        {
+          "itemId": 9302,
+          "rarity": "rare",
+          "rarityLabel": "Raro",
+          "bandIndex": 3,
+          "note": null
+        },
+        {
+          "itemId": 8082,
+          "rarity": "rare",
+          "rarityLabel": "Raro",
+          "bandIndex": 3,
+          "note": null
+        },
+        {
+          "itemId": 7413,
+          "rarity": "rare",
+          "rarityLabel": "Raro",
+          "bandIndex": 3,
+          "note": null
+        },
+        {
+          "itemId": 814,
+          "rarity": "rare",
+          "rarityLabel": "Raro",
+          "bandIndex": 3,
+          "note": null
+        },
+        {
+          "itemId": 7386,
+          "rarity": "rare",
+          "rarityLabel": "Raro",
+          "bandIndex": 3,
+          "note": null
+        },
+        {
+          "itemId": 3342,
+          "rarity": "rare",
+          "rarityLabel": "Raro",
+          "bandIndex": 3,
+          "note": null
+        },
+        {
+          "itemId": 3281,
+          "rarity": "rare",
+          "rarityLabel": "Raro",
+          "bandIndex": 3,
+          "note": null
+        },
+        {
+          "itemId": 22085,
+          "rarity": "rare",
+          "rarityLabel": "Raro",
+          "bandIndex": 3,
+          "note": null
+        },
+        {
+          "itemId": 3575,
+          "rarity": "rare",
+          "rarityLabel": "Raro",
+          "bandIndex": 3,
+          "note": null
+        },
+        {
+          "itemId": 3081,
+          "rarity": "rare",
+          "rarityLabel": "Raro",
+          "bandIndex": 3,
+          "note": null
+        },
+        {
+          "itemId": 811,
+          "rarity": "very-rare",
+          "rarityLabel": "Muito raro",
+          "bandIndex": 4,
+          "note": null
+        }
+      ],
+      "emptyMessage": null,
+      "source": "ui-observed",
+      "capturedAt": "2026-10-26T17:39:38.587Z"
+    }
+  ],
+  "complete": true,
+  "expectedRecords": 3,
+  "rawRecords": [
+    {
+      "name": "Branchy Crawler",
+      "text": "Branchy Crawler\n\nPLANTA\n\n🗺\nVer hunts\n☆\nAcompanhar\nTOTAL DE ABATES\n💀\n0\nPROGRESSO DA FASE ATUAL\n0 / 2.500 abates\n0%\nfaltam 2.500 abates para concluir esta fase\n‹\n1\nFase 1\nAtual\n💀\n2.500 abates\nXP\n+1% de experiência, para sempre\nfaltam 2.500 abates para concluir esta fase\n2\nFase 2\nBloqueada\n💀\n5.000 abates\nXP\n+1% de experiência, para sempre\n🔒\nContinue caçando para alcançar esta fase.\n›\n🛡\nATRIBUTOS PRINCIPAIS\n❤\nPontos de vida\n27.000\n⭐\nExperiência\n16.843\n⚔\nCorpo a corpo\n760–950\n⏱\nVelocidade de ataque\n2.0 s\n👟\nVelocidade\n527\n⚔\nRESISTÊNCIAS / TIPOS DE DANO\n🛡\nFísico\n100%\n🔥\nFogo\n109%\n🌿\nTerra\n50%\n⚡\nEnergia\n105%\n❄\nGelo\n100%\n✨\nSagrado\n60%\n💀\nMorte\n115%\n🩸\nLife Drain\n100%\n🧰\nTABELA DE LOOT\n◆\nIncomum\n◆\nSemi-raro\n◆\nRaro\n◆\nMuito raro",
+      "lootBands": [
+        {
+          "band": "1",
+          "items": [
+            {
+              "itemId": "3043",
+              "note": ""
+            }
+          ],
+          "label": "◆Incomum"
+        },
+        {
+          "band": "2",
+          "items": [
+            {
+              "itemId": "9058",
+              "note": ""
+            },
+            {
+              "itemId": "7643",
+              "note": "Até 8"
+            }
+          ],
+          "label": "◆Semi-raro"
+        },
+        {
+          "band": "3",
+          "items": [
+            {
+              "itemId": "3041",
+              "note": ""
+            },
+            {
+              "itemId": "812",
+              "note": ""
+            },
+            {
+              "itemId": "3038",
+              "note": ""
+            },
+            {
+              "itemId": "3332",
+              "note": ""
+            }
+          ],
+          "label": "◆Raro"
+        },
+        {
+          "band": "4",
+          "items": [
+            {
+              "itemId": "3036",
+              "note": ""
+            },
+            {
+              "itemId": "16163",
+              "note": ""
+            },
+            {
+              "itemId": "7418",
+              "note": ""
+            },
+            {
+              "itemId": "11657",
+              "note": ""
+            }
+          ],
+          "label": "◆Muito raro"
+        }
+      ],
+      "capturedAt": "2026-10-26T17:38:13.297Z"
+    },
+    {
+      "name": "Mould Phantom",
+      "text": "Mould Phantom\n\nMORTO-VIVO\n\n🗺\nVer hunts\n☆\nAcompanhar\nTOTAL DE ABATES\n💀\n0\nPROGRESSO DA FASE ATUAL\n0 / 2.500 abates\n0%\nfaltam 2.500 abates para concluir esta fase\n‹\n1\nFase 1\nAtual\n💀\n2.500 abates\nXP\n+1% de experiência, para sempre\nfaltam 2.500 abates para concluir esta fase\n2\nFase 2\nBloqueada\n💀\n5.000 abates\nXP\n+1% de experiência, para sempre\n🔒\nContinue caçando para alcançar esta fase.\n›\n🛡\nATRIBUTOS PRINCIPAIS\n❤\nPontos de vida\n28.000\n⭐\nExperiência\n17.286\n⚔\nCorpo a corpo\n720–900\n⏱\nVelocidade de ataque\n2.0 s\n👟\nVelocidade\n535\n⚔\nRESISTÊNCIAS / TIPOS DE DANO\n🛡\nFísico\n110%\n🔥\nFogo\n100%\n🌿\nTerra\n50%\n⚡\nEnergia\n100%\n❄\nGelo\n100%\n✨\nSagrado\n100%\n💀\nMorte\n100%\n🩸\nLife Drain\n100%\n🧰\nTABELA DE LOOT\n◆\nIncomum\n◆\nSemi-raro\n◆\nRaro\n◆\nMuito raro",
+      "lootBands": [
+        {
+          "band": "1",
+          "items": [
+            {
+              "itemId": "3043",
+              "note": ""
+            }
+          ],
+          "label": "◆Incomum"
+        },
+        {
+          "band": "2",
+          "items": [
+            {
+              "itemId": "9058",
+              "note": ""
+            }
+          ],
+          "label": "◆Semi-raro"
+        },
+        {
+          "band": "3",
+          "items": [
+            {
+              "itemId": "8092",
+              "note": ""
+            },
+            {
+              "itemId": "3038",
+              "note": ""
+            },
+            {
+              "itemId": "3036",
+              "note": ""
+            },
+            {
+              "itemId": "16096",
+              "note": ""
+            },
+            {
+              "itemId": "3041",
+              "note": ""
+            },
+            {
+              "itemId": "8094",
+              "note": ""
+            },
+            {
+              "itemId": "23542",
+              "note": ""
+            },
+            {
+              "itemId": "23529",
+              "note": ""
+            },
+            {
+              "itemId": "14247",
+              "note": ""
+            }
+          ],
+          "label": "◆Raro"
+        },
+        {
+          "band": "4",
+          "items": [
+            {
+              "itemId": "16163",
+              "note": ""
+            }
+          ],
+          "label": "◆Muito raro"
+        }
+      ],
+      "capturedAt": "2026-10-26T17:38:40.962Z"
+    },
+    {
+      "name": "Rotten Golem",
+      "text": "Rotten Golem\n\nCONSTRUCTO\n\n🗺\nVer hunts\n☆\nAcompanhar\nTOTAL DE ABATES\n💀\n0\nPROGRESSO DA FASE ATUAL\n0 / 2.500 abates\n0%\nfaltam 2.500 abates para concluir esta fase\n‹\n1\nFase 1\nAtual\n💀\n2.500 abates\nXP\n+1% de experiência, para sempre\nfaltam 2.500 abates para concluir esta fase\n2\nFase 2\nBloqueada\n💀\n5.000 abates\nXP\n+1% de experiência, para sempre\n🔒\nContinue caçando para alcançar esta fase.\n›\n🛡\nATRIBUTOS PRINCIPAIS\n❤\nPontos de vida\n28.000\n⭐\nExperiência\n16.843\n⚔\nCorpo a corpo\n760–950\n⏱\nVelocidade de ataque\n2.0 s\n👟\nVelocidade\n464\n⚔\nRESISTÊNCIAS / TIPOS DE DANO\n🛡\nFísico\n80%\n🔥\nFogo\n125%\n🌿\nTerra\n60%\n⚡\nEnergia\n115%\n❄\nGelo\n100%\n✨\nSagrado\n50%\n💀\nMorte\n120%\n🩸\nLife Drain\n100%\n🧰\nTABELA DE LOOT\n◆\nIncomum\n◆\nSemi-raro\n◆\nRaro\n◆\nMuito raro",
+      "lootBands": [
+        {
+          "band": "1",
+          "items": [
+            {
+              "itemId": "3043",
+              "note": ""
+            }
+          ],
+          "label": "◆Incomum"
+        },
+        {
+          "band": "2",
+          "items": [
+            {
+              "itemId": "7642",
+              "note": "Até 5"
+            }
+          ],
+          "label": "◆Semi-raro"
+        },
+        {
+          "band": "3",
+          "items": [
+            {
+              "itemId": "9302",
+              "note": ""
+            },
+            {
+              "itemId": "8082",
+              "note": ""
+            },
+            {
+              "itemId": "7413",
+              "note": ""
+            },
+            {
+              "itemId": "814",
+              "note": ""
+            },
+            {
+              "itemId": "7386",
+              "note": ""
+            },
+            {
+              "itemId": "3342",
+              "note": ""
+            },
+            {
+              "itemId": "3281",
+              "note": ""
+            },
+            {
+              "itemId": "22085",
+              "note": ""
+            },
+            {
+              "itemId": "3575",
+              "note": ""
+            },
+            {
+              "itemId": "3081",
+              "note": ""
+            }
+          ],
+          "label": "◆Raro"
+        },
+        {
+          "band": "4",
+          "items": [
+            {
+              "itemId": "811",
+              "note": ""
+            }
+          ],
+          "label": "◆Muito raro"
+        }
+      ],
+      "capturedAt": "2026-10-26T17:39:38.587Z"
+    }
+  ]
+}
