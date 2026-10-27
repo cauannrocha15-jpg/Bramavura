@@ -1,0 +1,1286 @@
+{
+  "schemaVersion": 1,
+  "captureType": "huntera-visible-hunt-normalized-20261026-v1",
+  "complete": true,
+  "expectedHunts": 1,
+  "expectedPulls": 3,
+  "source": {
+    "file": "rotten-wasteland.json",
+    "sha256": "97ea4636c7081cbc1819da7a25a7f00afcbf7f6831fb85a4ed2901b232837db7",
+    "url": "https://huntera.com.br/game",
+    "clientMain": "main-WHI3EZUB.js",
+    "huntIdSource": "Public client enum; UI label HUNT 84",
+    "method": "Rendered hunt detail, active tier button, monster buttons and loot DOM; catalog read only, hunt not started."
+  },
+  "enumEvidence": {
+    "file": "chunk-3UYZ2FFW.js",
+    "sha256": "e9b46273bfa541676068d5d2b8a92d4fc169d6c0d0830aeffa6f1261cab24d79",
+    "id": "rotten-wasteland-hunt",
+    "ordinal": 84
+  },
+  "scope": {
+    "observed": "Displayed description, active species, three tier labels and ordered loot at sort mode Peso.",
+    "sortMode": "Peso",
+    "lootOrder": "Rendered UI order under Peso; no server drop/spawn order inferred.",
+    "currencyId": "The DOM currency has itemId:null; resolve only its exact name through the captured DAT.",
+    "rawPanelText": "Omitted because it also contains the account record widget; name/description/tiers/species/loot rows/sort/capture times are preserved.",
+    "notRecovered": [
+      "monster counts per pull",
+      "spawn weights",
+      "drop probabilities",
+      "hunt maps",
+      "canonical outfit IDs/colors",
+      "server combat formulas"
+    ]
+  },
+  "counts": {
+    "hunts": 1,
+    "pulls": 3,
+    "lootEntriesPerPull": 27,
+    "displayedLootEntries": 81
+  },
+  "records": [
+    {
+      "id": "rotten-wasteland-hunt",
+      "name": "Rotten Wasteland",
+      "description": "Branchy crawlers, mould phantoms e rotten golems lançando bursts e chains de earth e holy acima de mil; earth e holy são desperdício neles, fire e death funcionam melhor.",
+      "tiers": [
+        "Agressivo",
+        "Suicida",
+        "Hardcore"
+      ],
+      "monsters": [
+        "Branchy Crawler",
+        "Rotten Golem",
+        "Mould Phantom"
+      ],
+      "loot": [
+        {
+          "itemId": 11657,
+          "name": "twiceslicer",
+          "rarity": "Muito raro"
+        },
+        {
+          "itemId": 3281,
+          "name": "giant sword",
+          "rarity": "Raro"
+        },
+        {
+          "itemId": 14247,
+          "name": "ornate crossbow",
+          "rarity": "Raro"
+        },
+        {
+          "itemId": 16163,
+          "name": "crystal crossbow",
+          "rarity": "Muito raro"
+        },
+        {
+          "itemId": 7413,
+          "name": "titan axe",
+          "rarity": "Raro"
+        },
+        {
+          "itemId": 3332,
+          "name": "hammer of wrath",
+          "rarity": "Raro"
+        },
+        {
+          "itemId": 7386,
+          "name": "mercenary sword",
+          "rarity": "Raro"
+        },
+        {
+          "itemId": 3342,
+          "name": "war axe",
+          "rarity": "Raro"
+        },
+        {
+          "itemId": 22085,
+          "name": "fur armor",
+          "rarity": "Raro"
+        },
+        {
+          "itemId": 7418,
+          "name": "nightmare blade",
+          "rarity": "Muito raro"
+        },
+        {
+          "itemId": 16096,
+          "name": "wand of defiance",
+          "rarity": "Raro"
+        },
+        {
+          "itemId": 8082,
+          "name": "underworld rod",
+          "rarity": "Raro"
+        },
+        {
+          "itemId": 8094,
+          "name": "wand of voodoo",
+          "rarity": "Raro"
+        },
+        {
+          "itemId": 8092,
+          "name": "wand of starstorm",
+          "rarity": "Raro"
+        },
+        {
+          "itemId": 811,
+          "name": "terra mantle",
+          "rarity": "Muito raro"
+        },
+        {
+          "itemId": 812,
+          "name": "terra legs",
+          "rarity": "Raro"
+        },
+        {
+          "itemId": 9058,
+          "name": "gold ingot",
+          "rarity": "Semi-raro"
+        },
+        {
+          "itemId": 3575,
+          "name": "wood cape",
+          "rarity": "Raro"
+        },
+        {
+          "itemId": 9302,
+          "name": "sacred tree amulet",
+          "rarity": "Raro"
+        },
+        {
+          "itemId": 3081,
+          "name": "stone skin amulet",
+          "rarity": "Raro"
+        },
+        {
+          "itemId": 814,
+          "name": "terra amulet",
+          "rarity": "Raro"
+        },
+        {
+          "itemId": 23542,
+          "name": "collar of blue plasma",
+          "rarity": "Raro"
+        },
+        {
+          "itemId": 23529,
+          "name": "ring of blue plasma",
+          "rarity": "Raro"
+        },
+        {
+          "itemId": 3041,
+          "name": "blue gem",
+          "rarity": "Raro"
+        },
+        {
+          "itemId": 3038,
+          "name": "green gem",
+          "rarity": "Raro"
+        },
+        {
+          "itemId": 3036,
+          "name": "violet gem",
+          "rarity": "Raro"
+        },
+        {
+          "itemId": null,
+          "name": "crystal coin",
+          "rarity": "Incomum"
+        }
+      ],
+      "pulls": [
+        {
+          "name": "Agressivo",
+          "monsters": [
+            "Branchy Crawler",
+            "Rotten Golem",
+            "Mould Phantom"
+          ],
+          "loot": [
+            {
+              "itemId": 11657,
+              "name": "twiceslicer",
+              "rarity": "Muito raro"
+            },
+            {
+              "itemId": 3281,
+              "name": "giant sword",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 14247,
+              "name": "ornate crossbow",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 16163,
+              "name": "crystal crossbow",
+              "rarity": "Muito raro"
+            },
+            {
+              "itemId": 7413,
+              "name": "titan axe",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 3332,
+              "name": "hammer of wrath",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 7386,
+              "name": "mercenary sword",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 3342,
+              "name": "war axe",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 22085,
+              "name": "fur armor",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 7418,
+              "name": "nightmare blade",
+              "rarity": "Muito raro"
+            },
+            {
+              "itemId": 16096,
+              "name": "wand of defiance",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 8082,
+              "name": "underworld rod",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 8094,
+              "name": "wand of voodoo",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 8092,
+              "name": "wand of starstorm",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 811,
+              "name": "terra mantle",
+              "rarity": "Muito raro"
+            },
+            {
+              "itemId": 812,
+              "name": "terra legs",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 9058,
+              "name": "gold ingot",
+              "rarity": "Semi-raro"
+            },
+            {
+              "itemId": 3575,
+              "name": "wood cape",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 9302,
+              "name": "sacred tree amulet",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 3081,
+              "name": "stone skin amulet",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 814,
+              "name": "terra amulet",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 23542,
+              "name": "collar of blue plasma",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 23529,
+              "name": "ring of blue plasma",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 3041,
+              "name": "blue gem",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 3038,
+              "name": "green gem",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 3036,
+              "name": "violet gem",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": null,
+              "name": "crystal coin",
+              "rarity": "Incomum"
+            }
+          ]
+        },
+        {
+          "name": "Suicida",
+          "monsters": [
+            "Branchy Crawler",
+            "Rotten Golem",
+            "Mould Phantom"
+          ],
+          "loot": [
+            {
+              "itemId": 11657,
+              "name": "twiceslicer",
+              "rarity": "Muito raro"
+            },
+            {
+              "itemId": 3281,
+              "name": "giant sword",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 14247,
+              "name": "ornate crossbow",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 16163,
+              "name": "crystal crossbow",
+              "rarity": "Muito raro"
+            },
+            {
+              "itemId": 7413,
+              "name": "titan axe",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 3332,
+              "name": "hammer of wrath",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 7386,
+              "name": "mercenary sword",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 3342,
+              "name": "war axe",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 22085,
+              "name": "fur armor",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 7418,
+              "name": "nightmare blade",
+              "rarity": "Muito raro"
+            },
+            {
+              "itemId": 16096,
+              "name": "wand of defiance",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 8082,
+              "name": "underworld rod",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 8094,
+              "name": "wand of voodoo",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 8092,
+              "name": "wand of starstorm",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 811,
+              "name": "terra mantle",
+              "rarity": "Muito raro"
+            },
+            {
+              "itemId": 812,
+              "name": "terra legs",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 9058,
+              "name": "gold ingot",
+              "rarity": "Semi-raro"
+            },
+            {
+              "itemId": 3575,
+              "name": "wood cape",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 9302,
+              "name": "sacred tree amulet",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 3081,
+              "name": "stone skin amulet",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 814,
+              "name": "terra amulet",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 23542,
+              "name": "collar of blue plasma",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 23529,
+              "name": "ring of blue plasma",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 3041,
+              "name": "blue gem",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 3038,
+              "name": "green gem",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 3036,
+              "name": "violet gem",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": null,
+              "name": "crystal coin",
+              "rarity": "Incomum"
+            }
+          ]
+        },
+        {
+          "name": "Hardcore",
+          "monsters": [
+            "Branchy Crawler",
+            "Rotten Golem",
+            "Mould Phantom"
+          ],
+          "loot": [
+            {
+              "itemId": 11657,
+              "name": "twiceslicer",
+              "rarity": "Muito raro"
+            },
+            {
+              "itemId": 3281,
+              "name": "giant sword",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 14247,
+              "name": "ornate crossbow",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 16163,
+              "name": "crystal crossbow",
+              "rarity": "Muito raro"
+            },
+            {
+              "itemId": 7413,
+              "name": "titan axe",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 3332,
+              "name": "hammer of wrath",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 7386,
+              "name": "mercenary sword",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 3342,
+              "name": "war axe",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 22085,
+              "name": "fur armor",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 7418,
+              "name": "nightmare blade",
+              "rarity": "Muito raro"
+            },
+            {
+              "itemId": 16096,
+              "name": "wand of defiance",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 8082,
+              "name": "underworld rod",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 8094,
+              "name": "wand of voodoo",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 8092,
+              "name": "wand of starstorm",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 811,
+              "name": "terra mantle",
+              "rarity": "Muito raro"
+            },
+            {
+              "itemId": 812,
+              "name": "terra legs",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 9058,
+              "name": "gold ingot",
+              "rarity": "Semi-raro"
+            },
+            {
+              "itemId": 3575,
+              "name": "wood cape",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 9302,
+              "name": "sacred tree amulet",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 3081,
+              "name": "stone skin amulet",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 814,
+              "name": "terra amulet",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 23542,
+              "name": "collar of blue plasma",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 23529,
+              "name": "ring of blue plasma",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 3041,
+              "name": "blue gem",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 3038,
+              "name": "green gem",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": 3036,
+              "name": "violet gem",
+              "rarity": "Raro"
+            },
+            {
+              "itemId": null,
+              "name": "crystal coin",
+              "rarity": "Incomum"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rawRecords": [
+    {
+      "description": "Rotten Wasteland\n☆\n\nBranchy crawlers, mould phantoms e rotten golems lançando bursts e chains de earth e holy acima de mil; earth e holy são desperdício neles, fire e death funcionam melhor.",
+      "loot": [
+        {
+          "imbuementSlots": "Imbuement slots: 3",
+          "itemId": "11657",
+          "name": "twiceslicer",
+          "rarityLabel": "Muito raro",
+          "text": "Twiceslicer\nImbuement slots: 3\nMuito raro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": "Imbuement slots: 3",
+          "itemId": "3281",
+          "name": "giant sword",
+          "rarityLabel": "Raro",
+          "text": "Giant Sword\nImbuement slots: 3\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "14247",
+          "name": "ornate crossbow",
+          "rarityLabel": "Raro",
+          "text": "Ornate Crossbow\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "16163",
+          "name": "crystal crossbow",
+          "rarityLabel": "Muito raro",
+          "text": "Crystal Crossbow\nMuito raro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "7413",
+          "name": "titan axe",
+          "rarityLabel": "Raro",
+          "text": "Titan Axe\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": "Imbuement slots: 3",
+          "itemId": "3332",
+          "name": "hammer of wrath",
+          "rarityLabel": "Raro",
+          "text": "Hammer Of Wrath\nImbuement slots: 3\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "7386",
+          "name": "mercenary sword",
+          "rarityLabel": "Raro",
+          "text": "Mercenary Sword\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": "Imbuement slots: 3",
+          "itemId": "3342",
+          "name": "war axe",
+          "rarityLabel": "Raro",
+          "text": "War Axe\nImbuement slots: 3\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "22085",
+          "name": "fur armor",
+          "rarityLabel": "Raro",
+          "text": "Fur Armor\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": "Imbuement slots: 2",
+          "itemId": "7418",
+          "name": "nightmare blade",
+          "rarityLabel": "Muito raro",
+          "text": "Nightmare Blade\nImbuement slots: 2\nMuito raro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "16096",
+          "name": "wand of defiance",
+          "rarityLabel": "Raro",
+          "text": "Wand Of Defiance\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": "Imbuement slots: 2",
+          "itemId": "8082",
+          "name": "underworld rod",
+          "rarityLabel": "Raro",
+          "text": "Underworld Rod\nImbuement slots: 2\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": "Imbuement slots: 2",
+          "itemId": "8094",
+          "name": "wand of voodoo",
+          "rarityLabel": "Raro",
+          "text": "Wand Of Voodoo\nImbuement slots: 2\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": "Imbuement slots: 2",
+          "itemId": "8092",
+          "name": "wand of starstorm",
+          "rarityLabel": "Raro",
+          "text": "Wand Of Starstorm\nImbuement slots: 2\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "811",
+          "name": "terra mantle",
+          "rarityLabel": "Muito raro",
+          "text": "Terra Mantle\nMuito raro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "812",
+          "name": "terra legs",
+          "rarityLabel": "Raro",
+          "text": "Terra Legs\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "9058",
+          "name": "gold ingot",
+          "rarityLabel": "Semi-raro",
+          "text": "Gold Ingot\nSemi-raro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "3575",
+          "name": "wood cape",
+          "rarityLabel": "Raro",
+          "text": "Wood Cape\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "9302",
+          "name": "sacred tree amulet",
+          "rarityLabel": "Raro",
+          "text": "Sacred Tree Amulet\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "3081",
+          "name": "stone skin amulet",
+          "rarityLabel": "Raro",
+          "text": "Stone Skin Amulet\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "814",
+          "name": "terra amulet",
+          "rarityLabel": "Raro",
+          "text": "Terra Amulet\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "23542",
+          "name": "collar of blue plasma",
+          "rarityLabel": "Raro",
+          "text": "Collar Of Blue Plasma\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "23529",
+          "name": "ring of blue plasma",
+          "rarityLabel": "Raro",
+          "text": "Ring Of Blue Plasma\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "3041",
+          "name": "blue gem",
+          "rarityLabel": "Raro",
+          "text": "Blue Gem\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "3038",
+          "name": "green gem",
+          "rarityLabel": "Raro",
+          "text": "Green Gem\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "3036",
+          "name": "violet gem",
+          "rarityLabel": "Raro",
+          "text": "Violet Gem\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": null,
+          "name": "crystal coin",
+          "rarityLabel": "Incomum",
+          "text": "Crystal Coin\nIncomum\n✔\n-"
+        }
+      ],
+      "monsters": [
+        {
+          "className": "hunt-monster",
+          "name": "Branchy Crawler"
+        },
+        {
+          "className": "hunt-monster",
+          "name": "Rotten Golem"
+        },
+        {
+          "className": "hunt-monster",
+          "name": "Mould Phantom"
+        }
+      ],
+      "name": "Rotten Wasteland",
+      "selectedTier": "Agressivo",
+      "sortMode": "Peso",
+      "tiers": [
+        "Agressivo",
+        "Suicida",
+        "Hardcore"
+      ],
+      "capturedAt": "2026-10-26T17:41:04.070Z"
+    },
+    {
+      "description": "Rotten Wasteland\n☆\n\nBranchy crawlers, mould phantoms e rotten golems lançando bursts e chains de earth e holy acima de mil; earth e holy são desperdício neles, fire e death funcionam melhor.",
+      "loot": [
+        {
+          "imbuementSlots": "Imbuement slots: 3",
+          "itemId": "11657",
+          "name": "twiceslicer",
+          "rarityLabel": "Muito raro",
+          "text": "Twiceslicer\nImbuement slots: 3\nMuito raro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": "Imbuement slots: 3",
+          "itemId": "3281",
+          "name": "giant sword",
+          "rarityLabel": "Raro",
+          "text": "Giant Sword\nImbuement slots: 3\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "14247",
+          "name": "ornate crossbow",
+          "rarityLabel": "Raro",
+          "text": "Ornate Crossbow\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "16163",
+          "name": "crystal crossbow",
+          "rarityLabel": "Muito raro",
+          "text": "Crystal Crossbow\nMuito raro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "7413",
+          "name": "titan axe",
+          "rarityLabel": "Raro",
+          "text": "Titan Axe\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": "Imbuement slots: 3",
+          "itemId": "3332",
+          "name": "hammer of wrath",
+          "rarityLabel": "Raro",
+          "text": "Hammer Of Wrath\nImbuement slots: 3\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "7386",
+          "name": "mercenary sword",
+          "rarityLabel": "Raro",
+          "text": "Mercenary Sword\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": "Imbuement slots: 3",
+          "itemId": "3342",
+          "name": "war axe",
+          "rarityLabel": "Raro",
+          "text": "War Axe\nImbuement slots: 3\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "22085",
+          "name": "fur armor",
+          "rarityLabel": "Raro",
+          "text": "Fur Armor\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": "Imbuement slots: 2",
+          "itemId": "7418",
+          "name": "nightmare blade",
+          "rarityLabel": "Muito raro",
+          "text": "Nightmare Blade\nImbuement slots: 2\nMuito raro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "16096",
+          "name": "wand of defiance",
+          "rarityLabel": "Raro",
+          "text": "Wand Of Defiance\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": "Imbuement slots: 2",
+          "itemId": "8082",
+          "name": "underworld rod",
+          "rarityLabel": "Raro",
+          "text": "Underworld Rod\nImbuement slots: 2\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": "Imbuement slots: 2",
+          "itemId": "8094",
+          "name": "wand of voodoo",
+          "rarityLabel": "Raro",
+          "text": "Wand Of Voodoo\nImbuement slots: 2\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": "Imbuement slots: 2",
+          "itemId": "8092",
+          "name": "wand of starstorm",
+          "rarityLabel": "Raro",
+          "text": "Wand Of Starstorm\nImbuement slots: 2\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "811",
+          "name": "terra mantle",
+          "rarityLabel": "Muito raro",
+          "text": "Terra Mantle\nMuito raro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "812",
+          "name": "terra legs",
+          "rarityLabel": "Raro",
+          "text": "Terra Legs\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "9058",
+          "name": "gold ingot",
+          "rarityLabel": "Semi-raro",
+          "text": "Gold Ingot\nSemi-raro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "3575",
+          "name": "wood cape",
+          "rarityLabel": "Raro",
+          "text": "Wood Cape\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "9302",
+          "name": "sacred tree amulet",
+          "rarityLabel": "Raro",
+          "text": "Sacred Tree Amulet\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "3081",
+          "name": "stone skin amulet",
+          "rarityLabel": "Raro",
+          "text": "Stone Skin Amulet\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "814",
+          "name": "terra amulet",
+          "rarityLabel": "Raro",
+          "text": "Terra Amulet\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "23542",
+          "name": "collar of blue plasma",
+          "rarityLabel": "Raro",
+          "text": "Collar Of Blue Plasma\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "23529",
+          "name": "ring of blue plasma",
+          "rarityLabel": "Raro",
+          "text": "Ring Of Blue Plasma\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "3041",
+          "name": "blue gem",
+          "rarityLabel": "Raro",
+          "text": "Blue Gem\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "3038",
+          "name": "green gem",
+          "rarityLabel": "Raro",
+          "text": "Green Gem\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "3036",
+          "name": "violet gem",
+          "rarityLabel": "Raro",
+          "text": "Violet Gem\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": null,
+          "name": "crystal coin",
+          "rarityLabel": "Incomum",
+          "text": "Crystal Coin\nIncomum\n✔\n-"
+        }
+      ],
+      "monsters": [
+        {
+          "className": "hunt-monster",
+          "name": "Branchy Crawler"
+        },
+        {
+          "className": "hunt-monster",
+          "name": "Rotten Golem"
+        },
+        {
+          "className": "hunt-monster",
+          "name": "Mould Phantom"
+        }
+      ],
+      "name": "Rotten Wasteland",
+      "selectedTier": "Suicida",
+      "sortMode": "Peso",
+      "tiers": [
+        "Agressivo",
+        "Suicida",
+        "Hardcore"
+      ],
+      "capturedAt": "2026-10-26T17:41:04.412Z"
+    },
+    {
+      "description": "Rotten Wasteland\n☆\n\nBranchy crawlers, mould phantoms e rotten golems lançando bursts e chains de earth e holy acima de mil; earth e holy são desperdício neles, fire e death funcionam melhor.",
+      "loot": [
+        {
+          "imbuementSlots": "Imbuement slots: 3",
+          "itemId": "11657",
+          "name": "twiceslicer",
+          "rarityLabel": "Muito raro",
+          "text": "Twiceslicer\nImbuement slots: 3\nMuito raro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": "Imbuement slots: 3",
+          "itemId": "3281",
+          "name": "giant sword",
+          "rarityLabel": "Raro",
+          "text": "Giant Sword\nImbuement slots: 3\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "14247",
+          "name": "ornate crossbow",
+          "rarityLabel": "Raro",
+          "text": "Ornate Crossbow\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "16163",
+          "name": "crystal crossbow",
+          "rarityLabel": "Muito raro",
+          "text": "Crystal Crossbow\nMuito raro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "7413",
+          "name": "titan axe",
+          "rarityLabel": "Raro",
+          "text": "Titan Axe\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": "Imbuement slots: 3",
+          "itemId": "3332",
+          "name": "hammer of wrath",
+          "rarityLabel": "Raro",
+          "text": "Hammer Of Wrath\nImbuement slots: 3\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "7386",
+          "name": "mercenary sword",
+          "rarityLabel": "Raro",
+          "text": "Mercenary Sword\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": "Imbuement slots: 3",
+          "itemId": "3342",
+          "name": "war axe",
+          "rarityLabel": "Raro",
+          "text": "War Axe\nImbuement slots: 3\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "22085",
+          "name": "fur armor",
+          "rarityLabel": "Raro",
+          "text": "Fur Armor\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": "Imbuement slots: 2",
+          "itemId": "7418",
+          "name": "nightmare blade",
+          "rarityLabel": "Muito raro",
+          "text": "Nightmare Blade\nImbuement slots: 2\nMuito raro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "16096",
+          "name": "wand of defiance",
+          "rarityLabel": "Raro",
+          "text": "Wand Of Defiance\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": "Imbuement slots: 2",
+          "itemId": "8082",
+          "name": "underworld rod",
+          "rarityLabel": "Raro",
+          "text": "Underworld Rod\nImbuement slots: 2\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": "Imbuement slots: 2",
+          "itemId": "8094",
+          "name": "wand of voodoo",
+          "rarityLabel": "Raro",
+          "text": "Wand Of Voodoo\nImbuement slots: 2\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": "Imbuement slots: 2",
+          "itemId": "8092",
+          "name": "wand of starstorm",
+          "rarityLabel": "Raro",
+          "text": "Wand Of Starstorm\nImbuement slots: 2\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "811",
+          "name": "terra mantle",
+          "rarityLabel": "Muito raro",
+          "text": "Terra Mantle\nMuito raro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "812",
+          "name": "terra legs",
+          "rarityLabel": "Raro",
+          "text": "Terra Legs\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "9058",
+          "name": "gold ingot",
+          "rarityLabel": "Semi-raro",
+          "text": "Gold Ingot\nSemi-raro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "3575",
+          "name": "wood cape",
+          "rarityLabel": "Raro",
+          "text": "Wood Cape\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "9302",
+          "name": "sacred tree amulet",
+          "rarityLabel": "Raro",
+          "text": "Sacred Tree Amulet\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "3081",
+          "name": "stone skin amulet",
+          "rarityLabel": "Raro",
+          "text": "Stone Skin Amulet\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "814",
+          "name": "terra amulet",
+          "rarityLabel": "Raro",
+          "text": "Terra Amulet\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "23542",
+          "name": "collar of blue plasma",
+          "rarityLabel": "Raro",
+          "text": "Collar Of Blue Plasma\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "23529",
+          "name": "ring of blue plasma",
+          "rarityLabel": "Raro",
+          "text": "Ring Of Blue Plasma\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "3041",
+          "name": "blue gem",
+          "rarityLabel": "Raro",
+          "text": "Blue Gem\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "3038",
+          "name": "green gem",
+          "rarityLabel": "Raro",
+          "text": "Green Gem\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": "3036",
+          "name": "violet gem",
+          "rarityLabel": "Raro",
+          "text": "Violet Gem\nRaro\nNão despachar\nVender\nDepot\nGuild"
+        },
+        {
+          "imbuementSlots": null,
+          "itemId": null,
+          "name": "crystal coin",
+          "rarityLabel": "Incomum",
+          "text": "Crystal Coin\nIncomum\n✔\n-"
+        }
+      ],
+      "monsters": [
+        {
+          "className": "hunt-monster",
+          "name": "Branchy Crawler"
+        },
+        {
+          "className": "hunt-monster",
+          "name": "Rotten Golem"
+        },
+        {
+          "className": "hunt-monster",
+          "name": "Mould Phantom"
+        }
+      ],
+      "name": "Rotten Wasteland",
+      "selectedTier": "Hardcore",
+      "sortMode": "Peso",
+      "tiers": [
+        "Agressivo",
+        "Suicida",
+        "Hardcore"
+      ],
+      "capturedAt": "2026-10-26T17:41:04.748Z"
+    }
+  ]
+}

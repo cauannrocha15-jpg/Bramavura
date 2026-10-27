@@ -1,6 +1,8 @@
 {
-  "capturedDate": "2026-10-23",
-  "main": "main-MUNRWAJS.js",
+  "capturedDate": "2026-10-26",
+  "main": "main-WHI3EZUB.js",
+  "historicalMain": "main-MUNRWAJS.js",
+  "scope": "Frozen WHI script closure with the matching stylesheet observed in the authenticated DOM; historical files retained. Local HTML shell is generated, not a recovered historical HTML response.",
   "files": [
     {
       "path": "main-MUNRWAJS.js",
@@ -316,9 +318,10 @@
     },
     {
       "path": "assets/ui/target-distance.png",
+      "sourceUrl": "https://huntera.com.br/assets/ui/target-distance.png",
       "bytes": 33690,
       "sha256": "58142fd458b63d4be3afd42bbb3935b9302395706015490df197fd1899f445ea",
-      "sourceUrl": "https://huntera.com.br/assets/ui/target-distance.png"
+      "contentType": "image/png"
     },
     {
       "path": "chunk-AKKYK6EA.js",
@@ -340,99 +343,115 @@
     },
     {
       "path": "assets/ui/prey-wildcard.png",
+      "sourceUrl": "https://huntera.com.br/assets/ui/prey-wildcard.png",
       "bytes": 101109,
       "sha256": "0d8464a8eaff026f8d26a6bacecfa1063b4b29e152dc5639a33b21a1fb078382",
-      "sourceUrl": "https://huntera.com.br/assets/ui/prey-wildcard.png"
+      "contentType": "image/png"
     },
     {
       "path": "assets/ui/loading-frame.png",
+      "sourceUrl": "https://huntera.com.br/assets/ui/loading-frame.png",
       "bytes": 158305,
       "sha256": "6c293f062c382d3cd6fdb1b68e2f78b5e879bb17ae3d4b61512c323f8b418e89",
-      "sourceUrl": "https://huntera.com.br/assets/ui/loading-frame.png"
+      "contentType": "image/png"
     },
     {
       "path": "assets/ui/huntera-coin.png",
+      "sourceUrl": "https://huntera.com.br/assets/ui/huntera-coin.png",
       "bytes": 31426,
       "sha256": "5c728025c7e955bc0a4b2fe9b2a92c31eb0a4265b414a39e4f7d2bfade46e4f3",
-      "sourceUrl": "https://huntera.com.br/assets/ui/huntera-coin.png"
+      "contentType": "image/png"
     },
     {
       "path": "assets/ui/loading-backdrop.jpg",
+      "sourceUrl": "https://huntera.com.br/assets/ui/loading-backdrop.jpg",
       "bytes": 208587,
       "sha256": "451d2316ceaec3df610f5bb26cad193ad0213752e60cb11639cfc53e43c1329a",
-      "sourceUrl": "https://huntera.com.br/assets/ui/loading-backdrop.jpg"
+      "contentType": "image/jpeg"
     },
     {
       "path": "assets/ui/frames/frame-button.png",
+      "sourceUrl": "https://huntera.com.br/assets/ui/frames/frame-button.png",
       "bytes": 5995,
       "sha256": "cc9965653271fbc1a8d6e2b3b1598aecf613889923c319b6846a32bd99e8e42a",
-      "sourceUrl": "https://huntera.com.br/assets/ui/frames/frame-button.png"
+      "contentType": "image/png"
     },
     {
       "path": "assets/ui/frames/frame-slot.png",
+      "sourceUrl": "https://huntera.com.br/assets/ui/frames/frame-slot.png",
       "bytes": 2624,
       "sha256": "a68c618362f9cfbd9d2e2059506137e79b09fca0b1bcd7b49f2e5c0bf4bc2a5b",
-      "sourceUrl": "https://huntera.com.br/assets/ui/frames/frame-slot.png"
+      "contentType": "image/png"
     },
     {
       "path": "assets/ui/frames/frame-window.png",
+      "sourceUrl": "https://huntera.com.br/assets/ui/frames/frame-window.png",
       "bytes": 5954,
       "sha256": "31f5000152c62deed2c938dc04a745de2e2c976ba6eed4688e19488a6e3e6f32",
-      "sourceUrl": "https://huntera.com.br/assets/ui/frames/frame-window.png"
+      "contentType": "image/png"
     },
     {
       "path": "assets/ui/frames/frame-slot-active.png",
+      "sourceUrl": "https://huntera.com.br/assets/ui/frames/frame-slot-active.png",
       "bytes": 3147,
       "sha256": "f8783a21138397e0ba84a304e7db60bf6bdd04e6a9ff648e04df92a961bac3f1",
-      "sourceUrl": "https://huntera.com.br/assets/ui/frames/frame-slot-active.png"
+      "contentType": "image/png"
     },
     {
       "path": "assets/ui/frames/frame-icon-button.png",
+      "sourceUrl": "https://huntera.com.br/assets/ui/frames/frame-icon-button.png",
       "bytes": 3658,
       "sha256": "53909de771eeef5eda5cc6ae0b2005327088468912a5160c83846e8802434463",
-      "sourceUrl": "https://huntera.com.br/assets/ui/frames/frame-icon-button.png"
+      "contentType": "image/png"
     },
     {
       "path": "assets/ui/frames/frame-bar.png",
+      "sourceUrl": "https://huntera.com.br/assets/ui/frames/frame-bar.png",
       "bytes": 2185,
       "sha256": "b9c6fc9a5a0d8462aa6048cfae119863fbfcdb9cf15dde2bd377f66605827632",
-      "sourceUrl": "https://huntera.com.br/assets/ui/frames/frame-bar.png"
+      "contentType": "image/png"
     },
     {
       "path": "assets/ui/frames/slider-knob.png",
+      "sourceUrl": "https://huntera.com.br/assets/ui/frames/slider-knob.png",
       "bytes": 3159,
       "sha256": "b89518057c59b82ceca066c9524a24c7c13efba2faed6b8168c17f1b157df020",
-      "sourceUrl": "https://huntera.com.br/assets/ui/frames/slider-knob.png"
+      "contentType": "image/png"
     },
     {
       "path": "assets/ui/coins/pile-1.png",
+      "sourceUrl": "https://huntera.com.br/assets/ui/coins/pile-1.png",
       "bytes": 16498,
       "sha256": "290b2bddd8556bb0b787bbfe6ae9dae99f7e644bf0f5d3c341e627f0e4e7bf3e",
-      "sourceUrl": "https://huntera.com.br/assets/ui/coins/pile-1.png"
+      "contentType": "image/png"
     },
     {
       "path": "assets/ui/coins/pile-3.png",
+      "sourceUrl": "https://huntera.com.br/assets/ui/coins/pile-3.png",
       "bytes": 11228,
       "sha256": "f436f193df205dcdd88a3ccc08e43890b3c773127eb2c5d9147ba894a57a1d64",
-      "sourceUrl": "https://huntera.com.br/assets/ui/coins/pile-3.png"
+      "contentType": "image/png"
     },
     {
       "path": "assets/ui/coins/pile-4.png",
+      "sourceUrl": "https://huntera.com.br/assets/ui/coins/pile-4.png",
       "bytes": 9129,
       "sha256": "cf2aee44d6c4995069e9013bf9773fe0fd1fa90241577d45159f2269339de59e",
-      "sourceUrl": "https://huntera.com.br/assets/ui/coins/pile-4.png"
+      "contentType": "image/png"
     },
     {
       "path": "assets/ui/name-change-scroll.png",
+      "sourceUrl": "https://huntera.com.br/assets/ui/name-change-scroll.png",
       "bytes": 84488,
       "sha256": "59f000883009d9f298c3a2e22971777ff4f837cb4d84ef2bf2e5db97b45d8ea0",
-      "sourceUrl": "https://huntera.com.br/assets/ui/name-change-scroll.png"
+      "contentType": "image/png"
     },
     {
       "path": "assets/ui/coins/pile-2.png",
+      "sourceUrl": "https://huntera.com.br/assets/ui/coins/pile-2.png",
       "bytes": 13666,
       "sha256": "fbc12d227341890e933959ad1872071a44c00d4229d572a0b64b4fc82c5439cd",
-      "sourceUrl": "https://huntera.com.br/assets/ui/coins/pile-2.png"
+      "contentType": "image/png"
     },
     {
       "path": "assets/ui/premium-shield.png",
@@ -460,15 +479,15 @@
     },
     {
       "path": "assets/spells/ultimate-healing.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/ultimate-healing.gif",
       "bytes": 2319,
-      "sha256": "c5283a6926c8ec3da3423b53c0d84ebeb86cb42c7f15e6d2f18c2b760979e024",
-      "sourceUrl": "https://huntera.com.br/assets/spells/ultimate-healing.gif"
+      "sha256": "c5283a6926c8ec3da3423b53c0d84ebeb86cb42c7f15e6d2f18c2b760979e024"
     },
     {
       "path": "assets/spells/front-sweep.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/front-sweep.gif",
       "bytes": 2455,
-      "sha256": "6d10784cc5b0d5aafa0d7cda8eae818338309c51e1e662cd13d624cfca49168d",
-      "sourceUrl": "https://huntera.com.br/assets/spells/front-sweep.gif"
+      "sha256": "6d10784cc5b0d5aafa0d7cda8eae818338309c51e1e662cd13d624cfca49168d"
     },
     {
       "path": "assets/ui/forge-dust.gif",
@@ -610,9 +629,10 @@
     },
     {
       "path": "worker-OU3KHZRC.js",
+      "sourceUrl": "https://huntera.com.br/worker-OU3KHZRC.js",
       "bytes": 10637,
       "sha256": "b2b29d415442ec4ab3e61999c824bc2d5823a9cafb0904a8bda65a9bdc121572",
-      "sourceUrl": "https://huntera.com.br/worker-OU3KHZRC.js"
+      "contentType": "application/javascript"
     },
     {
       "path": "chunk-4PD2CQE4.js",
@@ -25651,6 +25671,931 @@
       "bytes": 36004,
       "sha256": "36d4fa27876b524a3d8cfc49b627f230303ab1a9038394e70026fd90bd81b09c",
       "sourceUrl": "https://huntera.com.br/things/1332/sprites-250a92617a0925bf78f540cd0a4821149b9ed08642673b78847f0136e9c06a46.bmp.lzma"
+    },
+    {
+      "path": "chunk-2AXE27TE.js",
+      "bytes": 924,
+      "sha256": "b08be2068ddfd017721c7583edaf739ccdec5da75f07427cc1e2145cda178dde",
+      "sourceUrl": "https://huntera.com.br/chunk-2AXE27TE.js"
+    },
+    {
+      "path": "chunk-2ZJ5O6H2.js",
+      "bytes": 1203,
+      "sha256": "2ae50b682f0014f245ae1e682db9ed1ad030fcceb97087da7523844260bdaaf4",
+      "sourceUrl": "https://huntera.com.br/chunk-2ZJ5O6H2.js"
+    },
+    {
+      "path": "chunk-3UYZ2FFW.js",
+      "bytes": 151031,
+      "sha256": "e9b46273bfa541676068d5d2b8a92d4fc169d6c0d0830aeffa6f1261cab24d79",
+      "sourceUrl": "https://huntera.com.br/chunk-3UYZ2FFW.js"
+    },
+    {
+      "path": "chunk-3UZBBNWR.js",
+      "bytes": 7675,
+      "sha256": "4edf06a0ff8a9ec044bf20253e1d96f352ad3be6e7d762b78ad6e4c5230ac314",
+      "sourceUrl": "https://huntera.com.br/chunk-3UZBBNWR.js"
+    },
+    {
+      "path": "chunk-3YR3IVE3.js",
+      "bytes": 54211,
+      "sha256": "c387936c12fd9e533921d3068ebae3f2d66c1683eed822dbf4065dd72f393e0f",
+      "sourceUrl": "https://huntera.com.br/chunk-3YR3IVE3.js"
+    },
+    {
+      "path": "chunk-4LCYQ7VI.js",
+      "bytes": 17168,
+      "sha256": "537da0c5b71211729174a385c3cf6d1f6aa781b0d11d36eba52b9cf63f9b63dd",
+      "sourceUrl": "https://huntera.com.br/chunk-4LCYQ7VI.js"
+    },
+    {
+      "path": "chunk-5ASXDU5P.js",
+      "bytes": 7029,
+      "sha256": "83637817340c0ade24b4c11703341740c1f2a1651e47058e80fc3d751a8b4201",
+      "sourceUrl": "https://huntera.com.br/chunk-5ASXDU5P.js"
+    },
+    {
+      "path": "chunk-5NKSHFX3.js",
+      "bytes": 75624,
+      "sha256": "e26d15d20c1541bdb342c15e3bcdb52db65a83c2cfbb1a766c0bca72225153e1",
+      "sourceUrl": "https://huntera.com.br/chunk-5NKSHFX3.js"
+    },
+    {
+      "path": "chunk-5TRBVAYO.js",
+      "bytes": 513266,
+      "sha256": "8aff54d926c603c8d1f5bf0de9843c6aaaa3270018f92315fa077fa514d0b867",
+      "sourceUrl": "https://huntera.com.br/chunk-5TRBVAYO.js"
+    },
+    {
+      "path": "chunk-5UNVGE43.js",
+      "bytes": 6308,
+      "sha256": "473513eb80f7c6d8c516c69db4b4aa172f161c1f158224285084aee2e7f8dcc7",
+      "sourceUrl": "https://huntera.com.br/chunk-5UNVGE43.js"
+    },
+    {
+      "path": "chunk-5VF2RYSN.js",
+      "bytes": 24643,
+      "sha256": "92efa7c80b17751401438c3e129c850358a5c847d52b4e5deff919c3877a54c9",
+      "sourceUrl": "https://huntera.com.br/chunk-5VF2RYSN.js"
+    },
+    {
+      "path": "chunk-7DYETHAM.js",
+      "bytes": 9515,
+      "sha256": "d0af1c3f98d00b654428029776851ed9c0828e07ebb2eba7f4f318c49d63486d",
+      "sourceUrl": "https://huntera.com.br/chunk-7DYETHAM.js"
+    },
+    {
+      "path": "chunk-ABLMK24T.js",
+      "bytes": 118363,
+      "sha256": "b8235ba1446c850e3cfb53143efce6b02d3f716b90675ef3c565c49ea08fc731",
+      "sourceUrl": "https://huntera.com.br/chunk-ABLMK24T.js"
+    },
+    {
+      "path": "chunk-ADMRLFYX.js",
+      "bytes": 356793,
+      "sha256": "e73cd6a1d2284cfb55e7d459fcffa3b4e8f7f4923c40b95b3df9f5b60e90c986",
+      "sourceUrl": "https://huntera.com.br/chunk-ADMRLFYX.js"
+    },
+    {
+      "path": "chunk-BGNGSQMG.js",
+      "bytes": 142804,
+      "sha256": "bf72e05cbd6e19b08f8613377f9b02e051c802ae501f97320b1589e48af6c210",
+      "sourceUrl": "https://huntera.com.br/chunk-BGNGSQMG.js"
+    },
+    {
+      "path": "chunk-CETVD7W6.js",
+      "bytes": 447,
+      "sha256": "407bb4351ee554f25d7385875d7a88b0857f2c72e51bd396bf9d04d92203c5fb",
+      "sourceUrl": "https://huntera.com.br/chunk-CETVD7W6.js"
+    },
+    {
+      "path": "chunk-CMSWRQ36.js",
+      "bytes": 150318,
+      "sha256": "e78e93119a60e3f24dac4ffeaf8e348093538402e5acad254954dfa961a8d246",
+      "sourceUrl": "https://huntera.com.br/chunk-CMSWRQ36.js"
+    },
+    {
+      "path": "chunk-D3G3CQBF.js",
+      "bytes": 251602,
+      "sha256": "1d92833daf5535706a4d88b2dcc42344e6348d4f13ebba707c73a411be899674",
+      "sourceUrl": "https://huntera.com.br/chunk-D3G3CQBF.js"
+    },
+    {
+      "path": "chunk-DOXOLALI.js",
+      "bytes": 21869,
+      "sha256": "7ee58179e5a0b6c0b20a8d36054259539ed78b94bebe3272f62283fb86d90ac2",
+      "sourceUrl": "https://huntera.com.br/chunk-DOXOLALI.js"
+    },
+    {
+      "path": "chunk-E2P7LMMT.js",
+      "bytes": 1118,
+      "sha256": "df5d8d21a1b0e18c194cb5b7c2402a73b29d9ca7ce5dbebe68095c80dc9970d4",
+      "sourceUrl": "https://huntera.com.br/chunk-E2P7LMMT.js"
+    },
+    {
+      "path": "chunk-FB2DQHSS.js",
+      "bytes": 17635,
+      "sha256": "82932c6b6ea907527b76410982347ecb27a428b6e438d18a9d8e6dca6b41f217",
+      "sourceUrl": "https://huntera.com.br/chunk-FB2DQHSS.js"
+    },
+    {
+      "path": "chunk-FPJ2GHFL.js",
+      "bytes": 1674,
+      "sha256": "5f4e2a58c2b7baa4b25f2407cd99240e3628379026f44220797fd210868cf8e8",
+      "sourceUrl": "https://huntera.com.br/chunk-FPJ2GHFL.js"
+    },
+    {
+      "path": "chunk-FVI5FBB6.js",
+      "bytes": 50897,
+      "sha256": "d67f74b563e1c646adf3b135fa0a7384bbcd7f78c3cd22143d4f2db2ae89d4e6",
+      "sourceUrl": "https://huntera.com.br/chunk-FVI5FBB6.js"
+    },
+    {
+      "path": "chunk-GDHIY76Q.js",
+      "bytes": 4465,
+      "sha256": "98296c87d07ed2bea4d0ffe9a9b316541bbfaa1ff0ecaf084f8d328d04a41d3d",
+      "sourceUrl": "https://huntera.com.br/chunk-GDHIY76Q.js"
+    },
+    {
+      "path": "chunk-HK4PUHJL.js",
+      "bytes": 15530,
+      "sha256": "cc345bc36991fea3aa43bcce5609e617e6ac0e2551d5ff61111dc2d98552ce70",
+      "sourceUrl": "https://huntera.com.br/chunk-HK4PUHJL.js"
+    },
+    {
+      "path": "chunk-HKRTP7C5.js",
+      "bytes": 49122,
+      "sha256": "489ae80363658b3a2021c98e8b34fb8ee4379c4a14e23b9e1c4eb91613fa5f0f",
+      "sourceUrl": "https://huntera.com.br/chunk-HKRTP7C5.js"
+    },
+    {
+      "path": "chunk-IDB6NLN2.js",
+      "bytes": 57288,
+      "sha256": "7f45310c4b09f03c5c7e78e8ac15e52a77ecc6546acd00181e0ff38fb521b7b0",
+      "sourceUrl": "https://huntera.com.br/chunk-IDB6NLN2.js"
+    },
+    {
+      "path": "chunk-J73F5LW2.js",
+      "bytes": 13938,
+      "sha256": "41803496b3f7261c101c864705cb96af9bb04d8735730a6a32d6f78ee8e9090d",
+      "sourceUrl": "https://huntera.com.br/chunk-J73F5LW2.js"
+    },
+    {
+      "path": "chunk-JESGERD5.js",
+      "bytes": 20934,
+      "sha256": "af5ada2d2421791533bc794f5322657b206177ebf872eec8545372b01c43099e",
+      "sourceUrl": "https://huntera.com.br/chunk-JESGERD5.js"
+    },
+    {
+      "path": "chunk-JQY7LKMW.js",
+      "bytes": 7307,
+      "sha256": "1977d59ab0efd3ddea506a301b861e31531e0ba574c9ec4a593f22b890edd906",
+      "sourceUrl": "https://huntera.com.br/chunk-JQY7LKMW.js"
+    },
+    {
+      "path": "chunk-KGUVBA6T.js",
+      "bytes": 1083,
+      "sha256": "b82293404218417fbde67d5ea338ecaad00e6ebb1a9f15a34637c71a3e2b2479",
+      "sourceUrl": "https://huntera.com.br/chunk-KGUVBA6T.js"
+    },
+    {
+      "path": "chunk-MHZOIFIZ.js",
+      "bytes": 20399,
+      "sha256": "c3c256bca71ecbf83b3e99455f2d67dd8b702f77dd6a63cde6afbbf9fb81991c",
+      "sourceUrl": "https://huntera.com.br/chunk-MHZOIFIZ.js"
+    },
+    {
+      "path": "chunk-MUPJKZYN.js",
+      "bytes": 1135492,
+      "sha256": "e6d25c594407399bfb21903aeba16ec8a132efc2556a80a1dec3d1fd1d565eb9",
+      "sourceUrl": "https://huntera.com.br/chunk-MUPJKZYN.js"
+    },
+    {
+      "path": "chunk-MWF4VWHM.js",
+      "bytes": 39576,
+      "sha256": "da9113765e605a25986dd6d74a65a414b91f382662c4700cc1eb9a16bc3ee3fe",
+      "sourceUrl": "https://huntera.com.br/chunk-MWF4VWHM.js"
+    },
+    {
+      "path": "chunk-MX3FPGAT.js",
+      "bytes": 742,
+      "sha256": "ff0a26c1cca978d9919e305b2150ae816ea58bde1e5bd33bfdda5ac2c3080da0",
+      "sourceUrl": "https://huntera.com.br/chunk-MX3FPGAT.js"
+    },
+    {
+      "path": "chunk-NQ6LLDSH.js",
+      "bytes": 2630,
+      "sha256": "130f58ef5a06902deb5e4b75a743c192be853ba87a59d78531655e9e558439a6",
+      "sourceUrl": "https://huntera.com.br/chunk-NQ6LLDSH.js"
+    },
+    {
+      "path": "chunk-OFMWNO3E.js",
+      "bytes": 484,
+      "sha256": "909e941c0daa9c5244341f384e5d876c0b523b63da5f148d5a5b6c66ba5b59e7",
+      "sourceUrl": "https://huntera.com.br/chunk-OFMWNO3E.js"
+    },
+    {
+      "path": "chunk-OMDKDAQ3.js",
+      "bytes": 23861,
+      "sha256": "b9dec776e122a9b34d9e4fd1d3087a8e56eba6a040947768208dcb1e539f8d7f",
+      "sourceUrl": "https://huntera.com.br/chunk-OMDKDAQ3.js"
+    },
+    {
+      "path": "chunk-PAJPF74L.js",
+      "bytes": 1307,
+      "sha256": "9ecd579f9680e0317055b0f9e34a52ebbe43471db019660f561396bdf28acabe",
+      "sourceUrl": "https://huntera.com.br/chunk-PAJPF74L.js"
+    },
+    {
+      "path": "chunk-PO7HXG4G.js",
+      "bytes": 14427,
+      "sha256": "f6e11b186692bd2d744e6d25c2382e01a85f0bb02871669ebd208be15dbd315d",
+      "sourceUrl": "https://huntera.com.br/chunk-PO7HXG4G.js"
+    },
+    {
+      "path": "chunk-QHQDRMHS.js",
+      "bytes": 69575,
+      "sha256": "1478382ae35ff4e88a5ba47218720a7cc1d99ffaa428663204870cb63f015f92",
+      "sourceUrl": "https://huntera.com.br/chunk-QHQDRMHS.js"
+    },
+    {
+      "path": "chunk-QLYRN55M.js",
+      "bytes": 11976,
+      "sha256": "424b30e925e5298896d2f6a5236d239bbc39bac2c66368abd679c790d3187d30",
+      "sourceUrl": "https://huntera.com.br/chunk-QLYRN55M.js"
+    },
+    {
+      "path": "chunk-QVCUBXOB.js",
+      "bytes": 97418,
+      "sha256": "33c97a21afbc363d27a8076b3fa727c1e3e6a8cb58077314a97875410cf0f7dd",
+      "sourceUrl": "https://huntera.com.br/chunk-QVCUBXOB.js"
+    },
+    {
+      "path": "chunk-T4GWOPNQ.js",
+      "bytes": 87306,
+      "sha256": "faef6be02b02e01cedd05fb7e4e1d36eb994ef5874ced52acde2b92386a67f7a",
+      "sourceUrl": "https://huntera.com.br/chunk-T4GWOPNQ.js"
+    },
+    {
+      "path": "chunk-TR5WYPLB.js",
+      "bytes": 10068,
+      "sha256": "c285d75e2514a5da6ba448830dc0ff0cefd23bfc2bc8d6b2c0d2df848f24ccec",
+      "sourceUrl": "https://huntera.com.br/chunk-TR5WYPLB.js"
+    },
+    {
+      "path": "chunk-TYHP23QP.js",
+      "bytes": 5389,
+      "sha256": "d0e40b76db94feb862b6a6a3bfc8e30d102b5bbb42c9bfc7c3bd4befe057b667",
+      "sourceUrl": "https://huntera.com.br/chunk-TYHP23QP.js"
+    },
+    {
+      "path": "chunk-UZPSGQ46.js",
+      "bytes": 1518,
+      "sha256": "7ba1038ea6091aaf759000da14dd16d9b72a45377171ef0552059b6c88b7733f",
+      "sourceUrl": "https://huntera.com.br/chunk-UZPSGQ46.js"
+    },
+    {
+      "path": "chunk-V464N72O.js",
+      "bytes": 46745,
+      "sha256": "fcbe52c5fca4671cc37430558e73305dd35ff11997c0f03ef13dc711966fd6b8",
+      "sourceUrl": "https://huntera.com.br/chunk-V464N72O.js"
+    },
+    {
+      "path": "chunk-VDOAF5IR.js",
+      "bytes": 32819,
+      "sha256": "572a162e9d1cfcdefbb41bb0eb0b26c1fb942df9478ab9e04b62710f9dd27603",
+      "sourceUrl": "https://huntera.com.br/chunk-VDOAF5IR.js"
+    },
+    {
+      "path": "chunk-VKALHDSP.js",
+      "bytes": 12682,
+      "sha256": "d2dea64a280b37992599d25c6ea77cb3822e62743a4d6e0e37ff5c925a92364c",
+      "sourceUrl": "https://huntera.com.br/chunk-VKALHDSP.js"
+    },
+    {
+      "path": "chunk-VNEDAMWC.js",
+      "bytes": 8099,
+      "sha256": "458f03b14e2c5fac7196553c064a9f95cda9acbb3c12ce1d52a9498a38541a0f",
+      "sourceUrl": "https://huntera.com.br/chunk-VNEDAMWC.js"
+    },
+    {
+      "path": "chunk-VOEB4GUR.js",
+      "bytes": 24017,
+      "sha256": "cd651ab5294019c1291f00699213381718cd899eb88e6a40bf8d146fbe69a908",
+      "sourceUrl": "https://huntera.com.br/chunk-VOEB4GUR.js"
+    },
+    {
+      "path": "chunk-WCRIL5NY.js",
+      "bytes": 22270,
+      "sha256": "2f833bee6b8467e9e687cd6b816c33114f2a2ce8be77b6fbb4a81035fb79623c",
+      "sourceUrl": "https://huntera.com.br/chunk-WCRIL5NY.js"
+    },
+    {
+      "path": "chunk-X6Y4RCZD.js",
+      "bytes": 84014,
+      "sha256": "33bd3954c735af73f1788e3710c1083e9843d00611928f724e5c32ecbff57023",
+      "sourceUrl": "https://huntera.com.br/chunk-X6Y4RCZD.js"
+    },
+    {
+      "path": "chunk-X772MGJM.js",
+      "bytes": 10096,
+      "sha256": "db66da18cf274cf830f61da015daea688d9a0142932757f675266abe49e931ba",
+      "sourceUrl": "https://huntera.com.br/chunk-X772MGJM.js"
+    },
+    {
+      "path": "chunk-Y5AVIVOV.js",
+      "bytes": 764,
+      "sha256": "0558dde3967002ec465bca002b390531c9d231b10428f73ea1314070fbeb1fbf",
+      "sourceUrl": "https://huntera.com.br/chunk-Y5AVIVOV.js"
+    },
+    {
+      "path": "chunk-YAABHXDZ.js",
+      "bytes": 693620,
+      "sha256": "757e707410d30e09839e4c3564e716fdd5ded2010be4897b6d1da31a342d5767",
+      "sourceUrl": "https://huntera.com.br/chunk-YAABHXDZ.js"
+    },
+    {
+      "path": "chunk-ZLGNIJ2C.js",
+      "bytes": 9771,
+      "sha256": "87e7398a113837231034097ea4fa2097ff6d21d351ecca87e5bded9aa8abf0b1",
+      "sourceUrl": "https://huntera.com.br/chunk-ZLGNIJ2C.js"
+    },
+    {
+      "path": "main-WHI3EZUB.js",
+      "bytes": 6013,
+      "sha256": "1dd9dee99bad32d63c340e73311e8b0c032bb7d3227f6cc122d3e06dfc7458c3",
+      "sourceUrl": "https://huntera.com.br/main-WHI3EZUB.js"
+    },
+    {
+      "path": "styles-R5EQY622.css",
+      "sourceUrl": "https://huntera.com.br/styles-R5EQY622.css",
+      "bytes": 744359,
+      "sha256": "46ed64881ae1a31e477dfa6318c007d052a1f192f531de581e5df779175f87ee",
+      "contentType": "text/css"
+    },
+    {
+      "path": "assets/proficiency/border-active.png",
+      "sourceUrl": "https://huntera.com.br/assets/proficiency/border-active.png",
+      "bytes": 4291,
+      "sha256": "1e82f5d964efca0d19df32bcd245ba8d4ae3bcd85de94289198e60134a028788"
+    },
+    {
+      "path": "assets/proficiency/border-inactive.png",
+      "sourceUrl": "https://huntera.com.br/assets/proficiency/border-inactive.png",
+      "bytes": 2998,
+      "sha256": "6fd2f76c684076e2d80995403051ba0310bf26da016cbf0fa607f81dcd94737a"
+    },
+    {
+      "path": "assets/spells/annihilation.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/annihilation.gif",
+      "bytes": 2366,
+      "sha256": "892dc1fdcf7176e74e6eba606869fcff107651b6625460c3f07b81ea9c9fd075"
+    },
+    {
+      "path": "assets/spells/apprentices-strike.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/apprentices-strike.gif",
+      "bytes": 1563,
+      "sha256": "14e8f6e4f8586153d551d2ca60a4255faac219c471367edc320c719d05698898"
+    },
+    {
+      "path": "assets/spells/avatar-of-light.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/avatar-of-light.gif",
+      "bytes": 2233,
+      "sha256": "7bdfd1f4e462022ec2b08ff6b25b5fb36ef82da322ae310c841b19c0a1900ebb"
+    },
+    {
+      "path": "assets/spells/avatar-of-nature.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/avatar-of-nature.gif",
+      "bytes": 2234,
+      "sha256": "bc7152f3cc66d6c37f824905994294c3f4a4c888154b059253df55372a97a2ba"
+    },
+    {
+      "path": "assets/spells/avatar-of-steel.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/avatar-of-steel.gif",
+      "bytes": 2182,
+      "sha256": "7e1852f184be45d08e646133dfe9715d4d3f37b6b1f3c7febf9d20bb7ebd9a68"
+    },
+    {
+      "path": "assets/spells/avatar-of-storm.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/avatar-of-storm.gif",
+      "bytes": 2169,
+      "sha256": "603d827b4d287161ebefac08cfe477e6ff71c6a0005c223d18d59bf5c9fb0c83"
+    },
+    {
+      "path": "assets/spells/berserk.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/berserk.gif",
+      "bytes": 2347,
+      "sha256": "70b234200cfb00cf6adb861aa47a3744d566e576a3e6cfc3b50677effc35454e"
+    },
+    {
+      "path": "assets/spells/blood-rage.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/blood-rage.gif",
+      "bytes": 2363,
+      "sha256": "2283cb7d3ddf967e10acc86d728910a32b8753aec780a3f287766c46d789bdd1"
+    },
+    {
+      "path": "assets/spells/brutal-strike.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/brutal-strike.gif",
+      "bytes": 2414,
+      "sha256": "df2a2deb44e4480c4afec1cb81e316b02a8c3ec84ed09080571698b80296c487"
+    },
+    {
+      "path": "assets/spells/challenge.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/challenge.gif",
+      "bytes": 2322,
+      "sha256": "5e5e84a904c0be7958f5ab73dfc08a2df82a838e6cfc7527bce8446017025526"
+    },
+    {
+      "path": "assets/spells/charge.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/charge.gif",
+      "bytes": 2334,
+      "sha256": "41ab157afaf99eb8df8dddbe19620a85c328fee2a8e36fccd5de0dc24ca4a740"
+    },
+    {
+      "path": "assets/spells/chivalrous-challenge.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/chivalrous-challenge.gif",
+      "bytes": 2322,
+      "sha256": "5e5e84a904c0be7958f5ab73dfc08a2df82a838e6cfc7527bce8446017025526"
+    },
+    {
+      "path": "assets/spells/death-strike.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/death-strike.gif",
+      "bytes": 1553,
+      "sha256": "2a0985113021a6afa594cec3b90c0406eb67f968f5f9a22688eba6b6524bc6c2"
+    },
+    {
+      "path": "assets/spells/divine-caldera.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/divine-caldera.gif",
+      "bytes": 2307,
+      "sha256": "9cdde280cf197551da90c43a503506d473f990dd7916748462c0063d057db0e2"
+    },
+    {
+      "path": "assets/spells/divine-dazzle.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/divine-dazzle.gif",
+      "bytes": 2195,
+      "sha256": "6fe91447c1e6a6bddb98b2ce7976ea94f452b6ab3396538a9d75f5281f0f1a42"
+    },
+    {
+      "path": "assets/spells/divine-empowerment.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/divine-empowerment.gif",
+      "bytes": 2061,
+      "sha256": "d258913f5923bed851b0e9ceaa00f95cd9beaf6e9272f3018a0182d24002debc"
+    },
+    {
+      "path": "assets/spells/divine-grenade.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/divine-grenade.gif",
+      "bytes": 1804,
+      "sha256": "54de8b7f8e3d2a46177f682b407f106220cf9356d9492bd89d718e403ba5434c"
+    },
+    {
+      "path": "assets/spells/divine-healing.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/divine-healing.gif",
+      "bytes": 2377,
+      "sha256": "d551bb3d872765f16248c79b5efd78d484bf432eae420e25a3ced89b2eaa261e"
+    },
+    {
+      "path": "assets/spells/divine-missile.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/divine-missile.gif",
+      "bytes": 2344,
+      "sha256": "d441115a00b78abeb3ff84fc1eab3e3e970e178cfa44b992e183c3a968463896"
+    },
+    {
+      "path": "assets/spells/energy-beam.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/energy-beam.gif",
+      "bytes": 2422,
+      "sha256": "87e485f95396a3a3545f063a20a1b578f8b006986ae91b8f8de7d65e85e43e62"
+    },
+    {
+      "path": "assets/spells/energy-strike.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/energy-strike.gif",
+      "bytes": 2325,
+      "sha256": "32ed6a5b7f3caac1ebdeb50d85a34e30477efaabdf752e12a55a8775d024b830"
+    },
+    {
+      "path": "assets/spells/energy-wave.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/energy-wave.gif",
+      "bytes": 2338,
+      "sha256": "fd3b87e51e735d115bb72ec72924c2f883f3b8b0dfdadb76f1fc3264fac17a99"
+    },
+    {
+      "path": "assets/spells/eternal-winter.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/eternal-winter.gif",
+      "bytes": 2394,
+      "sha256": "fb9604e3ea8e61e828e067ecfcf1d0e31b8ce82a06af91a017cbfb55518c3d0c"
+    },
+    {
+      "path": "assets/spells/ethereal-spear.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/ethereal-spear.gif",
+      "bytes": 2361,
+      "sha256": "6e1d9e82593ce72c758d18a6c9e56335009c8867092e835185e882afc059376f"
+    },
+    {
+      "path": "assets/spells/executioners-throw.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/executioners-throw.gif",
+      "bytes": 1955,
+      "sha256": "e67d9b16e01ea80045a3e37feb7a96f40ce58d76078d6d154cecb7495867426f"
+    },
+    {
+      "path": "assets/spells/expose-weakness.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/expose-weakness.gif",
+      "bytes": 2242,
+      "sha256": "bc4c3eb92f284aad879f7d8c1607f72492479506edaa02ca21fa12b45a1a2eb2"
+    },
+    {
+      "path": "assets/spells/fair-wound-cleansing.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/fair-wound-cleansing.gif",
+      "bytes": 2282,
+      "sha256": "d37ebedd66c29c56a73854bfedea7e9b4878c089b13780c4e2b4056dc59b8a87"
+    },
+    {
+      "path": "assets/spells/fierce-berserk.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/fierce-berserk.gif",
+      "bytes": 2329,
+      "sha256": "9fc9bf30b94740c1947e55c40cac7613af8e9e9e0fa8dbb25cab3c964fd04ee4"
+    },
+    {
+      "path": "assets/spells/fire-wave.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/fire-wave.gif",
+      "bytes": 2426,
+      "sha256": "73407c44dd5d17c258be313865e79566eef1cca1db2688100745460dca876208"
+    },
+    {
+      "path": "assets/spells/flame-strike.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/flame-strike.gif",
+      "bytes": 1565,
+      "sha256": "a72fd6258919edf299ea28a74bb68fcb92542b0a089aeca7e394df47baf3937b"
+    },
+    {
+      "path": "assets/spells/great-death-beam.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/great-death-beam.gif",
+      "bytes": 2184,
+      "sha256": "6d3931d8f7b0fa31b2117ab0c92436e8270f481907fbbe73b5bcbc63b60ad461"
+    },
+    {
+      "path": "assets/spells/great-energy-beam.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/great-energy-beam.gif",
+      "bytes": 2330,
+      "sha256": "828b7e01abda02b8f303393e78846596ed5a38840d3b4d16c8d7a9edf60ec602"
+    },
+    {
+      "path": "assets/spells/great-fire-wave.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/great-fire-wave.gif",
+      "bytes": 2326,
+      "sha256": "944cebc9d47152c7056aacf4d0fec821e750945bfe4368bbe17ee423c706385f"
+    },
+    {
+      "path": "assets/spells/groundshaker.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/groundshaker.gif",
+      "bytes": 2405,
+      "sha256": "62329f2bf82bf922f4cacaa39c611bb53318c60a02450862e4f41cefab8bae9f"
+    },
+    {
+      "path": "assets/spells/haste.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/haste.gif",
+      "bytes": 2361,
+      "sha256": "1d0d5ca9298f2125b72226ff6f6211fe87732430881576a7558d5c8af5b25664"
+    },
+    {
+      "path": "assets/spells/heal-friend.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/heal-friend.gif",
+      "bytes": 2305,
+      "sha256": "1a8660d27975de6f5ce56d773e2ad974b375529cd1a03a9ab0cbfb8b22480db1"
+    },
+    {
+      "path": "assets/spells/hells-core.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/hells-core.gif",
+      "bytes": 2469,
+      "sha256": "1904f00c252e6cc21a33934a4c226af85c897fc3ba7ead2bc6b3feaabdea6050"
+    },
+    {
+      "path": "assets/spells/ice-burst.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/ice-burst.gif",
+      "bytes": 2058,
+      "sha256": "efe03eddde992f3e54032bfd1518fad03f65e044b7d75998579b84ad226f62e9"
+    },
+    {
+      "path": "assets/spells/ice-strike.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/ice-strike.gif",
+      "bytes": 1625,
+      "sha256": "717d9c0f394c57f0e0dcc2f8a9a0d340801ca40db812628b7cb04899474c963d"
+    },
+    {
+      "path": "assets/spells/ice-wave.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/ice-wave.gif",
+      "bytes": 2288,
+      "sha256": "31345e6e7286e08fb899d81b434f8009e5a4798c4343b66ae7051f7f8f12fa7d"
+    },
+    {
+      "path": "assets/spells/intense-healing.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/intense-healing.gif",
+      "bytes": 2278,
+      "sha256": "5c25c2fe170f0eb7b8976ca21349ad7e0a14bfb5e659918ea96a87a7e37582cd"
+    },
+    {
+      "path": "assets/spells/intense-wound-cleansing.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/intense-wound-cleansing.gif",
+      "bytes": 2282,
+      "sha256": "d37ebedd66c29c56a73854bfedea7e9b4878c089b13780c4e2b4056dc59b8a87"
+    },
+    {
+      "path": "assets/spells/lesser-front-sweep.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/lesser-front-sweep.gif",
+      "bytes": 2455,
+      "sha256": "6d10784cc5b0d5aafa0d7cda8eae818338309c51e1e662cd13d624cfca49168d"
+    },
+    {
+      "path": "assets/spells/light-healing.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/light-healing.gif",
+      "bytes": 2282,
+      "sha256": "8c456fe435accaa405b4da55b3a6b2a324f8825564d93306b3bf925d399bafd1"
+    },
+    {
+      "path": "assets/spells/magic-shield.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/magic-shield.gif",
+      "bytes": 1798,
+      "sha256": "ecd6b6fe6aa0cfd18e52b8118909dbb5712b5217232c0fe915763e0d49ecd977"
+    },
+    {
+      "path": "assets/spells/mass-healing.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/mass-healing.gif",
+      "bytes": 2282,
+      "sha256": "6c0a1edc02176e2158d6899ead5c551b1b84ea85ae9f42010c87aee14edb0334"
+    },
+    {
+      "path": "assets/spells/natures-embrace.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/natures-embrace.gif",
+      "bytes": 2272,
+      "sha256": "04e0c636069e5db4931a5c86ba17a700b9ae8d6531acbc4ef6c5124b3f9c6bfe"
+    },
+    {
+      "path": "assets/spells/protector.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/protector.gif",
+      "bytes": 2416,
+      "sha256": "0e8c33cee80b6e7612d2c21929cb94e65ec5cb3d182e9cefa8468caad5d359e6"
+    },
+    {
+      "path": "assets/spells/rage-of-the-skies.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/rage-of-the-skies.gif",
+      "bytes": 2330,
+      "sha256": "093a44fccc9a6e4d64c40470d3d7451a6d97cda74d77d288909d55a460a214b8"
+    },
+    {
+      "path": "assets/spells/salvation.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/salvation.gif",
+      "bytes": 2327,
+      "sha256": "3d7f7d6940d46afd89f9d61fc913e13cee8f355cbd2eecf6f1f049c5f151ea4d"
+    },
+    {
+      "path": "assets/spells/sap-strength.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/sap-strength.gif",
+      "bytes": 2260,
+      "sha256": "7b7af6008466eef82880b9919cbd7e93750035454fa5d826ea6fce1d14dbde76"
+    },
+    {
+      "path": "assets/spells/sharpshooter.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/sharpshooter.gif",
+      "bytes": 1740,
+      "sha256": "baf01c9acc4a7261c59ca486996e633f06c676393bf0008b22878a61ff57c427"
+    },
+    {
+      "path": "assets/spells/strong-energy-strike.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/strong-energy-strike.gif",
+      "bytes": 1606,
+      "sha256": "1d560a705de337edf73ca2416ba8b147ffb7e6364cc7e2b43ef5ff794e8fc812"
+    },
+    {
+      "path": "assets/spells/strong-ethereal-spear.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/strong-ethereal-spear.gif",
+      "bytes": 2352,
+      "sha256": "0155ad96e73d237a30dfff3999cb61d17425e0741966f0f839d0f8d140489266"
+    },
+    {
+      "path": "assets/spells/strong-flame-strike.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/strong-flame-strike.gif",
+      "bytes": 1630,
+      "sha256": "e5c95fded9ac1056ca973ac178cd0187e4a4490b1ec074a76cae9697a7ea485b"
+    },
+    {
+      "path": "assets/spells/strong-haste.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/strong-haste.gif",
+      "bytes": 2338,
+      "sha256": "cbd9b43d99b8dacc004ba6e494474d63c85c4a44165955526320d4e95725bb87"
+    },
+    {
+      "path": "assets/spells/strong-ice-strike.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/strong-ice-strike.gif",
+      "bytes": 2397,
+      "sha256": "5bf793f17a805cb2d72f4387473da57e3e727132fe027fe8e7f4fd814fba59f2"
+    },
+    {
+      "path": "assets/spells/strong-ice-wave.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/strong-ice-wave.gif",
+      "bytes": 2183,
+      "sha256": "59be5cbff8d1cea84252bd29559bc773c37428c784867e89f2a13802ce0000b3"
+    },
+    {
+      "path": "assets/spells/strong-terra-strike.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/strong-terra-strike.gif",
+      "bytes": 2294,
+      "sha256": "dc37087c4dc2b38197f7077569e6744e4d23044b42c22769c460135a575efa41"
+    },
+    {
+      "path": "assets/spells/swift-foot.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/swift-foot.gif",
+      "bytes": 2106,
+      "sha256": "1ffef0ab4c43ebb503dbabec57f5d417bcdf21a3e2bbede56bdebf79e5f25984"
+    },
+    {
+      "path": "assets/spells/terra-burst.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/terra-burst.gif",
+      "bytes": 2049,
+      "sha256": "c55e79158dd8da0ad9bc23629755296b40076bb6e7fffe9aafd298f7b9c563cf"
+    },
+    {
+      "path": "assets/spells/terra-strike.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/terra-strike.gif",
+      "bytes": 1710,
+      "sha256": "28b2396c9177a4eba71e0e983cb66064ab7e965274159c0844bfae5d575d1210"
+    },
+    {
+      "path": "assets/spells/terra-wave.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/terra-wave.gif",
+      "bytes": 2399,
+      "sha256": "f5ff83b3fec9e85855b7c6e9406ef32bb9ad05c4a0eedf86c9d94d65c0fb6ae0"
+    },
+    {
+      "path": "assets/spells/ultimate-energy-strike.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/ultimate-energy-strike.gif",
+      "bytes": 1642,
+      "sha256": "d18b9f10ca72617082a7312214b7acd0fa8ed3deb6b39b2d53b7ac7d1c32ef45"
+    },
+    {
+      "path": "assets/spells/ultimate-flame-strike.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/ultimate-flame-strike.gif",
+      "bytes": 1627,
+      "sha256": "9aa48267a18ed3a72d7f0b5b9833865e3b4339fd3c1890be267f2341d1cc1f41"
+    },
+    {
+      "path": "assets/spells/ultimate-ice-strike.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/ultimate-ice-strike.gif",
+      "bytes": 2421,
+      "sha256": "d6ce550d622caf91acc27059de124ab0f7de35b825442227431f2a7e86d9d9bf"
+    },
+    {
+      "path": "assets/spells/ultimate-terra-strike.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/ultimate-terra-strike.gif",
+      "bytes": 2297,
+      "sha256": "010ca33e2e4203b9a964846c648eada63887bac0f664ca9886d76c7f95055693"
+    },
+    {
+      "path": "assets/spells/whirlwind-throw.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/whirlwind-throw.gif",
+      "bytes": 2477,
+      "sha256": "85e44252af9161d978b0979f03946bae5498bdd0671a1ff383c52492229ab2d0"
+    },
+    {
+      "path": "assets/spells/wound-cleansing.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/wound-cleansing.gif",
+      "bytes": 2327,
+      "sha256": "7a720daf4cb2ec63a9faae63760f9de5b49d7d140db4ff54640e9961749ddd73"
+    },
+    {
+      "path": "assets/spells/wrath-of-nature.gif",
+      "sourceUrl": "https://huntera.com.br/assets/spells/wrath-of-nature.gif",
+      "bytes": 2341,
+      "sha256": "97917ac247c582499a2ee2c71bade69e17a73b582d9cf460956aaaa163bb62cd"
+    },
+    {
+      "path": "assets/wheel/augmented-chivalrous-challenge.gif",
+      "sourceUrl": "https://huntera.com.br/assets/wheel/augmented-chivalrous-challenge.gif",
+      "bytes": 1525,
+      "sha256": "798d93ff0b87c6c96fea995e6d4950eae14b68c8950f38a223293132dfdc1a81"
+    },
+    {
+      "path": "assets/wheel/augmented-magic-shield.gif",
+      "sourceUrl": "https://huntera.com.br/assets/wheel/augmented-magic-shield.gif",
+      "bytes": 1523,
+      "sha256": "9fa57a723226e3e77c995d422d75186af7b61e60d3443b422ee2f3c46afb51ac"
+    },
+    {
+      "path": "assets/wheel/augmented-natures-embrace.gif",
+      "sourceUrl": "https://huntera.com.br/assets/wheel/augmented-natures-embrace.gif",
+      "bytes": 1521,
+      "sha256": "a04ee2f0a29d2e5297cb1e1244d82dbfad409e231324259836328894ff280e77"
+    },
+    {
+      "path": "assets/wheel/augmented-sap-strength.gif",
+      "sourceUrl": "https://huntera.com.br/assets/wheel/augmented-sap-strength.gif",
+      "bytes": 1478,
+      "sha256": "497ac4221f40b1d66c9fd4d4261142fdcf59cc52f8a32798c3ad515c7a7ce962"
+    },
+    {
+      "path": "assets/wheel/augmented-sharpshooter.gif",
+      "sourceUrl": "https://huntera.com.br/assets/wheel/augmented-sharpshooter.gif",
+      "bytes": 1523,
+      "sha256": "8147377db2bae1924f1f5cbfeac7339ff7b352094421a69e69ee633670e943f6"
+    },
+    {
+      "path": "assets/wheel/augmented-swift-foot.gif",
+      "sourceUrl": "https://huntera.com.br/assets/wheel/augmented-swift-foot.gif",
+      "bytes": 1476,
+      "sha256": "8e4b5036344b3ad1d3aca41db263800f01fe3a8876a5623d045b90f9ab6f0651"
+    },
+    {
+      "path": "assets/wheel/backdrop_skillwheel_front_druid.png",
+      "sourceUrl": "https://huntera.com.br/assets/wheel/backdrop_skillwheel_front_druid.png",
+      "bytes": 80906,
+      "sha256": "aa3b7ded2120eac314d71444f4215b786b2b6a1985ab9225e4c67da6408193b2"
+    },
+    {
+      "path": "assets/wheel/backdrop_skillwheel_front_knight.png",
+      "sourceUrl": "https://huntera.com.br/assets/wheel/backdrop_skillwheel_front_knight.png",
+      "bytes": 79833,
+      "sha256": "8ff525ea9e24049e861a780498fcb4ffdd8557f840a3da0408ed982f7048f2eb"
+    },
+    {
+      "path": "assets/wheel/backdrop_skillwheel_front_paladin.png",
+      "sourceUrl": "https://huntera.com.br/assets/wheel/backdrop_skillwheel_front_paladin.png",
+      "bytes": 79537,
+      "sha256": "5e29650fa150c8e9fe2cdfbcbff4bd3bad7b8de726f69de9259c5cdc8e728f9b"
+    },
+    {
+      "path": "assets/wheel/backdrop_skillwheel_front_sorc.png",
+      "sourceUrl": "https://huntera.com.br/assets/wheel/backdrop_skillwheel_front_sorc.png",
+      "bytes": 80556,
+      "sha256": "8e7ee64ed8e53c7466b102b7bfbb62f76444e1b482ebd733c6948ab1fc252816"
+    },
+    {
+      "path": "assets/wheel/backdrop_skillwheel_largebonus_front0.png",
+      "sourceUrl": "https://huntera.com.br/assets/wheel/backdrop_skillwheel_largebonus_front0.png",
+      "bytes": 6887,
+      "sha256": "ad6a7803e30e316ac25b4746a3f32dc7757f4412ba11b9858aa590dc1e699260"
+    },
+    {
+      "path": "assets/wheel/backdrop_skillwheel_largebonus_front1.png",
+      "sourceUrl": "https://huntera.com.br/assets/wheel/backdrop_skillwheel_largebonus_front1.png",
+      "bytes": 7558,
+      "sha256": "4274ab20e8c317f59679e652a1ef5c058e3932b3dbb701b6c739b9640ab60bfa"
+    },
+    {
+      "path": "assets/wheel/backdrop_skillwheel_largebonus_front2.png",
+      "sourceUrl": "https://huntera.com.br/assets/wheel/backdrop_skillwheel_largebonus_front2.png",
+      "bytes": 7810,
+      "sha256": "ab186b5df822328ed2af97b9ccbd0e61534239fa463f4ff712430de34271565b"
+    },
+    {
+      "path": "assets/wheel/backdrop_skillwheel_largebonus_front3.png",
+      "sourceUrl": "https://huntera.com.br/assets/wheel/backdrop_skillwheel_largebonus_front3.png",
+      "bytes": 7827,
+      "sha256": "025f2c97994ffb7a4b3b361b29a74382134aa7f0c3c13d61af3e72ccaa099be9"
+    },
+    {
+      "path": "assets/wheel/backdrop_skillwheel_largebonus_light.png",
+      "sourceUrl": "https://huntera.com.br/assets/wheel/backdrop_skillwheel_largebonus_light.png",
+      "bytes": 1420,
+      "sha256": "3911ab503e40a7c15829d4fcecbbfd512cc2868b12e72255ad25396e208101e3"
+    },
+    {
+      "path": "assets/wheel/backdrop_skillwheel_largebonus_socketdisabled.png",
+      "sourceUrl": "https://huntera.com.br/assets/wheel/backdrop_skillwheel_largebonus_socketdisabled.png",
+      "bytes": 2072,
+      "sha256": "9d5e4c6a17d961d0cf6f17a255454f24aa57ba358432f4ed9f4b7c459db0482f"
+    },
+    {
+      "path": "assets/wheel/backdrop_skillwheel.png",
+      "sourceUrl": "https://huntera.com.br/assets/wheel/backdrop_skillwheel.png",
+      "bytes": 17975,
+      "sha256": "3a9b817371b83d09c8aaa2b360689155274247fdbf90b3985c2d338f7016d9dd"
+    },
+    {
+      "path": "assets/wheel/drain-body.gif",
+      "sourceUrl": "https://huntera.com.br/assets/wheel/drain-body.gif",
+      "bytes": 1619,
+      "sha256": "91a042ffda843bcade465045a46e549254d1b8bb85d356f7be65c97d68098379"
+    },
+    {
+      "path": "assets/wheel/icons-skillwheel-largeperks.png",
+      "sourceUrl": "https://huntera.com.br/assets/wheel/icons-skillwheel-largeperks.png",
+      "bytes": 28266,
+      "sha256": "5a36d866b59837fcee9395b88043f83c7fd0b4b8352cb27547aab8d2d1740872"
+    },
+    {
+      "path": "assets/wheel/icons-skillwheel-mediumperks.png",
+      "sourceUrl": "https://huntera.com.br/assets/wheel/icons-skillwheel-mediumperks.png",
+      "bytes": 75104,
+      "sha256": "64a798e63ec8ee3fe2d23d46ebe57d9bb55eb441afd506e03801f810e925af5b"
+    },
+    {
+      "path": "assets/wheel/icons-skillwheel-smallperks.png",
+      "sourceUrl": "https://huntera.com.br/assets/wheel/icons-skillwheel-smallperks.png",
+      "bytes": 738,
+      "sha256": "bba0ea4a558993af14148b69b89c955d3770806cf3733362c8bce7f8b092a65c"
+    },
+    {
+      "path": "assets/wheel/marker_largeperk.png",
+      "sourceUrl": "https://huntera.com.br/assets/wheel/marker_largeperk.png",
+      "bytes": 746,
+      "sha256": "374f9ad00e8c3834e49c408eb61faacdbf0fefbcc53daf007e1bfd88328e0021"
     }
   ]
 }

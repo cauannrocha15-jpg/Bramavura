@@ -1,0 +1,46 @@
+{
+  "capturedAt": "2026-10-27T00:16:58.442Z",
+  "url": "http://127.0.0.1:4175/game",
+  "resources": {
+    "scripts": [
+      "http://127.0.0.1:4175/main-WHI3EZUB.js"
+    ],
+    "styles": [
+      "http://127.0.0.1:4175/styles-R5EQY622.css"
+    ]
+  },
+  "observations": {
+    "charactersToCity": true,
+    "catalogLabel": "HUNT 84",
+    "hunt": "Rotten Wasteland",
+    "tiers": [
+      "Agressivo",
+      "Suicida",
+      "Hardcore"
+    ],
+    "lootRows": 27,
+    "enteredLocalInstance": true,
+    "worldLoadingCompleted": true,
+    "returnedToCity": true
+  },
+  "console": [
+    {
+      "level": "error",
+      "message": "ERROR Error: ResizeObserver loop completed with undelivered notifications.\n    at r (http://127.0.0.1:4175/chunk-KLSCFH7B.js:4:20977)",
+      "timestamp": "2026-10-27T00:12:35.626Z",
+      "url": "http://127.0.0.1:4175/chunk-KLSCFH7B.js"
+    },
+    {
+      "level": "warn",
+      "message": "outfit 0 failed to build Error: unknown outfit 0\n    at _t.buildOutfitView (http://127.0.0.1:4175/chunk-5NKSHFX3.js:2:10236)",
+      "timestamp": "2026-10-27T00:15:22.094Z",
+      "url": "http://127.0.0.1:4175/chunk-5NKSHFX3.js"
+    }
+  ],
+  "limits": [
+    "Local backend hunt maps and combat are simulations, not recovered server behavior.",
+    "New creature outfit IDs remain unknown; observed warning for outfit 0.",
+    "The UI reported daily-boss-open as not implemented.",
+    "ResizeObserver warning remains observed."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "manifestFiles": 4429,
+  "closureScripts": 82,
+  "reportedFromOrDynamicImportReferences": 367,
+  "broaderLiteralReferencesIncludingBareImports": 670,
+  "missingImports": [],
+  "frozenScriptsUnchanged": true,
+  "opcodes": {
+    "server": 193,
+    "client": 213,
+    "oldValuesUnchanged": true
+  },
+  "serverInfrastructureUnchanged": true,
+  "entrypoint": {
+    "localShell": true,
+    "main": "main-WHI3EZUB.js",
+    "css": "styles-R5EQY622.css",
+    "historicalHtmlRecovered": false
+  },
+  "worker": {
+    "unchanged": true,
+    "imports": 0
+  },
+  "derivedImages": 96,
+  "hunts": 84,
+  "pulls": 254,
+  "monsters": 195,
+  "items": 1070,
+  "backendSha256": "31f24b8f952eb4204bc1d2f0b9f2330d402658e18d6bfb417be116a4fd0f040d",
+  "testSha256": "3ee2b706c33d07b8d4cdd96c874bad7142b75f02b9d46c60b17ed27bdc41fb34"
+}

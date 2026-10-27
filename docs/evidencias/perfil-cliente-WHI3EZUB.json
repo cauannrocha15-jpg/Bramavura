@@ -1,0 +1,1642 @@
+{
+  "captureType": "huntera-client-migration-profile-20261026-v1",
+  "purpose": "Frozen observed WHI profile for quarantine verification; does not authorize production migration or claim server equivalence.",
+  "migrationReady": false,
+  "previous": {
+    "main": {
+      "file": "main-MUNRWAJS.js",
+      "bytes": 6013,
+      "sha256": "fefcf40aadb8cbead762d0ac147d2981c8d22c1c0fdcb90fa9f7ab324b868d7d"
+    },
+    "schema": {
+      "file": "chunk-JRE7IT7W.js",
+      "bytes": 148958,
+      "sha256": "6edbbe4f7c20dcfe12e2589da0dd07edd3c75bc6fbab489359a84ce014241f44"
+    },
+    "codec": {
+      "file": "chunk-L7RK2YWL.js",
+      "bytes": 21775,
+      "sha256": "ce1bdf09fee3fc86ad907853f925077ad58054930652e7d7b10a4455c5b6dfb4"
+    },
+    "translation": {
+      "file": "chunk-M5GYIUVK.js",
+      "bytes": 505362,
+      "sha256": "1da11cf65efc5ffd72e03ab37598dacdcebe406b6a356ffd3b96a9707bd77687"
+    }
+  },
+  "current": {
+    "main": {
+      "file": "main-WHI3EZUB.js",
+      "bytes": 6013,
+      "sha256": "1dd9dee99bad32d63c340e73311e8b0c032bb7d3227f6cc122d3e06dfc7458c3"
+    },
+    "schema": {
+      "file": "chunk-3UYZ2FFW.js",
+      "bytes": 151031,
+      "sha256": "e9b46273bfa541676068d5d2b8a92d4fc169d6c0d0830aeffa6f1261cab24d79"
+    },
+    "codec": {
+      "file": "chunk-DOXOLALI.js",
+      "bytes": 21869,
+      "sha256": "7ee58179e5a0b6c0b20a8d36054259539ed78b94bebe3272f62283fb86d90ac2"
+    },
+    "translation": {
+      "file": "chunk-5TRBVAYO.js",
+      "bytes": 513266,
+      "sha256": "8aff54d926c603c8d1f5bf0de9843c6aaaa3270018f92315fa077fa514d0b867"
+    },
+    "bestiaryComponent": {
+      "file": "chunk-MUPJKZYN.js",
+      "bytes": 1135492,
+      "sha256": "e6d25c594407399bfb21903aeba16ec8a132efc2556a80a1dec3d1fd1d565eb9"
+    },
+    "observedStylesheet": "styles-R5EQY622.css",
+    "expectedClosureScripts": 82
+  },
+  "schemaBindings": {
+    "serverValidator": {
+      "previous": "Gc",
+      "current": "Fc",
+      "localFunction": "De"
+    },
+    "itemCategoryLabels": {
+      "previous": "Jb",
+      "current": "Ib"
+    },
+    "huntIdValidator": {
+      "previous": "P",
+      "current": "P",
+      "localFunction": "M"
+    },
+    "spectatorAllowedCommands": {
+      "previous": null,
+      "current": "Hc",
+      "localBinding": "Cl"
+    }
+  },
+  "codecBindings": {
+    "service": {
+      "previous": "Qe",
+      "current": "Xe",
+      "export": "a"
+    },
+    "encodeClient": {
+      "previous": "Ye",
+      "current": "Je"
+    },
+    "decodeServer": {
+      "previous": "Je",
+      "current": "Qe"
+    },
+    "pack": {
+      "previous": "pt",
+      "current": "gt"
+    },
+    "transform": {
+      "previous": "He",
+      "current": "We"
+    },
+    "serverCodes": {
+      "previous": "ft",
+      "current": "ct"
+    },
+    "clientCodes": {
+      "previous": "je",
+      "current": "Ve"
+    },
+    "unwrap": {
+      "previous": "We",
+      "current": "Ye"
+    },
+    "decodeOne": {
+      "previous": "Pe",
+      "current": "je"
+    },
+    "decodeFrames": {
+      "previous": "dt",
+      "current": "mt"
+    },
+    "currentOriginalExport": "export{Xe as a};"
+  },
+  "bestiaryDamageRenderer": {
+    "previous": {
+      "file": "chunk-3MLTU4OB.js",
+      "function": "bc",
+      "contextBindings": {
+        "channels": "B0",
+        "names": "ur",
+        "icons": "op",
+        "translate": "t"
+      }
+    },
+    "current": {
+      "file": "chunk-MUPJKZYN.js",
+      "function": "Sc",
+      "contextBindings": {
+        "channels": "J0",
+        "names": "gr",
+        "icons": "bp",
+        "translate": "t"
+      }
+    },
+    "scope": "Source-selected damage-taken rendering only; full component equivalence is not asserted."
+  },
+  "opcodeDeltas": {
+    "server": {
+      "previousCount": 192,
+      "currentCount": 193,
+      "added": [
+        {
+          "type": "hunt-report",
+          "code": 199
+        }
+      ],
+      "removed": [],
+      "changed": [],
+      "currentSourceRange": {
+        "start": 8316,
+        "end": 12375
+      }
+    },
+    "client": {
+      "previousCount": 211,
+      "currentCount": 213,
+      "added": [
+        {
+          "type": "bosstiary-pattern",
+          "code": 216
+        },
+        {
+          "type": "hunt-report-request",
+          "code": 217
+        }
+      ],
+      "removed": [],
+      "changed": [],
+      "currentSourceRange": {
+        "start": 12379,
+        "end": 16963
+      }
+    }
+  },
+  "opcodes": {
+    "previous": {
+      "server": {
+        "action-bar-presets": 1,
+        "action-bar-update": 2,
+        "ammo-selection": 3,
+        "arena-catalog": 4,
+        "arena-prize-offer": 5,
+        "arena-status": 6,
+        "auto-loot-update": 7,
+        "battle-settings-update": 8,
+        "bestiary-progress": 9,
+        "blessings-status": 10,
+        "broadcast": 107,
+        "capacity-overflow": 11,
+        "chat-message": 12,
+        "coin-transfer-result": 13,
+        "coins": 14,
+        "creature-appear": 15,
+        "creature-critical": 17,
+        "creature-disappear": 18,
+        "creature-health": 19,
+        "creature-hit": 20,
+        "creature-move": 21,
+        "creature-outfit": 22,
+        "creature-restore": 23,
+        "creature-say": 24,
+        "creature-turn": 25,
+        "cyclopedia-catalog": 26,
+        "daily-reward-claimed": 27,
+        "daily-reward-offer": 28,
+        "depot-update": 29,
+        "experience-gain": 30,
+        "ground-item-appear": 31,
+        "ground-item-disappear": 32,
+        "guild-details": 110,
+        "guild-directory": 111,
+        "guild-expeditions": 33,
+        "guild-info": 34,
+        "guild-invite-offer": 35,
+        "guild-log": 36,
+        "guild-member-status": 37,
+        "hazard-zones": 38,
+        "header-badge": 113,
+        "highscores": 39,
+        "idle-training": 174,
+        "hunt-favorites": 176,
+        "hunt-analyzer-session": 40,
+        "hunt-analyzer-update": 41,
+        "hunt-catalog": 42,
+        "hunt-exit-rules": 43,
+        "hunt-leader-entered": 44,
+        "hunt-leader-invite-cancelled": 45,
+        "hunt-leave-pending": 46,
+        "hunt-pending": 47,
+        "hunt-portal-entered": 48,
+        "hunt-quick-sell-state": 49,
+        "hunt-start-warning": 115,
+        "hunt-team-invite-cancelled": 50,
+        "hunt-team-invited": 51,
+        "imbuement-result": 52,
+        "imbuement-shrine": 53,
+        "forge-state": 178,
+        "forge-result": 179,
+        "instance-enter": 54,
+        "inventory-delta": 55,
+        "item-requirements": 56,
+        "item-values": 57,
+        "login-queued": 58,
+        "loot-add": 59,
+        "loot-drop": 60,
+        "loot-remove": 61,
+        "loot-update": 62,
+        "market-browse-result": 63,
+        "market-enter": 64,
+        "market-history": 65,
+        "market-items": 66,
+        "market-own-offers": 67,
+        "market-owned": 68,
+        "market-result": 69,
+        "motd": 112,
+        "epilogue": 130,
+        "raid-score": 131,
+        "party-finder-config": 138,
+        "party-finder-match-closed": 134,
+        "party-finder-match-found": 135,
+        "party-finder-refused": 136,
+        "party-finder-state": 137,
+        "party-invite-confirm": 70,
+        "party-invited": 71,
+        "party-update": 72,
+        "player-died": 73,
+        "player-inventory": 74,
+        "player-mounts": 75,
+        "player-outfits": 76,
+        "player-stats": 77,
+        "player-target": 78,
+        "players-online": 79,
+        "pong": 80,
+        "prey-result": 81,
+        "prey-state": 82,
+        "private-message": 83,
+        "projectile-move": 84,
+        "quick-sell-update": 85,
+        "review-prompt": 108,
+        "review-result": 109,
+        "rmt-browse-result": 160,
+        "rmt-enter": 159,
+        "rmt-history": 162,
+        "rmt-own-offers": 161,
+        "rmt-pix-order": 164,
+        "rmt-sign-request": 165,
+        "rmt-delivered": 166,
+        "rmt-result": 163,
+        "dps-breakdown": 167,
+        "sandbox-catalog": 86,
+        "sandbox-character-results": 87,
+        "scenario-terrain": 88,
+        "shop-offers": 89,
+        "store-history": 133,
+        "store-offers": 90,
+        "store-result": 91,
+        "system-message": 92,
+        "trade-closed": 93,
+        "trade-requested": 94,
+        "trade-session": 95,
+        "training-update": 96,
+        "transfer-begin": 97,
+        "transfer-offer": 98,
+        "tutorial-hint": 99,
+        "tutorial-update": 100,
+        "vip-list": 101,
+        "vip-status": 102,
+        "welcome": 103,
+        "window-layout": 104,
+        "world-effect": 105,
+        "xp-scroll-state": 106,
+        "ticket-result": 114,
+        "ticket-history": 116,
+        "chat-report-result": 117,
+        "raid-status": 118,
+        "raid-queued": 119,
+        "raid-march": 120,
+        "raid-victims": 121,
+        "feature-flags": 122,
+        "poll-offer": 123,
+        "poll-result": 124,
+        "analyzer-values": 125,
+        "hunt-sell-rules": 126,
+        "chat-policy": 127,
+        "alerts-state": 132,
+        "party-costs-offered": 139,
+        "party-costs-cancelled": 140,
+        "party-costs-settled": 141,
+        "imbuement-materials": 142,
+        "daily-boss-status": 143,
+        "daily-boss-rooms": 144,
+        "daily-boss-room": 145,
+        "daily-boss-chat": 146,
+        "daily-boss-refused": 147,
+        "daily-boss-invited": 148,
+        "daily-boss-victory": 149,
+        "daily-boss-fight": 150,
+        "daily-boss-rewards": 151,
+        "death-film-offer": 152,
+        "death-film": 153,
+        "daily-boss-death-state": 154,
+        "creature-resync": 155,
+        "party-kick-vote": 156,
+        "party-kick-vote-ended": 157,
+        "quest-status": 168,
+        "quest-victory": 169,
+        "action-bar-preset-slots": 170,
+        "loot-destinations": 171,
+        "daily-boss-immunity": 172,
+        "death-history": 173,
+        "mission-leader-left": 175,
+        "ammo-rules": 177,
+        "forge-dust-gained": 180,
+        "forge-history": 181,
+        "guild-my-applications": 182,
+        "valuables-offers": 183,
+        "player-vitals": 184,
+        "jewel-rules": 185,
+        "creature-carry": 186,
+        "proficiency-state": 187,
+        "store-featured": 188,
+        "outfit-addon-offer": 189,
+        "guild-chat-history": 190,
+        "boss-route": 191,
+        "account-chest-update": 192,
+        "test-window": 193,
+        "bosstiary": 194,
+        "mount-unlock-offer": 195,
+        "wheel-state": 196
+      },
+      "client": {
+        "arena-prize-pick": 1,
+        "authenticate": 2,
+        "battle-settings": 3,
+        "blessing-buy": 4,
+        "blessings-open": 5,
+        "cancel-hunt": 6,
+        "cancel-leave-hunt": 7,
+        "choose-vocation": 8,
+        "claim-daily-reward": 9,
+        "client-ready": 10,
+        "coin-transfer": 11,
+        "cyclopedia-request": 12,
+        "delete-action-bar-preset": 13,
+        "depot-close": 14,
+        "depot-open": 15,
+        "destroy-backpack-item": 16,
+        "enter-arena": 17,
+        "enter-sandbox": 18,
+        "equip-item": 19,
+        "guild-create": 21,
+        "guild-donate-gold": 111,
+        "guild-details-request": 109,
+        "guild-directory-request": 110,
+        "guild-disband": 22,
+        "guild-info-request": 115,
+        "guild-invite": 23,
+        "guild-invite-respond": 24,
+        "guild-kick": 25,
+        "guild-leave": 26,
+        "guild-log-request": 27,
+        "guild-rename-rank": 28,
+        "guild-set-rank": 29,
+        "hello": 30,
+        "highscores-request": 31,
+        "hunt-analyzer-reset": 32,
+        "hunt-leader-respond": 33,
+        "hunt-quick-sell": 34,
+        "hunt-sell-skip": 130,
+        "hunt-team-respond": 35,
+        "imbuement-apply": 36,
+        "imbuement-clear": 37,
+        "imbuement-open": 38,
+        "forge-open": 177,
+        "forge-convert": 178,
+        "forge-fuse": 179,
+        "forge-transfer": 180,
+        "request-forge-history": 181,
+        "leave-hunt": 39,
+        "leave-sandbox": 40,
+        "leave-training": 41,
+        "logout": 42,
+        "loot-take": 43,
+        "market-accept-offer": 44,
+        "market-browse": 45,
+        "market-cancel-offer": 46,
+        "market-close": 47,
+        "market-create-offer": 48,
+        "market-my-history": 49,
+        "market-my-offers": 50,
+        "market-open": 51,
+        "mount-buy": 52,
+        "move-item": 53,
+        "party-finder-leave": 132,
+        "party-finder-queue": 133,
+        "party-finder-respond": 134,
+        "party-invite": 54,
+        "party-invite-name": 55,
+        "party-leave": 56,
+        "party-respond": 57,
+        "ping": 58,
+        "prey-bonus-reroll": 59,
+        "prey-list-reroll": 60,
+        "prey-option": 61,
+        "prey-pick": 62,
+        "prey-select-mode": 63,
+        "private-message": 64,
+        "quick-sell-configure": 65,
+        "reset-hunt-bests": 66,
+        "revive": 67,
+        "rmt-browse": 155,
+        "rmt-buy-offer": 157,
+        "rmt-cancel-offer": 158,
+        "rmt-close": 154,
+        "rmt-create-offer": 156,
+        "rmt-my-history": 160,
+        "rmt-my-offers": 159,
+        "rmt-open": 153,
+        "rmt-submit-signed": 161,
+        "rmt-withdraw": 182,
+        "forge-auto-convert": 183,
+        "sandbox-clone-character": 68,
+        "sandbox-give-item": 69,
+        "sandbox-search-characters": 70,
+        "sandbox-set-level": 71,
+        "sandbox-spawn-hazard": 72,
+        "sandbox-spawn-monsters": 73,
+        "save-action-bar-preset": 74,
+        "say": 75,
+        "select-action-bar-preset": 76,
+        "select-ammo": 77,
+        "set-action-slot": 78,
+        "set-auto-loot": 79,
+        "set-hunt-exit-rules": 80,
+        "set-idle-training": 171,
+        "set-hunt-favorites": 173,
+        "set-outfit": 81,
+        "set-sell-lock": 82,
+        "set-window-layout": 83,
+        "shop-buy": 84,
+        "shop-open": 85,
+        "shop-quick-sell": 86,
+        "shop-sell": 88,
+        "start-hunt": 89,
+        "submit-review": 108,
+        "store-buy": 90,
+        "store-history-request": 129,
+        "store-open": 91,
+        "trade-add-item": 92,
+        "trade-cancel": 93,
+        "trade-confirm": 94,
+        "trade-ready": 95,
+        "trade-remove-item": 96,
+        "trade-request": 97,
+        "trade-respond": 98,
+        "trade-set-gold": 99,
+        "transfer-respond": 100,
+        "tutorial-hint-seen": 101,
+        "tutorial-weapon": 102,
+        "vip-add": 103,
+        "vip-remove": 104,
+        "walk": 105,
+        "walk-stop": 106,
+        "walk-to": 107,
+        "submit-ticket": 112,
+        "start-training": 113,
+        "ticket-history-request": 114,
+        "coins-refresh": 119,
+        "set-action-bar-managed": 116,
+        "sort-action-bar": 117,
+        "clear-action-bar": 120,
+        "chat-report": 118,
+        "raid-enter": 121,
+        "poll-answers": 122,
+        "buy-stamina": 123,
+        "set-analyzer-value": 124,
+        "set-hunt-sell-rules": 125,
+        "alerts-open": 126,
+        "alerts-set": 127,
+        "alerts-unlink": 128,
+        "change-hunt": 131,
+        "party-costs-offer": 135,
+        "party-costs-respond": 136,
+        "party-costs-cancel": 137,
+        "daily-boss-open": 138,
+        "daily-boss-create": 139,
+        "daily-boss-join": 140,
+        "daily-boss-leave": 141,
+        "daily-boss-kick": 142,
+        "daily-boss-invite": 143,
+        "daily-boss-ready": 144,
+        "daily-boss-start": 145,
+        "daily-boss-say": 146,
+        "daily-boss-revive": 147,
+        "daily-boss-claim": 148,
+        "death-film-request": 149,
+        "daily-boss-stand-up": 150,
+        "party-kick": 151,
+        "party-kick-respond": 152,
+        "bestiary-unlock": 162,
+        "dps-breakdown-watch": 163,
+        "quest-pick": 164,
+        "quest-claim": 165,
+        "import-action-bar": 166,
+        "request-action-bar-preset": 167,
+        "daily-boss-presets": 168,
+        "set-loot-destination": 169,
+        "request-death-history": 170,
+        "party-follow-leader": 172,
+        "daily-boss-tier": 174,
+        "daily-boss-rules": 175,
+        "set-ammo-rules": 176,
+        "guild-set-recruitment": 184,
+        "guild-apply": 185,
+        "guild-application-withdraw": 186,
+        "guild-application-respond": 187,
+        "valuables-open": 188,
+        "valuables-buy": 189,
+        "set-jewel-rules": 190,
+        "proficiency-choose": 191,
+        "proficiency-clear": 192,
+        "set-offline-training-skill": 193,
+        "outfit-addon-inspect": 194,
+        "outfit-addon-unlock": 195,
+        "guild-chat-history-request": 196,
+        "guild-perk-reroll": 198,
+        "guild-items-reroll": 199,
+        "guild-bank-deposit-gold": 200,
+        "guild-bank-deposit-items": 201,
+        "guild-slot-fund": 203,
+        "guild-altar-commit": 204,
+        "guild-altar-unlock": 205,
+        "party-pass-leader": 206,
+        "boss-route-cancel": 207,
+        "account-chest": 208,
+        "bosstiary-request": 209,
+        "daily-boss-stars": 210,
+        "daily-boss-privacy": 211,
+        "mount-unlock-inspect": 212,
+        "wheel-save": 213,
+        "wheel-reset": 214,
+        "sandbox-wheel-full": 215
+      }
+    },
+    "current": {
+      "server": {
+        "action-bar-presets": 1,
+        "action-bar-update": 2,
+        "ammo-selection": 3,
+        "arena-catalog": 4,
+        "arena-prize-offer": 5,
+        "arena-status": 6,
+        "auto-loot-update": 7,
+        "battle-settings-update": 8,
+        "bestiary-progress": 9,
+        "blessings-status": 10,
+        "broadcast": 107,
+        "capacity-overflow": 11,
+        "chat-message": 12,
+        "coin-transfer-result": 13,
+        "coins": 14,
+        "creature-appear": 15,
+        "creature-critical": 17,
+        "creature-disappear": 18,
+        "creature-health": 19,
+        "creature-hit": 20,
+        "creature-move": 21,
+        "creature-outfit": 22,
+        "creature-restore": 23,
+        "creature-say": 24,
+        "creature-turn": 25,
+        "cyclopedia-catalog": 26,
+        "daily-reward-claimed": 27,
+        "daily-reward-offer": 28,
+        "depot-update": 29,
+        "experience-gain": 30,
+        "ground-item-appear": 31,
+        "ground-item-disappear": 32,
+        "guild-details": 110,
+        "guild-directory": 111,
+        "guild-expeditions": 33,
+        "guild-info": 34,
+        "guild-invite-offer": 35,
+        "guild-log": 36,
+        "guild-member-status": 37,
+        "hazard-zones": 38,
+        "header-badge": 113,
+        "highscores": 39,
+        "idle-training": 174,
+        "hunt-favorites": 176,
+        "hunt-analyzer-session": 40,
+        "hunt-analyzer-update": 41,
+        "hunt-catalog": 42,
+        "hunt-exit-rules": 43,
+        "hunt-leader-entered": 44,
+        "hunt-leader-invite-cancelled": 45,
+        "hunt-leave-pending": 46,
+        "hunt-pending": 47,
+        "hunt-portal-entered": 48,
+        "hunt-quick-sell-state": 49,
+        "hunt-start-warning": 115,
+        "hunt-team-invite-cancelled": 50,
+        "hunt-team-invited": 51,
+        "imbuement-result": 52,
+        "imbuement-shrine": 53,
+        "forge-state": 178,
+        "forge-result": 179,
+        "instance-enter": 54,
+        "inventory-delta": 55,
+        "item-requirements": 56,
+        "item-values": 57,
+        "login-queued": 58,
+        "loot-add": 59,
+        "loot-drop": 60,
+        "loot-remove": 61,
+        "loot-update": 62,
+        "market-browse-result": 63,
+        "market-enter": 64,
+        "market-history": 65,
+        "market-items": 66,
+        "market-own-offers": 67,
+        "market-owned": 68,
+        "market-result": 69,
+        "motd": 112,
+        "epilogue": 130,
+        "raid-score": 131,
+        "party-finder-config": 138,
+        "party-finder-match-closed": 134,
+        "party-finder-match-found": 135,
+        "party-finder-refused": 136,
+        "party-finder-state": 137,
+        "party-invite-confirm": 70,
+        "party-invited": 71,
+        "party-update": 72,
+        "player-died": 73,
+        "player-inventory": 74,
+        "player-mounts": 75,
+        "player-outfits": 76,
+        "player-stats": 77,
+        "player-target": 78,
+        "players-online": 79,
+        "pong": 80,
+        "prey-result": 81,
+        "prey-state": 82,
+        "private-message": 83,
+        "projectile-move": 84,
+        "quick-sell-update": 85,
+        "review-prompt": 108,
+        "review-result": 109,
+        "rmt-browse-result": 160,
+        "rmt-enter": 159,
+        "rmt-history": 162,
+        "rmt-own-offers": 161,
+        "rmt-pix-order": 164,
+        "rmt-sign-request": 165,
+        "rmt-delivered": 166,
+        "rmt-result": 163,
+        "dps-breakdown": 167,
+        "sandbox-catalog": 86,
+        "sandbox-character-results": 87,
+        "scenario-terrain": 88,
+        "shop-offers": 89,
+        "store-history": 133,
+        "store-offers": 90,
+        "store-result": 91,
+        "system-message": 92,
+        "trade-closed": 93,
+        "trade-requested": 94,
+        "trade-session": 95,
+        "training-update": 96,
+        "transfer-begin": 97,
+        "transfer-offer": 98,
+        "tutorial-hint": 99,
+        "tutorial-update": 100,
+        "vip-list": 101,
+        "vip-status": 102,
+        "welcome": 103,
+        "window-layout": 104,
+        "world-effect": 105,
+        "xp-scroll-state": 106,
+        "ticket-result": 114,
+        "ticket-history": 116,
+        "chat-report-result": 117,
+        "raid-status": 118,
+        "raid-queued": 119,
+        "raid-march": 120,
+        "raid-victims": 121,
+        "feature-flags": 122,
+        "poll-offer": 123,
+        "poll-result": 124,
+        "analyzer-values": 125,
+        "hunt-sell-rules": 126,
+        "chat-policy": 127,
+        "alerts-state": 132,
+        "party-costs-offered": 139,
+        "party-costs-cancelled": 140,
+        "party-costs-settled": 141,
+        "imbuement-materials": 142,
+        "daily-boss-status": 143,
+        "daily-boss-rooms": 144,
+        "daily-boss-room": 145,
+        "daily-boss-chat": 146,
+        "daily-boss-refused": 147,
+        "daily-boss-invited": 148,
+        "daily-boss-victory": 149,
+        "daily-boss-fight": 150,
+        "daily-boss-rewards": 151,
+        "death-film-offer": 152,
+        "death-film": 153,
+        "daily-boss-death-state": 154,
+        "creature-resync": 155,
+        "party-kick-vote": 156,
+        "party-kick-vote-ended": 157,
+        "quest-status": 168,
+        "quest-victory": 169,
+        "action-bar-preset-slots": 170,
+        "loot-destinations": 171,
+        "daily-boss-immunity": 172,
+        "death-history": 173,
+        "mission-leader-left": 175,
+        "ammo-rules": 177,
+        "forge-dust-gained": 180,
+        "forge-history": 181,
+        "guild-my-applications": 182,
+        "valuables-offers": 183,
+        "player-vitals": 184,
+        "jewel-rules": 185,
+        "creature-carry": 186,
+        "proficiency-state": 187,
+        "store-featured": 188,
+        "outfit-addon-offer": 189,
+        "guild-chat-history": 190,
+        "boss-route": 191,
+        "account-chest-update": 192,
+        "test-window": 193,
+        "bosstiary": 194,
+        "mount-unlock-offer": 195,
+        "wheel-state": 196,
+        "hunt-report": 199
+      },
+      "client": {
+        "arena-prize-pick": 1,
+        "authenticate": 2,
+        "battle-settings": 3,
+        "blessing-buy": 4,
+        "blessings-open": 5,
+        "cancel-hunt": 6,
+        "cancel-leave-hunt": 7,
+        "choose-vocation": 8,
+        "claim-daily-reward": 9,
+        "client-ready": 10,
+        "coin-transfer": 11,
+        "cyclopedia-request": 12,
+        "delete-action-bar-preset": 13,
+        "depot-close": 14,
+        "depot-open": 15,
+        "destroy-backpack-item": 16,
+        "enter-arena": 17,
+        "enter-sandbox": 18,
+        "equip-item": 19,
+        "guild-create": 21,
+        "guild-donate-gold": 111,
+        "guild-details-request": 109,
+        "guild-directory-request": 110,
+        "guild-disband": 22,
+        "guild-info-request": 115,
+        "guild-invite": 23,
+        "guild-invite-respond": 24,
+        "guild-kick": 25,
+        "guild-leave": 26,
+        "guild-log-request": 27,
+        "guild-rename-rank": 28,
+        "guild-set-rank": 29,
+        "hello": 30,
+        "highscores-request": 31,
+        "hunt-analyzer-reset": 32,
+        "hunt-leader-respond": 33,
+        "hunt-quick-sell": 34,
+        "hunt-sell-skip": 130,
+        "hunt-team-respond": 35,
+        "imbuement-apply": 36,
+        "imbuement-clear": 37,
+        "imbuement-open": 38,
+        "forge-open": 177,
+        "forge-convert": 178,
+        "forge-fuse": 179,
+        "forge-transfer": 180,
+        "request-forge-history": 181,
+        "leave-hunt": 39,
+        "leave-sandbox": 40,
+        "leave-training": 41,
+        "logout": 42,
+        "loot-take": 43,
+        "market-accept-offer": 44,
+        "market-browse": 45,
+        "market-cancel-offer": 46,
+        "market-close": 47,
+        "market-create-offer": 48,
+        "market-my-history": 49,
+        "market-my-offers": 50,
+        "market-open": 51,
+        "mount-buy": 52,
+        "move-item": 53,
+        "party-finder-leave": 132,
+        "party-finder-queue": 133,
+        "party-finder-respond": 134,
+        "party-invite": 54,
+        "party-invite-name": 55,
+        "party-leave": 56,
+        "party-respond": 57,
+        "ping": 58,
+        "prey-bonus-reroll": 59,
+        "prey-list-reroll": 60,
+        "prey-option": 61,
+        "prey-pick": 62,
+        "prey-select-mode": 63,
+        "private-message": 64,
+        "quick-sell-configure": 65,
+        "reset-hunt-bests": 66,
+        "revive": 67,
+        "rmt-browse": 155,
+        "rmt-buy-offer": 157,
+        "rmt-cancel-offer": 158,
+        "rmt-close": 154,
+        "rmt-create-offer": 156,
+        "rmt-my-history": 160,
+        "rmt-my-offers": 159,
+        "rmt-open": 153,
+        "rmt-submit-signed": 161,
+        "rmt-withdraw": 182,
+        "forge-auto-convert": 183,
+        "sandbox-clone-character": 68,
+        "sandbox-give-item": 69,
+        "sandbox-search-characters": 70,
+        "sandbox-set-level": 71,
+        "sandbox-spawn-hazard": 72,
+        "sandbox-spawn-monsters": 73,
+        "save-action-bar-preset": 74,
+        "say": 75,
+        "select-action-bar-preset": 76,
+        "select-ammo": 77,
+        "set-action-slot": 78,
+        "set-auto-loot": 79,
+        "set-hunt-exit-rules": 80,
+        "set-idle-training": 171,
+        "set-hunt-favorites": 173,
+        "set-outfit": 81,
+        "set-sell-lock": 82,
+        "set-window-layout": 83,
+        "shop-buy": 84,
+        "shop-open": 85,
+        "shop-quick-sell": 86,
+        "shop-sell": 88,
+        "start-hunt": 89,
+        "submit-review": 108,
+        "store-buy": 90,
+        "store-history-request": 129,
+        "store-open": 91,
+        "trade-add-item": 92,
+        "trade-cancel": 93,
+        "trade-confirm": 94,
+        "trade-ready": 95,
+        "trade-remove-item": 96,
+        "trade-request": 97,
+        "trade-respond": 98,
+        "trade-set-gold": 99,
+        "transfer-respond": 100,
+        "tutorial-hint-seen": 101,
+        "tutorial-weapon": 102,
+        "vip-add": 103,
+        "vip-remove": 104,
+        "walk": 105,
+        "walk-stop": 106,
+        "walk-to": 107,
+        "submit-ticket": 112,
+        "start-training": 113,
+        "ticket-history-request": 114,
+        "coins-refresh": 119,
+        "set-action-bar-managed": 116,
+        "sort-action-bar": 117,
+        "clear-action-bar": 120,
+        "chat-report": 118,
+        "raid-enter": 121,
+        "poll-answers": 122,
+        "buy-stamina": 123,
+        "set-analyzer-value": 124,
+        "set-hunt-sell-rules": 125,
+        "alerts-open": 126,
+        "alerts-set": 127,
+        "alerts-unlink": 128,
+        "change-hunt": 131,
+        "party-costs-offer": 135,
+        "party-costs-respond": 136,
+        "party-costs-cancel": 137,
+        "daily-boss-open": 138,
+        "daily-boss-create": 139,
+        "daily-boss-join": 140,
+        "daily-boss-leave": 141,
+        "daily-boss-kick": 142,
+        "daily-boss-invite": 143,
+        "daily-boss-ready": 144,
+        "daily-boss-start": 145,
+        "daily-boss-say": 146,
+        "daily-boss-revive": 147,
+        "daily-boss-claim": 148,
+        "death-film-request": 149,
+        "daily-boss-stand-up": 150,
+        "party-kick": 151,
+        "party-kick-respond": 152,
+        "bestiary-unlock": 162,
+        "dps-breakdown-watch": 163,
+        "quest-pick": 164,
+        "quest-claim": 165,
+        "import-action-bar": 166,
+        "request-action-bar-preset": 167,
+        "daily-boss-presets": 168,
+        "set-loot-destination": 169,
+        "request-death-history": 170,
+        "party-follow-leader": 172,
+        "daily-boss-tier": 174,
+        "daily-boss-rules": 175,
+        "set-ammo-rules": 176,
+        "guild-set-recruitment": 184,
+        "guild-apply": 185,
+        "guild-application-withdraw": 186,
+        "guild-application-respond": 187,
+        "valuables-open": 188,
+        "valuables-buy": 189,
+        "set-jewel-rules": 190,
+        "proficiency-choose": 191,
+        "proficiency-clear": 192,
+        "set-offline-training-skill": 193,
+        "outfit-addon-inspect": 194,
+        "outfit-addon-unlock": 195,
+        "guild-chat-history-request": 196,
+        "guild-perk-reroll": 198,
+        "guild-items-reroll": 199,
+        "guild-bank-deposit-gold": 200,
+        "guild-bank-deposit-items": 201,
+        "guild-slot-fund": 203,
+        "guild-altar-commit": 204,
+        "guild-altar-unlock": 205,
+        "party-pass-leader": 206,
+        "boss-route-cancel": 207,
+        "account-chest": 208,
+        "bosstiary-request": 209,
+        "daily-boss-stars": 210,
+        "daily-boss-privacy": 211,
+        "mount-unlock-inspect": 212,
+        "wheel-save": 213,
+        "wheel-reset": 214,
+        "sandbox-wheel-full": 215,
+        "bosstiary-pattern": 216,
+        "hunt-report-request": 217
+      }
+    }
+  },
+  "entrypoint": {
+    "observedDomFile": "work/reference-20261026-WHI3EZUB/observed-content/entrypoint-dom.json",
+    "resourceManifest": "work/client-migration-20261026/entrypoint-resources.json",
+    "publicHTMLMain": [
+      "main-6YGHWJTK.js"
+    ],
+    "publicHTMLMatchesObserved": false,
+    "requirement": "Use a clearly identified local shell with the observed WHI main and R5 stylesheet. The historical production HTML for WHI was not recovered; do not use a newer public HTML referencing another main."
+  },
+  "literalAssetReferences": [
+    {
+      "path": "assets/audio/alert-chime.wav",
+      "sourceReferences": [
+        {
+          "path": "assets/audio/alert-chime.wav",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 1040078
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/audio/alert-chime.wav",
+        "bytes": 50758,
+        "sha256": "ec4a51b82bbed4ccc416a674c5619dd1dd578d75ec05d82c0d901554611dab97"
+      }
+    },
+    {
+      "path": "assets/audio/raid-battle.mp3",
+      "sourceReferences": [
+        {
+          "path": "assets/audio/raid-battle.mp3",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 1036068
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/audio/raid-battle.mp3",
+        "bytes": 3050063,
+        "sha256": "d4b9f90048cfa3c5004763cd2483172a989dc921cd1a9538e4bae7aa9c3b9ce6"
+      }
+    },
+    {
+      "path": "assets/audio/raid-horn.mp3",
+      "sourceReferences": [
+        {
+          "path": "assets/audio/raid-horn.mp3",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 1034672
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/audio/raid-horn.mp3",
+        "bytes": 241415,
+        "sha256": "dc681f56f9ef58270da270b13c885bbb3e17d1a88c03f043a799f7e400b57e1d"
+      }
+    },
+    {
+      "path": "assets/gate/temple-terrain.json",
+      "sourceReferences": [
+        {
+          "path": "assets/gate/temple-terrain.json",
+          "file": "chunk-JQY7LKMW.js",
+          "offset": 2395
+        },
+        {
+          "path": "assets/gate/temple-terrain.json",
+          "file": "chunk-T4GWOPNQ.js",
+          "offset": 62570
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/gate/temple-terrain.json",
+        "bytes": 165596,
+        "sha256": "c063da89b96ea34f72085a9a61b3a0d8320931dbba488c1f02d3098470377335"
+      }
+    },
+    {
+      "path": "assets/guild-perks/keen-eye.png",
+      "sourceReferences": [
+        {
+          "path": "assets/guild-perks/keen-eye.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 618069
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/guild-perks/keen-eye.png",
+        "bytes": 413446,
+        "sha256": "74f4683c2cb91d54e02a501303e63ba2d0535c8101ea5d93414612fcdc4b94eb"
+      }
+    },
+    {
+      "path": "assets/guild-perks/siphon.png",
+      "sourceReferences": [
+        {
+          "path": "assets/guild-perks/siphon.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 618151
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/guild-perks/siphon.png",
+        "bytes": 520221,
+        "sha256": "991df5bd32dd84c958251db07acf09c9dd5b790ef0593990ee78a90d9c547835"
+      }
+    },
+    {
+      "path": "assets/guild-perks/thirst.png",
+      "sourceReferences": [
+        {
+          "path": "assets/guild-perks/thirst.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 618111
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/guild-perks/thirst.png",
+        "bytes": 445123,
+        "sha256": "b7e546de02cb68016147aa95dcba75f3b9c1361f5f12528f7d7ef3deaac0d348"
+      }
+    },
+    {
+      "path": "assets/nav/guild.png",
+      "sourceReferences": [
+        {
+          "path": "assets/nav/guild.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 1090125
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/nav/guild.png",
+        "bytes": 9514,
+        "sha256": "145839840b86dd370e4ce20819ed3d921e97f4c2943812116c49b9deaa05dac9"
+      }
+    },
+    {
+      "path": "assets/nav/hunt.png",
+      "sourceReferences": [
+        {
+          "path": "assets/nav/hunt.png",
+          "file": "chunk-D3G3CQBF.js",
+          "offset": 207454
+        },
+        {
+          "path": "assets/nav/hunt.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 429508
+        },
+        {
+          "path": "assets/nav/hunt.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 1089546
+        },
+        {
+          "path": "assets/nav/hunt.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 1091241
+        },
+        {
+          "path": "assets/nav/hunt.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 1095317
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/nav/hunt.png",
+        "bytes": 8954,
+        "sha256": "40b188fa08f6d460a8cd966f0b97a429f8225454f52ea582566de994e03908e9"
+      }
+    },
+    {
+      "path": "assets/nav/install.png",
+      "sourceReferences": [
+        {
+          "path": "assets/nav/install.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 1093986
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/nav/install.png",
+        "bytes": 3933,
+        "sha256": "a1dc47da88f8d5e85851f1c5527a810906ec0682bbaefc99bd7982929430ab1c"
+      }
+    },
+    {
+      "path": "assets/nav/options.png",
+      "sourceReferences": [
+        {
+          "path": "assets/nav/options.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 1090975
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/nav/options.png",
+        "bytes": 10143,
+        "sha256": "085ebddd3b7e0fe04dc075c8c5f89c3e6f0ccefa9800dfc5d9ceafb90358e918"
+      }
+    },
+    {
+      "path": "assets/nav/outfit.png",
+      "sourceReferences": [
+        {
+          "path": "assets/nav/outfit.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 1089412
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/nav/outfit.png",
+        "bytes": 9613,
+        "sha256": "981641b25cdd8b1dd43559a4efc52b323e4b90d87c39975a194bcc261c8e0c34"
+      }
+    },
+    {
+      "path": "assets/nav/party.png",
+      "sourceReferences": [
+        {
+          "path": "assets/nav/party.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 1089869
+        },
+        {
+          "path": "assets/nav/party.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 1095132
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/nav/party.png",
+        "bytes": 10020,
+        "sha256": "7255c714ecf2d9d613493ca127cb59eabc656b31dbd468e0b6ff4fb0505fa288"
+      }
+    },
+    {
+      "path": "assets/nav/prey.png",
+      "sourceReferences": [
+        {
+          "path": "assets/nav/prey.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 1089733
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/nav/prey.png",
+        "bytes": 9454,
+        "sha256": "c839f0f38f6d01e0747c0f6624de94a45d2ef69c77f080906b1cec7cc0d8d415"
+      }
+    },
+    {
+      "path": "assets/nav/ranking.png",
+      "sourceReferences": [
+        {
+          "path": "assets/nav/ranking.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 1090390
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/nav/ranking.png",
+        "bytes": 10555,
+        "sha256": "941ae6b94e16f5aed2e2c097bc22cb274493fadce97c7bd413cb12d107768fc2"
+      }
+    },
+    {
+      "path": "assets/nav/referral.png",
+      "sourceReferences": [
+        {
+          "path": "assets/nav/referral.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 1090678
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/nav/referral.png",
+        "bytes": 9057,
+        "sha256": "704fbfe14968236b2408b16b68237c55aef386157eb642b983f0e1dba99475e6"
+      }
+    },
+    {
+      "path": "assets/nav/store.png",
+      "sourceReferences": [
+        {
+          "path": "assets/nav/store.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 1089041
+        },
+        {
+          "path": "assets/nav/store.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 1091151
+        },
+        {
+          "path": "assets/nav/store.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 1094980
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/nav/store.png",
+        "bytes": 8614,
+        "sha256": "c5d126907a955e3ced0c66018b5c59bed82aec8aad7064586f1d56f5046962f0"
+      }
+    },
+    {
+      "path": "assets/nav/ticket.png",
+      "sourceReferences": [
+        {
+          "path": "assets/nav/ticket.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 1090521
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/nav/ticket.png",
+        "bytes": 8123,
+        "sha256": "6896196ac8b680871f9f9e654b6e3c7c0545778318d1e80b63f0a52d1def981f"
+      }
+    },
+    {
+      "path": "assets/nav/vip.png",
+      "sourceReferences": [
+        {
+          "path": "assets/nav/vip.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 1089999
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/nav/vip.png",
+        "bytes": 7391,
+        "sha256": "e6426ea9002bb6832a6a818e4fc504282f6c4b00dc0827b500ab0b9015ad8f6f"
+      }
+    },
+    {
+      "path": "assets/nav/wiki.png",
+      "sourceReferences": [
+        {
+          "path": "assets/nav/wiki.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 1090258
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/nav/wiki.png",
+        "bytes": 6813,
+        "sha256": "843344da1817ba36e905fa4ee828711f1679cd3f4a8be0ef7500e7fc17c36c26"
+      }
+    },
+    {
+      "path": "assets/spells/front-sweep.gif",
+      "sourceReferences": [
+        {
+          "path": "assets/spells/front-sweep.gif",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 618244
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/spells/front-sweep.gif",
+        "bytes": 2455,
+        "sha256": "6d10784cc5b0d5aafa0d7cda8eae818338309c51e1e662cd13d624cfca49168d"
+      }
+    },
+    {
+      "path": "assets/spells/ultimate-healing.gif",
+      "sourceReferences": [
+        {
+          "path": "assets/spells/ultimate-healing.gif",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 618192
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/spells/ultimate-healing.gif",
+        "bytes": 2319,
+        "sha256": "c5283a6926c8ec3da3423b53c0d84ebeb86cb42c7f15e6d2f18c2b760979e024"
+      }
+    },
+    {
+      "path": "assets/ui/forge-dust.gif",
+      "sourceReferences": [
+        {
+          "path": "assets/ui/forge-dust.gif",
+          "file": "chunk-3YR3IVE3.js",
+          "offset": 5798
+        },
+        {
+          "path": "assets/ui/forge-dust.gif",
+          "file": "chunk-3YR3IVE3.js",
+          "offset": 10940
+        },
+        {
+          "path": "assets/ui/forge-dust.gif",
+          "file": "chunk-3YR3IVE3.js",
+          "offset": 25223
+        },
+        {
+          "path": "assets/ui/forge-dust.gif",
+          "file": "chunk-5NKSHFX3.js",
+          "offset": 62833
+        },
+        {
+          "path": "assets/ui/forge-dust.gif",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 842959
+        },
+        {
+          "path": "assets/ui/forge-dust.gif",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 1093567
+        },
+        {
+          "path": "assets/ui/forge-dust.gif",
+          "file": "chunk-X772MGJM.js",
+          "offset": 4167
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/ui/forge-dust.gif",
+        "bytes": 18283,
+        "sha256": "21e819da781d6e58c09bbca46045d678ea81eaada87e2d6ec75fc42c70cdf9e0"
+      }
+    },
+    {
+      "path": "assets/ui/huntera-logo.png",
+      "sourceReferences": [
+        {
+          "path": "assets/ui/huntera-logo.png",
+          "file": "chunk-HK4PUHJL.js",
+          "offset": 14491
+        },
+        {
+          "path": "assets/ui/huntera-logo.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 1088342
+        },
+        {
+          "path": "assets/ui/huntera-logo.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 1096159
+        },
+        {
+          "path": "assets/ui/huntera-logo.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 1098344
+        },
+        {
+          "path": "assets/ui/huntera-logo.png",
+          "file": "chunk-TYHP23QP.js",
+          "offset": 2173
+        },
+        {
+          "path": "assets/ui/huntera-logo.png",
+          "file": "chunk-VOEB4GUR.js",
+          "offset": 19131
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/ui/huntera-logo.png",
+        "bytes": 463664,
+        "sha256": "a45745e8abb2423156d052ed9b6219581ea4a728d17294e4fb7e1a1345e1e87d"
+      }
+    },
+    {
+      "path": "assets/ui/name-change-scroll.png",
+      "sourceReferences": [
+        {
+          "path": "assets/ui/name-change-scroll.png",
+          "file": "chunk-5VF2RYSN.js",
+          "offset": 10217
+        },
+        {
+          "path": "assets/ui/name-change-scroll.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 374305
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/ui/name-change-scroll.png",
+        "bytes": 84488,
+        "sha256": "59f000883009d9f298c3a2e22971777ff4f837cb4d84ef2bf2e5db97b45d8ea0"
+      }
+    },
+    {
+      "path": "assets/ui/premium-shield.png",
+      "sourceReferences": [
+        {
+          "path": "assets/ui/premium-shield.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 263817
+        },
+        {
+          "path": "assets/ui/premium-shield.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 297275
+        },
+        {
+          "path": "assets/ui/premium-shield.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 373930
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/ui/premium-shield.png",
+        "bytes": 55433,
+        "sha256": "f779a062196ae78d73c918d8d75d0bc7ee0a26044bf68d5e27d7752ebc256f29"
+      }
+    },
+    {
+      "path": "assets/ui/prey-wildcard.png",
+      "sourceReferences": [
+        {
+          "path": "assets/ui/prey-wildcard.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 374126
+        },
+        {
+          "path": "assets/ui/prey-wildcard.png",
+          "file": "chunk-MUPJKZYN.js",
+          "offset": 404305
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/ui/prey-wildcard.png",
+        "bytes": 101109,
+        "sha256": "0d8464a8eaff026f8d26a6bacecfa1063b4b29e152dc5639a33b21a1fb078382"
+      }
+    },
+    {
+      "path": "assets/ui/stance/aggressive.png",
+      "sourceReferences": [
+        {
+          "path": "assets/ui/stance/aggressive.png",
+          "file": "chunk-BGNGSQMG.js",
+          "offset": 24866
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/ui/stance/aggressive.png",
+        "bytes": 23498,
+        "sha256": "7f221af1bd1ca60b8d2e917d4f9dd96a8cf3d9169053d8cad0c4bb47940e59ac"
+      }
+    },
+    {
+      "path": "assets/ui/stance/balanced.png",
+      "sourceReferences": [
+        {
+          "path": "assets/ui/stance/balanced.png",
+          "file": "chunk-BGNGSQMG.js",
+          "offset": 24674
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/ui/stance/balanced.png",
+        "bytes": 22654,
+        "sha256": "694621bc7b3d547ce8f57f142bd8f5167ba50e4810943b62d46045f3a6b3af35"
+      }
+    },
+    {
+      "path": "assets/ui/stance/defensive.png",
+      "sourceReferences": [
+        {
+          "path": "assets/ui/stance/defensive.png",
+          "file": "chunk-BGNGSQMG.js",
+          "offset": 24489
+        }
+      ],
+      "availableInBaseline": true,
+      "baseline": {
+        "file": "assets/ui/stance/defensive.png",
+        "bytes": 22844,
+        "sha256": "61ac600bcc10c77c85aa348d6f30564b4945e5d18a17bbc8a4862c28c411a1c2"
+      }
+    },
+    {
+      "path": "assets/wheel/backdrop_skillwheel.png",
+      "sourceReferences": [
+        {
+          "path": "assets/wheel/backdrop_skillwheel.png",
+          "file": "chunk-5VF2RYSN.js",
+          "offset": 8954
+        }
+      ],
+      "availableInBaseline": false,
+      "baseline": null
+    }
+  ],
+  "derivedAssetManifest": {
+    "file": "work/client-migration-20261026/derived-assets.json",
+    "sha256": "2cf3d84e7358c50f31b1120922357e0d365588e3b6e110313cea306f88449dfe",
+    "scope": "Concrete finite expansions are separate from unresolved dynamic families."
+  },
+  "dynamicAssetFamilies": {
+    "scope": "These are patterns, not exhaustive expanded resource coverage.",
+    "patterns": [
+      "/assets/spells/${spellId}.gif",
+      "/assets/ui/stance/${stance}.png",
+      "/assets/wheel/* selected by constants in chunk-MUPJKZYN.js",
+      "/assets/proficiency/* selected by mappings in chunk-MUPJKZYN.js"
+    ]
+  },
+  "worker": {
+    "referenceFile": "chunk-5457SQJN.js",
+    "referencedPath": "worker-OU3KHZRC.js",
+    "scope": "The frozen 82-script ES-import closure excludes this new Worker URL; verify and include worker imports independently."
+  }
+}

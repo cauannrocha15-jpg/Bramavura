@@ -13,14 +13,20 @@ const backendModule=require('../backend.cjs');
   const own=cleanup=>{let disposed=false;const dispose=async()=>{if(disposed)return;disposed=true;await cleanup();};cleanupStack.push(dispose);return dispose;};
   try{
   const captured=path.resolve(__dirname,'../public');
-  const protocol=await import(pathToFileURL(path.join(captured,'chunk-JRE7IT7W.js')).href);
-  const dictionary=(await import(pathToFileURL(path.join(captured,'chunk-M5GYIUVK.js')).href)).a;
-  let wire=fs.readFileSync(path.join(captured,'chunk-L7RK2YWL.js'),'utf8');
+  const currentSchema=await import(pathToFileURL(path.join(captured,'chunk-3UYZ2FFW.js')).href);
+  const protocol={Gc:currentSchema.Fc,Jb:currentSchema.Ib,P:currentSchema.P};
+  const manifest=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../capture-integrity.json'),'utf8'));
+  assert.equal(manifest.main,'main-WHI3EZUB.js','Use the complete frozen WHI profile');
+  assert(fs.readFileSync(path.join(captured,'index.html'),'utf8').includes('/main-WHI3EZUB.js'));
+  const dictionary=(await import(pathToFileURL(path.join(captured,'chunk-5TRBVAYO.js')).href)).a;
+  let wire=fs.readFileSync(path.join(captured,'chunk-DOXOLALI.js'),'utf8');
   wire=wire.replace(/from"\.\/(.*?)"/g,(_,name)=>'from'+JSON.stringify(pathToFileURL(path.join(captured,name)).href));
-  wire=wire.replace('export{Qe as a}', 'export{Qe as a,Ye as encodeClient,Je as decodeServer}');
+  wire=wire.replace('export{Xe as a};', 'export{Xe as a,Je as encodeClient,Qe as decodeServer,ct as serverCodes,Ve as clientCodes};');
   const original=await import('data:text/javascript;base64,'+Buffer.from(wire).toString('base64'));
-  assert.equal(Object.keys(backendModule.SERVER_CODES).length,192);
-  assert.equal(Object.keys(backendModule.CLIENT_CODES).length,211);
+  assert.equal(Object.keys(backendModule.SERVER_CODES).length,193);
+  assert.equal(Object.keys(backendModule.CLIENT_CODES).length,213);
+  assert.deepEqual(original.serverCodes,backendModule.SERVER_CODES,'Every server opcode matches the current shipped literal dictionary');
+  assert.deepEqual(original.clientCodes,backendModule.CLIENT_CODES,'Every client opcode matches the current shipped literal dictionary');
   for(const message of [{type:'authenticate',clientVersion:'0.3.0+e0',ticket:'local-1'},{type:'ping',t:1234.5},{type:'start-hunt',huntId:'rat-hunt',tier:0}]){
     assert.deepEqual(backendModule.decodeMessage(original.encodeClient(message)),message);
   }
@@ -33,8 +39,38 @@ const backendModule=require('../backend.cjs');
   assert.equal(backendModule.decodeMessage(invalidFlags),null,'Reserved wire flags must be rejected');
   const backend=backendModule.createBackend({memory:true});
   const cleanupBackend=own(()=>backend.close());
-  assert.equal(backend.observedHuntRecords.length,83,'Current captured hunt catalog must be complete');
-  assert.equal(backend.observedHuntRecords.reduce((count,hunt)=>count+(hunt.pulls||[]).length,0),251,'Preserve each observed pull, including hunts with one or four pulls');
+  assert.equal(backend.observedHuntRecords.length,84,'Include the observed Rotten Wasteland without changing the previous 83 hunts');
+  assert.equal(backend.observedHuntRecords.reduce((count,hunt)=>count+(hunt.pulls||[]).length,0),254,'Preserve the previous 251 pulls plus the three observed new tiers');
+  const newHuntFile='hunt-rotten-wasteland-observed-20261026.json';
+  const newHuntSource=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../data',newHuntFile),'utf8'));
+  const previousHunts=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../data/hunts-observed-current.json'),'utf8')).records;
+  assert.equal(previousHunts.length,83,'Keep the previous observation file unchanged');
+  assert.deepEqual(backend.observedHuntRecords.slice(0,83),previousHunts);
+  const rotten=backend.hunts.at(-1),rottenId='rotten-wasteland-hunt';
+  assert.equal(rotten.id,rottenId,'Append the exact 84th WHI hunt ID');
+  assert.equal(rotten.name,'Rotten Wasteland');
+  assert.equal(rotten.description,newHuntSource.rawRecords[0].description.replace(/^Rotten Wasteland\s*☆\s*/, '').trim());
+  assert(!/Seu recorde|Complete uma caçada|\bconta\b/i.test(rotten.description),'The public description excludes the account record widget');
+  assert.deepEqual(rotten.monsters.map(monster=>monster.name),['Branchy Crawler','Rotten Golem','Mould Phantom']);
+  assert(rotten.monsters.every(monster=>monster.outfitId===0&&!Object.hasOwn(monster,'outfitColors')),'The new hunt does not infer outfits or palettes');
+  assert.deepEqual(rotten.tiers.map(tier=>tier.name),['Agressivo','Suicida','Hardcore']);
+  for(const [index,raw] of newHuntSource.rawRecords.entries()){
+    assert.equal(raw.sortMode,'Peso');assert.equal(raw.selectedTier,rotten.tiers[index].name);
+    assert(!Object.hasOwn(raw,'text'),'Full account panel text stays in research, not in the local hunt description');
+    assert.deepEqual(rotten.tiers[index].monsterIndexes.map(i=>rotten.monsters[i].name),raw.monsters.map(monster=>monster.name));
+    assert.equal(rotten.tiers[index].monsterCount,0,'Unobserved monster counts retain the wire sentinel');
+    assert.equal(rotten.tiers[index].loot.length,27);
+    assert.deepEqual(rotten.tiers[index].loot.map(entry=>({itemId:rotten.loot[entry.index].itemId,name:rotten.loot[entry.index].name,rarity:entry.rarity})),raw.loot.map(item=>({itemId:item.itemId===null?3043:Number(item.itemId),name:item.name,rarity:{Comum:'common',Incomum:'uncommon','Semi-raro':'semi-rare',Raro:'rare','Muito raro':'very-rare'}[item.rarityLabel]})),'Preserve every displayed loot ID/name/order/rarity; the DAT resolves crystal coin');
+  }
+  assert.equal(rotten.loot.at(-1).itemId,3043);assert.equal(rotten.loot.at(-1).name,'crystal coin');
+  assert.equal(backend.catalogEvidence.newHuntCapture.complete,true);
+  assert.equal(backend.catalogEvidence.newHuntCapture.acceptedHunts,1);
+  assert.equal(backend.catalogEvidence.newHuntCapture.acceptedPulls,3);
+  assert.equal(backend.catalogEvidence.newHuntCapture.sourceSha256,'97ea4636c7081cbc1819da7a25a7f00afcbf7f6831fb85a4ed2901b232837db7');
+  assert.equal(backend.catalogEvidence.huntCapture.complete,true);
+  assert.equal(backend.catalogEvidence.huntCapture.capturedHunts,84);
+  assert.equal(backend.catalogEvidence.huntCapture.capturedPulls,254);
+  assert.deepEqual(backend.catalogEvidence.unknownTierCounts.filter(record=>record.huntId===rottenId),[0,1,2].map(tier=>({huntId:rottenId,tier})));
   assert.deepEqual(backend.catalogEvidence.missingObservedHunts,[]);
   assert.deepEqual(backend.catalogEvidence.missingObservedPulls,[]);
   assert.deepEqual(backend.catalogEvidence.unresolvedHuntLoot,[]);
@@ -61,10 +97,10 @@ const backendModule=require('../backend.cjs');
     const fromDOM=raw.lootBands.flatMap(band=>band.items.map(item=>({itemId:Number(item.itemId),rarity:['common','uncommon','semi-rare','rare','very-rare'][Number(band.band)],...(item.note?{max:Number(item.note.replace('Até ','').replaceAll('.',''))}:{})})));
     assert.deepEqual(monster.loot,fromDOM,'New loot retains the actual DOM band order, repetitions and maximum notes: '+name);
   }
-  assert.equal(backend.hunts.length,83,'The new hunt requires a coherent client migration');
-  const incompatibleHuntCatalog={type:'hunt-catalog',hunts:[...backend.hunts,{...backend.hunts[0],id:'rotten-wasteland-hunt'}]};
-  assert.equal(protocol.Gc(incompatibleHuntCatalog),null,'The captured baseline rejects the new hunt enum');
-  assert.deepEqual(original.decodeServer(backendModule.encodeMessage(incompatibleHuntCatalog)),[],'Do not silently transmit a catalog that the real decoder discards');
+  assert.equal(backend.hunts.length,84,'The complete WHI profile supports the observed 84th hunt');
+  const currentHuntCatalog={type:'hunt-catalog',hunts:backend.hunts};
+  assert(protocol.Gc(currentHuntCatalog),'The current schema accepts the actual new hunt enum');
+  assert.deepEqual(original.decodeServer(backendModule.encodeMessage(currentHuntCatalog)),[currentHuntCatalog],'The actual WHI decoder preserves the complete 84-hunt catalog');
   assert.equal(new Set(backend.cyclopediaCatalog.monsters.map(m=>m.id)).size,195);
   const renderRepresentativeFile='outfit-render-representatives-observed.json';
   const expectedRenderRepresentatives=new Map([['Adult Goanna',1195],['Arachnophobica',1135],['Blood Crab',200],['Blood Priest',553],['Bog Raider',299]]);
@@ -268,12 +304,12 @@ const backendModule=require('../backend.cjs');
   assert.equal(backend.cyclopediaCatalog.monsters.find(m=>m.name==='Flimsy Lost Soul').elements.death,100);
   // Exercise the captured UI consumer: catalog.elements carries resistance,
   // while the observed bestiary records store the percentage of damage taken.
-  const clientSource=fs.readFileSync(path.join(captured,'chunk-3MLTU4OB.js'),'utf8');
-  const rendererSource=clientSource.match(/function bc\(i\)\{[\s\S]*?\.join\(""\)\}/)?.[0];
+  const clientSource=fs.readFileSync(path.join(captured,'chunk-MUPJKZYN.js'),'utf8');
+  const rendererSource=clientSource.match(/function Sc\(i\)\{[\s\S]*?\.join\(""\)\}/)?.[0];
   assert(rendererSource,'Pinned client damage-taken renderer must be present');
   const channels=['physical','fire','earth','energy','ice','holy','death','lifedrain'];
   const identity=Object.fromEntries(channels.map(channel=>[channel,channel]));
-  const renderElements=vm.runInNewContext('('+rendererSource+')',{B0:channels,ur:identity,op:identity,t:(label,args={})=>label.replace(/\{(\w+)\}/g,(_,key)=>args[key])});
+  const renderElements=vm.runInNewContext('('+rendererSource+')',{J0:channels,gr:identity,bp:identity,t:(label,args={})=>label.replace(/\{(\w+)\}/g,(_,key)=>args[key])});
   const amazon=backend.cyclopediaCatalog.monsters.find(monster=>monster.name==='Amazon');
   assert.equal(amazon.elements.physical,-5);
   assert.equal(amazon.elements.death,-5);
@@ -347,6 +383,8 @@ const backendModule=require('../backend.cjs');
   assert.deepEqual(evidence.observedRenderRepresentatives,renderEvidence);
   assert.deepEqual(evidence.renderRepresentativeCapture,renderCapture);
   assert.deepEqual(evidence.newCreatureCapture,backend.catalogEvidence.newCreatureCapture);
+  assert.deepEqual(evidence.newHuntCapture,backend.catalogEvidence.newHuntCapture);
+  assert.equal(evidence.huntCapture.complete,true);assert.equal(evidence.huntCapture.capturedPulls,254);
   const socket=new WebSocket(ticket.websocketUrl);socket.binaryType='arraybuffer';
   const cleanupSocket=own(()=>socket.close());
   const received=[],originallyDecoded=[],rejected=[];
@@ -383,6 +421,16 @@ const backendModule=require('../backend.cjs');
     assert(received.some(m=>m.type==='creature-hit'));
     send({type:'leave-hunt'});
     await until(()=>received.filter(m=>m.type==='instance-enter').length>=3);
+    const beforeNewHunt=received.length;
+    send({type:'start-hunt',huntId:rottenId,tier:2});
+    await until(()=>received.slice(beforeNewHunt).some(message=>message.type==='instance-enter'&&message.scenarioId===rottenId));
+    const newHuntEvents=received.slice(beforeNewHunt),newInstance=newHuntEvents.find(message=>message.type==='instance-enter');
+    assert.equal(newInstance.scenarioId,rottenId);
+    assert(newHuntEvents.findIndex(message=>message.type==='scenario-terrain')<newHuntEvents.findIndex(message=>message.type==='instance-enter'));
+    assert(originallyDecoded.some(message=>message.type==='instance-enter'&&message.scenarioId===rottenId),'The actual WHI decoder accepts the new hunt scenario ID');
+    const beforeNewExit=received.length;
+    send({type:'leave-hunt'});
+    await until(()=>received.slice(beforeNewExit).some(message=>message.type==='instance-enter'&&message.scenarioId==='main-city'));
     send({type:'walk',direction:'north'});
     await until(()=>received.some(m=>m.type==='creature-move'));
     send({type:'shop-open'});
@@ -402,11 +450,37 @@ const backendModule=require('../backend.cjs');
   const fixtureRoot=path.resolve(os.tmpdir());
   const fixtureDir=fs.mkdtempSync(path.join(fixtureRoot,'huntera-backend-'));
   own(()=>{const target=path.resolve(fixtureDir);assert.equal(path.dirname(target),fixtureRoot);assert(path.basename(target).startsWith('huntera-backend-'));fs.rmSync(target,{recursive:true,force:true});});
-  const catalogFixtureFiles=['game-data.json','bestiary.json','new-hunts-normalized-20261019.json','bestiary-records.json','equipment-observed.json','hunts-observed-current.json','bestiary-loot-observed-current.json','item-catalog-observed-current.json',renderRepresentativeFile,newCreatureFile];
-  const copyCatalogFixture=(target,{includeItems=true,includeRepresentatives=true,includeNewCreatures=true}={})=>{
+  const catalogFixtureFiles=['game-data.json','bestiary.json','new-hunts-normalized-20261019.json','bestiary-records.json','equipment-observed.json','hunts-observed-current.json','bestiary-loot-observed-current.json','item-catalog-observed-current.json',renderRepresentativeFile,newCreatureFile,newHuntFile];
+  const copyCatalogFixture=(target,{includeItems=true,includeRepresentatives=true,includeNewCreatures=true,includeNewHunt=true}={})=>{
     fs.mkdirSync(target);
-    for(const name of catalogFixtureFiles)if((includeItems||name!=='item-catalog-observed-current.json')&&(includeRepresentatives||name!==renderRepresentativeFile)&&(includeNewCreatures||name!==newCreatureFile))fs.copyFileSync(path.resolve(__dirname,'../data',name),path.join(target,name));
+    for(const name of catalogFixtureFiles)if((includeItems||name!=='item-catalog-observed-current.json')&&(includeRepresentatives||name!==renderRepresentativeFile)&&(includeNewCreatures||name!==newCreatureFile)&&(includeNewHunt||name!==newHuntFile))fs.copyFileSync(path.resolve(__dirname,'../data',name),path.join(target,name));
   };
+  const invalidNewHuntCases=[
+    {name:'missing'},
+    {name:'incomplete',mutate:value=>{value.complete=false;}},
+    {name:'duplicate-tier',mutate:value=>{value.records[0].pulls[1].name='Agressivo';}},
+    {name:'invalid-loot-id',mutate:value=>{value.records[0].pulls[0].loot[0].itemId='11657';}},
+    {name:'unresolved-currency',mutate:value=>{value.records[0].pulls[0].loot.at(-1).name='invented currency';}},
+    {name:'invented-monster-count',mutate:value=>{value.records[0].pulls[0].monsterCount=10;}},
+    {name:'changed-raw-rarity',mutate:value=>{value.rawRecords[0].loot[0].rarityLabel='Comum';}},
+    {name:'account-description',mutate:value=>{value.records[0].description+='\nSeu recorde\n123';}},
+    {name:'source-sha',mutate:value=>{value.source.sha256='0'.repeat(64);}}
+  ];
+  for(const testCase of invalidNewHuntCases){
+    const target=path.join(fixtureDir,'new-hunt-'+testCase.name);copyCatalogFixture(target,{includeNewHunt:false});
+    if(testCase.mutate){const changed=structuredClone(newHuntSource);testCase.mutate(changed);fs.writeFileSync(path.join(target,newHuntFile),JSON.stringify(changed));}
+    const fallback=backendModule.createBackend({memory:true,dataDir:target}),dispose=own(()=>fallback.close());
+    assert.equal(fallback.catalogEvidence.newHuntCapture.complete,false);
+    assert.equal(fallback.catalogEvidence.newHuntCapture.acceptedHunts,0);assert.equal(fallback.catalogEvidence.newHuntCapture.acceptedPulls,0);
+    assert(fallback.catalogEvidence.newHuntCapture.reasons.length>0);
+    assert.equal(fallback.catalogEvidence.huntCapture.complete,false,'Reject latest coverage atomically');
+    assert.deepEqual(fallback.hunts,backend.hunts.slice(0,83),'Preserve all 83 prior hunts exactly: '+testCase.name);
+    assert.deepEqual(fallback.observedHuntRecords,previousHunts);assert.equal(fallback.catalogEvidence.huntCapture.capturedPulls,251);
+    assert.deepEqual(fallback.cyclopediaCatalog,backend.cyclopediaCatalog,'Hunt evidence cannot alter creatures/items');
+    const message={type:'hunt-catalog',hunts:fallback.hunts};assert.deepEqual(original.decodeServer(backendModule.encodeMessage(message)),[message]);
+    await dispose();
+  }
+  console.log(JSON.stringify({ok:true,newHunt:{hunts:84,pulls:254,newLootEntriesPerPull:27,rejectedSourceCases:invalidNewHuntCases.length,currencyId:3043,sortMode:'Peso'}}));
   const invalidNewCreatureCases=[
     {name:'missing'},
     {name:'incomplete',mutate:value=>{value.complete=false;}},
@@ -560,7 +634,7 @@ const backendModule=require('../backend.cjs');
     await until(()=>inventoryMessages===2);
     const uids=reloaded.state.characters.flatMap(c=>c.inventory?[...c.inventory.slots,...c.inventory.satchel,...Object.values(c.inventory.equipment)].filter(Boolean).map(i=>i.uid):[]);
     assert.equal(new Set(uids).size,uids.length,'Restart and purchase must retain globally unique UIDs');
-    console.log(JSON.stringify({ok:true,serverCodes:192,clientCodes:211,hunts:backend.hunts.length,observedPulls:backend.observedHuntRecords.reduce((count,hunt)=>count+(hunt.pulls||[]).length,0),unresolvedLoot:backend.catalogEvidence.unresolvedHuntLoot.length,cyclopedia:{monsters:backend.cyclopediaCatalog.monsters.length,items:backend.cyclopediaCatalog.items.length,bosses:backend.cyclopediaCatalog.bosses.length},bestiaryLoot:{species:backend.catalogEvidence.observedBestiaryLoot.length,entries:backend.catalogEvidence.bestiaryLootCapture.lootEntries,maxNotes:backend.catalogEvidence.bestiaryLootCapture.maxNotes,unknownAssociations:backend.catalogEvidence.unknownLootAssociations.length},tests:['195 directly observed species loot tables: order, rarity, duplicates and optional max','Bestiary evidence over HTTP and exact tables over binary WebSocket','invalid/null max and unconfirmed empty loot remain unknown','83 observed hunts and 251 pulls','per-pull active species/order/rarity/item IDs','damage-taken percentages rendered by captured client function','original codecs','original validators','reserved flags rejected','HTTP admission and shapes','wrong Origin rejected','text/plain rejected','null/array/boolean bodies rejected','object names rejected without crash','WebSocket bootstrap','automatic catalog request','terrain order','hunt combat','leave hunt','walk','shop','invalid inventory indices rejected; valid swap works','UID preservation and duplicate repair','UID uniqueness after restart and purchase']},null,2));
+    console.log(JSON.stringify({ok:true,serverCodes:193,clientCodes:213,hunts:backend.hunts.length,observedPulls:backend.observedHuntRecords.reduce((count,hunt)=>count+(hunt.pulls||[]).length,0),unresolvedLoot:backend.catalogEvidence.unresolvedHuntLoot.length,cyclopedia:{monsters:backend.cyclopediaCatalog.monsters.length,items:backend.cyclopediaCatalog.items.length,bosses:backend.cyclopediaCatalog.bosses.length},bestiaryLoot:{species:backend.catalogEvidence.observedBestiaryLoot.length,entries:backend.catalogEvidence.bestiaryLootCapture.lootEntries,maxNotes:backend.catalogEvidence.bestiaryLootCapture.maxNotes,unknownAssociations:backend.catalogEvidence.unknownLootAssociations.length},tests:['195 directly observed species loot tables: order, rarity, duplicates and optional max','Bestiary evidence over HTTP and exact tables over binary WebSocket','invalid/null max and unconfirmed empty loot remain unknown','83 preserved hunts/251 pulls plus Rotten Wasteland/3 pulls','per-pull active species/order/rarity/item IDs','damage-taken percentages rendered by captured client function','original codecs','original validators','reserved flags rejected','HTTP admission and shapes','wrong Origin rejected','text/plain rejected','null/array/boolean bodies rejected','object names rejected without crash','WebSocket bootstrap','automatic catalog request','terrain order','hunt combat','leave hunt','walk','shop','invalid inventory indices rejected; valid swap works','UID preservation and duplicate repair','UID uniqueness after restart and purchase']},null,2));
   }finally{
     await cleanupRestartSocket();
     const stopping=cleanupReloaded();
@@ -614,7 +688,7 @@ const backendModule=require('../backend.cjs');
   assert.equal(expectedLayout.inventory.picks.length,10);
   assert(!Object.hasOwn(expectedLayout,'loot'));assert(!Object.hasOwn(expectedLayout,'unknownWindow'));
   assert.deepEqual(expectedLayout.hunt.picks,[]);
-  const favorites=[preferenceServer.instance.hunts[1].id,'rat-hunt'];
+  const favorites=['rotten-wasteland-hunt',preferenceServer.instance.hunts[1].id,'rat-hunt'];
   assert(preferenceServer.instance.hunts.every(hunt=>protocol.P(hunt.id)),'Local favorite IDs must belong to the captured hunt enum');
   preferences.write({type:'set-window-layout',windows:layout});
   preferences.write({type:'set-hunt-favorites',huntIds:favorites});
